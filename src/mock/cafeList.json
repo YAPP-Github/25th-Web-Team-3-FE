@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "헤베커피",
+    "location": "충무로역 근처",
+    "tags": [
+      {
+        "id": 1,
+        "name": "전문 바리스타"
+      },
+      {
+        "id": 2,
+        "name": "로스터리"
+      },
+      {
+        "id": 3,
+        "name": "드립커피"
+      },
+      {
+        "id": 4,
+        "name": "시그니처"
+      }
+    ],
+    "images": [
+      "https://placehold.co/200x200?text=Cafe1",
+      "https://placehold.co/200x200?text=Cafe2",
+      "https://placehold.co/200x200?text=Cafe3"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "헤베커피",
+    "location": "충무로역 근처",
+    "tags": [
+      {
+        "id": 1,
+        "name": "전문 바리스타"
+      },
+      {
+        "id": 2,
+        "name": "로스터리"
+      },
+      {
+        "id": 3,
+        "name": "드립커피"
+      },
+      {
+        "id": 4,
+        "name": "시그니처"
+      }
+    ],
+    "images": [
+      "https://placehold.co/200x200?text=Cafe1",
+      "https://placehold.co/200x200?text=Cafe2",
+      "https://placehold.co/200x200?text=Cafe3"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "헤베커피",
+    "location": "충무로역 근처",
+    "tags": [
+      {
+        "id": 1,
+        "name": "전문 바리스타"
+      },
+      {
+        "id": 2,
+        "name": "로스터리"
+      },
+      {
+        "id": 3,
+        "name": "드립커피"
+      },
+      {
+        "id": 4,
+        "name": "시그니처"
+      }
+    ],
+    "images": [
+      "https://placehold.co/200x200?text=Cafe1",
+      "https://placehold.co/200x200?text=Cafe2",
+      "https://placehold.co/200x200?text=Cafe3"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "헤베커피",
+    "location": "충무로역 근처",
+    "tags": [
+      {
+        "id": 1,
+        "name": "전문 바리스타"
+      },
+      {
+        "id": 2,
+        "name": "로스터리"
+      },
+      {
+        "id": 3,
+        "name": "드립커피"
+      },
+      {
+        "id": 4,
+        "name": "시그니처"
+      },
+      {
+        "id": 5,
+        "name": "시그니처"
+      },
+      {
+        "id": 6,
+        "name": "시그니처"
+      },
+      {
+        "id": 7,
+        "name": "시그니처"
+      },
+      {
+        "id": 8,
+        "name": "시그니처"
+      }
+    ],
+    "images": [
+      "https://placehold.co/200x200?text=Cafe1",
+      "https://placehold.co/200x200?text=Cafe2",
+      "https://placehold.co/200x200?text=Cafe3"
+    ]
+  }
+]

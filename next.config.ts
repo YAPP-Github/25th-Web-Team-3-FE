@@ -1,5 +1,5 @@
-import type { NextConfig } from "next";
-import { createVanillaExtractPlugin } from "@vanilla-extract/next-plugin";
+import type { NextConfig } from 'next';
+import { createVanillaExtractPlugin } from '@vanilla-extract/next-plugin';
 
 const withVanillaExtract = createVanillaExtractPlugin();
 
@@ -9,6 +9,16 @@ const nextConfig: NextConfig = {
     fetches: {
       fullUrl: true,
     },
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'placehold.co',
+        pathname: '/**',
+      },
+    ],
+    dangerouslyAllowSVG: true,
   },
 };
 
