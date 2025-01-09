@@ -1,3 +1,4 @@
+import { REGIONS } from '@/constants/region';
 export interface Cafe {
   id: number;
   name: string;
@@ -5,3 +6,5 @@ export interface Cafe {
   tags: { id: number; name: string }[];
   images: string[];
 }
+
+export type Region = (typeof REGIONS)[keyof typeof REGIONS];

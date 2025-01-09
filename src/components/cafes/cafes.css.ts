@@ -80,3 +80,18 @@ export const closeButton = style({
   cursor: 'pointer',
   width: '100%',
 });
+
+// FilterButtons
+const baseRegionFilterButton = {
+  padding: '0.9rem 2rem',
+  fontSize: '1.5rem',
+  background: '#F6F8F9',
+  border: '1px solid #E9E9E9',
+  borderRadius: '4.3rem',
+  cursor: 'pointer',
+} as const;
+
+export const RegionFilterButton = {
+  default: style({ ...baseRegionFilterButton, color: '#a6a6a6' }),
+  isSelected: style({ ...baseRegionFilterButton, color: '#000000' }),
+};

@@ -1,4 +1,6 @@
+import { Region } from '@/types';
 import Modal from '../common/Modal';
+import { REGIONS } from '../../constants/region';
 import {
   closeButton,
   closeButtonWrapper,
@@ -9,26 +11,42 @@ import {
 
 interface RegionSelectModalProps {
   isOpen: boolean;
+  setRegion: (value: Region) => void;
   onClose: () => void;
 }
 
-export default function RegionSelectModal({ isOpen, onClose }: RegionSelectModalProps) {
+export default function RegionSelectModal({ isOpen, setRegion, onClose }: RegionSelectModalProps) {
   return (
     <Modal isOpen={isOpen} onClose={onClose} position="bottom">
-      <RegionSelectModalContent onClose={onClose} />
+      <RegionSelectModalContent setRegion={setRegion} onClose={onClose} />
     </Modal>
   );
 }
 
-function RegionSelectModalContent({ onClose }: { onClose: () => void }) {
+interface RegionSelectModalContentProps {
+  setRegion: (region: Region) => void;
+  onClose: () => void;
+}
+
+function RegionSelectModalContent({ setRegion, onClose }: RegionSelectModalContentProps) {
   return (
     <div className={regionSelectModalContent}>
       <h1 className={regionSelectModalTitle}>지역별</h1>
       <ul>
-        <li className={regionItem}>전체</li>
-        <li className={regionItem}>지역명1</li>
-        <li className={regionItem}>지역명2</li>
-        <li className={regionItem}>지역명3</li>
+        {Object.values(REGIONS).map((region) => {
+          return (
+            <li
+              key={region}
+              onClick={() => {
+                setRegion(region);
+                onClose();
+              }}
+              className={regionItem}
+            >
+              {region}
+            </li>
+          );
+        })}
       </ul>
       <div className={closeButtonWrapper}>
         <button className={closeButton} onClick={onClose}>
