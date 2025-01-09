@@ -15,7 +15,7 @@ const baseModalContent = {
   width: '100%',
   background: '#ffffff',
   position: 'fixed',
-  padding: '2rem 2.4rem',
+  padding: '1.6rem 2.4rem',
 } as const;
 
 export const modalContent: Record<ModalPosition, string> = {

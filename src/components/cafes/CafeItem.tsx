@@ -1,15 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { cafeImageList, cafeItemHeading, cafeItemName, tagList, temporaryTag } from './cafes.css';
 import { ROUTE_PATH } from '@/constants/routePath';
-
-interface Cafe {
-  id: number;
-  name: string;
-  location: string;
-  tags: { id: number; name: string }[];
-  images: string[];
-}
+import type { Cafe } from '@/types/cafe';
+import { cafeImageList, cafeItemHeading, cafeItemName, tagList, temporaryTag } from './cafes.css';
 
 interface CafeItemProps {
   cafe: Cafe;

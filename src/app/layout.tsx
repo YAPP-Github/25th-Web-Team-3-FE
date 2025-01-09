@@ -15,8 +15,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className={rootContainer}>{children}</div>
-        <div id="dialog-root"></div>
+        <div className={rootContainer}>
+          {children}
+          <div id="dialog-root"></div>
+        </div>
       </body>
     </html>
   );
