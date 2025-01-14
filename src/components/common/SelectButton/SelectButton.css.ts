@@ -10,18 +10,19 @@ const baseSelectButton = {
   display: 'flex',
   alignItems: 'center',
   gap: '0.2rem',
+  border: '1px solid',
 };
 
 export const selectButton = {
   default: style({
     ...baseSelectButton,
-    border: `1px solid ${color.grayScale.gray100}`,
-    background: color.grayScale.gray500,
+    borderColor: color.grayScale.gray100,
     color: color.grayScale.gray100,
   }),
   selected: style({
     ...baseSelectButton,
     background: color.grayScale.gray100,
+    borderColor: color.grayScale.gray100,
     color: color.grayScale.gray500,
   }),
 };
