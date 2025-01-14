@@ -1,3 +1,5 @@
+import { body1 } from './../../styles/typo.css';
+import { title3 } from '@/styles/typo.css';
 import { style } from '@vanilla-extract/css';
 
 // CafeItem
@@ -9,9 +11,11 @@ export const cafeItemHeading = style({
 });
 
 export const cafeItemName = style({
-  fontSize: '2rem',
-  fontWeight: 600,
-  lineHeight: '3.4rem',
+  ...title3,
+});
+
+export const cafeLocation = style({
+  ...body1,
 });
 
 export const tagList = style({
@@ -41,7 +45,7 @@ export const temporaryTag = style({
 
 // CafeList
 export const cafeListContainer = style({
-  padding: '3.6rem 0 2.4rem 2rem',
+  padding: '2.4rem 2rem',
   display: 'flex',
   flexDirection: 'column',
   gap: '2.4rem',

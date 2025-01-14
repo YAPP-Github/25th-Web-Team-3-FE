@@ -1,4 +1,5 @@
-import { body1, body1Bold } from '@/styles/typo.css';
+import { color } from '@/styles/color.css';
+import { body1, body1Bold, button1, title3 } from '@/styles/typo.css';
 import { style } from '@vanilla-extract/css';
 
 export const regionSelectModalContent = style({
@@ -7,9 +8,11 @@ export const regionSelectModalContent = style({
 });
 
 export const regionSelectModalTitle = style({
-  fontSize: '1.8rem',
-  fontWeight: 600,
-  margin: '0.8rem 0 1.2rem 0',
+  ...title3,
+  color: color.grayScale.gray500,
+  padding: '2.4rem 0 1.2rem 2rem',
+  display: 'flex',
+  alignItems: 'center',
 });
 
 const baseRegionItem = {
@@ -19,6 +22,7 @@ const baseRegionItem = {
   height: '5.6rem',
   cursor: 'pointer',
   width: '100%',
+  padding: '0 2rem 0 2rem',
 };
 
 export const regionItem = {
@@ -32,11 +36,11 @@ export const closeButtonWrapper = style({
   alignItems: 'center',
   borderTop: '1px solid #eeeeee',
   height: '4.7rem',
+  marginBottom: '1.6rem',
 });
 
 export const closeButton = style({
-  fontSize: '1.5rem',
-  fontWeight: 400,
+  ...button1,
   cursor: 'pointer',
   width: '100%',
 });

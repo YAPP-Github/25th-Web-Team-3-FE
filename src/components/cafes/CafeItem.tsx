@@ -2,7 +2,14 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ROUTE_PATH } from '@/constants/routePath';
 import type { Cafe } from '@/types';
-import { cafeImageList, cafeItemHeading, cafeItemName, tagList, temporaryTag } from './cafes.css';
+import {
+  cafeImageList,
+  cafeItemHeading,
+  cafeItemName,
+  cafeLocation,
+  tagList,
+  temporaryTag,
+} from './cafes.css';
 
 interface CafeItemProps {
   cafe: Cafe;
@@ -16,7 +23,7 @@ export default function CafeItem({ cafe }: CafeItemProps) {
       <div>
         <div className={cafeItemHeading}>
           <div className={cafeItemName}>{name}</div>
-          <div>{location}</div>
+          <div className={cafeLocation}>{location}</div>
         </div>
         <div className={tagList}>
           {tags.map((tag, index) => (
