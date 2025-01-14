@@ -31,7 +31,5 @@ export const modalContent: Record<ModalPosition, string> = {
     bottom: 0,
     left: '50%',
     transform: 'translateX(-50%)',
-    borderTopLeftRadius: '1.6rem',
-    borderTopRightRadius: '1.6rem',
   }),
 };
