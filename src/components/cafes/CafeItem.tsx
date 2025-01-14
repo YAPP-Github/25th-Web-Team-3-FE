@@ -3,7 +3,10 @@ import Link from 'next/link';
 import { ROUTE_PATH } from '@/constants/routePath';
 import type { Cafe } from '@/types';
 import {
+  cafeImage,
   cafeImageList,
+  cafeImageOverCount,
+  cafeImageWrapper,
   cafeItemHeading,
   cafeItemName,
   cafeLocation,
@@ -30,19 +33,29 @@ export default function CafeItem({ cafe }: CafeItemProps) {
             <TemporaryTag key={`${name}-tag-${index}`} name={tag.name} />
           ))}
         </div>
-        <div className={cafeImageList}>
-          {images.map((src, index) => (
-            <Image
-              key={`${name}-image-${index}`}
-              alt={`${name} ${index + 1}번째 사진`}
-              src={src}
-              height="200"
-              width="200"
-            />
-          ))}
-        </div>
+        <CafeImageList cafeName={name} images={images} />
       </div>
     </Link>
+  );
+}
+
+const MAX_IMAGE_COUNT = 3;
+
+function CafeImageList({ cafeName, images }: { cafeName: string; images: string[] }) {
+  const overflowImageCount = images.length - MAX_IMAGE_COUNT;
+  const isOverflow = overflowImageCount > 0;
+
+  const slicedImages = images.slice(0, MAX_IMAGE_COUNT);
+
+  return (
+    <div className={cafeImageList}>
+      {slicedImages.map((src, index) => (
+        <div className={cafeImageWrapper} key={`${cafeName}-image-${index}`}>
+          <Image fill className={cafeImage} alt={`${cafeName} ${index + 1}번째 사진`} src={src} />
+        </div>
+      ))}
+      {isOverflow && <div className={cafeImageOverCount}>+{overflowImageCount}</div>}
+    </div>
   );
 }
 

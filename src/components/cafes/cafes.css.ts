@@ -29,10 +29,32 @@ export const tagList = style({
 });
 
 export const cafeImageList = style({
+  position: 'relative',
+  width: '100%',
   display: 'flex',
-  overflowX: 'auto',
-  msOverflowStyle: 'none',
-  scrollbarWidth: 'none',
+  gap: '0.2rem',
+  height: '14rem',
+});
+
+export const cafeImageWrapper = style({
+  flex: 1,
+  position: 'relative',
+});
+
+export const cafeImage = style({
+  objectFit: 'cover',
+});
+
+export const cafeImageOverCount = style({
+  color: 'white',
+  position: 'absolute',
+  right: 0,
+  bottom: 0,
+  width: '3.6rem',
+  height: '3.6rem',
+  background: 'rgba(17, 17, 17, 0.8)',
+  textAlign: 'center',
+  lineHeight: '3.6rem',
 });
 
 export const temporaryTag = style({
