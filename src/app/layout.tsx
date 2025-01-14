@@ -1,6 +1,16 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { rootContainer } from './layout.css';
+import { DotGothic16 } from 'next/font/google';
+import localFont from 'next/font/local';
+
+const pretendard = localFont({
+  src: '../fonts/PretendardVariable.woff2',
+  display: 'swap',
+  weight: '45 920',
+});
+
+const dotGothic16 = DotGothic16({ weight: '400', subsets: ['latin'], display: 'swap' });
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -14,8 +24,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <div className={rootContainer}>
+      <body className={`${pretendard.className} `}>
+        <div className={`${rootContainer}`}>
           {children}
           <div id="dialog-root"></div>
         </div>
