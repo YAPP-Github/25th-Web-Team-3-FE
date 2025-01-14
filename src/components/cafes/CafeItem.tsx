@@ -39,6 +39,7 @@ export default function CafeItem({ cafe }: CafeItemProps) {
   );
 }
 
+// 유빈 공통 컴포넌트 구현 뒤 대체 예정
 function TemporaryTag({ name }: { name: string }) {
   return <div className={temporaryTag}>{name}</div>;
 }

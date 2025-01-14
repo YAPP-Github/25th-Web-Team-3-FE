@@ -1,5 +1,6 @@
 import { style } from '@vanilla-extract/css';
 
+// CafeItem
 export const cafeItemHeading = style({
   display: 'flex',
   alignItems: 'center',
@@ -46,52 +47,10 @@ export const cafeListContainer = style({
   gap: '2.4rem',
 });
 
-// RegionSelectModal
-export const regionSelectModalContent = style({
-  display: 'flex',
-  flexDirection: 'column',
-});
-
-export const regionSelectModalTitle = style({
-  fontSize: '1.8rem',
-  fontWeight: 600,
-  margin: '0.8rem 0 1.2rem 0',
-});
-
-export const regionItem = style({
-  height: '5.6rem',
-  lineHeight: '5.6rem',
-  fontSize: '1.5rem',
-  fontWeight: 400,
-  cursor: 'pointer',
-});
-
-export const closeButtonWrapper = style({
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  borderTop: '1px solid #eeeeee',
-  height: '4.7rem',
-});
-
-export const closeButton = style({
-  fontSize: '1.5rem',
-  fontWeight: 400,
-  cursor: 'pointer',
-  width: '100%',
-});
-
 // FilterButtons
-const baseRegionFilterButton = {
-  padding: '0.9rem 2rem',
-  fontSize: '1.5rem',
-  background: '#F6F8F9',
-  border: '1px solid #E9E9E9',
-  borderRadius: '4.3rem',
-  cursor: 'pointer',
-} as const;
-
-export const RegionFilterButton = {
-  default: style({ ...baseRegionFilterButton, color: '#a6a6a6' }),
-  isSelected: style({ ...baseRegionFilterButton, color: '#000000' }),
-};
+export const selectButtonsContainer = style({
+  display: 'flex',
+  gap: '0.8rem',
+  padding: '1.6rem 0 1.6rem 2rem',
+  background: 'black',
+});
