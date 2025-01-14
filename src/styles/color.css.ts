@@ -1,11 +1,11 @@
 export const color = {
   primary: {},
   grayScale: {
-    gray500: '#11111',
-    gray400: '#77777',
-    gray300: '#EEEEE',
+    gray500: '#111111',
+    gray400: '#777777',
+    gray300: '#EEEEEE',
     gray200: '#F5F5F5',
-    gray100: '#FFFFF',
+    gray100: '#FFFFFF',
   },
   flavor: {
     fruity: '#DB1C24',
