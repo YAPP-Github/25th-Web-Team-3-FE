@@ -27,7 +27,7 @@ export default function RootLayout({
       <body className={`${pretendard.className} `}>
         <div className={`${rootContainer}`}>
           {children}
-          <div id="dialog-root"></div>
+          <div id="modal-root"></div>
         </div>
       </body>
     </html>

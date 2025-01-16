@@ -14,7 +14,7 @@ export const useModal = (isOpen: boolean, onClose: () => void): UseModalReturn =
   const [targetContainer, setTargetContainer] = useState<HTMLElement>();
 
   useEffect(() => {
-    setTargetContainer(document.getElementById('dialog-root') as HTMLElement);
+    setTargetContainer(document.getElementById('modal-root') as HTMLElement);
   }, []);
 
   useEffect(() => {
