@@ -2,7 +2,6 @@
 
 import { PropsWithChildren } from 'react';
 import { createPortal } from 'react-dom';
-import ScrollFreezer from '../ScrollFreezer';
 import { useModal } from './hooks/useModal';
 import { modal, modalContent } from './Modal.css';
 
@@ -11,7 +10,7 @@ export type ModalPosition = 'center' | 'bottom';
 interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
-  position: ModalPosition;
+  position?: ModalPosition;
 }
 
 export default function Modal({
@@ -27,11 +26,9 @@ export default function Modal({
   }
 
   return createPortal(
-    <ScrollFreezer>
-      <dialog ref={dialogRef} onClose={onClose} onClick={onClickDialog} className={modal}>
-        <div className={modalContent[position]}>{children}</div>
-      </dialog>
-    </ScrollFreezer>,
+    <dialog ref={dialogRef} onClose={onClose} onClick={onClickDialog} className={modal}>
+      <div className={modalContent[position]}>{children}</div>
+    </dialog>,
     targetContainer
   );
 }

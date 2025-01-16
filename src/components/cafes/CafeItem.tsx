@@ -5,7 +5,7 @@ import type { Cafe } from '@/types';
 import {
   cafeImage,
   cafeImageList,
-  cafeImageOverCount,
+  overflowCafeImageCount,
   cafeImageWrapper,
   cafeItemHeading,
   cafeItemName,
@@ -54,7 +54,7 @@ function CafeImageList({ cafeName, images }: { cafeName: string; images: string[
           <Image fill className={cafeImage} alt={`${cafeName} ${index + 1}번째 사진`} src={src} />
         </div>
       ))}
-      {isOverflow && <div className={cafeImageOverCount}>+{overflowImageCount}</div>}
+      {isOverflow && <div className={overflowCafeImageCount}>+{overflowImageCount}</div>}
     </div>
   );
 }

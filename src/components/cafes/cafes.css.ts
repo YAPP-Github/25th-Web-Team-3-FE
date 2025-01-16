@@ -45,7 +45,7 @@ export const cafeImage = style({
   objectFit: 'cover',
 });
 
-export const cafeImageOverCount = style({
+export const overflowCafeImageCount = style({
   color: 'white',
   position: 'absolute',
   right: 0,
