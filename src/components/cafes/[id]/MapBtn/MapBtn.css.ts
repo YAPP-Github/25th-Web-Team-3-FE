@@ -1,13 +1,14 @@
+import { color } from '@/styles/color.css';
+import { button1, button2 } from '@/styles/typo.css';
 import { style } from '@vanilla-extract/css';
 
 export const mapBtn = style({
+  ...button2,
+  backgroundColor:color.grayScale.gray500,
+  borderRadius: '0.3rem',
   width: '6.3rem',
-  height: '3rem',
-  borderRadius: '4.3rem',
-  background: 'white',
-  color: '#222222',
-  border: '1px solid #222222',
-  fontSize: '1.5rem',
-  fontWeight: '400',
+  height: '3.6rem',
+  border:'none',
+  color: color.grayScale.gray100,
   cursor: 'pointer',
 });
