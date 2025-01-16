@@ -15,7 +15,7 @@ export default function SelectButton({
   ...attributes
 }: PropsWithChildren<SelectButtonProps>) {
   return (
-    <button className={selectButton[isSelected ? 'selected' : 'default']} {...attributes}>
+    <button className={selectButton({ isSelected })} {...attributes}>
       {children}
       {hasIcon && <ChevronDownIcon isBlack={isSelected} />}
     </button>

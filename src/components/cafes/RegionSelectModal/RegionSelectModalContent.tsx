@@ -29,15 +29,13 @@ export default function RegionSelectModalContent({
         {regions.map((region) => {
           const isSelected = region === selectedRegion;
 
-          const styleClassName = regionItem[isSelected ? 'selected' : 'default'];
-
           const handleClickRegionItem = () => {
             setRegion(region);
             onClose();
           };
 
           return (
-            <li key={region} className={styleClassName} onClick={handleClickRegionItem}>
+            <li key={region} className={regionItem({ isSelected })} onClick={handleClickRegionItem}>
               {region}
               {isSelected && <CheckIcon />}
             </li>

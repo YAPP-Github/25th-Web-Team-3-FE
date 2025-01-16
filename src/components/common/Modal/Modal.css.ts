@@ -1,5 +1,5 @@
 import { style } from '@vanilla-extract/css';
-import { ModalPosition } from '.';
+import { recipe } from '@vanilla-extract/recipes';
 
 export const modal = style({
   zIndex: 1000,
@@ -10,25 +10,27 @@ export const modal = style({
   },
 });
 
-const baseModalContent = {
-  maxWidth: '50rem',
-  width: '100%',
-  background: '#ffffff',
-  position: 'fixed',
-} as const;
+export const modalContent = recipe({
+  base: {
+    maxWidth: '50rem',
+    width: '100%',
+    background: '#ffffff',
+    position: 'fixed',
+  },
 
-export const modalContent: Record<ModalPosition, string> = {
-  center: style({
-    ...baseModalContent,
-    left: '50%',
-    top: '50%',
-    transform: 'translate(-50%, -50%)',
-    borderRadius: '1.6rem',
-  }),
-  bottom: style({
-    ...baseModalContent,
-    bottom: 0,
-    left: '50%',
-    transform: 'translateX(-50%)',
-  }),
-};
+  variants: {
+    position: {
+      center: {
+        left: '50%',
+        top: '50%',
+        transform: 'translate(-50%, -50%)',
+        borderRadius: '1.6rem',
+      },
+      bottom: {
+        bottom: 0,
+        left: '50%',
+        transform: 'translateX(-50%)',
+      },
+    },
+  },
+});

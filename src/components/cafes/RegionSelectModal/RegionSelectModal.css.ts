@@ -1,6 +1,7 @@
+import { style } from '@vanilla-extract/css';
+import { recipe } from '@vanilla-extract/recipes';
 import { color } from '@/styles/color.css';
 import { body1, body1Bold, button1, title3 } from '@/styles/typo.css';
-import { style } from '@vanilla-extract/css';
 
 export const regionSelectModalContent = style({
   display: 'flex',
@@ -15,20 +16,24 @@ export const regionSelectModalTitle = style({
   alignItems: 'center',
 });
 
-const baseRegionItem = {
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'space-between',
-  height: '5.6rem',
-  cursor: 'pointer',
-  width: '100%',
-  padding: '0 2rem 0 2rem',
-};
+export const regionItem = recipe({
+  base: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    height: '5.6rem',
+    cursor: 'pointer',
+    width: '100%',
+    padding: '0 2rem 0 2rem',
+  },
 
-export const regionItem = {
-  default: style({ ...baseRegionItem, ...body1 }),
-  selected: style({ ...baseRegionItem, ...body1Bold }),
-};
+  variants: {
+    isSelected: {
+      true: body1Bold,
+      false: body1,
+    },
+  },
+});
 
 export const closeButtonWrapper = style({
   display: 'flex',

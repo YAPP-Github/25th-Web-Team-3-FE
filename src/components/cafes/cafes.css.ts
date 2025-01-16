@@ -10,13 +10,9 @@ export const cafeItemHeading = style({
   marginBottom: '0.8rem',
 });
 
-export const cafeItemName = style({
-  ...title3,
-});
+export const cafeItemName = style(title3);
 
-export const cafeLocation = style({
-  ...body1,
-});
+export const cafeLocation = style(body1);
 
 export const tagList = style({
   display: 'flex',

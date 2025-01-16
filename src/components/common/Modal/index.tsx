@@ -27,7 +27,7 @@ export default function Modal({
 
   return createPortal(
     <dialog ref={dialogRef} onClose={onClose} onClick={onClickDialog} className={modal}>
-      <div className={modalContent[position]}>{children}</div>
+      <div className={modalContent({ position })}>{children}</div>
     </dialog>,
     targetContainer
   );
