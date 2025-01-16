@@ -25,6 +25,7 @@ import { RoastingBar } from '@/components/cafes/[id]/RoastingBar';
 
 import OriginList from '@/components/cafes/[id]/OriginList';
 import { FlavorList, FlavorListProps } from '@/components/cafes/[id]/FlavorItem';
+import Footer from '@/components/cafes/[id]/Footer';
 
 export default async function Page() {
   return (
@@ -111,6 +112,7 @@ export default async function Page() {
             </ul>
           </div>
         </section>
+      <Footer />
       </main>
     </>
   );
