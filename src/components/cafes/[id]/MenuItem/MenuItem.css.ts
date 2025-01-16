@@ -15,7 +15,7 @@ export const scrollContainer = style({
   },
 });
 
-export const MenuItemList = style({
+export const menuItemList = style({
   display: 'flex', // 요소들을 한 줄로 배치
   gap: '2.4rem',
   marginTop: '2rem',
@@ -23,21 +23,21 @@ export const MenuItemList = style({
   padding: '0', // 불필요한 여백 제거
 });
 
-export const MenuItemBox = style({
+export const menuItemBox = style({
   backgroundColor: color.grayScale.gray100,
   color: color.grayScale.gray500,
   padding: '1.6rem',
   width: '27.6rem',
   flexShrink: 0, // 요소가 축소되지 않도록
 });
-export const MenuItemTitleBox = style({
+export const menuItemTitleBox = style({
   ...body1Bold,
   display: 'flex',
   justifyContent: 'space-between',
   marginBottom: '1.2rem',
 } as ComplexStyleRule);
 
-export const MenuItemImg = style({
+export const menuItemImg = style({
   width: '100%',
   height: '24.4rem',
   objectFit: 'cover',

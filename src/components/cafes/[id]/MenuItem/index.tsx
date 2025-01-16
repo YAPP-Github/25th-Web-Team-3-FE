@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { MenuItemBox, menuItemContent, MenuItemImg, MenuItemTextBox, MenuItemTitleBox } from './cafes.id.css';
+import { menuItemBox, menuItemContent, menuItemImg, menuItemTitleBox } from './MenuItem.css';
 import { divider } from '@/app/cafes/[id]/page.css';
 
 export const MenuItem = ({
@@ -10,8 +10,8 @@ export const MenuItem = ({
   return (
     <>
       {menu.map((item) => (
-        <li className={MenuItemBox}>
-          <div key={item.id} className={MenuItemTitleBox}>
+        <li className={menuItemBox}>
+          <div key={item.id} className={menuItemTitleBox}>
             <h2>{item.title}</h2>
             <data>{item.price}</data>
           </div>
@@ -22,7 +22,7 @@ export const MenuItem = ({
             alt="이미지"
             width={1}
             height={1}
-            className={MenuItemImg}
+            className={menuItemImg}
           />
         </li>
       ))}
