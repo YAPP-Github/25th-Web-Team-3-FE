@@ -1,6 +1,6 @@
-import { headerImg } from '@/app/cafes/[id]/page.css';
 import Image from 'next/image';
-import { MenuItemBox, MenuItemImg, MenuItemTextBox } from './cafes.id.css';
+import { MenuItemBox, menuItemContent, MenuItemImg, MenuItemTextBox, MenuItemTitleBox } from './cafes.id.css';
+import { divider } from '@/app/cafes/[id]/page.css';
 
 export const MenuItem = ({
   menu,
@@ -11,6 +11,12 @@ export const MenuItem = ({
     <>
       {menu.map((item) => (
         <li className={MenuItemBox}>
+          <div key={item.id} className={MenuItemTitleBox}>
+            <h2>{item.title}</h2>
+            <data>{item.price}</data>
+          </div>
+          <div className={divider}></div>
+          <p className={menuItemContent}>{item.content}</p>
           <Image
             src={'https://placehold.co/600x400'}
             alt="이미지"
@@ -18,11 +24,6 @@ export const MenuItem = ({
             height={1}
             className={MenuItemImg}
           />
-          <div key={item.id} className={MenuItemTextBox}>
-            <h2>{item.title}</h2>
-            <p>{item.content}</p>
-            <data>{item.price}</data>
-          </div>
         </li>
       ))}
     </>
