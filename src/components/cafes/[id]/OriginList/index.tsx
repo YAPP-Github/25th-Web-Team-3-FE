@@ -1,5 +1,4 @@
-import Image from 'next/image';
-import brazil from '@/assets/Icon/brazil.svg';
+import Brazil from '@/assets/Icon/brazil.svg';
 import { orginItem } from './OriginList.css';
 
 interface OriginProps {
@@ -11,7 +10,7 @@ const OriginList = ({ origins }: OriginProps) => {
     <ul>
       {origins.map((item) => (
         <li key={item.id} className={orginItem}>
-          <Image src={brazil} alt={`${brazil} 아이콘`} />
+          <Brazil />
           {item.origin}
         </li>
       ))}

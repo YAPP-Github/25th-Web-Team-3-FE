@@ -1,27 +1,26 @@
 'use client';
 import { usePathname } from 'next/navigation';
 import { hashTag, hashTagItem } from './HashTag.css';
-import baristar from '@/assets/Icon/baristar.svg';
-import roastery from '@/assets/Icon/roastery.svg';
-import dirCoffee from '@/assets/Icon/dripCoffee.svg';
-import signiture from '@/assets/Icon/signiture.svg';
-import Image from 'next/image';
+import Baristar from '@/assets/Icon/baristar.svg';
+import Roastery from '@/assets/Icon/roastery.svg';
+import DirCoffee from '@/assets/Icon/dripCoffee.svg';
+import Signiture from '@/assets/Icon/signiture.svg';
 
 const HASH_TAG_DATA = [
   {
-    image: baristar,
+    Icon: Baristar,
     name: '전문 바리스타',
   },
   {
-    image: roastery,
+    Icon: Roastery,
     name: '로스터리',
   },
   {
-    image: dirCoffee,
+    Icon: DirCoffee,
     name: '드립커피',
   },
   {
-    image: signiture,
+    Icon: Signiture,
     name: '시그니처',
   },
 ];
@@ -45,7 +44,7 @@ export function HashTag() {
         <li key={index} className={hashTagItem({ isCafesPage })}>
           {isCafesPage ? (
             <div>
-              <Image src={tag.image} alt={tag.name} />
+              <tag.Icon/>
               <div>{tag.name}</div>
             </div>
           ) : (
