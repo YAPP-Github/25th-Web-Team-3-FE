@@ -1,14 +1,20 @@
 import Image from 'next/image';
-import { menuItemBox, menuItemContent, menuItemImg, menuItemTitleBox } from './MenuItem.css';
+import {
+  menuItemBox,
+  menuItemContent,
+  menuItemImg,
+  menuItemList,
+  menuItemTitleBox,
+} from './MenuItem.css';
 import { divider } from '@/app/cafes/[id]/page.css';
 
-export const MenuItem = ({
+export const MenuList = ({
   menu,
 }: {
   menu: { id: number; title: string; content: string; price: string }[];
 }) => {
   return (
-    <>
+    <ul className={menuItemList}>
       {menu.map((item) => (
         <li className={menuItemBox}>
           <div key={item.id} className={menuItemTitleBox}>
@@ -26,6 +32,6 @@ export const MenuItem = ({
           />
         </li>
       ))}
-    </>
+    </ul>
   );
 };
