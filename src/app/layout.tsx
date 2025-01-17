@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${pretendard.className} `}>
-        <div className={`${rootContainer}`}>
+        <div id="root" className={`${rootContainer}`}>
           <Providers>{children}</Providers>
           <div id="modal-root"></div>
         </div>
