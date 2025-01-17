@@ -1,5 +1,3 @@
-import { color } from '@/styles/color.css';
-import { style } from '@vanilla-extract/css';
 import { ReactNode } from 'react';
 import { cafesIdLayout } from './page.css';
 
