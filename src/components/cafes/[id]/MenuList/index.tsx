@@ -5,24 +5,24 @@ import {
   menuItemImg,
   menuItemList,
   menuItemTitleBox,
-} from './MenuItem.css';
+} from './MenuList.css';
 import { divider } from '@/app/cafes/[id]/page.css';
 
-export const MenuList = ({
-  menu,
+export default function MenuList({
+  menus,
 }: {
-  menu: { id: number; title: string; content: string; price: string }[];
-}) => {
+  menus: { id: number; title: string; content: string; price: string }[];
+}) {
   return (
     <ul className={menuItemList}>
-      {menu.map((item) => (
+      {menus.map((menu) => (
         <li className={menuItemBox}>
-          <div key={item.id} className={menuItemTitleBox}>
-            <h2>{item.title}</h2>
-            <data>{item.price}</data>
+          <div key={menu.id} className={menuItemTitleBox}>
+            <h2>{menu.title}</h2>
+            <data>{menu.price}</data>
           </div>
           <div className={divider}></div>
-          <p className={menuItemContent}>{item.content}</p>
+          <p className={menuItemContent}>{menu.content}</p>
           <Image
             src={'https://placehold.co/600x400'}
             alt="이미지"
@@ -34,4 +34,4 @@ export const MenuList = ({
       ))}
     </ul>
   );
-};
+}

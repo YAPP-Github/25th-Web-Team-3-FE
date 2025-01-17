@@ -48,6 +48,6 @@ export const menuItemContent = style({
   marginTop: '1.2rem',
   marginBottom: '1.6rem',
   maxWidth: '100%',
-  whiteSpace: 'normal', // 줄바꿈 가능
-  wordBreak: 'break-word', // 긴 단어에서 줄바꿈 허용
+  whiteSpace: 'normal', 
+  wordBreak: 'break-word', 
 });

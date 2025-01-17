@@ -1,5 +1,5 @@
+import  HashTag  from '@/components/common/HashTag';
 import { dot, flavorItem, flavorList } from './FlavorItem.css';
-
 export interface FlavorListProps {
   fruity: string;
   floral: string;
@@ -12,7 +12,7 @@ export interface FlavorListProps {
   other: string;
 }
 
-export const flavorNames: FlavorListProps = {
+export const FLAVOR_NAME = {
   fruity: '과일',
   floral: '꽃',
   sweet: '달콤한',
@@ -22,17 +22,19 @@ export const flavorNames: FlavorListProps = {
   sour: '시큼',
   nutty: '견과',
   other: '기타',
-};
+} as const;
+export type Flavor = keyof typeof FLAVOR_NAME;
 
-// FlavorList 컴포넌트 수정
-export const FlavorList = ({ flavors }: { flavors: Array<keyof FlavorListProps> }) => {
+export default function FlavorList ({ flavors }: { flavors: Array<keyof FlavorListProps> })  {
   return (
     <ul className={flavorList}>
       {flavors.map((flavor) => (
-        <li key={flavor} className={flavorItem}>
-          <span className={dot({ flavor })}></span>
-          {flavorNames[flavor]}
-        </li>
+        <HashTag key={flavor}>
+          <li className={flavorItem}>
+            <div className={dot({ flavor })}></div>
+            {FLAVOR_NAME[flavor]}
+          </li>
+        </HashTag>
       ))}
     </ul>
   );

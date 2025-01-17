@@ -1,6 +1,5 @@
 import Image from 'next/image';
-import { HashTag } from '@/components/common/HashTag';
-import { MenuList } from '@/components/cafes/[id]/MenuItem';
+import MenuList from '@/components/cafes/[id]/MenuList';
 import {
   cafesDetailMain,
   divider,
@@ -16,22 +15,26 @@ import {
   toggleInput,
   toggleLabel,
 } from './page.css';
-import { scrollContainer } from '@/components/cafes/[id]/MenuItem/MenuItem.css';
-import { MapBtn } from '@/components/cafes/[id]/MapBtn';
+import { scrollContainer } from '@/components/cafes/[id]/MenuList/MenuList.css';
+import MapButton from '@/components/cafes/[id]/MapButton';
 import ChevronLeft from '@/assets/icon/Chevron_Left.svg';
 import Bookmark from '@/assets/icon/Bookmark.svg';
 import DETAIL_MENU from '@/mock/detail.json';
 import { RoastingBar } from '@/components/cafes/[id]/RoastingBar';
 
 import OriginList from '@/components/cafes/[id]/OriginList';
-import { FlavorList, FlavorListProps } from '@/components/cafes/[id]/FlavorItem';
+import FlavorList, { FlavorListProps } from '@/components/cafes/[id]/FlavorItem';
 import Footer from '@/components/cafes/[id]/Footer';
+import IconWithHashTag from '@/components/cafes/[id]/IconWithHashTag';
+import Link from 'next/link';
 
 export default async function Page() {
   return (
     <>
       <header className={header}>
-        <ChevronLeft />
+        <Link href={'/cafes'}>
+          <ChevronLeft />
+        </Link>
         <Bookmark />
       </header>
       <div className={title}>
@@ -41,7 +44,7 @@ export default async function Page() {
         </h1>
         <div>
           <div>{DETAIL_MENU.detailplace}</div>
-          <MapBtn />
+          <MapButton />
         </div>
       </div>
       <Image
@@ -58,7 +61,7 @@ export default async function Page() {
           <article className={pickReasonBox}>
             <p className={pickReason}>{DETAIL_MENU.reason}</p>
             <div className={divider}></div>
-            <HashTag />
+            <IconWithHashTag />
           </article>
         </section>
         {/* 대표 원두 */}
@@ -107,7 +110,7 @@ export default async function Page() {
         <section>
           <h2 className={subTitle}>대표 메뉴</h2>
           <div className={scrollContainer}>
-            <MenuList menu={DETAIL_MENU.recoMenu} />
+            <MenuList menus={DETAIL_MENU.recoMenu} />
           </div>
         </section>
         <Footer />

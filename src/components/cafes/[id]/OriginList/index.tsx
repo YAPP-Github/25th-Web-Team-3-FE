@@ -1,21 +1,22 @@
 import Brazil from '@/assets/Icon/brazil.svg';
-import { orginItem } from './OriginList.css';
+import { orginItem, originList } from './OriginList.css';
+import HashTag from '@/components/common/HashTag';
 
 interface OriginProps {
   origins: { id: number; origin: string }[];
 }
 
-const OriginList = ({ origins }: OriginProps) => {
+export default function OriginList({ origins }: OriginProps) {
   return (
-    <ul>
+    <ul className={originList}>
       {origins.map((item) => (
-        <li key={item.id} className={orginItem}>
-          <Brazil />
-          {item.origin}
-        </li>
+        <HashTag key={item.id}>
+          <li className={orginItem}>
+            <Brazil />
+            {item.origin}
+          </li>
+        </HashTag>
       ))}
     </ul>
   );
-};
-
-export default OriginList;
+}

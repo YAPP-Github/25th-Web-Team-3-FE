@@ -10,13 +10,12 @@ export const flavorList = style({
   marginTop: '0.8rem',
 });
 export const flavorItem = style({
-  backgroundColor: color.grayScale.gray200,
   display: 'flex',
   alignItems: 'center',
-  padding: '0.2rem 0.8rem',
 });
 export const dot = recipe({
   base: {
+    display:'block',
     width: '0.8rem',
     height: '0.8rem',
     borderRadius: '50%',
