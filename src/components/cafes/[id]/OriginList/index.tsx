@@ -3,7 +3,7 @@ import { orginItem, originList } from './OriginList.css';
 import HashTag from '@/components/common/HashTag';
 
 interface OriginProps {
-  origins: { id: number; origin: string }[];
+  origins: { id: number; countryOfOrigin: string }[];
 }
 
 export default function OriginList({ origins }: OriginProps) {
@@ -13,7 +13,7 @@ export default function OriginList({ origins }: OriginProps) {
         <HashTag key={item.id}>
           <li className={orginItem}>
             <Brazil />
-            {item.origin}
+            {item.countryOfOrigin}
           </li>
         </HashTag>
       ))}

@@ -27,15 +27,7 @@
     "origins": [
       {
         "id": 0,
-        "origin": "브라질 세라도 NY2 FC"
-      },
-      {
-        "id": 1,
-        "origin": "콜롬비아 후일라 엑셀소 벌크로스터"
-      },
-      {
-        "id": 2,
-        "origin": "인도네시아 만델링"
+        "countryOfOrigin": "브라질 세라도 NY2 FC"
       }
     ],
     "loast_point": "medium"
