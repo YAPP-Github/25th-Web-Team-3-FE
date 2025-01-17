@@ -19,21 +19,21 @@ interface CafeItemProps {
 }
 
 export default function CafeItem({ cafe }: CafeItemProps) {
-  const { id, name, location, tags, images } = cafe;
+  const { id, name, nearestStation, tag: tags, previewImages } = cafe;
 
   return (
-    <Link href={`${ROUTE_PATH.cafe}/${id}`}>
+    <Link href={`${ROUTE_PATH.cafes}/${id}`}>
       <div>
         <div className={cafeItemHeading}>
           <div className={cafeItemName}>{name}</div>
-          <div className={cafeLocation}>{location}</div>
+          <div className={cafeLocation}>{nearestStation}</div>
         </div>
         <div className={tagList}>
           {tags.map((tag, index) => (
             <TemporaryTag key={`${name}-tag-${index}`} name={tag.name} />
           ))}
         </div>
-        <CafeImageList cafeName={name} images={images} />
+        <CafeImageList cafeName={name} images={previewImages} />
       </div>
     </Link>
   );

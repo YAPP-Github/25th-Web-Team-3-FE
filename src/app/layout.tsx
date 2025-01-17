@@ -3,6 +3,7 @@ import './globals.css';
 import { rootContainer } from './layout.css';
 import { DotGothic16 } from 'next/font/google';
 import localFont from 'next/font/local';
+import Providers from './providers';
 
 const pretendard = localFont({
   src: '../fonts/PretendardVariable.woff2',
@@ -25,8 +26,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${pretendard.className} `}>
-        <div className={`${rootContainer}`}>
-          {children}
+        <div id="root" className={`${rootContainer}`}>
+          <Providers>{children}</Providers>
           <div id="modal-root"></div>
         </div>
       </body>
