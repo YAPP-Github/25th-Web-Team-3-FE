@@ -22,7 +22,7 @@ export default function CafeItem({ cafe }: CafeItemProps) {
   const { id, name, location, tags, images } = cafe;
 
   return (
-    <Link href={`${ROUTE_PATH.cafe}/${id}`}>
+    <Link href={`${ROUTE_PATH.cafes}/${id}`}>
       <div>
         <div className={cafeItemHeading}>
           <div className={cafeItemName}>{name}</div>
