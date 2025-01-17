@@ -1,9 +1,9 @@
 [
   {
-    "id": 2,
+    "id": "1",
     "name": "헤베커피",
-    "location": "충무로역 근처",
-    "tags": [
+    "nearestStation": "충무로역",
+    "tag": [
       {
         "id": 1,
         "name": "전문 바리스타"
@@ -21,13 +21,16 @@
         "name": "시그니처"
       }
     ],
-    "images": ["https://placehold.co/200x200?text=Cafe1"]
+    "previewImages": ["https://placehold.co/200x200?text=Cafe1"],
+    "location": "string",
+    "price": 0,
+    "mainImages": "string"
   },
   {
-    "id": 1,
-    "name": "헤베커피",
-    "location": "충무로역 근처",
-    "tags": [
+    "id": "2",
+    "name": "헤베커피2",
+    "nearestStation": "공덕역",
+    "tag": [
       {
         "id": 1,
         "name": "전문 바리스타"
@@ -45,13 +48,19 @@
         "name": "시그니처"
       }
     ],
-    "images": ["https://placehold.co/200x200?text=Cafe1", "https://placehold.co/200x200?text=Cafe3"]
+    "previewImages": [
+      "https://placehold.co/200x200?text=Cafe1",
+      "https://placehold.co/200x200?text=Cafe3"
+    ],
+    "location": "string",
+    "price": 0,
+    "mainImages": "string"
   },
   {
-    "id": 4,
-    "name": "헤베커피",
-    "location": "충무로역 근처",
-    "tags": [
+    "id": "3",
+    "name": "헤베커피3",
+    "nearestStation": "홍대역",
+    "tag": [
       {
         "id": 1,
         "name": "전문 바리스타"
@@ -63,39 +72,22 @@
       {
         "id": 3,
         "name": "드립커피"
-      },
-      {
-        "id": 4,
-        "name": "시그니처"
-      },
-      {
-        "id": 5,
-        "name": "시그니처"
-      },
-      {
-        "id": 6,
-        "name": "시그니처"
-      },
-      {
-        "id": 7,
-        "name": "시그니처"
-      },
-      {
-        "id": 8,
-        "name": "시그니처"
       }
     ],
-    "images": [
+    "previewImages": [
       "https://placehold.co/200x200?text=Cafe1",
       "https://placehold.co/200x200?text=Cafe2",
       "https://placehold.co/200x200?text=Cafe3"
-    ]
+    ],
+    "location": "string",
+    "price": 0,
+    "mainImages": "string"
   },
   {
-    "id": 3,
-    "name": "헤베커피",
-    "location": "충무로역 근처",
-    "tags": [
+    "id": "4",
+    "name": "헤베커피4",
+    "nearestStation": "충무로역",
+    "tag": [
       {
         "id": 1,
         "name": "전문 바리스타"
@@ -113,11 +105,14 @@
         "name": "시그니처"
       }
     ],
-    "images": [
+    "previewImages": [
       "https://placehold.co/200x200?text=Cafe1",
       "https://placehold.co/200x200?text=Cafe2",
       "https://placehold.co/200x200?text=Cafe3",
       "https://placehold.co/200x200?text=Cafe4"
-    ]
+    ],
+    "location": "string",
+    "price": 0,
+    "mainImages": "string"
   }
 ]
