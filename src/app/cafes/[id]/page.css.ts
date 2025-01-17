@@ -21,7 +21,7 @@ export const title = style({
     fontSize: '1.5rem',
     fontWeight: '400',
   },
-  '& data': {
+  '& div': {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',

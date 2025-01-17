@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { HashTag } from '@/components/common/HashTag';
-import { MenuItem } from '@/components/cafes/[id]/MenuItem';
+import { MenuList } from '@/components/cafes/[id]/MenuItem';
 import {
   cafesDetailMain,
   divider,
@@ -16,9 +16,9 @@ import {
   toggleInput,
   toggleLabel,
 } from './page.css';
-import { menuItemList, scrollContainer } from '@/components/cafes/[id]/MenuItem/MenuItem.css';
+import { scrollContainer } from '@/components/cafes/[id]/MenuItem/MenuItem.css';
 import { MapBtn } from '@/components/cafes/[id]/MapBtn';
-import Chevron_Left from '@/assets/icon/Chevron_Left.svg';
+import ChevronLeft from '@/assets/icon/Chevron_Left.svg';
 import Bookmark from '@/assets/icon/Bookmark.svg';
 import DETAIL_MENU from '@/mock/detail.json';
 import { RoastingBar } from '@/components/cafes/[id]/RoastingBar';
@@ -31,18 +31,18 @@ export default async function Page() {
   return (
     <>
       <header className={header}>
-        <Image src={Chevron_Left} alt="뒤로가기 아이콘" />
-        <Image src={Bookmark} alt="북마크 아이콘" />
+        <ChevronLeft />
+        <Bookmark />
       </header>
       <div className={title}>
         <h1>
           {DETAIL_MENU.title}
           <span>{DETAIL_MENU.place}</span>
         </h1>
-        <data>
+        <div>
           <div>{DETAIL_MENU.detailplace}</div>
           <MapBtn />
-        </data>
+        </div>
       </div>
       <Image
         src={'https://placehold.co/600x400'}
@@ -54,7 +54,7 @@ export default async function Page() {
       <main className={cafesDetailMain}>
         {/* 선정 이유 */}
         <section>
-          <h1 className={subTitle}>선정 이유</h1>
+          <h2 className={subTitle}>선정 이유</h2>
           <article className={pickReasonBox}>
             <p className={pickReason}>{DETAIL_MENU.reason}</p>
             <div className={divider}></div>
@@ -63,10 +63,10 @@ export default async function Page() {
         </section>
         {/* 대표 원두 */}
         <section>
-          <h1 className={subTitle}>대표 원두</h1>
+          <h2 className={subTitle}>대표 원두</h2>
           <article className={recoCoffeeBeanBox}>
             <div>
-              <h2>{DETAIL_MENU.recocoffebeans.title_eng}</h2>
+              <h3>{DETAIL_MENU.recocoffebeans.title_eng}</h3>
               <input
                 type="checkbox"
                 id="toggle"
@@ -77,7 +77,7 @@ export default async function Page() {
               <div className={toggleBox}>
                 <h3>{DETAIL_MENU.recocoffebeans.title}</h3>
                 <label htmlFor="toggle" className={toggleLabel}>
-                  <Image src={Chevron_Left} alt="토글 버튼" />
+                  <ChevronLeft />
                 </label>
               </div>
               <div className={divider}></div>
@@ -105,14 +105,12 @@ export default async function Page() {
         </section>
         {/* 대표 메뉴 */}
         <section>
-          <h1 className={subTitle}>대표 메뉴</h1>
+          <h2 className={subTitle}>대표 메뉴</h2>
           <div className={scrollContainer}>
-            <ul className={menuItemList}>
-              <MenuItem menu={DETAIL_MENU.recoMenu} />
-            </ul>
+            <MenuList menu={DETAIL_MENU.recoMenu} />
           </div>
         </section>
-      <Footer />
+        <Footer />
       </main>
     </>
   );
