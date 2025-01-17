@@ -35,6 +35,12 @@ ol {
   list-style: none;
 }
 
+button {
+  background: none;
+  border: none;
+  height: fit-content;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

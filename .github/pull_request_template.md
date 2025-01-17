@@ -1,7 +1,7 @@
-### 작업 내용
+## 작업 내용
 
-something
+- something
 
-### 연관 이슈
+## 연관 이슈
 
 - close #

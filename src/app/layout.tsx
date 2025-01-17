@@ -10,7 +10,7 @@ const pretendard = localFont({
   weight: '45 920',
 });
 
-const dotGothic16 = DotGothic16({ weight: '400',subsets:['latin'],display:'swap' });
+const dotGothic16 = DotGothic16({ weight: '400', subsets: ['latin'], display: 'swap' });
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -25,7 +25,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${pretendard.className} `}>
-        <div className={`${rootContainer}`}>{children}</div>
+        <div className={`${rootContainer}`}>
+          {children}
+          <div id="modal-root"></div>
+        </div>
       </body>
     </html>
   );

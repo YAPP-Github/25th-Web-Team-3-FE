@@ -4,7 +4,15 @@ import { createVanillaExtractPlugin } from '@vanilla-extract/next-plugin';
 const withVanillaExtract = createVanillaExtractPlugin();
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ['@svgr/webpack'],
+    });
+
+    return config;
+  },
+
   logging: {
     fetches: {
       fullUrl: true,
@@ -14,11 +22,11 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'placehold.co', // placehold.co 도메인 추가
-        pathname: '/**', // 모든 경로 허용
+        hostname: 'placehold.co',
+        pathname: '/**',
       },
     ],
-    dangerouslyAllowSVG: true, // SVG 허용
+    dangerouslyAllowSVG: true,
   },
 };
 
