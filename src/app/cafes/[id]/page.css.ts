@@ -16,19 +16,14 @@ export const header = style({
 export const title = style({
   backgroundColor: color.grayScale.gray100,
   padding: '0 2rem',
-  '& h1 > span': {
-    marginLeft: '0.8rem',
-    fontSize: '1.5rem',
-    fontWeight: '400',
-  },
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  paddingBottom: '1.6rem',
   '& div': {
     display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    color: '#4F4F4F',
-    fontSize: '1.5rem',
-    marginTop: '0.4rem',
-    paddingBottom: '1.6rem',
+    flexDirection: 'column',
+    gap: '0.6rem',
   },
 } as ComplexStyleRule);
 
@@ -64,10 +59,8 @@ export const recoCoffeeBeanBox = style({
   padding: '2.4rem 2rem',
   background: color.grayScale.gray100,
   color: color.grayScale.gray500,
-  '& h2': {
-    ...etc,
-  },
 } as ComplexStyleRule);
+export const beanCardTitle = style({ ...etc });
 
 export const divider = style({
   height: '0.1rem',
@@ -86,7 +79,7 @@ export const toggleBox = style({
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
-  margin: '0.4rem 0',
+  margin: '0.4rem 0 1.45rem 0 ',
 });
 
 export const toggleInput = style({
@@ -110,6 +103,7 @@ export const toggleLabel = style({
 });
 
 export const toggleContent = style({
+  ...body1,
   display: 'none',
   marginTop: '1.6rem',
   selectors: {
