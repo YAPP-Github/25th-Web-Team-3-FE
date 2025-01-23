@@ -1,3 +1,5 @@
+import { color } from '@/styles/color.css';
+import { title3 } from '@/styles/typo.css';
 import { style } from '@vanilla-extract/css';
 import { recipe } from '@vanilla-extract/recipes';
 
@@ -10,7 +12,20 @@ export const modal = style({
   },
 });
 
-export const modalContent = recipe({
+export const modalTitle = style({
+  ...title3,
+  color: color.grayScale.gray500,
+  padding: '2.4rem 2rem 1.2rem 2rem',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+});
+
+export const closeIcon = style({
+  cursor: 'pointer',
+});
+
+export const modalContainer = recipe({
   base: {
     maxWidth: '50rem',
     width: '100%',
@@ -33,4 +48,8 @@ export const modalContent = recipe({
       },
     },
   },
+});
+
+export const modalContent = style({
+  padding: '1.6rem 2rem 2.4rem 2rem',
 });
