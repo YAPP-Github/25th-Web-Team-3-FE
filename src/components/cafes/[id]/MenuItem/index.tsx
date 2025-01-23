@@ -7,7 +7,9 @@ import {
   menuItemTitleBox,
 } from './MenuItem.css';
 import { divider } from '@/app/cafes/[id]/page.css';
+import { Menu } from '@/types';
 
+<<<<<<< HEAD:src/components/cafes/[id]/MenuItem/index.tsx
 export const MenuList = ({
   menu,
 }: {
@@ -23,11 +25,30 @@ export const MenuList = ({
           </div>
           <div className={divider}></div>
           <p className={menuItemContent}>{item.content}</p>
+=======
+
+
+interface MenuListProps {
+  menus: Menu[];
+}
+
+export default function MenuList({ menus }: MenuListProps) {
+  return (
+    <ul className={menuItemList}>
+      {menus.map((menuItem) => (
+        <li key={menuItem.id} className={menuItemBox}>
+          <div className={menuItemTitleBox}>
+            <div>{menuItem.name}</div>
+            <span>{menuItem.price}원</span>
+          </div>
+          <div className={divider}></div>
+          <p className={menuItemContent}>{menuItem.description}</p>
+>>>>>>> ecfebd0 (fix:Response 구조 변화으로 인한 반환 값 수정):src/components/cafes/[id]/MenuList/index.tsx
           <Image
             src={'https://placehold.co/600x400'}
             alt="이미지"
-            width={1}
-            height={1}
+            width={600}
+            height={400}
             className={menuItemImg}
           />
         </li>

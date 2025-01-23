@@ -25,6 +25,21 @@
     "flavor": ["fruity", "floral", "sweet"],
 
     "origins": [
+    "coffeeBean": {
+      "id": "30313934-3565-3630-2d31-3831662d9999",
+      "description": "클래식 블렌드의 목표는 누구나 호불호 없이 즐길 수 있는 커피를 만들자 였습니다. 거기에 텁텁하지 않고 클린한 후미까지!",
+      "name": "클래식 브랜드",
+      "engName": "Classic Blend",
+      "imageUrl": "https://placehold.co/600x400?text=Cafe1",
+      "flavors": ["아몬드", "시트러스", "꽃"],
+      "countryOfOrigin": [
+        "브라질 세라도 NY2 FC",
+        "콜롬비아 후일라 엑셀소 벌크로스터",
+        "인도네시아 만델링"
+      ],
+      "roastingPoint": "DARK"
+    },
+    "menus": [
       {
         "id": 0,
         "origin": "브라질 세라도 NY2 FC"
