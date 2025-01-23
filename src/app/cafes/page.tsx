@@ -12,7 +12,8 @@ import { IntersectionDetector } from '@/components/common/IntersectionDetector';
 export default function Page() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [region, setRegion] = useState<Region>(REGIONS.전체);
-  const { fetchNextPage, data } = useInfiniteCafes(region);
+  const { fetchNextPage, data, hasNextPage } = useInfiniteCafes(region);
+  console.log('page');
 
   const resetRegion = () => {
     setRegion(REGIONS.전체);
@@ -30,7 +31,7 @@ export default function Page() {
     <div>
       <RegionSelectButtons region={region} resetRegion={resetRegion} openModal={openModal} />
       <CafeList cafeList={data} />
-      <IntersectionDetector onIntersected={fetchNextPage} />
+      <IntersectionDetector onIntersected={fetchNextPage} isOff={!hasNextPage} />
       <RegionSelectModal
         isOpen={isModalOpen}
         region={region}

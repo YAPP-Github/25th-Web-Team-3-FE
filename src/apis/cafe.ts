@@ -3,7 +3,7 @@ import type { Cafe, Region } from '@/types';
 import type { QueryFunctionContext } from '@tanstack/react-query';
 
 export interface CafeListResponse {
-  result: Cafe[];
+  cafes: Cafe[];
   hasNext: boolean;
 }
 

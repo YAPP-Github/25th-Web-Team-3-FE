@@ -25,7 +25,7 @@ const useIntersectionObserver = (onIntersected: () => void): TargetSetter => {
     return () => {
       observer.disconnect();
     };
-  }, [target, onIntersected]);
+  }, [target]);
 
   return setTarget;
 };

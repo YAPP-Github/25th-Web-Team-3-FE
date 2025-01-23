@@ -19,7 +19,7 @@ export const useInfiniteCafes = (region: Region) => {
 
   return {
     ...queryResult,
-    data: queryResult.data?.pages.flatMap((page) => page.result) || [],
+    data: queryResult.data?.pages.flatMap((page) => page.cafes) || [],
     fetchNextPage: () => {
       if (!queryResult.isLoading && !queryResult.isFetchingNextPage) {
         queryResult.fetchNextPage();
@@ -33,7 +33,7 @@ function getLastCafeId(lastPage: CafeListResponse) {
     return;
   }
 
-  const lastCafeId = lastPage.result.at(-1)?.id;
+  const lastCafeId = lastPage.cafes.at(-1)?.cafeId;
 
   return lastCafeId;
 }

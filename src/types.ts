@@ -1,9 +1,10 @@
 import { REGIONS } from '@/constants/region';
+
 export interface Cafe {
-  id: string;
+  cafeId: string;
   name: string;
   nearestStation: string;
-  tag: { id: number; name: string }[];
+  tags: { id: string; name: string }[];
   previewImages: string[];
 }
 

@@ -19,17 +19,17 @@ interface CafeItemProps {
 }
 
 export default function CafeItem({ cafe }: CafeItemProps) {
-  const { id, name, nearestStation, tag: tags, previewImages } = cafe;
+  const { cafeId, name, nearestStation, tags, previewImages } = cafe;
 
   return (
-    <Link href={`${ROUTE_PATH.cafes}/${id}`}>
+    <Link href={`${ROUTE_PATH.cafes}/${cafeId}`}>
       <div>
         <div className={cafeItemHeading}>
           <div className={cafeItemName}>{name}</div>
           <div className={cafeLocation}>{nearestStation}</div>
         </div>
         <div className={tagList}>
-          {tags.map((tag, index) => (
+          {tags?.map((tag, index) => (
             <TemporaryTag key={`${name}-tag-${index}`} name={tag.name} />
           ))}
         </div>
@@ -40,16 +40,19 @@ export default function CafeItem({ cafe }: CafeItemProps) {
 }
 
 const MAX_IMAGE_COUNT = 3;
+const DEFAULT_CAFE_IMAGE = 'https://placehold.co/200x200?text=Coffee Lounge';
 
 function CafeImageList({ cafeName, images }: { cafeName: string; images: string[] }) {
   const overflowImageCount = images.length - MAX_IMAGE_COUNT;
   const isOverflow = overflowImageCount > 0;
 
-  const slicedImages = images.slice(0, MAX_IMAGE_COUNT);
+  const isEmpty = images.length === 0;
+
+  const displayingImages = isEmpty ? [DEFAULT_CAFE_IMAGE] : images.slice(0, MAX_IMAGE_COUNT);
 
   return (
     <div className={cafeImageList}>
-      {slicedImages.map((src, index) => (
+      {displayingImages.map((src, index) => (
         <div className={cafeImageWrapper} key={`${cafeName}-image-${index}`}>
           <Image fill className={cafeImage} alt={`${cafeName} ${index + 1}번째 사진`} src={src} />
         </div>
