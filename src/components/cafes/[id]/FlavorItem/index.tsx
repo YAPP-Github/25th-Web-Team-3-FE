@@ -1,39 +1,42 @@
+import HashTag from '@/components/common/HashTag';
 import { dot, flavorItem, flavorList } from './FlavorItem.css';
+import { FLAVOR_DATA } from '@/constants/flavor';
 
-export interface FlavorListProps {
-  fruity: string;
-  floral: string;
-  sweet: string;
-  spices: string;
-  roasted: string;
-  green: string;
-  sour: string;
-  nutty: string;
-  other: string;
+type FlavorCategory = keyof typeof FLAVOR_DATA | 'other';
+
+const findFlavorCategory = (flavorName: string): FlavorCategory => {
+  if (flavorName in FLAVOR_DATA) {
+    return flavorName as keyof typeof FLAVOR_DATA;
+  }
+
+  for (const [category, data] of Object.entries(FLAVOR_DATA)) {
+    if (data.items.includes(flavorName)) {
+      return category as keyof typeof FLAVOR_DATA;
+    }
+  }
+
+  return 'other';
+};
+
+interface FlavorListProps {
+  flavors: string[];
 }
 
-export const flavorNames: FlavorListProps = {
-  fruity: '과일',
-  floral: '꽃',
-  sweet: '달콤한',
-  spices: '향신료',
-  roasted: '구운',
-  green: '그린',
-  sour: '시큼',
-  nutty: '견과',
-  other: '기타',
-};
-
-// FlavorList 컴포넌트 수정
-export const FlavorList = ({ flavors }: { flavors: Array<keyof FlavorListProps> }) => {
+export default function FlavorList({ flavors }: FlavorListProps) {
   return (
     <ul className={flavorList}>
-      {flavors.map((flavor) => (
-        <li key={flavor} className={flavorItem}>
-          <span className={dot({ flavor })}></span>
-          {flavorNames[flavor]}
-        </li>
-      ))}
+      {flavors.map((flavor) => {
+        const category = findFlavorCategory(flavor);
+
+        return (
+          <HashTag key={flavor}>
+            <li className={flavorItem}>
+              <div className={dot({ flavor: category })}></div>
+              {flavor}
+            </li>
+          </HashTag>
+        );
+      })}
     </ul>
   );
-};
+}

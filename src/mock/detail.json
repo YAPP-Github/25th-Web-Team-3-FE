@@ -1,30 +1,16 @@
 {
-  "id": 0,
-  "title": "헤베커피",
-  "place": "충무로역 근처",
-  "detailplace": "서울 중구 필동로 32 낙원빌딩 1층",
-  "reason": "헤베커피는 커피씬에서 주목 받는 스페셜티 커피 매장입니다. 오너인 임지영 바리스타는 한국 브루어스컵 국가대표 선발전 등 다양한 대회에서 수상 경력을 자랑하며, 생두 유통, 로스팅, 머신 제조업, 커피 체인 전 영역에서 드물게 전문성을 인정받은 여성 바리스타입니다.",
-  "recoMenu": [
-    {
-      "id": 101,
-      "title": "드립커피",
-      "content": "시즌에 가장 맛있는 원두를 선별하여 소개합니다.",
-      "price": "변동"
+  "result": "SUCCESS",
+  "data": {
+    "cafe": {
+      "id": "30313934-3565-3630-2d31-3831662d3001",
+      "reasonForSelection": "헤베커피를 이끄는 여성 임지영 바리스타는 코리아 브루어스 컵 챔피언십(KBrC)을 수상하며 커피 시장에서 증명받았습니다. 호불호 안 갈리는 로스팅과 고소함을 통해 입문자들도 스페셜티에 빠져들게끔 합니다. 헤베커피는 두유와 에스프레소를 기반으로 한 시그니처 라테를 제공합니다.",
+      "naverMapUrl": "test",
+      "name": "test",
+      "nearestStation": "test",
+      "location": "test",
+      "price": 8,
+      "mainImageUrl": ["https://placehold.co/200x200?text=Cafe1", "https://placehold.co/200x200?text=Cafe1", "https://placehold.co/200x200?text=Cafe1"]
     },
-    {
-      "id": 102,
-      "title": "헤베커피",
-      "content": "고소한 두유 베이스에 에스프레소 샷과 달콤한 생크림의 조화!",
-      "price": "7000원"
-    }
-  ],
-  "recocoffebeans": {
-    "title": "클래식 블렌드",
-    "title_eng": "CLASSIC BLEND",
-    "feature": "클래식 블렌드의 목표는 누구나 호불호 없이 즐길 수 있는 커피를 만들자 였습니다. 거기에 텁텁하지 않고 클린한 후미까지!",
-    "flavor": ["fruity", "floral", "sweet"],
-
-    "origins": [
     "coffeeBean": {
       "id": "30313934-3565-3630-2d31-3831662d9999",
       "description": "클래식 블렌드의 목표는 누구나 호불호 없이 즐길 수 있는 커피를 만들자 였습니다. 거기에 텁텁하지 않고 클린한 후미까지!",
@@ -41,18 +27,28 @@
     },
     "menus": [
       {
-        "id": 0,
-        "origin": "브라질 세라도 NY2 FC"
-      },
-      {
-        "id": 1,
-        "origin": "콜롬비아 후일라 엑셀소 벌크로스터"
-      },
-      {
-        "id": 2,
-        "origin": "인도네시아 만델링"
+        "id": "30313933-3565-3630-2d31-3831662d3001",
+        "name": "드립커피",
+        "price": 100,
+        "imageUrl": "https://placehold.co/200x200?text=Cafe1",
+        "description": "test"
       }
     ],
-    "loast_point": "medium"
-  }
+    "tags": [
+      {
+        "id": "30313934-3565-3630-2d31-3831662d3100",
+        "name": "고소한맛"
+      },
+      {
+        "id": "30313934-3565-3630-2d31-3831662d3200",
+        "name": "부드러운맛"
+      },
+      {
+        "id": "30313934-3565-3630-2d31-3831662d3300",
+        "name": "신맛"
+      }
+    ],
+    "updatedAt": "2025-01-14"
+  },
+  "error": null
 }

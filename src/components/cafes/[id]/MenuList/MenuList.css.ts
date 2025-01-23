@@ -1,11 +1,11 @@
 import { color } from '@/styles/color.css';
-import { body1, body1Bold } from '@/styles/typo.css';
+import { body1, body1Bold, title2 } from '@/styles/typo.css';
 import { ComplexStyleRule, style } from '@vanilla-extract/css';
 export const scrollContainer = style({
   overflowX: 'auto',
   whiteSpace: 'nowrap',
   display: 'flex', 
-  gap: '1rem',
+  gap: '1.6rem',
   scrollbarWidth: 'none', 
   msOverflowStyle: 'none', 
   selectors: {
@@ -16,11 +16,10 @@ export const scrollContainer = style({
 });
 
 export const menuItemList = style({
-  display: 'flex', // 요소들을 한 줄로 배치
+  display: 'flex', 
   gap: '2.4rem',
-  marginTop: '2rem',
   width: '100%',
-  padding: '0', // 불필요한 여백 제거
+  padding: '0', 
 });
 
 export const menuItemBox = style({
@@ -28,7 +27,7 @@ export const menuItemBox = style({
   color: color.grayScale.gray500,
   padding: '1.6rem',
   width: '27.6rem',
-  flexShrink: 0, // 요소가 축소되지 않도록
+  flexShrink: 0,
 });
 export const menuItemTitleBox = style({
   ...body1Bold,
@@ -48,6 +47,6 @@ export const menuItemContent = style({
   marginTop: '1.2rem',
   marginBottom: '1.6rem',
   maxWidth: '100%',
-  whiteSpace: 'normal', // 줄바꿈 가능
-  wordBreak: 'break-word', // 긴 단어에서 줄바꿈 허용
+  whiteSpace: 'normal', 
+  wordBreak: 'break-word', 
 });

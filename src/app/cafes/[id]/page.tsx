@@ -1,6 +1,5 @@
 import Image from 'next/image';
-import { HashTag } from '@/components/common/HashTag';
-import { MenuList } from '@/components/cafes/[id]/MenuItem';
+import MenuList from '@/components/cafes/[id]/MenuList';
 import {
   beanCardTitle,
   cafesDetailMain,
@@ -17,8 +16,8 @@ import {
   toggleInput,
   toggleLabel,
 } from './page.css';
-import { scrollContainer } from '@/components/cafes/[id]/MenuItem/MenuItem.css';
-import { MapBtn } from '@/components/cafes/[id]/MapBtn';
+import { scrollContainer } from '@/components/cafes/[id]/MenuList/MenuList.css';
+import MapButton from '@/components/cafes/[id]/MapButton';
 import ChevronLeft from '@/assets/icon/Chevron_Left.svg';
 import { RoastingBar } from '@/components/cafes/[id]/RoastingBar';
 import OriginList from '@/components/cafes/[id]/OriginList';
@@ -63,7 +62,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
           <article className={pickReasonBox}>
             <div className={pickReason}>카페를 선정한 이유들 ~~~</div>
             <div className={divider}></div>
-            <HashTag />
+            <IconWithHashTag />
           </article>
         </section>
         <section>
