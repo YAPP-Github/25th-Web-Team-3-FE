@@ -28,3 +28,4 @@ export default async function OriginList({ countryOfOrigin }: OriginProps) {
     </ul>
   );
 }
+}

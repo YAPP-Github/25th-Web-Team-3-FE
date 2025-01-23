@@ -2,10 +2,10 @@ import { REGIONS } from '@/constants/region';
 // cafe 와 detailCafe 모두 사용되는 부분이라 이렇게 재사용하면 어떨지!!??
 export type Tag = { id: number; name: string };
 export interface Cafe {
-  id: string;
+  cafeId: string;
   name: string;
   nearestStation: string;
-  tag: { id: number; name: string }[];
+  tags: { id: string; name: string }[];
   previewImages: string[];
 }
 
