@@ -1,6 +1,6 @@
 import { FooterBox, updateText } from './Footer.css';
 
-const Footer = ({ updatedDate }) => {
+const Footer = ({ updatedDate }:{updatedDate:string}) => {
   const date = updatedDate.replaceAll('-', '.');
   return (
     <footer className={FooterBox}>
