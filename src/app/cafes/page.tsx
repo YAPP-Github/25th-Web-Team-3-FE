@@ -13,7 +13,6 @@ export default function Page() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [region, setRegion] = useState<Region>(REGIONS.전체);
   const { fetchNextPage, data, hasNextPage } = useInfiniteCafes(region);
-  console.log('page');
 
   const resetRegion = () => {
     setRegion(REGIONS.전체);
