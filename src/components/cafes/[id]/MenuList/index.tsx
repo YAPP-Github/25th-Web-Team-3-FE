@@ -9,8 +9,6 @@ import {
 import { divider } from '@/app/cafes/[id]/page.css';
 import { Menu } from '@/types';
 
-
-
 interface MenuListProps {
   menus: Menu[];
 }
