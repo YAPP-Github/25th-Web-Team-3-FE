@@ -29,7 +29,7 @@ export const FLAVOR_DATA = {
   floral: {
     name: '꽃',
     color: color.flavor.floral,
-    items: ['장미', '자스민', '라일락', '홍차', '카모마일'] as string[],
+    items: ['장미', '자스민', '라일락', '홍차', '카모마일','플로럴','꽃'] as string[],
   },
   sweet: {
     name: '달콤한',
