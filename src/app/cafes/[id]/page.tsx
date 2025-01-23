@@ -107,7 +107,9 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
         <section>
           <h2 className={subTitle}>대표 메뉴</h2>
           <div className={scrollContainer}>
+
             <MenuList menus={data.menus} />
+
           </div>
         </section>
         <Footer updatedDate={data.updatedAt} />

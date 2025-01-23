@@ -37,6 +37,4 @@ export default function FlavorList({ flavors }: FlavorListProps) {
           </HashTag>
         );
       })}
-    </ul>
-  );
-}
+      ))}
