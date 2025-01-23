@@ -18,7 +18,7 @@ export const roastingSegment = recipe({
     color: color.grayScale.gray400,
   },
   variants: {
-    isActive: {
+    roastingLevel: {
       light: {
         selectors: {
           '&': {
@@ -51,7 +51,7 @@ export const roastingStatus = recipe({
     color: color.grayScale.gray400,
   },
   variants: {
-    isActive: {
+    roastingLevel: {
       light: { color: color.grayScale.gray500 },
       medium: { color: color.grayScale.gray500 },
       dark: { color: color.grayScale.gray500 },
@@ -64,7 +64,7 @@ export const roastingText = recipe({
     flex: '1',
   },
   variants: {
-    isActive: {
+    roastingLevel: {
       true: {
         color: color.grayScale.gray500,
       },
@@ -73,9 +73,9 @@ export const roastingText = recipe({
 });
 
 globalStyle(`${roastingStatus()} span:nth-child(2)`, {
-  textAlign: 'center'
+  textAlign: 'center',
 });
 
 globalStyle(`${roastingStatus()} span:nth-child(3)`, {
-  textAlign: 'right'
+  textAlign: 'right',
 });

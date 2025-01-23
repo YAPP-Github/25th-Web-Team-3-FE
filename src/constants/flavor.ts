@@ -29,12 +29,23 @@ export const FLAVOR_DATA = {
   floral: {
     name: '꽃',
     color: color.flavor.floral,
-    items: ['장미', '자스민', '라일락', '홍차', '카모마일','플로럴','꽃'] as string[],
+    items: ['장미', '자스민', '라일락', '홍차', '카모마일', '플로럴', '꽃'] as string[],
   },
   sweet: {
     name: '달콤한',
     color: color.flavor.sweet,
-    items: ['카라멜', '초콜릿', '바닐라', '꿀','다크 초콜릿','당밀','메이플 시럽','바닐라 첨가향','전반적으로 달콤한','달콤한 향료'] as string[],
+    items: [
+      '카라멜',
+      '초콜릿',
+      '바닐라',
+      '꿀',
+      '다크 초콜릿',
+      '당밀',
+      '메이플 시럽',
+      '바닐라 첨가향',
+      '전반적으로 달콤한',
+      '달콤한 향료',
+    ] as string[],
   },
   spices: {
     name: '향신료',

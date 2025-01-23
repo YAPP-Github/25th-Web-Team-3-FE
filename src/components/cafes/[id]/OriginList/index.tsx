@@ -7,14 +7,14 @@ import Image from 'next/image';
 interface OriginProps {
   countryOfOrigin: string[];
 }
-
+const DEFAULT_COUNTRY_IMAGE ="https://placehold.co/23x18?text=Country"
 export default async function OriginList({ countryOfOrigin }: OriginProps) {
   const data = await getCountryFlag();
   return (
     <ul className={originList}>
       {countryOfOrigin.map((country, idx) => {
         const countryItem = data.find((item) => country.includes(item.country_nm));
-        const imageUrl = countryItem ? countryItem.download_url : '';
+        const imageUrl = countryItem ? countryItem.download_url : DEFAULT_COUNTRY_IMAGE ;
 
         return (
           <HashTag key={idx}>
@@ -27,5 +27,4 @@ export default async function OriginList({ countryOfOrigin }: OriginProps) {
       })}
     </ul>
   );
-}
 }

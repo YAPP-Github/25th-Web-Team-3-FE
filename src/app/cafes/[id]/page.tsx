@@ -27,30 +27,33 @@ import IconWithHashTag from '@/components/cafes/[id]/IconWithHashTag';
 import Link from 'next/link';
 import { getCafeDetail } from '@/apis/cafeDetail';
 import { getCountryFlag } from '@/apis/countryFlag';
+import mockdata from '@/mock/detail.json';
+import { ROUTE_PATH } from '@/constants/routePath';
 import BookMark from '@/components/cafes/[id]/BookMark';
-import mockdata from '@/mock/detail.json'
+
+const DEFAULT_CAFE_MAIN_IMAGE = 'https://placehold.co/600x400?text=Cafe1';
 
 export default async function Page({ params }: { params: Promise<{ id: string }> }) {
   const detailPageId = (await params).id;
-  // const data = await getCafeDetail('36666662-6662-3031-2d64-3535662d3131');
-  const data =mockdata.data
+  const data = await getCafeDetail(detailPageId);
+  const { cafe, coffeeBean, menus, updatedAt } = data 
   return (
     <>
       <header className={header}>
-        <Link href={'/cafes'}>
+        <Link href={ROUTE_PATH.cafes}>
           <ChevronLeft />
         </Link>
-        <BookMark bookMarkId={data.cafe.id} />
+        <BookMark cafeIdForBookMark={cafe.id} />
       </header>
       <div className={title}>
         <div>
-          <h1>{data.cafe.name}</h1>
-          <div>{data.cafe.location}</div>
+          <h1>{cafe.name}</h1>
+          <div>{cafe.location}</div>
         </div>
         <MapButton />
       </div>
       <Image
-        src={data.coffeeBean.imageUrl}
+        src={coffeeBean.imageUrl ? coffeeBean.imageUrl : DEFAULT_CAFE_MAIN_IMAGE}
         alt={`1번 카페의 이미지`}
         width={600}
         height={400}
@@ -60,7 +63,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
         <section>
           <h2 className={subTitle}>선정 이유</h2>
           <article className={pickReasonBox}>
-            <div className={pickReason}>카페를 선정한 이유들 ~~~</div>
+            <div className={pickReason}>{cafe.reasonForSelection}</div>
             <div className={divider}></div>
             <IconWithHashTag />
           </article>
@@ -69,7 +72,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
           <h2 className={subTitle}>대표 원두</h2>
           <article className={recoCoffeeBeanBox}>
             <div>
-              <h3 className={beanCardTitle}>{data.coffeeBean.engName}</h3>
+              <h3 className={beanCardTitle}>{coffeeBean.engName}</h3>
               <input
                 type="checkbox"
                 id="toggle"
@@ -78,39 +81,37 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
                 aria-controls="toggle-content"
               />
               <div className={toggleBox}>
-                <h3>{data.coffeeBean.name}</h3>
+                <h3>{coffeeBean.name}</h3>
                 <label htmlFor="toggle" className={toggleLabel}>
                   <ChevronLeft />
                 </label>
               </div>
               <div className={divider}></div>
               <div id="toggle-content" className={toggleContent}>
-                <p>{data.coffeeBean.description}</p>
+                <p>{coffeeBean.description}</p>
               </div>
             </div>
             <div>
               <h3>향미</h3>
-              <FlavorList flavors={data.coffeeBean.flavors} />
+              <FlavorList flavors={coffeeBean.flavors} />
             </div>
             <div>
               <h3>산지</h3>
-              <OriginList countryOfOrigin={data.coffeeBean.countryOfOrigin} />
+              <OriginList countryOfOrigin={coffeeBean.countryOfOrigin} />
             </div>
             <div>
               <h3>로스팅 포인트</h3>
-              <RoastingBar
-                activeLevel={data.coffeeBean.roastingPoint as 'medium' | 'light' | 'dark'}
-              />
+              <RoastingBar activeLevel={coffeeBean.roastingPoint as 'medium' | 'light' | 'dark'} />
             </div>
           </article>
         </section>
         <section>
           <h2 className={subTitle}>대표 메뉴</h2>
           <div className={scrollContainer}>
-            <MenuList menus={data.menus} />
+            <MenuList menus={menus} />
           </div>
         </section>
-        <Footer updatedDate={data.updatedAt} />
+        <Footer updatedDate={updatedAt} />
       </main>
     </>
   );

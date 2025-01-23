@@ -23,8 +23,10 @@ export interface CoffeeBean {
   cafe: Cafe;
   mainImages: string;
   name: string;
+  engName:string;
   imageUrl: string;
-  flavor: string[];
+  description:string
+  flavors: string[];
   countryOfOrigin: string[];
   roastingPoint: string;
 }
