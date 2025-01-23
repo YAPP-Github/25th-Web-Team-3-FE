@@ -1,12 +1,6 @@
 import { REGIONS } from '@/constants/region';
 import type { Region } from '@/types';
-import {
-  closeButton,
-  closeButtonWrapper,
-  regionItem,
-  regionSelectModalContent,
-  regionSelectModalTitle,
-} from './RegionSelectModal.css';
+import { regionItem, regionSelectModalContent } from './RegionSelectModal.css';
 import CheckIcon from '@/assets/checkIcon.svg';
 
 interface RegionSelectModalContentProps {
@@ -24,7 +18,6 @@ export default function RegionSelectModalContent({
 
   return (
     <div className={regionSelectModalContent}>
-      <h1 className={regionSelectModalTitle}>지역별</h1>
       <ul>
         {regions.map((region) => {
           const isSelected = region === selectedRegion;
@@ -42,11 +35,6 @@ export default function RegionSelectModalContent({
           );
         })}
       </ul>
-      <div className={closeButtonWrapper}>
-        <button className={closeButton} onClick={onClose}>
-          닫기
-        </button>
-      </div>
     </div>
   );
 }

@@ -16,7 +16,7 @@ export default function RegionSelectModal({
   onClose,
 }: RegionSelectModalProps) {
   return (
-    <Modal isOpen={isOpen} onClose={onClose} position="bottom">
+    <Modal title="지역별" isOpen={isOpen} onClose={onClose} position="bottom">
       <RegionSelectModalContent selectedRegion={region} setRegion={setRegion} onClose={onClose} />
     </Modal>
   );
