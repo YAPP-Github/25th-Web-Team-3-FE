@@ -11,8 +11,8 @@ import {
   cafeItemName,
   cafeLocation,
   tagList,
-  temporaryTag,
 } from './cafes.css';
+import HashTag from '../common/HashTag';
 
 interface CafeItemProps {
   cafe: Cafe;
@@ -30,7 +30,7 @@ export default function CafeItem({ cafe }: CafeItemProps) {
         </div>
         <div className={tagList}>
           {tags?.map((tag, index) => (
-            <TemporaryTag key={`${name}-tag-${index}`} name={tag.name} />
+            <HashTag key={`${name}-tag-${index}`}>{tag.name}</HashTag>
           ))}
         </div>
         <CafeImageList cafeName={name} images={previewImages} />
@@ -60,9 +60,4 @@ function CafeImageList({ cafeName, images }: { cafeName: string; images: string[
       {isOverflow && <div className={overflowCafeImageCount}>+{overflowImageCount}</div>}
     </div>
   );
-}
-
-// 유빈 공통 컴포넌트 구현 뒤 대체 예정
-function TemporaryTag({ name }: { name: string }) {
-  return <div className={temporaryTag}>{name}</div>;
 }

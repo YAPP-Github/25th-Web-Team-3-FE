@@ -53,14 +53,6 @@ export const overflowCafeImageCount = style({
   lineHeight: '3.6rem',
 });
 
-export const temporaryTag = style({
-  backgroundColor: '#ECECEC80',
-  width: 'fit-content',
-  padding: '0.3rem 0.6rem',
-  borderRadius: '0.4rem',
-  lineHeight: '2.2rem',
-});
-
 // CafeList
 export const cafeListContainer = style({
   padding: '2.4rem 2rem',
