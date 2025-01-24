@@ -25,7 +25,7 @@ export default function MenuList({ menus }: MenuListProps) {
           <div className={divider}></div>
           <p className={menuItemContent}>{menuItem.description}</p>
           <Image
-            src={'https://placehold.co/600x400'}
+            src={menuItem.imageUrl ? menuItem.imageUrl : 'https://placehold.co/600x400'}
             alt="이미지"
             width={600}
             height={400}

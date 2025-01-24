@@ -28,13 +28,12 @@ import Link from 'next/link';
 import { getCafeDetail } from '@/apis/cafeDetail';
 import { ROUTE_PATH } from '@/constants/routePath';
 import BookMark from '@/components/cafes/[id]/BookMark';
-
 const DEFAULT_CAFE_MAIN_IMAGE = 'https://placehold.co/600x400?text=Cafe1';
 
 export default async function Page({ params }: { params: Promise<{ id: string }> }) {
   const detailPageId = (await params).id;
   const data = await getCafeDetail(detailPageId);
-  const { cafe, coffeeBean, menus, updatedAt } = data 
+  const { cafe, coffeeBean, menus, updatedAt } = data
   return (
     <>
       <header className={header}>
@@ -48,7 +47,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
           <h1>{cafe.name}</h1>
           <div>{cafe.location}</div>
         </div>
-        <MapButton />
+        <MapButton naverMapUrl={cafe.naverMapUrl}/>
       </div>
       <Image
         src={coffeeBean.imageUrl ? coffeeBean.imageUrl : DEFAULT_CAFE_MAIN_IMAGE}

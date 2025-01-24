@@ -2,10 +2,11 @@ import { ROUTE_PATH } from '@/constants/routePath';
 import { Cafe, CoffeeBean, Menu, Tag } from '@/types';
 
 interface CafeDetail extends Cafe {
-  id:string
+  id: string;
+  naverMapUrl: string;
   location: string;
   mainImages: string;
-  reasonForSelection:string,
+  reasonForSelection: string;
 }
 interface CafeDetailResponse {
   cafe: CafeDetail;
