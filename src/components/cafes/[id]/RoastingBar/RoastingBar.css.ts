@@ -1,6 +1,6 @@
 import { color } from '@/styles/color.css';
 import { body1 } from '@/styles/typo.css';
-import { ComplexStyleRule, globalStyle, style } from '@vanilla-extract/css';
+import {globalStyle, style } from '@vanilla-extract/css';
 import { recipe } from '@vanilla-extract/recipes';
 
 export const roastingBar = style({

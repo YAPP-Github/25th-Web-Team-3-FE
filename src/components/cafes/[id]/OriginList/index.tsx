@@ -1,4 +1,3 @@
-import Brazil from '@/assets/Icon/brazil.svg';
 import { orginItem, originList } from './OriginList.css';
 import HashTag from '@/components/common/HashTag';
 import { getCountryFlag } from '@/apis/countryFlag';

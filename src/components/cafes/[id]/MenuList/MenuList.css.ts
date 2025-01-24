@@ -1,6 +1,6 @@
 import { color } from '@/styles/color.css';
 
-import { body1, body1Bold, title2 } from '@/styles/typo.css';
+import { body1, body1Bold } from '@/styles/typo.css';
 import { ComplexStyleRule, style } from '@vanilla-extract/css';
 export const scrollContainer = style({
   overflowX: 'auto',
