@@ -1,15 +1,17 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import Bookmark from '@/assets/Icon/Bookmark.svg';
+import BookMarkIcon from '@/assets/Icon/Bookmark.svg';
 import { bookMark } from './BookMark.css';
+import { color } from '@/styles/color.css';
 
 interface BookMarkProps {
   cafeIdForBookMark: string;
 }
+type CafeId = string;
 
 export default function BookMark({ cafeIdForBookMark }: BookMarkProps) {
-  const [bookMarks, setBookMarks] = useState<string[]>([]);
+  const [bookMarks, setBookMarks] = useState<CafeId[]>([]);
 
   useEffect(() => {
     const savedBookmarks = localStorage.getItem('bookMarkList');
@@ -18,7 +20,7 @@ export default function BookMark({ cafeIdForBookMark }: BookMarkProps) {
     }
   }, []);
 
-  const BookMarkChecked = (id: string) => {
+  const isBookMarkChecked = (id: string) => {
     const updatedBookMarks = bookMarks.includes(id)
       ? bookMarks.filter((bookMark) => bookMark !== id)
       : [...bookMarks, id];
@@ -27,13 +29,13 @@ export default function BookMark({ cafeIdForBookMark }: BookMarkProps) {
     localStorage.setItem('bookMarkList', JSON.stringify(updatedBookMarks));
   };
 
-  const isCurrentCafeBookmarked = bookMarks.includes(cafeIdForBookMark);
+  const isCurrentCafeBookMarked = bookMarks.includes(cafeIdForBookMark);
 
   return (
-    <Bookmark 
-      className={bookMark} 
-      onClick={() => BookMarkChecked(cafeIdForBookMark)}
-      fill={isCurrentCafeBookmarked ? '#11111' : 'none'}
+    <BookMarkIcon
+      className={bookMark}
+      onClick={() => isBookMarkChecked(cafeIdForBookMark)}
+      fill={isCurrentCafeBookMarked ? color.grayScale.gray500: 'none'}
     />
   );
 }
