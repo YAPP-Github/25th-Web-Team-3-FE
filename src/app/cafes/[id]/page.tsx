@@ -18,7 +18,7 @@ import {
 } from './page.css';
 import { scrollContainer } from '@/components/cafes/[id]/MenuList/MenuList.css';
 import MapButton from '@/components/cafes/[id]/MapButton';
-import ChevronLeft from '@/assets/icon/Chevron_Left.svg';
+import ChevronLeft from '@/assets/Icon/Chevron_Left.svg';
 import { RoastingBar } from '@/components/cafes/[id]/RoastingBar';
 import OriginList from '@/components/cafes/[id]/OriginList';
 import FlavorList from '@/components/cafes/[id]/FlavorItem';
@@ -26,8 +26,6 @@ import Footer from '@/components/cafes/[id]/Footer';
 import IconWithHashTag from '@/components/cafes/[id]/IconWithHashTag';
 import Link from 'next/link';
 import { getCafeDetail } from '@/apis/cafeDetail';
-import { getCountryFlag } from '@/apis/countryFlag';
-import mockdata from '@/mock/detail.json';
 import { ROUTE_PATH } from '@/constants/routePath';
 import BookMark from '@/components/cafes/[id]/BookMark';
 

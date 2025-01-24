@@ -21,7 +21,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 export const getCafeDetail = async (id: string): Promise<CafeDetailResponse> => {
   const url = `${BASE_URL}${ROUTE_PATH.cafesDetail}/${id}`;
   const response = await fetch(url);
-  // if (!response.ok) throw new Error('카페 상세페이지를 불러오는 도중 에러가 발생하였습니다!');
+  if (!response.ok) throw new Error('카페 상세페이지를 불러오는 도중 에러가 발생하였습니다!');
   const data = await response.json();
   return data.data;
 };
