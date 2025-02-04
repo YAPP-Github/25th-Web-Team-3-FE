@@ -14,7 +14,6 @@ export const useInfiniteCafes = (region: Region) => {
     queryFn: getCafes,
     getNextPageParam: getLastCafeId,
     initialPageParam: undefined,
-    throwOnError: true,
   });
 
   return {
