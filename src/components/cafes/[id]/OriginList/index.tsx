@@ -1,22 +1,29 @@
-import Brazil from '@/assets/Icon/brazil.svg';
 import { orginItem, originList } from './OriginList.css';
 import HashTag from '@/components/common/HashTag';
+import { getCountryFlag } from '@/apis/countryFlag';
+import Image from 'next/image';
 
 interface OriginProps {
-  origins: { id: number; countryOfOrigin: string }[];
+  countryOfOrigin: string[];
 }
-
-export default function OriginList({ origins }: OriginProps) {
+const DEFAULT_COUNTRY_IMAGE = 'https://placehold.co/23x18?text=Country';
+export default async function OriginList({ countryOfOrigin }: OriginProps) {
+  const data = await getCountryFlag();
   return (
     <ul className={originList}>
-      {origins.map((item) => (
-        <HashTag key={item.id}>
-          <li className={orginItem}>
-            <Brazil />
-            {item.countryOfOrigin}
-          </li>
-        </HashTag>
-      ))}
+      {countryOfOrigin.map((country, idx) => {
+        const countryItem = data.find((item) => country.split(' ')[0] === item.country_nm);
+        const imageUrl = countryItem ? countryItem.download_url : DEFAULT_COUNTRY_IMAGE;
+
+        return (
+          <HashTag key={idx}>
+            <li className={orginItem}>
+              <Image src={imageUrl} alt={`${country} 국기`} width={23} height={18} />
+              {country}
+            </li>
+          </HashTag>
+        );
+      })}
     </ul>
   );
 }

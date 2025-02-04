@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${dotGothic16.className}`}>
       <body className={`${pretendard.className} ${body}`}>
         <div id="root" className={`${rootContainer}`}>
           <Providers>{children}</Providers>

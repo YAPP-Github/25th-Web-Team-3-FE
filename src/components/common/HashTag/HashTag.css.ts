@@ -1,10 +1,9 @@
 import { color } from '@/styles/color.css';
-import { caption } from '@/styles/typo.css';
 import { style } from '@vanilla-extract/css';
 import { recipe } from '@vanilla-extract/recipes';
 
 export const hashtag = style({
-  
+  borderRadius:'0.3rem',
   backgroundColor: color.grayScale.gray200,
   color: color.grayScale.gray500,
   padding:'0.3rem 0.8rem'

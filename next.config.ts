@@ -27,10 +27,16 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'opendata.mofa.go.kr',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
         hostname: 'github.com',
         pathname: '/**',
       },
     ],
+
     dangerouslyAllowSVG: true,
   },
 };

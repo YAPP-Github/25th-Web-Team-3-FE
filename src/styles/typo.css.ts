@@ -1,4 +1,4 @@
-import { createGlobalTheme, style } from '@vanilla-extract/css';
+import { style } from '@vanilla-extract/css';
 import { color } from './color.css';
 
 export const fontVars = {
@@ -141,6 +141,6 @@ export const etc = {
 
 export const h1 = style({
   ...etc,
-  fontWeight:fontVars.fontSize.title1,
-  color:color.flavor.floral,
+  fontWeight: fontVars.fontSize.title1,
+  color: color.flavor.floral,
 });
