@@ -22,9 +22,16 @@ export interface CafeRecommendationResponse {
   hasNext: boolean;
 }
 
-type CafeRecommendationGroup = {
+export interface RecommendedCafe {
+  id: string;
+  mainImage: string;
   name: string;
-  cafes: { id: string; mainImage: string; name: string; nearestStation: string }[];
+  nearestStation: string;
+}
+
+export type CafeRecommendationGroup = {
+  name: string;
+  cafes: RecommendedCafe[];
 };
 
 export const getCafeRecommendation = async ({
