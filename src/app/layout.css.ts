@@ -1,20 +1,27 @@
 import { color } from '@/styles/color.css';
+
 import { style } from '@vanilla-extract/css';
 
 export const body = style({
   background: color.grayScale.gray200,
+  overscrollBehavior: 'none',
+});
+
+export const bodyInnerWrapper = style({
+  position: 'relative',
+  margin: '0 auto',
+  maxWidth: '50rem',
 });
 
 export const rootContainer = style({
-  maxWidth: '50rem',
-  margin: '0 auto',
+  overscrollBehavior: 'contain',
   height: '100vh',
   fontSize: '1.6rem',
   overflowY: 'auto',
   msOverflowStyle: 'none',
-  scrollbarWidth: 'none',
   background: color.grayScale.gray100,
 
+  scrollbarWidth: 'none',
   selectors: {
     '&::-webkit-scrollbar': {
       display: 'none',
