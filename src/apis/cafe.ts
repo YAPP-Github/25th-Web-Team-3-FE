@@ -22,10 +22,10 @@ export interface CafeRecommendationResponse {
   hasNext: boolean;
 }
 
-export type CafeRecommendationGroup = {
+export interface CafeRecommendationGroup {
   name: string;
   cafes: RecommendedCafe[];
-};
+}
 
 export interface RecommendedCafe {
   id: string;
