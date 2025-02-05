@@ -4,7 +4,7 @@ import { body, bodyInnerWrapper, rootContainer } from './layout.css';
 import { DotGothic16 } from 'next/font/google';
 import localFont from 'next/font/local';
 import Providers from './providers';
-import BrewLoungeQR from '@/components/layout/BrewLoungeQR';
+import BrewloungeQR from '@/components/layout/BrewloungeQR';
 
 const pretendard = localFont({
   src: '../fonts/PretendardVariable.woff2',
@@ -32,7 +32,9 @@ export default function RootLayout({
             <Providers>{children}</Providers>
             <div id="modal-root"></div>
           </div>
-          <BrewLoungeQR />
+          <aside>
+            <BrewloungeQR />
+          </aside>
         </div>
       </body>
     </html>

@@ -18,7 +18,7 @@ export const fontVars = {
     title4: '1.8rem',
     body1: '1.5rem',
     body2: '1.4rem',
-    caption: '1.4rem',
+    caption: '1.3rem',
     button1: '1.6rem',
     button2: '1.4rem',
     etc: '3.2rem',
@@ -29,6 +29,7 @@ export const fontVars = {
     title3: '2.6rem',
     title4: '2.4rem',
     body1: '2.4rem',
+    body1Bold: '2.3rem',
     body2: '2.0rem',
     caption: '1.8rem',
     button1: '2.6rem',
@@ -68,7 +69,7 @@ export const title3 = {
 
 export const title4 = {
   fontFamily: fontVars.fontFamily.pretendard,
-  fontWeight: fontVars.fontWeight.bold,
+  fontWeight: fontVars.fontWeight.semibold,
   fontSize: fontVars.fontSize.title4,
   lineHeight: fontVars.lineHeight.title4,
   letterSpacing: fontVars.letterSpacing.loose,
@@ -86,7 +87,7 @@ export const body1Bold = {
   fontFamily: fontVars.fontFamily.pretendard,
   fontWeight: fontVars.fontWeight.bold,
   fontSize: fontVars.fontSize.body1,
-  lineHeight: fontVars.lineHeight.body1,
+  lineHeight: fontVars.lineHeight.body1Bold,
   letterSpacing: fontVars.letterSpacing.loose,
 };
 

@@ -2,6 +2,8 @@ import { body1 } from './../../styles/typo.css';
 import { title3 } from '@/styles/typo.css';
 import { style } from '@vanilla-extract/css';
 
+export const pageContainer = style({ paddingBottom: '8rem' });
+
 // CafeItem
 export const cafeItemHeading = style({
   display: 'flex',
@@ -55,7 +57,7 @@ export const overflowCafeImageCount = style({
 
 // CafeList
 export const cafeListContainer = style({
-  padding: '2.4rem 2rem',
+  padding: '2.4rem 2rem 0 2rem',
   display: 'flex',
   flexDirection: 'column',
   gap: '2.4rem',

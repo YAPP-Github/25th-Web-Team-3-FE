@@ -2,7 +2,7 @@ import { color } from '@/styles/color.css';
 import { body2, title4 } from '@/styles/typo.css';
 import { style } from '@vanilla-extract/css';
 
-export const serviceQr = style({
+export const brewloungeQr = style({
   position: 'absolute',
   right: '-3.3rem',
   bottom: '8rem',
@@ -11,10 +11,12 @@ export const serviceQr = style({
   height: '25.2rem',
   background: color.grayScale.gray100,
   padding: '2.4rem',
+  opacity: 1,
+  transition: 'opacity 1s ease-in-out',
 
   '@media': {
     [`(max-width: 1000px)`]: {
-      display: 'none',
+      opacity: 0,
     },
   },
 });

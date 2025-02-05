@@ -8,6 +8,7 @@ import RegionSelectButtons from '@/components/cafes/RegionSelectButtons';
 import { REGIONS } from '@/constants/region';
 import { useInfiniteCafes } from '@/hooks/server/useInfiniteCafes';
 import { IntersectionDetector } from '@/components/common/IntersectionDetector';
+import { pageContainer } from '@/components/cafes/cafes.css';
 
 export default function Page() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -27,7 +28,7 @@ export default function Page() {
   };
 
   return (
-    <div>
+    <div className={pageContainer}>
       <RegionSelectButtons region={region} resetRegion={resetRegion} openModal={openModal} />
       <CafeList cafeList={data} />
       <IntersectionDetector onIntersected={fetchNextPage} isOff={!hasNextPage} />

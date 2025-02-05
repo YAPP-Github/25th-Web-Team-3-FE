@@ -1,14 +1,14 @@
-'use client';
-
 import CafeRecommendation from '@/components/home/CafeRecommendation';
-import { useInfiniteCafeRecommendation } from '@/hooks/server/useInfiniteCafeRecommendation';
+import HeroBanner from '@/components/home/HeroBanner';
+import { pageContainer } from '@/components/home/Home.css';
 
 export default function Home() {
-  const { data: cafeGroups } = useInfiniteCafeRecommendation();
-
   return (
-    <div>
-      <CafeRecommendation cafeGroups={cafeGroups} />
+    <div className={pageContainer}>
+      <HeroBanner />
+      <main>
+        <CafeRecommendation />
+      </main>
     </div>
   );
 }

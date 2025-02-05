@@ -1,8 +1,8 @@
-import { qrCode, qrDescription, qrNotification, serviceQr } from './layout.css';
+import { qrCode, qrDescription, qrNotification, brewloungeQr } from './layout.css';
 
-export default function BrewLoungeQR() {
+export default function BrewloungeQR() {
   return (
-    <div className={serviceQr}>
+    <div className={brewloungeQr}>
       <div className={qrCode}></div>
       <p className={qrDescription}>
         모바일로 어디서든
