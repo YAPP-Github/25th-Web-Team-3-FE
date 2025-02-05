@@ -27,8 +27,8 @@ export default function RecommendedCafeList({ groupName, cafes }: RecommendedCaf
 
 function CafeItem({ cafe }: { cafe: RecommendedCafe }) {
   return (
-    <Link href={`${ROUTE_PATH.cafes}/${cafe.id}`}>
-      <li className={cafeItem}>
+    <li>
+      <Link className={cafeItem} href={`${ROUTE_PATH.cafes}/${cafe.id}`}>
         <Image
           className={cafeImage}
           src={cafe.mainImage}
@@ -40,7 +40,7 @@ function CafeItem({ cafe }: { cafe: RecommendedCafe }) {
           <p className={cafeName}>{cafe.name}</p>
           <p className={cafeNearestStation}>{cafe.nearestStation} 근처</p>
         </div>
-      </li>
-    </Link>
+      </Link>
+    </li>
   );
 }

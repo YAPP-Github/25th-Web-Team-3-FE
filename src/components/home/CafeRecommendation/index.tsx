@@ -9,13 +9,13 @@ export default function CafeRecommendation() {
   const { data: cafeGroups } = useInfiniteCafeRecommendation();
 
   return (
-    <section>
+    <main>
       {cafeGroups.map(({ name, cafes }) => (
         <section className={cafeRecommendationItem} key={name}>
           <h2 className={CafeRecommendationName}>{name}</h2>
           <RecommendedCafeList groupName={name} cafes={cafes} />
         </section>
       ))}
-    </section>
+    </main>
   );
 }

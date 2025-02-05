@@ -6,9 +6,7 @@ export default function Home() {
   return (
     <div className={pageContainer}>
       <HeroBanner />
-      <main>
-        <CafeRecommendation />
-      </main>
+      <CafeRecommendation />
     </div>
   );
 }
