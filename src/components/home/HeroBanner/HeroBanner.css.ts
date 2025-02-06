@@ -31,6 +31,7 @@ export const carouselSlide = style({
   display: 'flex',
   alignItems: 'center',
   flexDirection: 'column',
+  cursor: 'pointer',
 });
 
 export const carouselImage = style({ objectFit: 'cover' });

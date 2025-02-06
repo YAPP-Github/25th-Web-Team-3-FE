@@ -2,7 +2,14 @@
 
 import Image from 'next/image';
 import React from 'react';
-import { bannerDescription, bannerText, carouselImage, carouselSnap } from './HeroBanner.css';
+import {
+  bannerDescription,
+  bannerLength,
+  bannerOrder,
+  bannerText,
+  carouselImage,
+  carouselSnap,
+} from './HeroBanner.css';
 import Carousel from './Carousel';
 
 export default function BannerCarousel({
@@ -12,7 +19,7 @@ export default function BannerCarousel({
 }) {
   return (
     <Carousel>
-      {banners.map((banner) => (
+      {banners.map((banner, index) => (
         <Carousel.Slide key={banner.text}>
           <div className={carouselSnap}>
             <Image
@@ -24,13 +31,10 @@ export default function BannerCarousel({
             />
             <div className={bannerDescription}>
               <span className={bannerText}>{banner.text}</span>
-              {/* TODO: 슬라이드 순서를 표시하는 영역은 디자인 픽스 후 추가하겠습니다. */}
-              {/*
               <span className={bannerOrder}>
-                {currentOrder}
+                {index + 1}
                 <span className={bannerLength}>/{banners.length}</span>
               </span>
-              */}
             </div>
           </div>
         </Carousel.Slide>
