@@ -13,7 +13,7 @@ export const useCarousel = (slideCount: number, autoPlayDelay: number): UseCarou
   ]);
   const [currentOrder, setCurrentOrder] = React.useState(1);
 
-  const progressRate = Math.ceil((currentOrder / slideCount) * 100);
+  const progressRate = slideCount === 0 ? Math.ceil((currentOrder / slideCount) * 100) : 0;
 
   React.useEffect(() => {
     if (!emblaApi) {

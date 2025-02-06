@@ -19,6 +19,10 @@ export default Carousel;
 function BaseCarousel({ children }: React.PropsWithChildren) {
   const slideCount = React.Children.count(children);
 
+  if (slideCount === 0) {
+    throw new Error('캐러셀이 비어 있습니다.');
+  }
+
   const { containerRef, progressRate } = useCarousel(slideCount, CAROUSEL_AUTOPLAY_DELAY);
 
   return (
