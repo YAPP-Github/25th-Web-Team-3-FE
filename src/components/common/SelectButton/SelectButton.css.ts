@@ -11,7 +11,7 @@ export const selectButton = recipe({
     display: 'flex',
     alignItems: 'center',
     gap: '0.2rem',
-    border: '1px solid',
+    border: '0.1rem solid',
   },
   variants: {
     isSelected: {
