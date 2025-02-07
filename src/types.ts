@@ -18,15 +18,19 @@ export interface Menu {
   imageUrl: string;
   description: string;
 }
+export interface Country {
+  name: string;
+  flagImageUrl: string;
+}
 export interface CoffeeBean {
   id: string;
   cafe: Cafe;
   mainImages: string;
   name: string;
-  engName:string;
+  engName: string;
   imageUrl: string;
-  description:string
+  description: string;
   flavors: string[];
-  countryOfOrigin: string[];
+  countryOfOrigin: Country[];
   roastingPoint: string;
 }
