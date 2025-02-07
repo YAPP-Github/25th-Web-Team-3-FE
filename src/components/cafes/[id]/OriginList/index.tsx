@@ -1,8 +1,7 @@
-import { countryImage, orginItem, originList } from './OriginList.css';
 import HashTag from '@/components/common/HashTag';
-import { getCountryFlag } from '@/apis/countryFlag';
-import Image from 'next/image';
 import { Country } from '@/types';
+import Image from 'next/image';
+import { countryImage, orginItem, originList } from './OriginList.css';
 
 interface CountryOfOriginProps {
   countryOfOrigin: Country[];

@@ -6,7 +6,7 @@ export default function BackButton() {
   const router = useRouter();
   return (
     <div className={backButton}>
-      <ChevronLeft width={32} height={32} onClick={() => router.back()} />;
+      <ChevronLeft width={32} height={32} onClick={() => router.back()} />
     </div>
   );
 }
