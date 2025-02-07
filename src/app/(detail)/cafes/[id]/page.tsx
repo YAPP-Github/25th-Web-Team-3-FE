@@ -28,7 +28,8 @@ import {
   toggleInput,
   toggleLabel,
 } from './page.css';
-export const DEFAULT_CAFE_MAIN_IMAGE = 'https://placehold.co/600x400?text=Cafe1';
+
+const DEFAULT_CAFE_MAIN_IMAGE = 'https://placehold.co/600x400?text=Cafe1';
 
 export default async function Page({ params }: { params: Promise<{ id: string }> }) {
   const detailPageId = (await params).id;

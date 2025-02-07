@@ -1,6 +1,5 @@
 import { color } from '@/styles/color.css';
 import { button2 } from '@/styles/typo.css';
-import { style } from '@vanilla-extract/css';
 import { recipe } from '@vanilla-extract/recipes';
 
 export const popUpButton = recipe({
@@ -8,10 +7,10 @@ export const popUpButton = recipe({
     ...button2,
     padding: '1.3rem 0',
     textAlign: 'center',
-    width:'100%',
-    borderRadius:'0.5rem',
-    border:'1px solid',
-    cursor:'pointer'
+    width: '100%',
+    borderRadius: '0.5rem',
+    border: '1px solid',
+    cursor: 'pointer',
   },
   variants: {
     color: {
