@@ -12,7 +12,7 @@ interface CafeDetailResponse {
   cafe: CafeDetail;
   coffeeBean: CoffeeBean;
   menus: Menu[];
-  tag: Tag[];
+  tags: Tag[];
   updatedAt: string;
   description: string;
 }

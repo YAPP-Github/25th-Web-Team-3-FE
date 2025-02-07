@@ -34,7 +34,7 @@ const DEFAULT_CAFE_MAIN_IMAGE = 'https://placehold.co/600x400?text=Cafe1';
 export default async function Page({ params }: { params: Promise<{ id: string }> }) {
   const detailPageId = (await params).id;
   const data = await getCafeDetail(detailPageId);
-  const { cafe, coffeeBean, menus, updatedAt } = data;
+  const { cafe, coffeeBean, menus, updatedAt, tags } = data;
 
   return (
     <div className={cafesIdLayout}>
@@ -62,7 +62,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
           <article className={pickReasonBox}>
             <div className={pickReason}>{cafe.reasonForSelection}</div>
             <div className={divider}></div>
-            <IconWithHashTag />
+            <IconWithHashTag tags={tags} />
           </article>
         </section>
         <section>

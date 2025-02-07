@@ -12,3 +12,6 @@ export const IconWithHashTagListItem = style({
   justifyContent: 'center',
   alignItems: 'center',
 });
+export const tagName= style({
+  marginTop:'1.1rem'
+})
