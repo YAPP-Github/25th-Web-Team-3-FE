@@ -10,8 +10,8 @@ export default function CafeRecommendation() {
 
   return (
     <main>
-      {cafeGroups.map(({ name, cafes }) => (
-        <section className={cafeRecommendationItem} key={name}>
+      {cafeGroups.map(({ name, cafes }, index) => (
+        <section className={cafeRecommendationItem} key={`${name}-${index}`}>
           <h2 className={CafeRecommendationName}>{name}</h2>
           <RecommendedCafeList groupName={name} cafes={cafes} />
           <IntersectionDetector onIntersected={fetchNextPage} />
