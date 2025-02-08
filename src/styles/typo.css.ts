@@ -4,7 +4,7 @@ import { color } from './color.css';
 export const fontVars = {
   fontFamily: {
     pretendard: 'Pretendard, sans-serif',
-    dotgothic: 'DotGothic16, sans-serif',
+    gmarketSansTTF: 'gmarketSansTTF, sans-serif',
   },
   fontWeight: {
     regular: '400',
@@ -133,7 +133,7 @@ export const button2 = {
 
 //Bean Card
 export const etc = {
-  fontFamily: fontVars.fontFamily.dotgothic,
+  fontFamily: fontVars.fontFamily.gmarketSansTTF,
   fontWeight: fontVars.fontWeight.regular,
   fontSize: fontVars.fontSize.etc,
   lineHeight: fontVars.lineHeight.etc,

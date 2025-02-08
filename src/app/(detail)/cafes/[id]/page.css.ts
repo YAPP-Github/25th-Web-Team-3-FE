@@ -1,5 +1,5 @@
 import { color } from '@/styles/color.css';
-import { body1, body1Bold, etc, title3, title4 } from '@/styles/typo.css';
+import { body1, body1Bold, etc, fontVars, title3, title4 } from '@/styles/typo.css';
 import { ComplexStyleRule, style } from '@vanilla-extract/css';
 
 export const cafesIdLayout = style({
@@ -70,7 +70,7 @@ export const recoCoffeeBeanBox = style({
     ...body1Bold,
   },
 } as ComplexStyleRule);
-export const beanCardTitle = style({ ...etc });
+export const beanCardTitle = style({ ...etc,fontWeight:fontVars.fontWeight.bold });
 
 export const divider = style({
   borderTop: 'dashed 0.1rem',

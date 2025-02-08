@@ -5,22 +5,23 @@ import { ComplexStyleRule, style } from '@vanilla-extract/css';
 export const scrollContainer = style({
   overflowX: 'auto',
   whiteSpace: 'nowrap',
-  display: 'flex', 
+  display: 'flex',
   gap: '1.6rem',
-  scrollbarWidth: 'none', 
-  msOverflowStyle: 'none', 
+  scrollbarWidth: 'none',
+  msOverflowStyle: 'none',
   selectors: {
     '&::-webkit-scrollbar': {
-      display: 'none', 
+      display: 'none',
     },
   },
 });
 
 export const menuItemList = style({
-  display: 'flex', 
+  display: 'flex',
   gap: '1.6rem',
   width: '100%',
-  padding: '0', 
+  padding: '0',
+
 });
 
 export const menuItemBox = style({
@@ -29,6 +30,10 @@ export const menuItemBox = style({
   padding: '1.6rem',
   width: '27.6rem',
   flexShrink: 0,
+  display:'flex',
+  flexDirection:'column',
+  justifyContent:'space-between',
+
 });
 export const menuItemTitleBox = style({
   ...body1Bold,
@@ -41,6 +46,8 @@ export const menuItemImg = style({
   width: '100%',
   height: '24.4rem',
   objectFit: 'cover',
+
+ 
 });
 
 export const menuItemContent = style({
@@ -48,6 +55,6 @@ export const menuItemContent = style({
   marginTop: '1.2rem',
   marginBottom: '1.6rem',
   maxWidth: '100%',
-  whiteSpace: 'normal', 
-  wordBreak: 'break-word', 
+  whiteSpace: 'normal',
+  wordBreak: 'break-word',
 });
