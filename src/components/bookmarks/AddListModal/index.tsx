@@ -18,7 +18,11 @@ export default function AddListModal({
 }: AddListModalProps) {
   return (
     <Modal title="새 리스트 추가" isOpen={isOpen} onClose={onClose} position="bottom">
-      <AddListModalContents listName={listName} onChangeListName={onChangeListName} addBookmarkList={addBookmarkList} />
+      <AddListModalContents
+        listName={listName}
+        onChangeListName={onChangeListName}
+        addBookmarkList={addBookmarkList}
+      />
     </Modal>
   );
 }

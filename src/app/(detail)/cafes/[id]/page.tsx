@@ -36,11 +36,12 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
   const data = await getCafeDetail(detailPageId);
   const { cafe, coffeeBean, menus, updatedAt, tags } = data;
 
+
   return (
     <div className={cafesIdLayout}>
       <header className={header}>
         <BackButton />
-        <BookMarkButton cafe={cafe} />
+        <BookMarkButton cafe={cafe}  />
       </header>
       <div className={title}>
         <div>
@@ -109,6 +110,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
           </div>
         </section>
         <Footer updatedDate={updatedAt} />
+        
       </main>
     </div>
   );

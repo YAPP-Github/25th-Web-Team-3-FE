@@ -36,7 +36,7 @@ const BookmarkItem = ({ item, isEdit, onOpen }: BookmarkItemProps) => {
   const [itemCounts, setItemCounts] = useState<number>(0);
 
   useEffect(() => {
-    const listData = localStorage.getItem(item.listName);
+    const listData = localStorage.getItem('boomarkList');
     if (listData) {
       const parsedData = JSON.parse(listData);
       setImageUrl(parsedData[0]?.mainImageUrl[0] || '');

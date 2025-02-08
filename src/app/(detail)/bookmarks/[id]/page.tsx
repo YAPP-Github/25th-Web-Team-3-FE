@@ -25,7 +25,7 @@ export default function Page() {
   const router = useRouter();
 
   const fetchBookmarks = () => {
-    const savedBookmarks = localStorage.getItem(listName);
+    const savedBookmarks = localStorage.getItem('bookmarkList');
     if (savedBookmarks) {
       setDetailFromBookmarkList(JSON.parse(savedBookmarks));
     }

@@ -18,7 +18,7 @@ import { useRouter } from 'next/navigation';
 import { ROUTE_PATH } from '@/constants/routePath';
 
 interface SavedBookmarkListProps {
-  detailFromBookmarkList: {
+  detailFrom: {
     id: string;
     name: string;
     location: string;
@@ -32,7 +32,7 @@ interface SavedBookmarkListProps {
 }
 
 export default function SavedBookmarkList({
-  detailFromBookmarkList,
+  detailFrom,
   isEdit,
   setIsEdit,
   selectedIds,
@@ -45,22 +45,23 @@ export default function SavedBookmarkList({
     );
   };
   const router=useRouter ()
+
   return (
     <ul className={listContainer}>
-      {detailFromBookmarkList.length > 0 ? (
-        detailFromBookmarkList.map((bookmark) => (
+      {detailFrom.length > 0 ? (
+        detailFrom.map((bookmark) => (
           <div key={bookmark.id}>
             <li className={listItem}>
               {isEdit && (
                 <CheckBox
                   isEdit={isEdit}
-                  checked={selectedIds.includes(bookmark.id)} // 현재 북마크가 선택되었는지 여부
-                  onCheck={() => handleCheck(bookmark.id)} // 체크 상태 변경 시 호출할 함수
+                  checked={selectedIds.includes(bookmark.id)} 
+                  onCheck={() => handleCheck(bookmark.id)} 
                 />
               )}
               <Image
-                src={`${bookmark.mainImageUrl}`}
-                alt={`${bookmark.name}`}
+                src={`${bookmark.cafes.mainImageUrl}`}
+                alt={`${bookmark.cafes.name}`}
                 width={75}
                 height={75}
               />
