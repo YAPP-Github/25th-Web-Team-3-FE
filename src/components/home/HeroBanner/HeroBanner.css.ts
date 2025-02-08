@@ -1,5 +1,5 @@
 import { color } from '@/styles/color.css';
-import { body1, caption } from '@/styles/typo.css';
+import { caption } from '@/styles/typo.css';
 import { style } from '@vanilla-extract/css';
 
 export const heroBanner = style({
@@ -12,8 +12,8 @@ export const heroBanner = style({
 
 export const bannerTypo = style({
   width: '33.5rem',
+  height: '3.31rem',
   margin: '2.474rem auto',
-  ...body1,
 });
 
 // BannerCarousel
