@@ -1,5 +1,5 @@
 import { color } from '@/styles/color.css';
-import { button2 } from '@/styles/typo.css';
+import { button2, caption } from '@/styles/typo.css';
 import { style } from '@vanilla-extract/css';
 
 export const FooterBox = style({
@@ -8,4 +8,5 @@ export const FooterBox = style({
   flexDirection:'column',
   gap:'0.6rem'
 });
-export const updateText = style({ ...button2 });
+export const updateDate = style({ ...button2 });
+export const updateText = style({...caption})

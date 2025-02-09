@@ -26,7 +26,7 @@ export default function CafeItem({ cafe }: CafeItemProps) {
       <div>
         <div className={cafeItemHeading}>
           <div className={cafeItemName}>{name}</div>
-          <div className={cafeLocation}>{nearestStation}</div>
+          <div className={cafeLocation}>{nearestStation}역 근처</div>
         </div>
         <div className={tagList}>
           {tags?.map((tag, index) => (

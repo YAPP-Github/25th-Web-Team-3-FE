@@ -5,9 +5,12 @@ import { recipe } from '@vanilla-extract/recipes';
 
 export const modal = style({
   zIndex: 1000,
+
   selectors: {
     '&::backdrop': {
       background: 'rgba(0, 0, 0, 0.5)',
+      maxWidth: '50rem',
+      margin: '0 auto',
     },
   },
 });

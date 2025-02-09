@@ -1,6 +1,7 @@
 import { style } from '@vanilla-extract/css';
 import { recipe } from '@vanilla-extract/recipes';
 import { body1, body1Bold } from '@/styles/typo.css';
+import { color } from '@/styles/color.css';
 
 export const regionSelectModalContent = style({
   display: 'flex',
@@ -15,6 +16,7 @@ export const regionItem = recipe({
     height: '5.6rem',
     cursor: 'pointer',
     width: '100%',
+    color: color.grayScale.gray500,
   },
 
   variants: {

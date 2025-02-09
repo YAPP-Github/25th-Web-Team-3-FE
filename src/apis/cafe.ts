@@ -10,7 +10,7 @@ export interface CafeListResponse {
 export const getCafes = async ({
   pageParam,
 }: QueryFunctionContext<['cafes', Region], string | undefined>): Promise<CafeListResponse> => {
-  const query = pageParam ? `lastCafeId=${pageParam}` : '';
+  const query = pageParam ? `?lastCafeId=${pageParam}` : '';
 
   const data = await get<{ data: CafeListResponse }>(`${ROUTE_PATH.cafes}${query}`);
 

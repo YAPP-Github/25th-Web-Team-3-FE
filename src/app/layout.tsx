@@ -1,12 +1,9 @@
+import BrewloungeQR from '@/components/layout/BrewLoungeQR';
 import type { Metadata } from 'next';
-import './globals.css';
-import { body, bodyInnerWrapper, rootContainer } from './layout.css';
-import { DotGothic16 } from 'next/font/google';
 import localFont from 'next/font/local';
 import './globals.css';
+import { body, bodyInnerWrapper, rootContainer } from './layout.css';
 import Providers from './providers';
-import BrewloungeQR from '@/components/layout/BrewLoungeQR';
-
 
 const pretendard = localFont({
   src: '../fonts/PretendardVariable.woff2',
@@ -14,7 +11,10 @@ const pretendard = localFont({
   weight: '45 920',
 });
 
-const dotGothic16 = DotGothic16({ weight: '400', subsets: ['latin'], display: 'swap' });
+const gmarketSansTTF = localFont({
+  src: '../fonts/GmarketSansTTF/GmarketSansTTFMedium.ttf',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${dotGothic16.className}`}>
+    <html lang="en" className={`${gmarketSansTTF.className}`}>
       <body className={`${pretendard.className} ${body}`}>
         <div className={bodyInnerWrapper}>
           <div id="root" className={`${rootContainer}`}>

@@ -6,12 +6,14 @@ import { recipe } from '@vanilla-extract/recipes';
 export const flavorList = style({
   ...body1,
   display: 'flex',
+  flexWrap:'wrap',
   gap: '0.6rem',
   marginTop: '0.8rem',
 });
 export const flavorItem = style({
   display: 'flex',
   alignItems: 'center',
+  whiteSpace:'nowrap'
 });
 export const dot = recipe({
   base: {

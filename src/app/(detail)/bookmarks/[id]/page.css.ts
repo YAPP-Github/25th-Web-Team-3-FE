@@ -20,6 +20,7 @@ export const headerInfo = style({
 });
 export const editButton = style({
   ...button1,
+  color:color.grayScale.gray100,
   cursor: 'pointer',
 });
 
