@@ -26,8 +26,8 @@ export default function BannerCarousel({
               className={carouselImage}
               src={banner.image}
               alt={banner.text}
-              width="269"
-              height="268"
+              width="316"
+              height="316"
             />
             <div className={bannerDescription}>
               <span className={bannerText}>{banner.text}</span>

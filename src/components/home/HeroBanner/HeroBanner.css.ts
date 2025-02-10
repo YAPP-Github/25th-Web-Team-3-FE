@@ -1,5 +1,5 @@
 import { color } from '@/styles/color.css';
-import { caption } from '@/styles/typo.css';
+import { caption, title4 } from '@/styles/typo.css';
 import { style } from '@vanilla-extract/css';
 
 export const heroBanner = style({
@@ -11,9 +11,20 @@ export const heroBanner = style({
 });
 
 export const bannerTypo = style({
-  width: '33.5rem',
-  height: '3.31rem',
   margin: '2.474rem auto',
+
+  '@media': {
+    [`(max-width: 375px)`]: {
+      width: '33.5rem',
+    },
+    [`(min-width: 376px) and (max-width: 500px)`]: {
+      width: '35rem',
+    },
+    [`(min-width: 501px)`]: {
+      width: '37.4rem',
+      margin: '2.68rem auto',
+    },
+  },
 });
 
 // BannerCarousel
@@ -34,7 +45,24 @@ export const carouselSlide = style({
   cursor: 'pointer',
 });
 
-export const carouselImage = style({ objectFit: 'cover' });
+export const carouselImage = style({
+  objectFit: 'cover',
+
+  '@media': {
+    [`(max-width: 375px)`]: {
+      width: '26.8rem',
+      height: '26.8rem',
+    },
+    [`(min-width: 376px) and (max-width: 500px)`]: {
+      width: '29.2rem',
+      height: '29.2rem',
+    },
+    [`(min-width: 501px)`]: {
+      width: '31.6rem',
+      height: '31.6rem',
+    },
+  },
+});
 
 export const carouselSnap = style({ display: 'flex', flexDirection: 'column' });
 
@@ -50,9 +78,24 @@ export const bannerText = style({
   lineHeight: '2.3rem',
   fontSize: '1.5rem',
   fontWeight: 600,
+
+  '@media': {
+    [`(min-width: 501px)`]: {
+      ...title4,
+    },
+  },
 });
 
-export const bannerOrder = style({ ...caption });
+export const bannerOrder = style({
+  ...caption,
+  '@media': {
+    [`(min-width: 501px)`]: {
+      fontSize: '1.6rem',
+      lineHeight: '1.8rem',
+      fontWeight: 400,
+    },
+  },
+});
 
 export const bannerLength = style({ color: '#777777' });
 
