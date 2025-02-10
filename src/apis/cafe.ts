@@ -24,6 +24,7 @@ export interface CafeRecommendationResponse {
 
 export interface CafeRecommendationGroup {
   name: string;
+  groupId: string;
   cafes: RecommendedCafe[];
 }
 
@@ -40,7 +41,7 @@ export const getCafeRecommendation = async ({
   ['cafes', 'recommend'],
   string | undefined
 >): Promise<CafeRecommendationResponse> => {
-  const query = pageParam ? `?lastCafeId=${pageParam}` : '';
+  const query = pageParam ? `?lastGroupId=${pageParam}` : '';
 
   const data = await get<{ data: CafeRecommendationResponse }>(
     `${ROUTE_PATH.cafeRecommendation}${query}`
