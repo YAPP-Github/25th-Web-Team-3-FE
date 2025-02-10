@@ -11,7 +11,7 @@ export const useInfiniteCafes = (region: Region) => {
     string | undefined
   >({
     queryKey: ['cafes', region],
-    queryFn: getCafes,
+    queryFn: ({ pageParam }) => getCafes(region, pageParam),
     getNextPageParam: getLastCafeId,
     initialPageParam: undefined,
   });

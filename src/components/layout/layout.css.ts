@@ -24,8 +24,6 @@ export const brewloungeQr = style({
 export const qrCode = style({
   width: '8.8rem',
   height: '8.8rem',
-  border: `0.1rem solid ${color.grayScale.gray300}`,
-  borderRadius: '0.4rem',
 });
 
 export const qrDescription = style({ marginTop: '1.6rem', ...title4 });

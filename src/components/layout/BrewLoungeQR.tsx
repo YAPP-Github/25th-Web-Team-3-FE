@@ -1,9 +1,10 @@
 import { qrCode, qrDescription, qrNotification, brewloungeQr } from './layout.css';
+import BrewloungeQRImage from '@/assets/brewLoungeQR.svg';
 
 export default function BrewloungeQR() {
   return (
     <div className={brewloungeQr}>
-      <div className={qrCode}></div>
+      <BrewloungeQRImage className={qrCode} />
       <p className={qrDescription}>
         모바일로 어디서든
         <br />

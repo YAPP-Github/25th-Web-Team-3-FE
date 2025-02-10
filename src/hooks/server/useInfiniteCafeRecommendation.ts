@@ -12,7 +12,7 @@ export const useInfiniteCafeRecommendation = () => {
     queryKey: ['cafes', 'recommend'],
     queryFn: getCafeRecommendation,
     initialPageParam: undefined,
-    getNextPageParam: getLastCafeId,
+    getNextPageParam: getLastGroupId,
   });
 
   return {
@@ -21,12 +21,12 @@ export const useInfiniteCafeRecommendation = () => {
   };
 };
 
-function getLastCafeId(lastPage: CafeRecommendationResponse) {
+function getLastGroupId(lastPage: CafeRecommendationResponse) {
   if (!lastPage.hasNext) {
     return;
   }
 
-  const lastCafeId = lastPage.groups.at(-1)?.cafes.at(-1)?.id;
+  const lastGroupId = lastPage.groups?.at(-1)?.groupId;
 
-  return lastCafeId;
+  return lastGroupId;
 }
