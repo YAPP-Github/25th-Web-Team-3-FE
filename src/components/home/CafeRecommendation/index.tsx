@@ -6,7 +6,7 @@ import { useInfiniteCafeRecommendation } from '@/hooks/server/useInfiniteCafeRec
 import { IntersectionDetector } from '@/components/common/IntersectionDetector';
 
 export default function CafeRecommendation() {
-  const { data: cafeGroups, fetchNextPage } = useInfiniteCafeRecommendation();
+  const { data: cafeGroups, fetchNextPage, hasNextPage } = useInfiniteCafeRecommendation();
 
   return (
     <main>
@@ -14,7 +14,7 @@ export default function CafeRecommendation() {
         <section className={cafeRecommendationItem} key={groupId}>
           <h2 className={CafeRecommendationName}>{name}</h2>
           <RecommendedCafeList groupId={groupId} cafes={cafes} />
-          <IntersectionDetector onIntersected={fetchNextPage} />
+          <IntersectionDetector onIntersected={fetchNextPage} isOff={!hasNextPage} />
         </section>
       ))}
     </main>
