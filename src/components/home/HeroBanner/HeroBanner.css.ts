@@ -1,6 +1,6 @@
 import { color } from '@/styles/color.css';
 import { caption, title4 } from '@/styles/typo.css';
-import { style } from '@vanilla-extract/css';
+import { keyframes, style } from '@vanilla-extract/css';
 
 export const heroBanner = style({
   paddingTop: '3.2rem',
@@ -105,8 +105,18 @@ export const progressBarContainer = style({
   marginTop: '4rem',
 });
 
+export const autoplayProgress = keyframes({
+  from: { transform: 'translateX(-100%)' },
+  to: { transform: 'translateX(0)' },
+});
+
 export const progressBar = style({
+  width: '100%',
   height: '100%',
   backgroundColor: '#BCBCBC',
-  transition: 'width 0.3s ease-in-out',
+  position: 'absolute',
+  left: 0,
+  transform: 'translateX(-100%)', // 기본 상태
+  animationTimingFunction: 'linear',
+  animationName: autoplayProgress,
 });

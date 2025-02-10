@@ -1,19 +1,19 @@
 import Autoplay from 'embla-carousel-autoplay';
 import useEmblaCarousel, { type EmblaViewportRefType } from 'embla-carousel-react';
 import React from 'react';
+import { useCarouselProgress } from './useCarouselProgress';
 
 interface UseCarouselReturn {
   containerRef: EmblaViewportRefType;
-  progressRate: number;
+  progressBarRef: React.RefObject<HTMLDivElement>;
 }
 
-export const useCarousel = (slideCount: number, autoPlayDelay: number): UseCarouselReturn => {
+export const useCarousel = (autoPlayDelay: number): UseCarouselReturn => {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
     Autoplay({ delay: autoPlayDelay }),
   ]);
-  const [currentOrder, setCurrentOrder] = React.useState(1);
-
-  const progressRate = slideCount === 0 ? 0 : Math.ceil((currentOrder / slideCount) * 100);
+  const progressBarRef = React.useRef<HTMLDivElement>(null);
+  useCarouselProgress(emblaApi, progressBarRef);
 
   React.useEffect(() => {
     if (!emblaApi) {
@@ -33,24 +33,8 @@ export const useCarousel = (slideCount: number, autoPlayDelay: number): UseCarou
     };
   }, [emblaApi]);
 
-  React.useEffect(() => {
-    const updateCurrentOrder = () => {
-      if (emblaApi) {
-        const order = emblaApi.selectedScrollSnap() + 1;
-
-        setCurrentOrder(order);
-      }
-    };
-
-    emblaApi?.on('select', updateCurrentOrder);
-
-    return () => {
-      emblaApi?.off('select', updateCurrentOrder);
-    };
-  }, [emblaApi]);
-
   return {
     containerRef: emblaRef,
-    progressRate,
+    progressBarRef,
   };
 };
