@@ -64,7 +64,11 @@ export const carouselImage = style({
   },
 });
 
-export const carouselSnap = style({ display: 'flex', flexDirection: 'column' });
+export const carouselSnap = style({
+  display: 'flex',
+  flexDirection: 'column',
+  position: 'relative',
+});
 
 export const bannerDescription = style({
   color: 'white',
@@ -72,6 +76,12 @@ export const bannerDescription = style({
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center',
+
+  '@media': {
+    [`(min-width: 501px)`]: {
+      marginTop: '1.4rem',
+    },
+  },
 });
 
 export const bannerText = style({
@@ -88,19 +98,19 @@ export const bannerText = style({
 
 export const bannerOrder = style({
   ...caption,
-  '@media': {
-    [`(min-width: 501px)`]: {
-      fontSize: '1.6rem',
-      lineHeight: '1.8rem',
-      fontWeight: 400,
-    },
-  },
+  padding: '0.4rem 0.8rem',
+  color: 'white',
+  background: 'rgba(17, 17, 17, 0.8)',
+  position: 'absolute',
+  bottom: 0,
+  right: 0,
+  whiteSpace: 'nowrap',
 });
 
 export const bannerLength = style({ color: '#777777' });
 
 export const progressBarContainer = style({
-  background: '#676767',
+  backgroundColor: '#BCBCBC',
   height: '0.4rem',
   marginTop: '4rem',
 });
@@ -111,9 +121,9 @@ export const autoplayProgress = keyframes({
 });
 
 export const progressBar = style({
+  background: color.grayScale.gray400,
   width: '100%',
   height: '100%',
-  backgroundColor: '#BCBCBC',
   position: 'absolute',
   left: 0,
   transform: 'translateX(-100%)', // 기본 상태

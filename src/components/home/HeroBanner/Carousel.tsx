@@ -24,8 +24,8 @@ function BaseCarousel({ children }: React.PropsWithChildren) {
   const { containerRef, progressBarRef } = useCarousel(CAROUSEL_AUTOPLAY_DELAY);
 
   return (
-    <div className={`${carousel}`} ref={containerRef}>
-      <ol className={`embla__container ${carouselWrapper}`}>{children}</ol>
+    <div className={carousel} ref={containerRef}>
+      <ol className={carouselWrapper}>{children}</ol>
       <div className={progressBarContainer}>
         <div ref={progressBarRef} className={progressBar}></div>
       </div>

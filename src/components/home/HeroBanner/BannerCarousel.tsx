@@ -29,13 +29,13 @@ export default function BannerCarousel({
               width="316"
               height="316"
             />
-            <div className={bannerDescription}>
-              <span className={bannerText}>{banner.text}</span>
-              <span className={bannerOrder}>
-                {index + 1}
-                <span className={bannerLength}>/{banners.length}</span>
-              </span>
-            </div>
+            <span className={bannerOrder}>
+              {index + 1}
+              <span className={bannerLength}> / {banners.length}</span>
+            </span>
+          </div>
+          <div className={bannerDescription}>
+            <span className={bannerText}>{banner.text}</span>
           </div>
         </Carousel.Slide>
       ))}
