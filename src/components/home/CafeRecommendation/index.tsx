@@ -13,7 +13,7 @@ export default function CafeRecommendation() {
       {cafeGroups.map(({ groupId, name, cafes }) => (
         <section className={cafeRecommendationItem} key={groupId}>
           <h2 className={CafeRecommendationName}>{name}</h2>
-          <RecommendedCafeList groupName={name} cafes={cafes} />
+          <RecommendedCafeList groupId={groupId} cafes={cafes} />
           <IntersectionDetector onIntersected={fetchNextPage} />
         </section>
       ))}
