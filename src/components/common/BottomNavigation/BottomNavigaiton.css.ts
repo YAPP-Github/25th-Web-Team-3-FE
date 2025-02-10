@@ -9,12 +9,12 @@ export const BottomNavigationContainer = style({
   padding: '0.8rem 0',
   position: 'fixed',
   bottom: '0',
-  width:'100%',
-  maxWidth:'50rem',
-  height:'5.7rem',
+  width: '100%',
+  maxWidth: '50rem',
+  height: '5.7rem',
   overflow: 'hidden',
-  backgroundColor:color.grayScale.gray100,
-  
+  backgroundColor: color.grayScale.gray100,
+  borderTop: `1px solid ${color.grayScale.gray200}`,
 });
 
 export const BottomNavigationList = style({
