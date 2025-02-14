@@ -9,11 +9,14 @@ import { REGIONS } from '@/constants/region';
 import { useInfiniteCafes } from '@/hooks/server/useInfiniteCafes';
 import { IntersectionDetector } from '@/components/common/IntersectionDetector';
 import { pageContainer } from '@/components/cafes/cafes.css';
+import { useRestoreScroll } from '@/hooks/useRestoreScroll';
 
 export default function Page() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [region, setRegion] = useState<Region>(REGIONS.전체);
   const { fetchNextPage, data, hasNextPage } = useInfiniteCafes(region);
+
+  useRestoreScroll('cafes');
 
   const resetRegion = () => {
     setRegion(REGIONS.전체);
