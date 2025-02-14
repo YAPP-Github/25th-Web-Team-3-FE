@@ -2,7 +2,7 @@ import { getCafeDetail } from '@/apis/cafeDetail';
 import ChevronLeft from '@/assets/Icon/Chevron_Left.svg';
 import BackButton from '@/components/cafes/[id]/BackButton';
 import BookMarkButton from '@/components/cafes/[id]/BookMarkButton';
-// import FlavorList from '@/components/cafes/[id]/FlavorItem';
+import FlavorList from '@/components/cafes/[id]/FlavorItem';
 import Footer from '@/components/cafes/[id]/Footer';
 import IconWithHashTag from '@/components/cafes/[id]/IconWithHashTag';
 import MapButton from '@/components/cafes/[id]/MapButton';
@@ -90,7 +90,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
             </div>
             <div>
               <h3>향미</h3>
-              {/* <FlavorList flavors={coffeeBean.flavors} /> */}
+              <FlavorList flavors={coffeeBean.flavors} />
             </div>
             <div>
               <h3>산지</h3>
