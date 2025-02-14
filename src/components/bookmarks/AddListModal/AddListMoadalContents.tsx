@@ -30,6 +30,7 @@ export default function AddListModalContents({
   return (
     <div className={contentsInputContainer}>
       <input
+        value={listName}
         onChange={onChangeModalContents}
         type="text"
         maxLength={20}

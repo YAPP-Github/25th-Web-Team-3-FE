@@ -1,34 +1,31 @@
 import Modal from '@/components/common/Modal';
+import { LocalstorageBookmarkList } from '../BookMarkButton';
 import SavedBookmarkListModalContents from './SavedBookmarkListModalContents';
-import { useState } from 'react';
 
 interface SavedBookmarkListModalProps {
   isSavedBookmarkModalOpen: boolean;
-  onClose: () => void;
+  onCloseeSavedBookmarkModal: () => void;
   onSave: (checkedItems: { [key: string]: boolean }) => void;
+  savedBookmarkList: LocalstorageBookmarkList[];
+  checkedItems: { [key: string]: boolean };
+  onCheck: (id: string) => void;
+  addBookmarkList: (listName: string) => void;
 }
 
 export default function SavedBookmarkListModal({
   isSavedBookmarkModalOpen,
-  onClose,
+  onCloseeSavedBookmarkModal,
   onSave,
+  savedBookmarkList,
+  checkedItems,
+  onCheck,
+  addBookmarkList,
 }: SavedBookmarkListModalProps) {
-  const [checkedItems, setCheckedItems] = useState<{ [key: string]: boolean }>({});
-
-  const onCheck = (id: string) => {
-    setCheckedItems((prev) => ({
-      ...prev,
-      [id]: !prev[id],
-    }));
-  };
-
-  const savedBookmarkList = JSON.parse(localStorage.getItem('bookmarkList') || '[]');
-
   return (
     <Modal
       title="새 리스트 추가"
       isOpen={isSavedBookmarkModalOpen}
-      onClose={onClose}
+      onClose={onCloseeSavedBookmarkModal}
       position="bottom"
     >
       <SavedBookmarkListModalContents
@@ -36,6 +33,7 @@ export default function SavedBookmarkListModal({
         checkedItems={checkedItems}
         onCheck={onCheck}
         onSave={() => onSave(checkedItems)}
+        addBookmarkList={addBookmarkList}
       />
     </Modal>
   );
