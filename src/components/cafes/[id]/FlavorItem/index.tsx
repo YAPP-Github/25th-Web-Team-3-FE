@@ -22,7 +22,7 @@ export default function FlavorList({ flavors }: FlavorListProps) {
   return (
     <ul className={flavorList}>
       {flavors.map((flavor) => {
-        const category = getFlavor(flavor.category);
+        const category = getFlavor(flavor.name);
         return (
           <HashTag key={flavor.category}>
             <li className={flavorItem}>
