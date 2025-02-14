@@ -1,15 +1,22 @@
 import { useEffect, useState } from 'react';
 
+export interface Cafe {
+  id: string;
+  name: string;
+  location: string;
+  mainImageUrl:  string[];
+}
+
 export interface BookmarkListType {
   id: string;
   listName: string;
-  mainImageUrl?: string;
+  cafes?: Cafe[];
 }
+
 export const useBookmarkList = () => {
   const [bookmarkList, setBookmarkList] = useState<BookmarkListType[]>([]);
 
   useEffect(() => {
-    localStorage.removeItem('bookId')
     const savedBookmarks = localStorage.getItem('bookmarkList');
     if (savedBookmarks) {
       setBookmarkList(JSON.parse(savedBookmarks));
@@ -36,5 +43,5 @@ export const useBookmarkList = () => {
     localStorage.setItem('bookmarkList', JSON.stringify(updatedList));
   };
 
-  return { bookmarkList, addBookmarkList, deleteBookmarkList };
+  return { bookmarkList, addBookmarkList, deleteBookmarkList, setBookmarkList };
 };
