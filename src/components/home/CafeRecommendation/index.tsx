@@ -8,6 +8,7 @@ import { useRestoreScroll } from '@/hooks/useRestoreScroll';
 
 export default function CafeRecommendation() {
   useRestoreScroll('home');
+
   const { data: cafeGroups, fetchNextPage, hasNextPage } = useInfiniteCafeRecommendation();
 
   return (

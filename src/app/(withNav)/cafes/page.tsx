@@ -12,11 +12,11 @@ import { pageContainer } from '@/components/cafes/cafes.css';
 import { useRestoreScroll } from '@/hooks/useRestoreScroll';
 
 export default function Page() {
+  useRestoreScroll('cafes');
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [region, setRegion] = useState<Region>(REGIONS.전체);
   const { fetchNextPage, data, hasNextPage } = useInfiniteCafes(region);
-
-  useRestoreScroll('cafes');
 
   const resetRegion = () => {
     setRegion(REGIONS.전체);
