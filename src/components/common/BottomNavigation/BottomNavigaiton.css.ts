@@ -14,6 +14,8 @@ export const BottomNavigationContainer = style({
   height:'5.7rem',
   overflow: 'hidden',
   backgroundColor:color.grayScale.gray100,
+  zIndex:'999',
+  borderTop:`0.1rem solid ${color.grayScale.gray200}`
   
 });
 

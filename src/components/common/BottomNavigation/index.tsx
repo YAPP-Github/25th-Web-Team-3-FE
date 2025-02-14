@@ -1,17 +1,17 @@
 'use client';
-import Link from 'next/link';
 import BookMarkIcon from '@/assets/Icon/Navigation/bookmarkUsedNavigationIcon.svg';
 import HomeIcon from '@/assets/Icon/Navigation/homeIcon.svg';
 import SearchCafesIcon from '@/assets/Icon/Navigation/searchCafesIcon.svg';
 import UnCheckedBookMarkIcon from '@/assets/Icon/Navigation/unCheckedbookmarkUsedNavigationIcon.svg';
-import UnCheckedSearchCafesIcon from '@/assets/Icon/Navigation/unCheckedSearchCafesIcon.svg';
 import UnCheckedHomeIcon from '@/assets/Icon/Navigation/unCheckedHomeIcon.svg';
+import UnCheckedSearchCafesIcon from '@/assets/Icon/Navigation/unCheckedSearchCafesIcon.svg';
 import { ROUTE_PATH } from '@/constants/routePath';
+import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
   BottomNavigationContainer,
-  BottomNavigationList,
   BottomNavigationItem,
+  BottomNavigationList,
 } from './BottomNavigaiton.css';
 
 const navigationList = [
@@ -41,7 +41,7 @@ export default function BottomNavigation() {
     <nav className={BottomNavigationContainer}>
       <ul className={BottomNavigationList}>
         {navigationList.map(({ path, Icon, UncheckedIcon }) => (
-          <li key={path}>
+          <li key={path} >
             <Link href={path}>
               {pageIconColor(path) ? (
                 <Icon className={BottomNavigationItem({ isCurrentPage: true })} />
