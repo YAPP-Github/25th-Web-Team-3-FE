@@ -9,9 +9,9 @@ interface CountryOfOriginProps {
 export default async function OriginList({ countryOfOrigin }: CountryOfOriginProps) {
   return (
     <ul className={originList}>
-      {countryOfOrigin.map((country, idx) => {
+      {countryOfOrigin.map((country) => {
         return (
-          <HashTag key={idx}>
+          <HashTag key={`country-list-${country.name}`}>
             <li className={orginItem}>
               <Image
                 className={countryImage}

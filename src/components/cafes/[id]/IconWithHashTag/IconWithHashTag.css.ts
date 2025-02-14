@@ -3,7 +3,8 @@ import { style } from '@vanilla-extract/css';
 
 export const IconWithHashTagList = style({
   display: 'flex',
-  justifyContent: 'space-between',
+  gap:'0.8rem',
+  justifyContent:'space-around'
 });
 export const IconWithHashTagListItem = style({
   ...caption,
@@ -11,6 +12,7 @@ export const IconWithHashTagListItem = style({
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
+   padding:'0 0.6rem'
 });
 export const tagName= style({
   marginTop:'1.1rem'
