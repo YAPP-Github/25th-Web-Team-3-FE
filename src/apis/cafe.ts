@@ -1,3 +1,4 @@
+import { REGIONS } from '@/constants/region';
 import { ROUTE_PATH } from '@/constants/routePath';
 import type { Cafe, Region } from '@/types';
 import type { QueryFunctionContext } from '@tanstack/react-query';
@@ -7,10 +8,13 @@ export interface CafeListResponse {
   hasNext: boolean;
 }
 
-export const getCafes = async ({
-  pageParam,
-}: QueryFunctionContext<['cafes', Region], string | undefined>): Promise<CafeListResponse> => {
-  const query = pageParam ? `?lastCafeId=${pageParam}` : '';
+export const getCafes = async (region: Region, pageParam?: string): Promise<CafeListResponse> => {
+  const params = new URLSearchParams();
+
+  if (region && region !== REGIONS.전체) params.append('area', region);
+  if (pageParam) params.append('lastCafeId', pageParam);
+
+  const query = params.toString() ? `?${params.toString()}` : '';
 
   const data = await get<{ data: CafeListResponse }>(`${ROUTE_PATH.cafes}${query}`);
 
@@ -24,6 +28,7 @@ export interface CafeRecommendationResponse {
 
 export interface CafeRecommendationGroup {
   name: string;
+  groupId: string;
   cafes: RecommendedCafe[];
 }
 
@@ -40,7 +45,7 @@ export const getCafeRecommendation = async ({
   ['cafes', 'recommend'],
   string | undefined
 >): Promise<CafeRecommendationResponse> => {
-  const query = pageParam ? `?lastCafeId=${pageParam}` : '';
+  const query = pageParam ? `?lastGroupId=${pageParam}` : '';
 
   const data = await get<{ data: CafeRecommendationResponse }>(
     `${ROUTE_PATH.cafeRecommendation}${query}`

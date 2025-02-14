@@ -1,43 +1,45 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import BookMarkIcon from '@/assets/Icon/Bookmark.svg';
-import { bookMarkButton } from './BookMark.css';
+import Toast from '@/components/common/Toast';
+import { useToast } from '@/components/common/Toast/hooks/useToast';
 import { color } from '@/styles/color.css';
+import { useEffect, useState } from 'react';
 import SavedBookmarkListModal from '../SavedBookmarkListModal';
+import { bookMarkButton } from './BookMark.css';
+import { Cafe, useBookmarkList } from '@/components/bookmarks/BookmarkList/hooks/useBookmarkList';
+import { CheckedItems, useCheckedItems } from './hooks/useCheckedItems';
 
-interface CafeBookmark {
-  id: string;
-  name: string;
-  location: string;
-  mainImageUrl: string[];
+interface BookmarkButtonProps {
+  cafe: Cafe;
 }
 
-interface BookMarkProps {
-  cafe: CafeBookmark;
-}
-
-interface BookmarkFolder {
+export interface LocalstorageBookmarkList {
   id: string;
   listName: string;
-  cafes?: CafeBookmark[];
+  cafes?: Cafe[] 
 }
 
-export default function BookMarkButton({ cafe }: BookMarkProps) {
-  const [bookMarks, setBookMarks] = useState<CafeBookmark[]>([]);
-  const [isSavedBookmarkModalOpen, setIsSavedBookmarkModalOpen] = useState(false);
-  const [isCurrentCafeBookMarked, setIsCurrentCafeBookMarked] = useState(false);
+const isCafeBookmarked = (cafeId: string, bookmarkList: LocalstorageBookmarkList[]): boolean => {
+  return bookmarkList.some(
+    (bookmark) => bookmark.cafes?.some((bookmarkedCafe) => bookmarkedCafe.id === cafeId) ?? false
+  );
+};
 
-  // Check if current cafe is bookmarked on component mount
-  useEffect(() => {
-    const bookmarkList = JSON.parse(
-      localStorage.getItem('bookmarkList') || '[]'
-    ) as BookmarkFolder[];
-    const isBookmarked = bookmarkList.some((folder) =>
-      folder.cafes?.some((bookmarkedCafe) => bookmarkedCafe.id === cafe.id)
-    );
-    setIsCurrentCafeBookMarked(isBookmarked);
-  }, [cafe.id]);
+export default function BookMarkButton({ cafe }: BookmarkButtonProps) {
+  const [isSavedBookmarkModalOpen, setIsSavedBookmarkModalOpen] = useState<boolean>(false);
+
+  const { isToastVisible, toastMessage, showToast } = useToast();
+
+  const { bookmarkList, addBookmarkList } = useBookmarkList();
+  const { checkedItems, onCheck } = useCheckedItems(cafe.id);
+
+  const updateLocalStorage = (bookmarkList: LocalstorageBookmarkList[]) => {
+    localStorage.setItem('bookmarkList', JSON.stringify(bookmarkList));
+  };
+  useEffect(() => {}, []);
+
+  const isCurrentCafeBookMarked = isCafeBookmarked(cafe.id, bookmarkList);
 
   const openSavedBookmarkModal = () => {
     setIsSavedBookmarkModalOpen(true);
@@ -47,52 +49,57 @@ export default function BookMarkButton({ cafe }: BookMarkProps) {
     setIsSavedBookmarkModalOpen(false);
   };
 
-  const toggleBookmark = (checkedItems: { [key: string]: boolean }) => {
-    const currentBookmarkList = JSON.parse(
-      localStorage.getItem('bookmarkList') || '[]'
-    ) as BookmarkFolder[];
+  const handleShowToast = () => {
+    showToast('북마크 리스트에 저장 되었어요', 3000);
+  };
 
-    const updatedBookmarkList = currentBookmarkList.map((folder) => {
-      if (checkedItems[folder.id]) {
-        if (!folder.cafes) {
-          folder.cafes = [];
-        }
+  const addCafeToBookmark = (bookmark: LocalstorageBookmarkList, cafe: Cafe) => {
+    bookmark.cafes = bookmark.cafes || [];
+    if (!bookmark.cafes.some((bookmarkedCafe) => bookmarkedCafe.id === cafe.id)) {
+      bookmark.cafes.push({
+        id: cafe.id,
+        name: cafe.name,
+        mainImageUrl: cafe.mainImageUrl,
+        location: cafe.location,
+      });
+    }
+  };
 
-        const isCafeAlreadyBookmarked = folder.cafes.some(
-          (bookmarkedCafe) => bookmarkedCafe.id === cafe.id
-        );
-        if (!isCafeAlreadyBookmarked) {
-          folder.cafes.push({
-            id: cafe.id,
-            name: cafe.name,
-            location: cafe.location,
-            mainImageUrl: cafe.mainImageUrl,
-          });
-        }
+  const removeCafeFromBookmark = (bookmark: LocalstorageBookmarkList, cafeId: string) => {
+    bookmark.cafes = bookmark.cafes?.filter((bookmarkedCafe) => bookmarkedCafe.id !== cafeId);
+  };
+
+  const toggleBookmark = (checkedItems: CheckedItems) => {
+    const updatedBookmarkList = bookmarkList.map((bookmark) => {
+      if (checkedItems[bookmark.id]) {
+        addCafeToBookmark(bookmark, cafe);
       } else {
-        if (folder.cafes) {
-          folder.cafes = folder.cafes.filter((bookmarkedCafe) => bookmarkedCafe.id !== cafe.id);
-        }
+        removeCafeFromBookmark(bookmark, cafe.id);
       }
-      return folder;
+      return bookmark;
     });
 
-    localStorage.setItem('bookmarkList', JSON.stringify(updatedBookmarkList));
-    const isBookmarked = updatedBookmarkList.some((folder) =>
-      folder.cafes?.some((bookmarkedCafe) => bookmarkedCafe.id === cafe.id)
-    );
-    setIsCurrentCafeBookMarked(isBookmarked);
-    setIsSavedBookmarkModalOpen(false);
+    updateLocalStorage(updatedBookmarkList);
+    handleShowToast();
+    closeSavedBookmarkModal();
   };
 
   return (
-    <div className={bookMarkButton} onClick={openSavedBookmarkModal}>
-      <BookMarkIcon fill={isCurrentCafeBookMarked ? color.grayScale.gray500 : 'none'} />
+    <div className={bookMarkButton}>
+      <BookMarkIcon
+        onClick={openSavedBookmarkModal}
+        fill={isCurrentCafeBookMarked ? color.grayScale.gray500 : 'none'}
+      />
       <SavedBookmarkListModal
         isSavedBookmarkModalOpen={isSavedBookmarkModalOpen}
-        onClose={closeSavedBookmarkModal}
+        onCloseeSavedBookmarkModal={closeSavedBookmarkModal}
         onSave={toggleBookmark}
+        savedBookmarkList={bookmarkList}
+        addBookmarkList={addBookmarkList}
+        checkedItems={checkedItems}
+        onCheck={onCheck}
       />
+      {isToastVisible && <Toast message={toastMessage} />}
     </div>
   );
 }

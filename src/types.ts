@@ -22,7 +22,7 @@ export interface Country {
   name: string;
   flagImageUrl: string;
 }
-export interface Flavor {
+interface Flavors {
   name: string;
   category: string;
 }
@@ -34,7 +34,7 @@ export interface CoffeeBean {
   engName: string;
   imageUrl: string;
   description: string;
-  flavors: Flavor[];
+  flavors: Flavors[]
   countryOfOrigin: Country[];
   roastingPoint: string;
 }

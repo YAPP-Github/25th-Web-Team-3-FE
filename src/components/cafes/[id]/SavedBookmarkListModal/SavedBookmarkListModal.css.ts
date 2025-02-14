@@ -26,11 +26,16 @@ export const addListButton = style({
 
 export const savedBookmarkListContainer = style({
   display: 'flex',
+  flexDirection:'column',
+
+ 
+});
+export const savedBookmarkListBox= style({
+  display:'flex',
   justifyContent: 'space-between',
   marginBottom: '1.6rem',
   gap: '1.2rem',
   alignItems: 'center',
-  width: '100%',
 });
 export const savedBookmarkListContents = style({
   display:'flex',

@@ -11,15 +11,15 @@ import {
 } from './CafeRecommendation.css';
 
 interface RecommendedCafeListProps {
-  groupName: string;
+  groupId: string;
   cafes: RecommendedCafe[];
 }
 
-export default function RecommendedCafeList({ groupName, cafes }: RecommendedCafeListProps) {
+export default function RecommendedCafeList({ groupId, cafes }: RecommendedCafeListProps) {
   return (
     <ul className={recommendedCafeList}>
       {cafes.map((cafe) => (
-        <CafeItem key={`${groupName}-${cafe.id}`} cafe={cafe} />
+        <CafeItem key={`${groupId}-${cafe.id}`} cafe={cafe} />
       ))}
     </ul>
   );

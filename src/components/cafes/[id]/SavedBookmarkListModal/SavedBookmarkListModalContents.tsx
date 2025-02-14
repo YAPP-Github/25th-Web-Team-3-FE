@@ -9,6 +9,7 @@ import { useState } from 'react';
 import { LocalstorageBookmarkList } from '../BookMarkButton';
 import {
   addListButton,
+  savedBookmarkListBox,
   savedBookmarkListContainer,
   savedBookmarkListContents,
   savedBookmarkListNumber,
@@ -74,16 +75,18 @@ export default function SavedBookmarkListModalContents({
           const isChecked = checkedItems[bookmark.id];
 
           return (
-            <li className={savedBookmarkListContents} key={bookmark.id}>
-              {lastCafeImage ? (
-                <Image src={lastCafeImage} alt={`${bookmark.listName}`} width={75} height={75} />
-              ) : (
-                <DefaultListImage alt="기본 리스트 이미지" />
-              )}
+            <li className={savedBookmarkListBox} key={bookmark.id}>
+              <div className={savedBookmarkListContents}>
+                {lastCafeImage ? (
+                  <Image src={lastCafeImage} alt={`${bookmark.listName}`} width={75} height={75} />
+                ) : (
+                  <DefaultListImage alt="기본 리스트 이미지" />
+                )}
 
-              <div className={savedBookmarkListTextBox}>
-                <div className={savedBookmarkListTitle}>{bookmark.listName}</div>
-                <div className={savedBookmarkListNumber}>{cafeCount}개</div>
+                <div className={savedBookmarkListTextBox}>
+                  <div className={savedBookmarkListTitle}>{bookmark.listName}</div>
+                  <div className={savedBookmarkListNumber}>{cafeCount}개</div>
+                </div>
               </div>
 
               {isChecked ? (

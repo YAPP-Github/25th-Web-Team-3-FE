@@ -6,13 +6,24 @@ export const cafeItem = style({
   display: 'flex',
   flexDirection: 'column',
   gap: '1.2rem',
+  width: '14rem',
 });
 
 export const cafeImage = style({ objectFit: 'cover' });
 
-export const cafeName = style({ ...body1Bold });
+export const cafeName = style({
+  ...body1Bold,
+  overflow: 'hidden',
+  textOverflow: 'ellipsis',
+  whiteSpace: 'nowrap',
+});
 
-export const cafeNearestStation = style({ ...body2 });
+export const cafeNearestStation = style({
+  ...body2,
+  overflow: 'hidden',
+  textOverflow: 'ellipsis',
+  whiteSpace: 'nowrap',
+});
 
 // RecommendedCafeList
 export const recommendedCafeList = style({
