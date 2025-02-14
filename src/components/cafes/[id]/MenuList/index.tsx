@@ -6,7 +6,7 @@ import {
   menuItemList,
   menuItemTitleBox,
 } from './MenuList.css';
-import { divider } from '@/app/(detail)/cafes/[id]/page.css';
+import { divider } from '@/app/(withoutNav)/cafes/[id]/page.css';
 import { Menu } from '@/types';
 
 interface MenuListProps {
