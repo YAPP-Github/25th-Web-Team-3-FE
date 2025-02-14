@@ -13,7 +13,8 @@ export const flavorList = style({
 export const flavorItem = style({
   display: 'flex',
   alignItems: 'center',
-  whiteSpace:'nowrap'
+  whiteSpace:'nowrap',
+  color:color.grayScale.gray500,
 });
 export const dot = recipe({
   base: {
