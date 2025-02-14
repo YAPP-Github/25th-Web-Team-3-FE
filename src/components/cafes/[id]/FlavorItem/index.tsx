@@ -10,22 +10,24 @@ const getFlavor = (name: string): FlavorCategory => {
   });
   return matchedCategory ? (matchedCategory[0] as FlavorCategory) : 'other';
 };
-
+interface Flavors {
+  name: string;
+  category: string;
+}
 interface FlavorListProps {
-  flavors: string[];
+  flavors: Flavors[];
 }
 
 export default function FlavorList({ flavors }: FlavorListProps) {
   return (
     <ul className={flavorList}>
       {flavors.map((flavor) => {
-        const category = getFlavor(flavor);
-
+        const category = getFlavor(flavor.category);
         return (
-          <HashTag key={flavor}>
+          <HashTag key={flavor.category}>
             <li className={flavorItem}>
               <div className={dot({ flavor: category })}></div>
-              {flavor}
+              {flavor.name}
             </li>
           </HashTag>
         );
