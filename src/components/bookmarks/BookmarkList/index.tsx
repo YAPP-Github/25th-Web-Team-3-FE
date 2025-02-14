@@ -1,10 +1,12 @@
-import BookmarkBasicImage from '@/assets/Icon/bookmarkBasic.svg';
+import BookmarkBasicImage from '@/assets/Icon/bookmarkBasicImage.svg';
 import CloseIcon from '@/assets/Icon/closeIcon.svg';
 import { ROUTE_PATH } from '@/constants/routePath';
+import Image from 'next/image';
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import {
   bookmarkBasicImage,
+  bookmarkLink,
   bookmarkListItem,
   closeIcon,
   container,
@@ -14,7 +16,6 @@ import {
 } from '../BookmarkList/BookmarkList.css';
 import EditListModal from '../EditListModal';
 import { BookmarkListType } from './hooks/useBookmarkList';
-import Image from 'next/image';
 
 interface BookmarkListProps {
   isEdit: boolean;
@@ -32,17 +33,8 @@ interface BookmarkItemProps {
 }
 
 const BookmarkItem = ({ item, isEdit, onOpen }: BookmarkItemProps) => {
-  const [imageUrl, setImageUrl] = useState<string>('');
-  const [itemCounts, setItemCounts] = useState<number>(0);
-
-  useEffect(() => {
-    const listData = localStorage.getItem('boomarkList');
-    if (listData) {
-      const parsedData = JSON.parse(listData);
-      setImageUrl(parsedData[0]?.mainImageUrl[0] || '');
-      setItemCounts(parsedData.length);
-    }
-  }, [item.listName]);
+  const imageUrl = item.cafes?.at(-1)?.mainImageUrl?.[0] || '';
+  const itemCounts = item.cafes?.length || 0;
 
   return (
     <li className={bookmarkListItem}>
@@ -59,19 +51,15 @@ const BookmarkItem = ({ item, isEdit, onOpen }: BookmarkItemProps) => {
         )}
         <div>{item.listName}</div>
       </div>
-      {imageUrl ? (
-        <Image
-          src={imageUrl}
-          alt={item.listName}
-          className={bookmarkBasicImage}
-          width={148}
-          height={144}
-        />
-      ) : (
-        <BookmarkBasicImage className={bookmarkBasicImage} />
-      )}
-      <div className={listItemCounts}>
-        <span className={listItemCountsNumber}>{itemCounts}</span>
+      <div className={bookmarkBasicImage}>
+        {imageUrl ? (
+          <Image src={imageUrl} alt={item.listName} width={163} height={191} />
+        ) : (
+          <BookmarkBasicImage width={163} heigth={191} />
+        )}
+        <div className={listItemCounts}>
+          <span className={listItemCountsNumber}>{itemCounts}</span>
+        </div>
       </div>
     </li>
   );
@@ -104,6 +92,7 @@ export default function BookmarkList({
               pathname: `${ROUTE_PATH.bookmarks}/${item.id}`,
               query: { listName: item.listName },
             }}
+            className={bookmarkLink}
           >
             <BookmarkItem item={item} isEdit={isEdit} onOpen={handleOpen} />
           </Link>
