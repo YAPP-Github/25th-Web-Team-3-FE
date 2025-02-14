@@ -1,6 +1,6 @@
 import HashTag from '@/components/common/HashTag';
-import { dot, flavorItem, flavorList } from './FlavorItem.css';
 import { FLAVOR_DATA } from '@/constants/flavor';
+import { dot, flavorItem, flavorList } from './FlavorItem.css';
 
 type FlavorCategory = keyof typeof FLAVOR_DATA | 'other';
 
@@ -24,7 +24,7 @@ export default function FlavorList({ flavors }: FlavorListProps) {
       {flavors.map((flavor) => {
         const category = getFlavor(flavor.name);
         return (
-          <HashTag key={flavor.category}>
+          <HashTag key={`${flavor.name}-${flavor.category}`}>
             <li className={flavorItem}>
               <div className={dot({ flavor: category })}></div>
               {flavor.name}

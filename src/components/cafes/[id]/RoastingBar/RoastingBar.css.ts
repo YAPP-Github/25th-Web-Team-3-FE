@@ -6,9 +6,10 @@ import { recipe } from '@vanilla-extract/recipes';
 export const roastingBar = style({
   display: 'flex',
   width: '100%',
+  gap:'0.4rem',
   height: '0.8rem',
   marginTop: '1.2rem',
-  backgroundColor: color.grayScale.gray200,
+  backgroundColor: color.grayScale.gray100,
 });
 export const roastingSegment = recipe({
   base: {
@@ -16,6 +17,7 @@ export const roastingSegment = recipe({
     height: '100%',
     position: 'relative',
     color: color.grayScale.gray400,
+    backgroundColor: color.grayScale.gray300,
   },
   variants: {
     roastingLevel: {
@@ -48,7 +50,7 @@ export const roastingStatus = recipe({
     ...body1,
     display: 'flex',
     justifyContent: 'space-between',
-    color: color.grayScale.gray400,
+    color: color.grayScale.gray300,
   },
   variants: {
     roastingLevel: {
