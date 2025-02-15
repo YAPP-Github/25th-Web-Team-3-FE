@@ -1,6 +1,5 @@
-import { REGIONS } from '@/constants/region';
 import { ROUTE_PATH } from '@/constants/routePath';
-import type { Cafe, Region } from '@/types';
+import type { Cafe } from '@/types';
 import type { QueryFunctionContext } from '@tanstack/react-query';
 
 export interface CafeListResponse {
@@ -8,10 +7,18 @@ export interface CafeListResponse {
   hasNext: boolean;
 }
 
-export const getCafes = async (region: Region, pageParam?: string): Promise<CafeListResponse> => {
+export interface CafeRegion {
+  code: string;
+  displayName: string;
+}
+
+export const getCafes = async (
+  region: CafeRegion,
+  pageParam?: string
+): Promise<CafeListResponse> => {
   const params = new URLSearchParams();
 
-  if (region && region !== REGIONS.전체) params.append('area', region);
+  if (region.code) params.append('area', region.code);
   if (pageParam) params.append('lastCafeId', pageParam);
 
   const query = params.toString() ? `?${params.toString()}` : '';
@@ -52,6 +59,14 @@ export const getCafeRecommendation = async ({
   );
 
   return data.data;
+};
+
+const REGION_전체 = { displayName: '전체', code: '' };
+
+export const getCafeRegions = async () => {
+  const data = await get<{ data: { areas: CafeRegion[] } }>('/cafes/areas');
+
+  return [REGION_전체, ...data.data.areas];
 };
 
 const BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
