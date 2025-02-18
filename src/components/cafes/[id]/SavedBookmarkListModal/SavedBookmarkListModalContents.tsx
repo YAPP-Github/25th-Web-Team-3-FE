@@ -1,6 +1,6 @@
 import { ListName } from '@/app/(withNav)/bookmarks/page';
 import CheckedIcon from '@/assets/Icon/checkedBox.svg';
-import BookmarkBasicImage from '@/assets/Icon/bookmarkBasicImage.svg';
+import BookmarkBasicImageSmall from '@/assets/Icon/bookmarkBasicImageSmall.svg';
 import UnCheckedIcon from '@/assets/Icon/unCheckedBox.svg';
 import AddListModal from '@/components/bookmarks/AddListModal';
 import PopUpButton from '@/components/common/PopUpButton';
@@ -87,7 +87,7 @@ export default function SavedBookmarkListModalContents({
                       height={75}
                     />
                   ) : (
-                    <BookmarkBasicImage width={75} height={75} alt="기본 리스트 이미지" />
+                    <BookmarkBasicImageSmall width={75} height={75} alt="기본 리스트 이미지" />
                   )}
                 </div>
 

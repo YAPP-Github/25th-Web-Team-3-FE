@@ -6,7 +6,8 @@ export const FooterBox = style({
   color: color.grayScale.gray400,
   display:'flex',
   flexDirection:'column',
-  gap:'0.6rem'
+  gap:'0.6rem',
+  padding:"2.4rem 2rem 3.2rem 2rem"
 });
 export const updateDate = style({ ...button2 });
 export const updateText = style({...caption})
