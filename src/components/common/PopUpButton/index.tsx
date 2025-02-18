@@ -6,7 +6,7 @@ interface PopUpButton {
   title: string;
   color?: PopUpButtonColor;
   opacity?: PopUpButtonOpacity;
-  onClick: (...args: any[]) => void;
+  onClick: (...args: string[]) => void;
 }
 
 export default function PopUpButton({

@@ -1,15 +1,15 @@
 import { useCheckedItems } from '@/components/cafes/[id]/BookMarkButton/hooks/useCheckedItems';
 
-import CheckBox from '../../CheckBox';
+import { Cafe } from '@/components/bookmarks/BookmarkList/hooks/useBookmarkList';
 import Image from 'next/image';
+import CheckBox from '../../CheckBox';
 import {
   listItem,
   listItemDivider,
   listItemLocation,
   listItemName,
-  listItemTextBox,
+  listItemTextBox
 } from './SavedBookmarkItem.css';
-import { Cafe } from '@/components/bookmarks/BookmarkList/hooks/useBookmarkList';
 export default function SavedBookmarkItem({
   cafe,
   isEdit,
@@ -34,7 +34,13 @@ export default function SavedBookmarkItem({
     <div key={cafe.id}>
       <li className={listItem}>
         {isEdit && (
-          <CheckBox isEdit={isEdit} checked={selectedIds.includes(cafe.id)} onCheck={handleCheck} />
+          <div>
+            <CheckBox
+              isEdit={isEdit}
+              checked={selectedIds.includes(cafe.id)}
+              onCheck={handleCheck}
+            />
+          </div>
         )}
         <Image src={`${cafe?.mainImageUrl[0]}`} alt={cafe.name} width={75} height={75} />
         <div className={listItemTextBox}>

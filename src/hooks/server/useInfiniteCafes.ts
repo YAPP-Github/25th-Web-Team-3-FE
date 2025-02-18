@@ -1,16 +1,15 @@
-import { type CafeListResponse, getCafes } from '@/apis/cafe';
-import type { Region } from '@/types';
+import { type CafeListResponse, CafeRegion, getCafes } from '@/apis/cafe';
 import { DefaultError, InfiniteData, useInfiniteQuery } from '@tanstack/react-query';
 
-export const useInfiniteCafes = (region: Region) => {
+export const useInfiniteCafes = (region: CafeRegion) => {
   const queryResult = useInfiniteQuery<
     CafeListResponse,
     DefaultError,
     InfiniteData<CafeListResponse>,
-    ['cafes', Region],
+    ['cafes', string],
     string | undefined
   >({
-    queryKey: ['cafes', region],
+    queryKey: ['cafes', region.displayName],
     queryFn: ({ pageParam }) => getCafes(region, pageParam),
     getNextPageParam: getLastCafeId,
     initialPageParam: undefined,

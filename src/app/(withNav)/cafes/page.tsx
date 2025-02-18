@@ -1,46 +1,8 @@
-'use client';
+import { getCafeRegions } from '@/apis/cafe';
+import CafesPage from '@/components/cafes/CafesPage';
 
-import { useState } from 'react';
-import CafeList from '@/components/cafes/CafeList';
-import type { Region } from '@/types';
-import RegionSelectModal from '@/components/cafes/RegionSelectModal';
-import RegionSelectButtons from '@/components/cafes/RegionSelectButtons';
-import { REGIONS } from '@/constants/region';
-import { useInfiniteCafes } from '@/hooks/server/useInfiniteCafes';
-import { IntersectionDetector } from '@/components/common/IntersectionDetector';
-import { pageContainer } from '@/components/cafes/cafes.css';
-import { useRestoreScroll } from '@/hooks/useRestoreScroll';
+export default async function Page() {
+  const regions = await getCafeRegions();
 
-export default function Page() {
-  useRestoreScroll('cafes');
-
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [region, setRegion] = useState<Region>(REGIONS.전체);
-  const { fetchNextPage, data, hasNextPage } = useInfiniteCafes(region);
-
-  const resetRegion = () => {
-    setRegion(REGIONS.전체);
-  };
-
-  const openModal = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-
-  return (
-    <div className={pageContainer}>
-      <RegionSelectButtons region={region} resetRegion={resetRegion} openModal={openModal} />
-      <CafeList cafeList={data} />
-      <IntersectionDetector onIntersected={fetchNextPage} isOff={!hasNextPage} />
-      <RegionSelectModal
-        isOpen={isModalOpen}
-        region={region}
-        setRegion={setRegion}
-        onClose={closeModal}
-      />
-    </div>
-  );
+  return <CafesPage availableRegions={regions} />;
 }

@@ -3,7 +3,7 @@ import AddListButton from '@/components/bookmarks/AddListButton';
 import AddListModal from '@/components/bookmarks/AddListModal';
 import BookmarkList from '@/components/bookmarks/BookmarkList';
 import { useBookmarkList } from '@/components/bookmarks/BookmarkList/hooks/useBookmarkList';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { container, editButton, header, title } from './page.css';
 
 export type ListName = string;

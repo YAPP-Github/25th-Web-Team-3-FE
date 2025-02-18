@@ -13,7 +13,7 @@ export const listItem = style({
   display: 'flex',
   gap: '1.2rem',
   alignItems: 'center',
-  zIndex: '-1',
+  width:'100%'
 });
 export const listItemTextBox = style({
   padding: '1.2rem 0',

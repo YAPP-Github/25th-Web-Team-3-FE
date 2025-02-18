@@ -1,10 +1,9 @@
-import { REGIONS } from '@/constants/region';
-import type { Region } from '@/types';
 import SelectButton from '../common/SelectButton';
 import { selectButtonsContainer } from './cafes.css';
+import { CafeRegion } from '@/apis/cafe';
 
 interface RegionSelectButtonsProps {
-  region: Region;
+  region: CafeRegion;
   resetRegion: () => void;
   openModal: () => void;
 }
@@ -14,16 +13,16 @@ export default function RegionSelectButtons({
   resetRegion,
   openModal,
 }: RegionSelectButtonsProps) {
-  const is전체Selected = region === REGIONS.전체;
+  const is전체Selected = region.code === '';
   const isRegionSelected = !is전체Selected;
 
   return (
     <div className={selectButtonsContainer}>
       <SelectButton isSelected={is전체Selected} onClick={resetRegion}>
-        {REGIONS.전체}
+        전체
       </SelectButton>
       <SelectButton isSelected={isRegionSelected} hasIcon onClick={openModal}>
-        {isRegionSelected ? region : '지역별'}
+        {isRegionSelected ? region.displayName : '지역별'}
       </SelectButton>
     </div>
   );

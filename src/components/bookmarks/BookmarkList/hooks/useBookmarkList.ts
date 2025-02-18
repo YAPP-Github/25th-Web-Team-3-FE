@@ -14,17 +14,22 @@ export interface BookmarkListType {
 }
 
 const getInitialBookmarkList = (): BookmarkListType[] => {
-  const savedBookmarks = localStorage.getItem('bookmarkList');
-  if (savedBookmarks) {
-    return JSON.parse(savedBookmarks);
-  }
-  return [
+  const defaultList = [
     {
       id: 'bookmark-1',
       listName: '기본 폴더',
     },
   ];
+  if (typeof window !== 'undefined') {
+    const savedBookmarks = localStorage.getItem('bookmarkList');
+    if (savedBookmarks) {
+      return JSON.parse(savedBookmarks);
+    }
+  }
+  
+  return defaultList;
 };
+
 
 export const useBookmarkList = () => {
   const [bookmarkList, setBookmarkList] = useState<BookmarkListType[]>(getInitialBookmarkList);

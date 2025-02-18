@@ -60,7 +60,7 @@ export const cafeListContainer = style({
   padding: '2.4rem 2rem 0 2rem',
   display: 'flex',
   flexDirection: 'column',
-  gap: '2.4rem',
+  gap: '3.2rem',
 });
 
 // FilterButtons
