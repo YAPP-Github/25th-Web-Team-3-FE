@@ -20,40 +20,43 @@ const getInitialBookmarkList = (): BookmarkListType[] => {
       listName: '기본 폴더',
     },
   ];
-  if (typeof window !== 'undefined') {
-    const savedBookmarks = localStorage.getItem('bookmarkList');
-    if (savedBookmarks) {
-      return JSON.parse(savedBookmarks);
-    }
+  if (typeof window === 'undefined') {
+    return [];
   }
-  
+  const savedBookmarks = localStorage.getItem('bookmarkList');
+  if (savedBookmarks) {
+    return JSON.parse(savedBookmarks);
+  }
   return defaultList;
 };
 
-
 export const useBookmarkList = () => {
-  const [bookmarkList, setBookmarkList] = useState<BookmarkListType[]>(getInitialBookmarkList);
+  const [bookmarkList, setBookmarkList] = useState<BookmarkListType[]>([]);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    localStorage.setItem('bookmarkList', JSON.stringify(bookmarkList));
-  }, [bookmarkList]);
+    setIsMounted(true);
+    setBookmarkList(getInitialBookmarkList());
+  }, []);
+
+  useEffect(() => {
+    if (isMounted) {
+      localStorage.setItem('bookmarkList', JSON.stringify(bookmarkList));
+    }
+  }, [bookmarkList, isMounted]);
 
   const addBookmarkList = (listName: string) => {
-    setBookmarkList((prev) => {
-      const updatedList = [
-        ...prev,
-        {
-          id: `bookmark-${Date.now()}`,
-          listName,
-        },
-      ];
-      return updatedList;
-    });
+    setBookmarkList((prev) => [
+      ...prev,
+      {
+        id: `bookmark-${Date.now()}`,
+        listName,
+      },
+    ]);
   };
 
   const deleteBookmarkList = (id: string) => {
-    const updatedList = bookmarkList.filter((item) => item.id !== id);
-    setBookmarkList(updatedList);
+    setBookmarkList((prev) => prev.filter((item) => item.id !== id));
   };
 
   return { bookmarkList, addBookmarkList, deleteBookmarkList, setBookmarkList };
