@@ -26,7 +26,7 @@ export const dot = recipe({
   },
   variants: {
     flavor: {
-      fruity: { backgroundColor: color.flavor.fruity },
+      fruit: { backgroundColor: color.flavor.fruit },
       floral: { backgroundColor: color.flavor.floral },
       sweet: { backgroundColor: color.flavor.sweet },
       spices: { backgroundColor: color.flavor.spices },
@@ -36,5 +36,5 @@ export const dot = recipe({
       nutty: { backgroundColor: color.flavor.nutty },
       other: { backgroundColor: color.flavor.other },
     },
-  },
+  } 
 });

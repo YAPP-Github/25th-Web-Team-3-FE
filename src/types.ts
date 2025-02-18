@@ -22,7 +22,7 @@ export interface Country {
   name: string;
   flagImageUrl: string;
 }
-interface Flavors {
+export interface Flavors {
   name: string;
   category: string;
 }
