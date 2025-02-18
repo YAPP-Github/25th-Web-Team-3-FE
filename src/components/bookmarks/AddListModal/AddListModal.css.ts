@@ -12,14 +12,18 @@ export const contentsInputContainer = style({
 });
 export const addListModalInput = style({
   ...body1,
-  width: '100%',
+  fontSize: '1.6rem', 
+  width: '106.67%', 
   backgroundColor: color.grayScale.gray100,
   color: color.grayScale.gray500,
-
   outline: 'none',
-  padding: '1.2rem 1.6rem 1.2rem 1.2rem ',
-  borderRadius: '0.5rem',
+  padding: '1.28rem 1.6rem 1.28rem 1.28rem',
+  borderRadius: '0.53rem', 
   border: '1px solid',
+  transform: 'scale(0.9375)',
+  transformOrigin: 'left top',
+  marginBottom: '-0.4rem', 
+  marginRight: '-6.67%', 
 });
 
 export const addListCompleteButton = recipe({
@@ -39,7 +43,7 @@ export const addListCompleteButton = recipe({
         backgroundColor: color.grayScale.gray500,
         color: color.grayScale.gray100,
         cursor: 'pointer',
-      }
+      },
     },
   },
 });
