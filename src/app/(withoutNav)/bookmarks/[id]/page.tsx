@@ -20,6 +20,8 @@ export default function Page() {
   const { bookmarkList, setBookmarkList } = useBookmarkList();
 
   const selectedBookmarkList = bookmarkList.find((folder) => folder.id === listId);
+  
+  const hasCafes = selectedBookmarkList?.cafes && selectedBookmarkList.cafes.length > 0;
 
   const handleSelectItem = (id: string) => {
     setSelectedIds((prev) =>
@@ -78,9 +80,11 @@ export default function Page() {
           <ChervonIcon onClick={() => router.back()} className={backButton} />
           <span className={headerTitle}>{listName}</span>
         </div>
-        <button className={editButton} onClick={handleEdit}>
-          {isEdit ? '전체선택' : '편집'}
-        </button>
+        {hasCafes && (
+          <button className={editButton} onClick={handleEdit}>
+            {isEdit ? '전체선택' : '편집'}
+          </button>
+        )}
       </header>
       <main>
         {selectedBookmarkList && (

@@ -1,17 +1,23 @@
 import { popUpButton } from './PopUpButton.css';
 
 type PopUpButtonColor = 'white' | 'black';
-
+type PopUpButtonOpacity = 'regular' | 'light';
 interface PopUpButton {
   title: string;
   color?: PopUpButtonColor;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  opacity?: PopUpButtonOpacity;
   onClick: (...args: any[]) => void;
 }
 
-export default function PopUpButton({ title, color = 'white', onClick }: PopUpButton) {
+export default function PopUpButton({
+  title,
+  color = 'white',
+  opacity = 'regular',
+  onClick,
+}: PopUpButton) {
+  const isDisabled = opacity === 'light';
   return (
-    <button className={popUpButton({ color: color })} onClick={() => onClick()}>
+    <button disabled={isDisabled} className={popUpButton({ color: color, opacity: opacity })} onClick={() => onClick()}>
       {title}
     </button>
   );

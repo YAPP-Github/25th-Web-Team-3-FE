@@ -23,5 +23,15 @@ export const popUpButton = recipe({
         color: color.grayScale.gray500,
       },
     },
+    opacity: {
+      regular: {
+        opacity: '100%',
+        cursor: 'pointer',
+      },
+      light: {
+        opacity: '10%',
+        cursor: 'not-allowed',
+      },
+    },
   },
 });
