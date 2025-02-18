@@ -1,6 +1,6 @@
 import { ListName } from '@/app/(withNav)/bookmarks/page';
 import CheckedIcon from '@/assets/Icon/checkedBox.svg';
-import DefaultListImage from '@/assets/Icon/list.svg';
+import BookmarkBasicImage from '@/assets/Icon/bookmarkBasicImage.svg';
 import UnCheckedIcon from '@/assets/Icon/unCheckedBox.svg';
 import AddListModal from '@/components/bookmarks/AddListModal';
 import PopUpButton from '@/components/common/PopUpButton';
@@ -12,6 +12,8 @@ import {
   savedBookmarkListBox,
   savedBookmarkListContainer,
   savedBookmarkListContents,
+  savedBookmarkListImage,
+  savedBookmarkListImageBox,
   savedBookmarkListNumber,
   savedBookmarkListTextBox,
   savedBookmarkListTitle,
@@ -58,7 +60,7 @@ export default function SavedBookmarkListModalContents({
   const handleCheck = (id: string) => () => {
     onCheck(id);
   };
-
+  const isAllUnchecked = Object.values(checkedItems).every((value) => value === false);
   return (
     <div className={savedBookmarkModalContainer}>
       <header className={savedBookmarkModalHeader}>
@@ -71,17 +73,23 @@ export default function SavedBookmarkListModalContents({
         {savedBookmarkList.map((bookmark) => {
           const cafeCount = bookmark.cafes?.length || 0;
           const lastCafeImage = bookmark.cafes?.at(-1)?.mainImageUrl[0];
-
           const isChecked = checkedItems[bookmark.id];
-
           return (
             <li className={savedBookmarkListBox} key={bookmark.id}>
               <div className={savedBookmarkListContents}>
-                {lastCafeImage ? (
-                  <Image src={lastCafeImage} alt={`${bookmark.listName}`} width={75} height={75} />
-                ) : (
-                  <DefaultListImage alt="기본 리스트 이미지" />
-                )}
+                <div className={savedBookmarkListImageBox}>
+                  {lastCafeImage ? (
+                    <Image
+                      className={savedBookmarkListImage}
+                      src={lastCafeImage}
+                      alt={`${bookmark.listName}`}
+                      width={75}
+                      height={75}
+                    />
+                  ) : (
+                    <BookmarkBasicImage width={75} height={75} alt="기본 리스트 이미지" />
+                  )}
+                </div>
 
                 <div className={savedBookmarkListTextBox}>
                   <div className={savedBookmarkListTitle}>{bookmark.listName}</div>
@@ -98,7 +106,13 @@ export default function SavedBookmarkListModalContents({
           );
         })}
       </ul>
-      <PopUpButton title="저장" onClick={onSave} color="black" />
+
+      {isAllUnchecked ? (
+        <PopUpButton title="저장" onClick={onSave} color="black" opacity="light" />
+      ) : (
+        <PopUpButton title="저장" onClick={onSave} color="black" />
+      )}
+
       <AddListModal
         isOpen={isAddListModal}
         onClose={closeAddListModal}

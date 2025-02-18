@@ -1,5 +1,3 @@
-
-
 import { ROUTE_PATH } from '@/constants/routePath';
 import { nonListButton, nonListContents, nonListText, nonListTitle } from './EmptyListMessage.css';
 import { useRouter } from 'next/navigation';

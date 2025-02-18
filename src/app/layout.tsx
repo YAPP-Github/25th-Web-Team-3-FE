@@ -12,7 +12,7 @@ const pretendard = localFont({
 });
 
 const gmarketSansTTF = localFont({
-  src: '../fonts/GmarketSansTTF/GmarketSansTTFMedium.ttf',
+  src: '../fonts/GmarketSansTTF/GmarketSansTTFBold.ttf',
   display: 'swap',
 });
 

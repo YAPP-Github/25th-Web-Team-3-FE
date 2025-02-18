@@ -23,7 +23,7 @@ export default function SavedBookmarkListModal({
 }: SavedBookmarkListModalProps) {
   return (
     <Modal
-      title="새 리스트 추가"
+      title="북마크 저장"
       isOpen={isSavedBookmarkModalOpen}
       onClose={onCloseeSavedBookmarkModal}
       position="bottom"

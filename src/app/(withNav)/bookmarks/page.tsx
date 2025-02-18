@@ -3,7 +3,7 @@ import AddListButton from '@/components/bookmarks/AddListButton';
 import AddListModal from '@/components/bookmarks/AddListModal';
 import BookmarkList from '@/components/bookmarks/BookmarkList';
 import { useBookmarkList } from '@/components/bookmarks/BookmarkList/hooks/useBookmarkList';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { container, editButton, header, title } from './page.css';
 
 export type ListName = string;
@@ -14,8 +14,7 @@ export default function Page() {
   const [isEidt, setIsEdit] = useState<boolean>(false);
   const [isEditModalOpen, setIsEditModalOpen] = useState<boolean>(false);
   const { bookmarkList, addBookmarkList, deleteBookmarkList } = useBookmarkList();
-  
-  
+
   const openModal = () => {
     setIsModalOpen(true);
   };
@@ -40,7 +39,6 @@ export default function Page() {
     addBookmarkList(listName);
     closeModal();
   };
- 
 
   return (
     <div className={container}>

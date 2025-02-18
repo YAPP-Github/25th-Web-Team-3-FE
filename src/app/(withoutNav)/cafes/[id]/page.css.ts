@@ -1,5 +1,5 @@
 import { color } from '@/styles/color.css';
-import { body1, body1Bold, etc, fontVars, title2, title3 } from '@/styles/typo.css';
+import { body1, body1Bold, etc, fontVars, title3 } from '@/styles/typo.css';
 import { ComplexStyleRule, style } from '@vanilla-extract/css';
 
 export const cafesIdLayout = style({
@@ -13,18 +13,18 @@ export const header = style({
   '& > *': {
     padding: '1.2rem',
   },
-}as ComplexStyleRule);
+} as ComplexStyleRule);
 
 export const title = style({
   backgroundColor: color.grayScale.gray100,
   padding: '0 2rem',
   display: 'flex',
   justifyContent: 'space-between',
-  gap:'0.8rem',
+  gap: '0.8rem',
   alignItems: 'center',
   paddingBottom: '1.6rem',
   '& h1': {
-    ...title2,
+    ...title3,
   },
   '& div > div': {
     ...body1,
@@ -71,7 +71,7 @@ export const recoCoffeeBeanBox = style({
     ...body1Bold,
   },
 } as ComplexStyleRule);
-export const beanCardTitle = style({ ...etc,fontWeight:fontVars.fontWeight.bold });
+export const beanCardTitle = style({ ...etc,whiteSpace:'nowrap' });
 
 export const divider = style({
   borderTop: 'dashed 0.1rem',

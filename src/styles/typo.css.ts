@@ -21,7 +21,7 @@ export const fontVars = {
     caption: '1.3rem',
     button1: '1.6rem',
     button2: '1.4rem',
-    etc: '3.2rem',
+    etc: '2.6rem',
   },
   lineHeight: {
     title1: '4.0rem',
@@ -134,7 +134,7 @@ export const button2 = {
 //Bean Card
 export const etc = {
   fontFamily: fontVars.fontFamily.gmarketSansTTF,
-  fontWeight: fontVars.fontWeight.regular,
+  fontWeight: fontVars.fontWeight.bold,
   fontSize: fontVars.fontSize.etc,
   lineHeight: fontVars.lineHeight.etc,
   letterSpacing: fontVars.letterSpacing.normal,

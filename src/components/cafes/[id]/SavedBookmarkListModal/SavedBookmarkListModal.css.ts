@@ -26,20 +26,26 @@ export const addListButton = style({
 
 export const savedBookmarkListContainer = style({
   display: 'flex',
-  flexDirection:'column',
-
- 
+  flexDirection: 'column',
 });
-export const savedBookmarkListBox= style({
-  display:'flex',
+export const savedBookmarkListBox = style({
+  display: 'flex',
   justifyContent: 'space-between',
   marginBottom: '1.6rem',
   gap: '1.2rem',
   alignItems: 'center',
 });
 export const savedBookmarkListContents = style({
-  display:'flex',
-  gap:'1.2rem'
+  display: 'flex',
+  gap: '1.2rem',
+});
+export const savedBookmarkListImageBox = style({
+  width: '7.5rem',
+  height: '7.5rem',
+});
+export const savedBookmarkListImage = style({
+  width: '100%',
+  height: '100%',
 });
 export const savedBookmarkListTextBox = style({
   padding: '1.2rem 0',
@@ -52,5 +58,5 @@ export const savedBookmarkListNumber = style({
   color: color.grayScale.gray400,
 });
 export const checkedIcon = style({
-  backgroundColor:'white'
-})
+  backgroundColor: 'white',
+});

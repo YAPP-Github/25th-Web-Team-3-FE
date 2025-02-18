@@ -70,7 +70,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
           <h2 className={subTitle}>대표 원두</h2>
           <article className={recoCoffeeBeanBox}>
             <div>
-              <div className={beanCardTitle}>{coffeeBean.engName}</div>
+              <div className={beanCardTitle}>{coffeeBean.engName.toUpperCase()}</div>
               <input
                 type="checkbox"
                 id="toggle"

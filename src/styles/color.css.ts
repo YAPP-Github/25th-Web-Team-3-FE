@@ -8,7 +8,7 @@ export const color = {
     gray100: '#FFFFFF',
   },
   flavor: {
-    fruity: '#DB1C24',
+    fruit: '#DB1C24',
     floral: '#DB0D69',
     sweet: '#E45833',
     nutty: '#A97B64', // 코코아 동일

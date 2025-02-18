@@ -1,7 +1,16 @@
 import HashTag from '@/components/common/HashTag';
 import { dot, flavorItem, flavorList } from './FlavorItem.css';
 
-type FlavorCategory = 'green' | 'fruit' | 'floral' | 'sweet' | 'spices' | 'roasted' | 'sour' | 'nutty' | 'other';
+type FlavorCategory =
+  | 'green'
+  | 'fruit'
+  | 'floral'
+  | 'sweet'
+  | 'spices'
+  | 'roasted'
+  | 'sour'
+  | 'nutty'
+  | 'other';
 interface Flavors {
   name: string;
   category: string;
@@ -14,7 +23,10 @@ export default function FlavorList({ flavors }: FlavorListProps) {
   return (
     <ul className={flavorList}>
       {flavors.map((flavor) => {
-        const category= flavor.category.toLowerCase() as FlavorCategory;
+        //api 응답 값 오타 수정 후 코드 수정 예정입니다!
+        const category = flavor.category
+          ? (flavor.category.toLowerCase() as FlavorCategory)
+          : ('other' as FlavorCategory);
         return (
           <HashTag key={`${flavor.name}-${flavor.category}`}>
             <li className={flavorItem}>

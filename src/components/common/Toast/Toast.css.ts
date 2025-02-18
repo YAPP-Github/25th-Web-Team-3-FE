@@ -1,6 +1,6 @@
 import { color } from '@/styles/color.css';
 import { body1 } from '@/styles/typo.css';
-import { style, keyframes } from '@vanilla-extract/css';
+import { keyframes, style } from '@vanilla-extract/css';
 
 const slideUp = keyframes({
   from: {
@@ -21,6 +21,7 @@ export const toastBox = style({
   left: '50%',
   padding: '1.2rem 2rem',
   borderRadius: '0.4rem',
+  whiteSpace:'nowrap',
   transform: 'translate(-50%, -3.2rem)',
   backgroundColor: color.grayScale.gray400,
   color: color.grayScale.gray100,

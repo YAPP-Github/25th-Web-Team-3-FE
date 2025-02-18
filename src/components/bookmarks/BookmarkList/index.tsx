@@ -84,7 +84,9 @@ export default function BookmarkList({
     <ul className={container}>
       {bookmarkList.map((item) =>
         isEdit ? (
-          <BookmarkItem key={item.id} item={item} isEdit={isEdit} onOpen={handleOpen} />
+          <div className={bookmarkLink}>
+            <BookmarkItem key={item.id} item={item} isEdit={isEdit} onOpen={handleOpen} />
+          </div>
         ) : (
           <Link
             key={item.id}

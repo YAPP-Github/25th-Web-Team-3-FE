@@ -1,7 +1,7 @@
 import HashTag from '@/components/common/HashTag';
 import { Country } from '@/types';
 import Image from 'next/image';
-import { countryImage, orginItem, originList } from './OriginList.css';
+import { countryImage, orginItem, originItemText, originList } from './OriginList.css';
 
 interface CountryOfOriginProps {
   countryOfOrigin: Country[];
@@ -20,7 +20,7 @@ export default async function OriginList({ countryOfOrigin }: CountryOfOriginPro
                 width={23}
                 height={16}
               />
-              <div>{country.name}</div>
+              <div className={originItemText}>{country.name}</div>
             </li>
           </HashTag>
         );

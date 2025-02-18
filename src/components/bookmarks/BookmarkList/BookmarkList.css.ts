@@ -1,5 +1,5 @@
 import { color } from '@/styles/color.css';
-import { body1Bold } from '@/styles/typo.css';
+import { body1Bold, body2 } from '@/styles/typo.css';
 import { ComplexStyleRule, style } from '@vanilla-extract/css';
 
 export const container = style({
@@ -9,7 +9,6 @@ export const container = style({
   backgroundColor: color.grayScale.gray500,
   minHeight: '100svh',
   gap: '0.8rem',
-  padding: '0.8rem',
 });
 
 export const bookmarkLink = style({
@@ -85,5 +84,5 @@ export const listItemCounts = style({
 });
 
 export const listItemCountsNumber = style({
-  fontWeight: 'bold',
+  ...body2
 });
