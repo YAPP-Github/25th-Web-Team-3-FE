@@ -41,21 +41,23 @@ export const closeIcon = style({
 
 export const modalContainer = recipe({
   base: {
-    maxWidth: '50rem',
-    width: '100%',
     background: '#ffffff',
     position: 'fixed',
+    maxWidth: '50rem',
   },
 
   variants: {
     position: {
       center: {
+        width: 'calc(100% - 8%)',
+        maxWidth: 'calc(50rem - 4rem)',
         left: '50%',
         top: '50%',
         transform: 'translate(-50%, -50%)',
         borderRadius: '0.4rem',
       },
       bottom: {
+        width: '100%',
         bottom: 0,
         left: '50%',
         transform: 'translateX(-50%)',
