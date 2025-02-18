@@ -4,7 +4,7 @@ export interface Cafe {
   id: string;
   name: string;
   location: string;
-  mainImageUrl:  string[];
+  mainImageUrl: string[];
 }
 
 export interface BookmarkListType {
@@ -13,15 +13,26 @@ export interface BookmarkListType {
   cafes?: Cafe[];
 }
 
+const getInitialBookmarkList = (): BookmarkListType[] => {
+  const savedBookmarks = localStorage.getItem('bookmarkList');
+  if (savedBookmarks) {
+    return JSON.parse(savedBookmarks);
+  }
+  return [
+    {
+      id: 'bookmark-1',
+      listName: '기본 폴더',
+    },
+  ];
+};
+
 export const useBookmarkList = () => {
-  const [bookmarkList, setBookmarkList] = useState<BookmarkListType[]>([]);
+  const [bookmarkList, setBookmarkList] = useState<BookmarkListType[]>(getInitialBookmarkList);
 
   useEffect(() => {
-    const savedBookmarks = localStorage.getItem('bookmarkList');
-    if (savedBookmarks) {
-      setBookmarkList(JSON.parse(savedBookmarks));
-    }
-  }, []);
+    localStorage.setItem('bookmarkList', JSON.stringify(bookmarkList));
+  }, [bookmarkList]);
+
   const addBookmarkList = (listName: string) => {
     setBookmarkList((prev) => {
       const updatedList = [
@@ -31,8 +42,6 @@ export const useBookmarkList = () => {
           listName,
         },
       ];
-      localStorage.setItem('bookmarkList', JSON.stringify(updatedList));
-
       return updatedList;
     });
   };
@@ -40,7 +49,6 @@ export const useBookmarkList = () => {
   const deleteBookmarkList = (id: string) => {
     const updatedList = bookmarkList.filter((item) => item.id !== id);
     setBookmarkList(updatedList);
-    localStorage.setItem('bookmarkList', JSON.stringify(updatedList));
   };
 
   return { bookmarkList, addBookmarkList, deleteBookmarkList, setBookmarkList };
