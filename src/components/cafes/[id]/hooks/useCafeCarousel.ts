@@ -1,8 +1,13 @@
 'use client';
-import useEmblaCarousel from 'embla-carousel-react';
+import useEmblaCarousel, { EmblaViewportRefType } from 'embla-carousel-react';
 import { useEffect, useState } from 'react';
 
-export const useCafeCarousel = () => {
+interface UseCafeCarouselReturn {
+  carouselRef: EmblaViewportRefType;
+  currentIndex: number;
+}
+
+export const useCafeCarousel = (): UseCafeCarouselReturn => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [carouselRef, carouselApi] = useEmblaCarousel();
   useEffect(() => {
