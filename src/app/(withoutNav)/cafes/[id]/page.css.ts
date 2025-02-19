@@ -4,6 +4,7 @@ import { ComplexStyleRule, style } from '@vanilla-extract/css';
 
 export const cafesIdLayout = style({
   backgroundColor: color.grayScale.gray500,
+  
 });
 
 export const header = style({
@@ -71,14 +72,14 @@ export const recoCoffeeBeanBox = style({
     ...body1Bold,
   },
 } as ComplexStyleRule);
-export const beanCardTitle = style({ ...etc,whiteSpace:'nowrap' });
+export const beanCardTitle = style({ ...etc, whiteSpace: 'nowrap' });
 
 export const divider = style({
   borderTop: 'dashed 0.1rem',
 });
 
 export const cafesDetailMain = style({
-  padding: '2.4rem 2rem',
+  
   color: color.grayScale.gray100,
   display: 'flex',
   flexDirection: 'column',
@@ -122,4 +123,15 @@ export const toggleContent = style({
       transition: 'transform 1s ease-in-out',
     },
   },
+});
+
+export const pickReasonSection = style({
+  padding: '2.4rem 2rem',
+})
+export const coffeeBeanSection = style({
+  padding: '2.4rem 2rem',
+})
+
+export const menuListSection = style({
+  padding:'2.4rem 0rem 2.4rem 2rem'
 });

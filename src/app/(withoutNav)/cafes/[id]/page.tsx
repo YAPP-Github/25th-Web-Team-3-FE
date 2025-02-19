@@ -15,10 +15,13 @@ import {
   beanCardTitle,
   cafesDetailMain,
   cafesIdLayout,
+  coffeeBeanSection,
   divider,
   header,
+  menuListSection,
   pickReason,
   pickReasonBox,
+  pickReasonSection,
   recoCoffeeBeanBox,
   subTitle,
   title,
@@ -58,7 +61,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
         className={titleImg}
       />
       <main className={cafesDetailMain}>
-        <section>
+        <section className={pickReasonSection}>
           <h2 className={subTitle}>선정 이유</h2>
           <article className={pickReasonBox}>
             <div className={pickReason}>{cafe.reasonForSelection}</div>
@@ -66,7 +69,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
             <IconWithHashTag tags={tags} />
           </article>
         </section>
-        <section>
+        <section className={coffeeBeanSection}>
           <h2 className={subTitle}>대표 원두</h2>
           <article className={recoCoffeeBeanBox}>
             <div>
@@ -103,12 +106,7 @@ export default async function Page({ params }: { params: Promise<{ id: string }>
             </div>
           </article>
         </section>
-        <section>
-          <h2 className={subTitle}>대표 메뉴</h2>
-          <div className={scrollContainer}>
-            <MenuList menus={menus} />
-          </div>
-        </section>
+        <MenuList menus={menus} />
       </main>
       <Footer updatedDate={updatedAt} />
     </div>

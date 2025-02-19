@@ -14,6 +14,8 @@ export const scrollContainer = style({
       display: 'none',
     },
   },
+
+
 });
 
 export const menuItemList = style({
@@ -21,7 +23,6 @@ export const menuItemList = style({
   gap: '1.6rem',
   width: '100%',
   padding: '0',
-
 });
 
 export const menuItemBox = style({
@@ -30,9 +31,10 @@ export const menuItemBox = style({
   padding: '1.6rem',
   width: '27.6rem',
   flexShrink: 0,
-  display:'flex',
-  flexDirection:'column',
-  justifyContent:'space-between',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'space-between',
+  boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
 
 });
 export const menuItemTitleBox = style({
