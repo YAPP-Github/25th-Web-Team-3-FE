@@ -1,21 +1,21 @@
 import { color } from '@/styles/color.css';
 import { style } from '@vanilla-extract/css';
 
-export const MainImageCarouselContainer = style({
+export const mainImageCarouselContainer = style({
   width: '100%',
   overflow: 'hidden',
 });
 
-export const MainImageCarousellList = style({
+export const mainImageCarousellList = style({
   display: 'flex',
 });
 
-export const MainImageCarouselListItem = style({
+export const mainImageCarouselListItem = style({
   flex: '0 0 100%',
   minWidth: 0,
   position: 'relative',
 });
-export const MainImageCarouselCounts = style({
+export const mainImageCarouselCounts = style({
   backgroundColor: color.grayScale.gray500,
   opacity: '80%',
   position: 'absolute',
@@ -23,10 +23,10 @@ export const MainImageCarouselCounts = style({
   bottom: '1.6rem',
   padding:'0.4rem 0.8rem',
 });
-export const MainImageCarouselCurrentNumber = style({
+export const mainImageCarouselCurrentNumber = style({
   color: color.grayScale.gray100,
 });
-export const MainImageCarouselAllNumber = style({
+export const mainImageCarouselAllNumber = style({
   color: color.grayScale.gray400,
 });
 
