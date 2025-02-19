@@ -69,7 +69,7 @@ export const recoCoffeeBeanBox = style({
     ...body1Bold,
   },
 } as ComplexStyleRule);
-export const beanCardTitle = style({ ...etc, whiteSpace: 'nowrap' });
+export const beanCardTitle = style({ ...etc,});
 
 export const divider = style({
   borderTop: 'dashed 0.1rem',

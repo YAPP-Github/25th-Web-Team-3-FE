@@ -11,6 +11,7 @@ export const flavorList = style({
   marginTop: '0.8rem',
 });
 export const flavorItem = style({
+  ...body1,
   display: 'flex',
   alignItems: 'center',
   whiteSpace:'nowrap',

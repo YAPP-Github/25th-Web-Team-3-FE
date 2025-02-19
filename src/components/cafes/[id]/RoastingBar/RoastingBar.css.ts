@@ -51,6 +51,7 @@ export const roastingStatus = recipe({
     display: 'flex',
     justifyContent: 'space-between',
     color: color.grayScale.gray300,
+    marginTop:'0.4rem'
   },
   variants: {
     roastingLevel: {
