@@ -36,10 +36,7 @@ export const title = style({
   },
 } as ComplexStyleRule);
 
-export const titleImg = style({
-  width: '100%',
-  height: 'auto',
-});
+
 
 export const subTitle = style({
   ...title3,

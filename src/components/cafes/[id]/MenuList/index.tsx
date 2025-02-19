@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import Image from 'next/image';
 import {
   menuItemBox,
@@ -10,7 +10,7 @@ import {
 } from './MenuList.css';
 import { divider, menuListSection, subTitle } from '@/app/(withoutNav)/cafes/[id]/page.css';
 import { Menu } from '@/types';
-import { useMenuCarousel } from './hooks/useMenuCarousel';
+import { useCafeCarousel } from '../hooks/useCafeCarousel';
 
 
 interface MenuListProps {
@@ -18,7 +18,9 @@ interface MenuListProps {
 }
 
 export default function MenuList({ menus }: MenuListProps) {
-  const { carouselRef } = useMenuCarousel();
+
+  const { carouselRef } = useCafeCarousel();
+
   return (
     <section className={menuListSection}>
       <h2 className={subTitle}>대표 메뉴</h2>
