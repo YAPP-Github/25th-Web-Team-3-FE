@@ -39,26 +39,10 @@ export default function Page() {
     addBookmarkList(listName);
     closeModal();
   };
-
-  const resetBookmark = () => {
-    Object.keys(localStorage).forEach((key) => {
-      if (key.startsWith('bookmark')) {
-        localStorage.removeItem(key);
-        window.location.reload()
-      }
-    });
-  }
-
   return (
     <div className={container}>
       <header className={header}>
         <h1 className={title}>북마크</h1>
-        <button
-          className={editButton}
-          onClick={resetBookmark}
-        >
-          초기화
-        </button>
         <button
           className={editButton}
           onClick={() => {
