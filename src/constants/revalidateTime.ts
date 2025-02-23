@@ -1,0 +1,1 @@
+export const REVALIDATE_TIME = 60 * 60 * 5 
