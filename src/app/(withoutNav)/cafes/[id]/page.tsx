@@ -1,7 +1,8 @@
+import { getCafes } from '@/apis/cafe';
 import { getCafeDetail } from '@/apis/cafeDetail';
 import ChevronLeft from '@/assets/Icon/Chevron_Left.svg';
 import BackButton from '@/components/cafes/[id]/BackButton';
-import BookMarkButton from '@/components/cafes/[id]/BookMarkButton';
+import BookMarkButtonWrapper from '@/components/cafes/[id]/BookmarkButtonWrapper';
 import FlavorList from '@/components/cafes/[id]/FlavorItem';
 import Footer from '@/components/cafes/[id]/Footer';
 import IconWithHashTag from '@/components/cafes/[id]/IconWithHashTag';
@@ -10,7 +11,7 @@ import MapButton from '@/components/cafes/[id]/MapButton';
 import MenuList from '@/components/cafes/[id]/MenuList';
 import OriginList from '@/components/cafes/[id]/OriginList';
 import { RoastingBar } from '@/components/cafes/[id]/RoastingBar';
-
+import { REVALIDATE_TIME } from '@/constants/revalidateTime';
 import {
   beanCardTitle,
   cafesDetailMain,
@@ -30,17 +31,28 @@ import {
   toggleLabel,
 } from './page.css';
 
-export default async function Page({ params }: { params: Promise<{ id: string }> }) {
-  const detailPageId = (await params).id;
+interface PageId {
+  id: string;
+}
 
-  const data = await getCafeDetail(detailPageId);
+export async function generateStaticParams(): Promise<PageId[]> {
+  const cafesResponse = await getCafes();
+  const { cafes } = cafesResponse;
+  return cafes.map((cafe) => ({
+    id: cafe.cafeId,
+  }));
+}
+
+export default async function Page({ params }: { params: Promise<PageId> }) {
+  const detailPageId = (await params).id;
+  const data = await getCafeDetail(detailPageId, REVALIDATE_TIME);
   const { cafe, coffeeBean, menus, updatedAt, tags } = data;
 
   return (
     <div className={cafesIdLayout}>
       <header className={header}>
         <BackButton />
-        <BookMarkButton cafe={cafe} />
+        <BookMarkButtonWrapper cafe={cafe} />
       </header>
       <div className={title}>
         <div>
