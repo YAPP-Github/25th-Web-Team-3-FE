@@ -13,12 +13,12 @@ export interface CafeRegion {
 }
 
 export const getCafes = async (
-  region: CafeRegion,
+  region?: CafeRegion,
   pageParam?: string
 ): Promise<CafeListResponse> => {
   const params = new URLSearchParams();
 
-  if (region.code) params.append('area', region.code);
+  if (region?.code) params.append('area', region.code);
   if (pageParam) params.append('lastCafeId', pageParam);
 
   const query = params.toString() ? `?${params.toString()}` : '';

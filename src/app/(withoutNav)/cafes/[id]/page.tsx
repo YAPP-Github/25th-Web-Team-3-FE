@@ -1,3 +1,4 @@
+import { getCafes } from '@/apis/cafe';
 import { getCafeDetail } from '@/apis/cafeDetail';
 import ChevronLeft from '@/assets/Icon/Chevron_Left.svg';
 import BackButton from '@/components/cafes/[id]/BackButton';
@@ -10,7 +11,7 @@ import MapButton from '@/components/cafes/[id]/MapButton';
 import MenuList from '@/components/cafes/[id]/MenuList';
 import OriginList from '@/components/cafes/[id]/OriginList';
 import { RoastingBar } from '@/components/cafes/[id]/RoastingBar';
-
+import { CAFE_DETAIL_REVALIDATE_TIME } from '@/constants/revalidateTime';
 import {
   beanCardTitle,
   cafesDetailMain,
@@ -30,10 +31,21 @@ import {
   toggleLabel,
 } from './page.css';
 
-export default async function Page({ params }: { params: Promise<{ id: string }> }) {
-  const detailPageId = (await params).id;
+interface PageId {
+  id: string;
+}
 
-  const data = await getCafeDetail(detailPageId);
+export async function generateStaticParams(): Promise<PageId[]> {
+  const cafesResponse = await getCafes();
+  const { cafes } = cafesResponse;
+  return cafes.map((cafe) => ({
+    id: cafe.cafeId,
+  }));
+}
+
+export default async function Page({ params }: { params: Promise<PageId> }) {
+  const detailPageId = (await params).id;
+  const data = await getCafeDetail(detailPageId, CAFE_DETAIL_REVALIDATE_TIME);
   const { cafe, coffeeBean, menus, updatedAt, tags } = data;
 
   return (

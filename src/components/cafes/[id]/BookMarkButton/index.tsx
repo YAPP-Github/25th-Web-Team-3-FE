@@ -1,23 +1,22 @@
 'use client';
 
 import BookMarkIcon from '@/assets/Icon/Bookmark.svg';
+import { Cafe, useBookmarkList } from '@/components/bookmarks/BookmarkList/hooks/useBookmarkList';
 import Toast from '@/components/common/Toast';
 import { useToast } from '@/components/common/Toast/hooks/useToast';
 import { color } from '@/styles/color.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import SavedBookmarkListModal from '../SavedBookmarkListModal';
 import { bookMarkButton } from './BookMark.css';
-import { Cafe, useBookmarkList } from '@/components/bookmarks/BookmarkList/hooks/useBookmarkList';
 import { CheckedItems, useCheckedItems } from './hooks/useCheckedItems';
-
+import dynamic from 'next/dynamic';
 interface BookmarkButtonProps {
   cafe: Cafe;
 }
-
 export interface LocalstorageBookmarkList {
   id: string;
   listName: string;
-  cafes?: Cafe[] 
+  cafes?: Cafe[];
 }
 
 const isCafeBookmarked = (cafeId: string, bookmarkList: LocalstorageBookmarkList[]): boolean => {
@@ -26,32 +25,22 @@ const isCafeBookmarked = (cafeId: string, bookmarkList: LocalstorageBookmarkList
   );
 };
 
-export default function BookMarkButton({ cafe }: BookmarkButtonProps) {
+function BookMarkButton({ cafe }: BookmarkButtonProps) {
   const [isSavedBookmarkModalOpen, setIsSavedBookmarkModalOpen] = useState<boolean>(false);
 
   const { isToastVisible, toastMessage, showToast } = useToast();
-
   const { bookmarkList, addBookmarkList } = useBookmarkList();
   const { checkedItems, onCheck } = useCheckedItems(cafe.id);
 
   const updateLocalStorage = (bookmarkList: LocalstorageBookmarkList[]) => {
     localStorage.setItem('bookmarkList', JSON.stringify(bookmarkList));
   };
-  useEffect(() => {}, []);
 
   const isCurrentCafeBookMarked = isCafeBookmarked(cafe.id, bookmarkList);
 
-  const openSavedBookmarkModal = () => {
-    setIsSavedBookmarkModalOpen(true);
-  };
-
-  const closeSavedBookmarkModal = () => {
-    setIsSavedBookmarkModalOpen(false);
-  };
-
-  const handleShowToast = () => {
-    showToast('북마크 리스트에 저장 되었어요', 3000);
-  };
+  const openSavedBookmarkModal = () => setIsSavedBookmarkModalOpen(true);
+  const closeSavedBookmarkModal = () => setIsSavedBookmarkModalOpen(false);
+  const handleShowToast = () => showToast('북마크 리스트에 저장 되었어요', 3000);
 
   const addCafeToBookmark = (bookmark: LocalstorageBookmarkList, cafe: Cafe) => {
     bookmark.cafes = bookmark.cafes || [];
@@ -103,3 +92,5 @@ export default function BookMarkButton({ cafe }: BookmarkButtonProps) {
     </div>
   );
 }
+
+export default dynamic(() => Promise.resolve(BookMarkButton), { ssr: false });
