@@ -1,5 +1,5 @@
 import { usePreventScroll } from '@/hooks/usePreventScroll';
-import { useEffect, useRef, useState, type RefObject } from 'react';
+import React, { type RefObject } from 'react';
 
 interface UseModalReturn {
   dialogRef: RefObject<HTMLDialogElement>;
@@ -10,14 +10,14 @@ interface UseModalReturn {
 export const useModal = (isOpen: boolean, onClose: () => void): UseModalReturn => {
   usePreventScroll(isOpen);
 
-  const dialogRef = useRef<HTMLDialogElement>(null);
-  const [targetContainer, setTargetContainer] = useState<HTMLElement>();
+  const dialogRef = React.useRef<HTMLDialogElement>(null);
+  const [targetContainer, setTargetContainer] = React.useState<HTMLElement>();
 
-  useEffect(() => {
+  React.useEffect(() => {
     setTargetContainer(document.getElementById('modal-root') as HTMLElement);
   }, []);
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (isOpen) {
       dialogRef.current?.showModal();
     } else {

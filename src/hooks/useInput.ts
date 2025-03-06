@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useState } from 'react';
+import React from 'react';
 
 interface UseInputReturn {
   handleOnChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
@@ -10,10 +10,10 @@ interface UseInputReturn {
 }
 
 export const useInput = (intialInput: string, maxLength: number): UseInputReturn => {
-  const [input, setInput] = useState<string>(intialInput);
-  const [error, setError] = useState<string>('');
+  const [input, setInput] = React.useState<string>(intialInput);
+  const [error, setError] = React.useState<string>('');
 
-  const handleOnChange = useCallback(
+  const handleOnChange = React.useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
       const { value } = e.target;
       if (value.length > maxLength) {
@@ -26,7 +26,7 @@ export const useInput = (intialInput: string, maxLength: number): UseInputReturn
     [maxLength]
   );
 
-  const resetInput = useCallback(() => {
+  const resetInput = React.useCallback(() => {
     setInput('');
   }, []);
 

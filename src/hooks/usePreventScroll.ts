@@ -1,7 +1,7 @@
-import { useEffect } from 'react';
+import React from 'react';
 
 export const usePreventScroll = (isOn: boolean): void => {
-  useEffect(() => {
+  React.useEffect(() => {
     if (isOn) {
       document.documentElement.style.overflow = 'hidden';
     } else {

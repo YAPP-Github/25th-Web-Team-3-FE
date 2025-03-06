@@ -1,6 +1,6 @@
 'use client';
+import React from 'react';
 import useEmblaCarousel, { EmblaViewportRefType } from 'embla-carousel-react';
-import { useEffect, useState } from 'react';
 
 interface UseCafeCarouselReturn {
   carouselRef: EmblaViewportRefType;
@@ -8,9 +8,9 @@ interface UseCafeCarouselReturn {
 }
 
 export const useCafeCarousel = (): UseCafeCarouselReturn => {
-  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const [currentIndex, setCurrentIndex] = React.useState<number>(0);
   const [carouselRef, carouselApi] = useEmblaCarousel();
-  useEffect(() => {
+  React.useEffect(() => {
     if (carouselApi)
       carouselApi.on('select', () => {
         setCurrentIndex(carouselApi.selectedScrollSnap);

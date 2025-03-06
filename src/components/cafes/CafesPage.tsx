@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import React from 'react';
 import CafeList from '@/components/cafes/CafeList';
 import RegionSelectModal from '@/components/cafes/RegionSelectModal';
 import RegionSelectButtons from '@/components/cafes/RegionSelectButtons';
@@ -17,8 +17,8 @@ interface CafesPageProps {
 export default function CafesPage({ availableRegions }: CafesPageProps) {
   useRestoreScroll('cafes');
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [region, setRegion] = useState<CafeRegion>(availableRegions[0]);
+  const [isModalOpen, setIsModalOpen] = React.useState(false);
+  const [region, setRegion] = React.useState<CafeRegion>(availableRegions[0]);
   const { fetchNextPage, data, hasNextPage } = useInfiniteCafes(region);
 
   const resetRegion = () => {

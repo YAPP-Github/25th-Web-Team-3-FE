@@ -1,9 +1,10 @@
-'use client'
-import { useState } from 'react';
+'use client';
+
+import React from 'react';
 
 export const useToast = () => {
-  const [isToastVisible, setIsToastVisible] = useState<boolean>(false);
-  const [toastMessage, setToastMessage] = useState<string>('');
+  const [isToastVisible, setIsToastVisible] = React.useState<boolean>(false);
+  const [toastMessage, setToastMessage] = React.useState<string>('');
 
   const showToast = (message: string, duration: number) => {
     setToastMessage(message);

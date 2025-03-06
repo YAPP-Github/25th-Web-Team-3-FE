@@ -1,9 +1,9 @@
-import { useEffect, useRef } from 'react';
+import React from 'react';
 
 export const useRestoreScroll = (key: string | number) => {
-  const scrollRef = useRef<number>();
+  const scrollRef = React.useRef<number>();
 
-  useEffect(() => {
+  React.useEffect(() => {
     const traceScroll = (e: Event) => {
       requestAnimationFrame(() => {
         const target = e.target as HTMLElement;
@@ -21,7 +21,7 @@ export const useRestoreScroll = (key: string | number) => {
     };
   }, [key]);
 
-  useEffect(() => {
+  React.useEffect(() => {
     const restoreScrollPosition = () => {
       const savedScroll = sessionStorage.getItem(`scroll-${key}`);
 

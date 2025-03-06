@@ -1,5 +1,5 @@
 import { color } from '@/styles/color.css';
-import { body1, button2 } from '@/styles/typo.css';
+import { body1, button2, fontVars } from '@/styles/typo.css';
 import { style } from '@vanilla-extract/css';
 import { recipe } from '@vanilla-extract/recipes';
 
@@ -55,3 +55,10 @@ export const maxLengthText = style({
   right: '1.6rem',
   color: color.grayScale.gray400,
 });
+
+export const errorMessage = style({
+  color:color.flavor.fruit,
+  fontWeight:fontVars.fontWeight.regular,
+  fontSize:'1.2rem',
+  padding:'0rem 0.8rem',
+})

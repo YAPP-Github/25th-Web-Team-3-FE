@@ -1,9 +1,10 @@
+import React from 'react';
 import BookmarkBasicImage from '@/assets/Icon/bookmarkBasicImage.svg';
 import CloseIcon from '@/assets/Icon/closeIcon.svg';
 import { ROUTE_PATH } from '@/constants/routePath';
+import { BookmarkFolder, useBookmarkStore } from '@/store/store';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
 import {
   bookmarkBasicImage,
   bookmarkLink,
@@ -15,26 +16,26 @@ import {
   subTitle,
 } from '../BookmarkList/BookmarkList.css';
 import EditListModal from '../EditListModal';
-import { BookmarkListType } from './hooks/useBookmarkList';
 
 interface BookmarkListProps {
   isEdit: boolean;
   isEditModalOpen: boolean;
   onOpen: () => void;
   onClose: () => void;
-  onDelete: (id: string) => void;
-  bookmarkList: BookmarkListType[];
 }
 
 interface BookmarkItemProps {
-  item: BookmarkListType;
+  item: BookmarkFolder;
   isEdit: boolean;
-  onOpen: (id: string) => void;
+  onOpen: (id: string, folderName: string) => void;
 }
 
 const BookmarkItem = ({ item, isEdit, onOpen }: BookmarkItemProps) => {
   const imageUrl = item.cafes?.at(-1)?.mainImageUrl?.[0] || '';
   const itemCounts = item.cafes?.length || 0;
+  const getShortFolderName = (name: string) => {
+    return name.length > 17 ? name.slice(0, 13) + '...' : name;
+  };
 
   return (
     <li className={bookmarkListItem}>
@@ -45,15 +46,15 @@ const BookmarkItem = ({ item, isEdit, onOpen }: BookmarkItemProps) => {
             onClick={(e: React.MouseEvent) => {
               e.stopPropagation();
               e.preventDefault();
-              onOpen(item.id);
+              onOpen(item.id, item.folderName);
             }}
           />
         )}
-        <div>{item.listName}</div>
+        <div>{getShortFolderName(item.folderName)}</div>
       </div>
       <div className={bookmarkBasicImage}>
         {imageUrl ? (
-          <Image src={imageUrl} alt={item.listName} width={163} height={191} />
+          <Image src={imageUrl} alt={item.folderName} width={163} height={191} />
         ) : (
           <BookmarkBasicImage width={163} heigth={191} />
         )}
@@ -66,23 +67,24 @@ const BookmarkItem = ({ item, isEdit, onOpen }: BookmarkItemProps) => {
 };
 
 export default function BookmarkList({
-  bookmarkList,
   isEdit,
-  onDelete,
   onOpen,
   onClose,
   isEditModalOpen,
 }: BookmarkListProps) {
-  const [selectedId, setSelectedId] = useState<string>('');
+  const [seletedId, setSelectedId] = React.useState<string | null>(null);
+  const [selectFolderName, setSelectFolderName] = React.useState<string>('');
+  const bookmarkFolders = useBookmarkStore((state) => state.bookmarkFolders);
 
-  const handleOpen = (id: string) => {
+  const handleOpen = (id: string, folderName: string) => {
     setSelectedId(id);
+    setSelectFolderName(folderName);
     onOpen();
   };
 
   return (
     <ul className={container}>
-      {bookmarkList.map((item) =>
+      {bookmarkFolders.map((item) =>
         isEdit ? (
           <div className={bookmarkLink} key={item.id}>
             <BookmarkItem item={item} isEdit={isEdit} onOpen={handleOpen} />
@@ -92,7 +94,7 @@ export default function BookmarkList({
             key={item.id}
             href={{
               pathname: `${ROUTE_PATH.bookmarks}/${item.id}`,
-              query: { listName: item.listName },
+              query: { folderName: item.folderName },
             }}
             className={bookmarkLink}
           >
@@ -101,11 +103,10 @@ export default function BookmarkList({
         )
       )}
       <EditListModal
-        id={selectedId}
         isOpen={isEditModalOpen}
         onClose={onClose}
-        onDelete={onDelete}
-        listName={bookmarkList.find((item) => item.id === selectedId)?.listName || ''}
+        id={seletedId}
+        folderName={selectFolderName}
       />
     </ul>
   );

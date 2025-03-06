@@ -1,11 +1,11 @@
-import { useEffect, useState } from 'react';
+import React from 'react';
 
 type TargetSetter = (target: Element | null) => void;
 
 const useIntersectionObserver = (onIntersected: () => void): TargetSetter => {
-  const [target, setTarget] = useState<Element | null>(null);
+  const [target, setTarget] = React.useState<Element | null>(null);
 
-  useEffect(() => {
+  React.useEffect(() => {
     if (!target) return;
 
     const observer = new IntersectionObserver(
