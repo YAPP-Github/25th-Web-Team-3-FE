@@ -1,6 +1,6 @@
 import CafeItem from './CafeItem';
 import { cafeListContainer } from './cafes.css';
-import { Cafe } from '@/types';
+import { Cafe } from '@/types/types';
 
 interface CafeListProps {
   cafeList: Cafe[];

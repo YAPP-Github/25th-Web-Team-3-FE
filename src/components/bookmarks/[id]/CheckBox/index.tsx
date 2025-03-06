@@ -3,7 +3,7 @@ import UnCheckedBox from '@/assets/Icon/unCheckedBox.svg';
 
 interface CheckBoxProps {
   isEdit: boolean;
-  checked: boolean; 
+  checked: boolean | undefined
   onCheck: () => void; 
 }
 

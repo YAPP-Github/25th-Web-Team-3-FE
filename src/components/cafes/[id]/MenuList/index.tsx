@@ -9,16 +9,14 @@ import {
   scrollContainer,
 } from './MenuList.css';
 import { divider, menuListSection, subTitle } from '@/app/(withoutNav)/cafes/[id]/page.css';
-import { Menu } from '@/types';
+import { Menu } from '@/types/types';
 import { useCafeCarousel } from '../hooks/useCafeCarousel';
-
 
 interface MenuListProps {
   menus: Menu[];
 }
 
 export default function MenuList({ menus }: MenuListProps) {
-
   const { carouselRef } = useCafeCarousel();
 
   return (

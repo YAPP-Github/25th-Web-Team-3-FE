@@ -1,5 +1,5 @@
 import { ROUTE_PATH } from '@/constants/routePath';
-import { Cafe, CoffeeBean, Menu, Tag } from '@/types';
+import { Cafe, CoffeeBean, Menu, Tag } from '@/types/types';
 
 interface CafeDetail extends Cafe {
   id: string;

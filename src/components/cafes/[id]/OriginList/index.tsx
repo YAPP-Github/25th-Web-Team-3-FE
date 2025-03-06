@@ -1,5 +1,5 @@
 import HashTag from '@/components/common/HashTag';
-import { Country } from '@/types';
+import { Country } from '@/types/types';
 import Image from 'next/image';
 import { countryImage, orginItem, originItemText, originList } from './OriginList.css';
 

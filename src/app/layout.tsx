@@ -1,9 +1,9 @@
 import BrewloungeQR from '@/components/layout/BrewLoungeQR';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
+import QueryClientProviders from '../config/QueryClientProviders';
 import './globals.css';
 import { body, bodyInnerWrapper, rootContainer } from './layout.css';
-import Providers from './providers';
 
 const pretendard = localFont({
   src: '../fonts/PretendardVariable.woff2',
@@ -31,7 +31,7 @@ export default function RootLayout({
       <body className={`${pretendard.className} ${body}`}>
         <div className={bodyInnerWrapper}>
           <div id="root" className={`${rootContainer}`}>
-            <Providers>{children}</Providers>
+            <QueryClientProviders>{children}</QueryClientProviders>
             <div id="modal-root"></div>
           </div>
           <aside>

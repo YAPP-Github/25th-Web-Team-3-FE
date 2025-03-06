@@ -1,5 +1,5 @@
 import { ROUTE_PATH } from '@/constants/routePath';
-import type { Cafe } from '@/types';
+import type { Cafe } from '@/types/types';
 import type { QueryFunctionContext } from '@tanstack/react-query';
 
 export interface CafeListResponse {
