@@ -13,7 +13,8 @@ export const listItem = style({
   display: 'flex',
   gap: '1.2rem',
   alignItems: 'center',
-  width:'100%'
+  width: '100%',
+  cursor: 'pointer',
 });
 export const listItemTextBox = style({
   padding: '1.2rem 0',
@@ -33,3 +34,8 @@ export const listItemDivider = style({
   borderTop: '0.1rem solid #F0F0F0',
 });
 
+export const listSection = style({
+  display: 'flex',
+  alignItems:'center',
+  gap:'1.2rem',
+});

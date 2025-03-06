@@ -1,67 +1,36 @@
 import PopUpButton from '@/components/common/PopUpButton';
+import { useBookmarkStore } from '@/store/store';
 import EmptyListMessage from './EmptyListMessage';
 import { buttonSection, listContainer } from './SavedBookmark.css';
 import SavedBookmarkItem from './SavedBookmarkItem';
-import { Cafe } from '../../BookmarkList/hooks/useBookmarkList';
 
-
-interface SelectedBookmarkList {
-  id: string;
-  listName: string;
-  cafes?: Cafe[]
-}
 interface SavedBookmarkListProps {
-  listId: string;
-  selectedBookmarkList: SelectedBookmarkList[];
+  folderId: string;
   isEdit: boolean;
-  selectedIds: string[];
-  onCancelEdit: () => void;
-  onDelete: (ids: string[]) => void;
-  onSelectItem: (id: string) => void;
+  handelIsEdit: () => void;
 }
 
 export default function SavedBookmarkList({
-  listId,
-  selectedBookmarkList,
+  folderId,
   isEdit,
-  selectedIds,
-  onCancelEdit,
-  onSelectItem,
-  onDelete,
+  handelIsEdit,
 }: SavedBookmarkListProps) {
-  const folder = selectedBookmarkList.find((folder) => folder.id === listId);
-  const cafes = folder?.cafes ?? [];
+  const { bookmarkFolders, saveChanges } = useBookmarkStore((state) => state);
+  const selectedBookmarkFolder = bookmarkFolders.find((bookmark) => bookmark.id == folderId);
 
-  const handleItemCheck = (id: string) => {
-    onSelectItem(id);
-  };
-
-  if (cafes.length === 0) {
+  if (!selectedBookmarkFolder || selectedBookmarkFolder.cafes.length === 0) {
     return <EmptyListMessage />;
   }
 
   return (
     <ul className={listContainer}>
-      {[...cafes].reverse().map((bookmark) => (
-        <SavedBookmarkItem
-          key={bookmark.id}
-          cafe={bookmark}
-          isEdit={isEdit}
-          selectedIds={selectedIds}
-          onItemCheck={handleItemCheck}
-          listId={listId}
-        />
+      {selectedBookmarkFolder.cafes.map((cafe) => (
+        <SavedBookmarkItem key={cafe.id} cafe={cafe} isEdit={isEdit} folderId={folderId} />
       ))}
       {isEdit && (
         <section className={buttonSection}>
-          <PopUpButton title="취소" onClick={onCancelEdit} />
-          <PopUpButton
-            title="선택 삭제"
-            color="black"
-            onClick={() => {
-              onDelete(selectedIds);
-            }}
-          />
+          <PopUpButton title="취소" onClick={handelIsEdit} />
+          <PopUpButton title="선택 삭제" color="black" onClick={saveChanges} />
         </section>
       )}
     </ul>
