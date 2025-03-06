@@ -1,26 +1,23 @@
 'use client';
+
+import React from 'react';
 import AddListButton from '@/components/bookmarks/AddListButton';
 import AddListModal from '@/components/bookmarks/AddListModal';
 import BookmarkList from '@/components/bookmarks/BookmarkList';
-import { useBookmarkList } from '@/components/bookmarks/BookmarkList/hooks/useBookmarkList';
-import { useState } from 'react';
 import { container, editButton, header, title } from './page.css';
 
 export type ListName = string;
 
 export default function Page() {
-  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
-  const [listName, setListName] = useState<ListName>('');
-  const [isEidt, setIsEdit] = useState<boolean>(false);
-  const [isEditModalOpen, setIsEditModalOpen] = useState<boolean>(false);
-  const { bookmarkList, addBookmarkList, deleteBookmarkList } = useBookmarkList();
+  const [isModalOpen, setIsModalOpen] = React.useState<boolean>(false);
+  const [isEditModalOpen, setIsEditModalOpen] = React.useState<boolean>(false);
+  const [isEidt, setIsEdit] = React.useState<boolean>(false);
 
   const openModal = () => {
     setIsModalOpen(true);
   };
 
   const closeModal = () => {
-    setListName('');
     setIsModalOpen(false);
   };
   const openEditModal = () => {
@@ -31,14 +28,6 @@ export default function Page() {
     setIsEditModalOpen(false);
   };
 
-  const onChangeBookmarkListName = (name: string) => {
-    setListName(name);
-  };
-
-  const handleAddBookmarkList = () => {
-    addBookmarkList(listName);
-    closeModal();
-  };
   return (
     <div className={container}>
       <header className={header}>
@@ -53,21 +42,13 @@ export default function Page() {
         </button>
       </header>
       <BookmarkList
-        bookmarkList={bookmarkList}
         isEdit={isEidt}
-        onDelete={deleteBookmarkList}
+        isEditModalOpen={isEditModalOpen}
         onOpen={openEditModal}
         onClose={closeEditModal}
-        isEditModalOpen={isEditModalOpen}
       />
       <AddListButton openModal={openModal} />
-      <AddListModal
-        isOpen={isModalOpen}
-        onClose={closeModal}
-        listName={listName}
-        onChangeListName={onChangeBookmarkListName}
-        addBookmarkList={handleAddBookmarkList}
-      />
+      <AddListModal isOpen={isModalOpen} onClose={closeModal} />
     </div>
   );
 }

@@ -45,8 +45,11 @@ export async function generateStaticParams(): Promise<PageId[]> {
 
 export default async function Page({ params }: { params: Promise<PageId> }) {
   const detailPageId = (await params).id;
-  const data = await getCafeDetail(detailPageId, CAFE_DETAIL_REVALIDATE_TIME);
-  const { cafe, coffeeBean, menus, updatedAt, tags } = data;
+
+  const { cafe, coffeeBean, menus, updatedAt, tags } = await getCafeDetail(
+    detailPageId,
+    CAFE_DETAIL_REVALIDATE_TIME
+  );
 
   return (
     <div className={cafesIdLayout}>

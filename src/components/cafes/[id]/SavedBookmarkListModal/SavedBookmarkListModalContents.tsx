@@ -1,12 +1,13 @@
-import { ListName } from '@/app/(withNav)/bookmarks/page';
+import React from 'react';
+import BookmarkBasicImage from '@/assets/Icon/bookmarkBasicImageSmall.svg';
 import CheckedIcon from '@/assets/Icon/checkedBox.svg';
-import BookmarkBasicImageSmall from '@/assets/Icon/bookmarkBasicImageSmall.svg';
 import UnCheckedIcon from '@/assets/Icon/unCheckedBox.svg';
 import AddListModal from '@/components/bookmarks/AddListModal';
 import PopUpButton from '@/components/common/PopUpButton';
+import { useBookmarkStore } from '@/store/store';
+import { BookmarkCafe } from '@/types/types';
 import Image from 'next/image';
-import { useState } from 'react';
-import { LocalstorageBookmarkList } from '../BookMarkButton';
+import { useParams } from 'next/navigation';
 import {
   addListButton,
   savedBookmarkListBox,
@@ -21,46 +22,39 @@ import {
   savedBookmarkModalHeader,
   savedBookmarkModalSubTitle,
 } from './SavedBookmarkListModal.css';
-
 interface SavedBookmarkListModalContentsProps {
-  savedBookmarkList: LocalstorageBookmarkList[];
-  checkedItems: { [key: string]: boolean };
-  onCheck: (id: string) => void;
-  onSave: () => void;
-  addBookmarkList: (listName: string) => void;
+  cafe: BookmarkCafe;
+  onClose: () => void;
+  showToast: (message: string, duration: number) => void;
 }
 
 export default function SavedBookmarkListModalContents({
-  savedBookmarkList,
-  checkedItems,
-  onCheck,
-  onSave,
-  addBookmarkList,
+  cafe,
+  onClose,
+  showToast,
 }: SavedBookmarkListModalContentsProps) {
-  const [isAddListModal, setIsAddListModal] = useState<boolean>(false);
-  const [listName, setListName] = useState<ListName>('');
+  const [isAddListModal, setIsAddListModal] = React.useState<boolean>(false);
+  const { bookmarkFolders, checkBookmark, saveChanges } = useBookmarkStore((state) => state);
+
+  const params = useParams();
 
   const openAddListModal = () => {
     setIsAddListModal(true);
   };
   const closeAddListModal = () => {
-    setListName('');
     setIsAddListModal(false);
   };
 
-  const onChangeBookmarkListName = (name: string) => {
-    setListName(name);
+  const isAllUnchecked = bookmarkFolders.some((folder) =>
+    folder.cafes.every((cafe) => cafe.isBookmarked)
+  );
+
+  const onSave = () => {
+    showToast('북마크 리스트에 저장 되었어요', 3000);
+    saveChanges();
+    onClose();
   };
 
-  const handleAddBookmarkList = () => {
-    addBookmarkList(listName);
-    closeAddListModal();
-  };
-
-  const handleCheck = (id: string) => () => {
-    onCheck(id);
-  };
-  const isAllUnchecked = Object.values(checkedItems).every((value) => value === false);
   return (
     <div className={savedBookmarkModalContainer}>
       <header className={savedBookmarkModalHeader}>
@@ -70,10 +64,13 @@ export default function SavedBookmarkListModalContents({
         </div>
       </header>
       <ul className={savedBookmarkListContainer}>
-        {savedBookmarkList.map((bookmark) => {
+        {bookmarkFolders?.map((bookmark) => {
           const cafeCount = bookmark.cafes?.length || 0;
           const lastCafeImage = bookmark.cafes?.at(-1)?.mainImageUrl[0];
-          const isChecked = checkedItems[bookmark.id];
+          const isBookmarked = bookmark.cafes.some(
+            (cafe) => cafe.id == params.id && cafe.isBookmarked
+          );
+
           return (
             <li className={savedBookmarkListBox} key={bookmark.id}>
               <div className={savedBookmarkListContents}>
@@ -82,44 +79,38 @@ export default function SavedBookmarkListModalContents({
                     <Image
                       className={savedBookmarkListImage}
                       src={lastCafeImage}
-                      alt={`${bookmark.listName}`}
+                      alt={`${bookmark.folderName}`}
                       width={75}
                       height={75}
                     />
                   ) : (
-                    <BookmarkBasicImageSmall width={75} height={75} alt="기본 리스트 이미지" />
+                    <BookmarkBasicImage width={75} height={75} alt="기본 리스트 이미지" />
                   )}
                 </div>
 
                 <div className={savedBookmarkListTextBox}>
-                  <div className={savedBookmarkListTitle}>{bookmark.listName}</div>
+                  <div className={savedBookmarkListTitle}>{bookmark.folderName}</div>
                   <div className={savedBookmarkListNumber}>{cafeCount}개</div>
                 </div>
               </div>
 
-              {isChecked ? (
-                <CheckedIcon onClick={handleCheck(bookmark.id)} />
+              {isBookmarked ? (
+                <CheckedIcon onClick={() => checkBookmark(bookmark.id, cafe)} />
               ) : (
-                <UnCheckedIcon onClick={handleCheck(bookmark.id)} />
+                <UnCheckedIcon onClick={() => checkBookmark(bookmark.id, cafe)} />
               )}
             </li>
           );
         })}
       </ul>
 
-      {isAllUnchecked ? (
+      {!isAllUnchecked ? (
         <PopUpButton title="저장" onClick={onSave} color="black" opacity="light" />
       ) : (
         <PopUpButton title="저장" onClick={onSave} color="black" />
       )}
 
-      <AddListModal
-        isOpen={isAddListModal}
-        onClose={closeAddListModal}
-        listName={listName}
-        onChangeListName={onChangeBookmarkListName}
-        addBookmarkList={handleAddBookmarkList}
-      />
+      <AddListModal isOpen={isAddListModal} onClose={closeAddListModal} />
     </div>
   );
 }

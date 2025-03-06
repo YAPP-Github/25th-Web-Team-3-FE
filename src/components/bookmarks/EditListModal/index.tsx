@@ -2,22 +2,20 @@ import Modal from '@/components/common/Modal';
 import EditListModalContents from './EditListMdoalContents';
 
 interface EditListModalProps {
-  id: string;
+  id: string | null;
   isOpen: boolean;
   onClose: () => void;
-  onDelete: (id: string) => void;
-  listName: string;
+  folderName: string;
 }
-export default function EditListModal({
-  id,
-  isOpen,
-  onClose,
-  listName,
-  onDelete,
-}: EditListModalProps) {
+export default function EditListModal({ isOpen, onClose, id, folderName }: EditListModalProps) {
   return (
-    <Modal title={`'${listName}' 폴더를 삭제하시겠습니까?`} isOpen={isOpen} onClose={onClose} closeButton={false}>
-      <EditListModalContents listName={listName} onClose={onClose} onDelete={() => onDelete(id)} />
+    <Modal
+      title={`'${folderName}' 폴더를 삭제하시겠습니까?`}
+      isOpen={isOpen}
+      onClose={onClose}
+      closeButton={false}
+    >
+      <EditListModalContents onClose={onClose} id={id} />
     </Modal>
   );
 }

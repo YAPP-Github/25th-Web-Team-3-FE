@@ -1,47 +1,46 @@
-import { ChangeEvent } from 'react';
+import { useInput } from '@/hooks/useInput';
+import { useBookmarkStore } from '@/store/store';
 import {
   addListCompleteButton,
   addListModalInput,
   contentsInputContainer,
+  errorMessage,
   maxLengthText,
 } from './AddListModal.css';
 
 interface AddListModalContentsProps {
-  listName: string;
-  onChangeListName: (name: string) => void;
-  addBookmarkList: () => void;
+  onClose: () => void;
 }
 
-export default function AddListModalContents({
-  listName,
-  onChangeListName,
-  addBookmarkList,
-}: AddListModalContentsProps) {
-  const listNameLength = listName.length;
+export default function AddListModalContents({ onClose }: AddListModalContentsProps) {
+  const { createFolder } = useBookmarkStore((state) => state);
+  const { input, resetInput, handleOnChange, error } = useInput('', 20);
 
-  const onChangeModalContents = (e: ChangeEvent<HTMLInputElement>) => {
-    onChangeListName(e.target.value);
+  const handleAddBookmarkFoloder = (folderName: string) => {
+    createFolder(folderName);
+    resetInput();
+    onClose();
   };
+
   const hasContents = (contentsLength: number) => {
     if (contentsLength > 0) return true;
     return false;
   };
-
   return (
     <div className={contentsInputContainer}>
       <input
-        value={listName}
-        onChange={onChangeModalContents}
+        value={input}
+        onChange={handleOnChange}
         type="text"
-        maxLength={20}
         className={addListModalInput}
         placeholder="리스트 이름을 입력해주세요"
       />
-      <span className={maxLengthText}>{listNameLength}/20</span>
+      <div className={errorMessage}>{error}</div>
+      <span className={maxLengthText}>{input.length}/20</span>
       <button
-        className={addListCompleteButton({ isButtonActive: hasContents(listNameLength) })}
-        disabled={!hasContents(listNameLength)}
-        onClick={() => addBookmarkList()}
+        className={addListCompleteButton({ isButtonActive: hasContents(input.length) })}
+        disabled={!hasContents(input.length)}
+        onClick={() => handleAddBookmarkFoloder(input)}
       >
         완료
       </button>
