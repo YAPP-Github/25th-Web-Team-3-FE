@@ -4,6 +4,8 @@ import localFont from 'next/font/local';
 import QueryClientProviders from '../config/QueryClientProviders';
 import './globals.css';
 import { body, bodyInnerWrapper, rootContainer } from './layout.css';
+import Providers from './providers';
+import GoogleAnalytics from '@/lib/GoogleAnalytics';
 
 const pretendard = localFont({
   src: '../fonts/PretendardVariable.woff2',
@@ -21,6 +23,8 @@ export const metadata: Metadata = {
   description: '맛있는 커피만을 선별하는 카페 큐레이션',
 };
 
+const GOOGLE_ANALYTICS_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID;
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -32,6 +36,9 @@ export default function RootLayout({
         <div className={bodyInnerWrapper}>
           <div id="root" className={`${rootContainer}`}>
             <QueryClientProviders>{children}</QueryClientProviders>
+            {GOOGLE_ANALYTICS_ID && <GoogleAnalytics gaId={GOOGLE_ANALYTICS_ID} />}
+            <Providers>{children}</Providers>
+
             <div id="modal-root"></div>
           </div>
           <aside>
