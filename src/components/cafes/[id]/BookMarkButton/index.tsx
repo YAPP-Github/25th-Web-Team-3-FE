@@ -1,4 +1,5 @@
 'use client';
+
 import React from 'react';
 import BookMarkIcon from '@/assets/Icon/Bookmark.svg';
 import { color } from '@/styles/color.css';
@@ -8,6 +9,7 @@ import SavedBookmarkListModal from '../SavedBookmarkListModal';
 import { bookMarkButton } from './BookMark.css';
 import { useToast } from '@/components/common/Toast/hooks/useToast';
 import Toast from '@/components/common/Toast';
+import { useBookmarkStore } from '@/store/store';
 interface BookmarkButtonProps {
   cafe: BookmarkCafe;
 }
@@ -17,8 +19,13 @@ function BookMarkButton({ cafe }: BookmarkButtonProps) {
   const bookmarkCafe = { id, name, mainImageUrl, location, isBookmarked: true };
 
   const [isModalOpen, setIsModalOpen] = React.useState<boolean>(false);
+  const { bookmarkFolders } = useBookmarkStore();
   const { showToast, isToastVisible, toastMessage } = useToast();
-  const isCurrentCafeBookMarked = true;
+  
+  const isCurrentCafeBookMarked = bookmarkFolders.some((bookmarkFolder) =>
+    bookmarkFolder.cafes.some((cafe) => cafe.id == id)
+  );
+  console.log(isCurrentCafeBookMarked);
 
   const openSavedBookmarkModal = () => {
     setIsModalOpen(true);
