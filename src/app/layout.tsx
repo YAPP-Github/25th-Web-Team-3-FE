@@ -20,6 +20,9 @@ const gmarketSansTTF = localFont({
 export const metadata: Metadata = {
   title: 'BrewLounge',
   description: '맛있는 커피만을 선별하는 카페 큐레이션',
+  other: {
+    'format-detection': 'telephone=no',
+  },
 };
 
 const GOOGLE_ANALYTICS_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID;
