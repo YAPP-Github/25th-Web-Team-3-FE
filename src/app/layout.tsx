@@ -5,6 +5,7 @@ import QueryClientProviders from '../config/QueryClientProviders';
 import './globals.css';
 import { body, bodyInnerWrapper, rootContainer } from './layout.css';
 import GoogleAnalytics from '@/lib/GoogleAnalytics';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const pretendard = localFont({
   src: '../fonts/PretendardVariable.woff2',
@@ -39,6 +40,7 @@ export default function RootLayout({
           <div id="root" className={`${rootContainer}`}>
             {GOOGLE_ANALYTICS_ID && <GoogleAnalytics gaId={GOOGLE_ANALYTICS_ID} />}
             <QueryClientProviders>{children}</QueryClientProviders>
+            <SpeedInsights />
             <div id="modal-root"></div>
           </div>
           <aside>
