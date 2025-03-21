@@ -4,10 +4,10 @@ import { ComplexStyleRule, style } from '@vanilla-extract/css';
 
 export const cafesIdLayout = style({
   backgroundColor: color.grayScale.gray500,
-  
 });
 
 export const header = style({
+  height: '4.8rem',
   display: 'flex',
   justifyContent: 'space-between',
   backgroundColor: color.grayScale.gray100,
@@ -35,8 +35,6 @@ export const title = style({
     gap: '0.6rem',
   },
 } as ComplexStyleRule);
-
-
 
 export const subTitle = style({
   ...title3,
@@ -69,14 +67,13 @@ export const recoCoffeeBeanBox = style({
     ...body1Bold,
   },
 } as ComplexStyleRule);
-export const beanCardTitle = style({ ...etc,});
+export const beanCardTitle = style({ ...etc });
 
 export const divider = style({
   borderTop: 'dashed 0.1rem',
 });
 
 export const cafesDetailMain = style({
-  
   color: color.grayScale.gray100,
   display: 'flex',
   flexDirection: 'column',
@@ -124,11 +121,11 @@ export const toggleContent = style({
 
 export const pickReasonSection = style({
   padding: '2.4rem 2rem',
-})
+});
 export const coffeeBeanSection = style({
   padding: '2.4rem 2rem',
-})
+});
 
 export const menuListSection = style({
-  padding:'2.4rem 0rem 2.4rem 2rem'
+  padding: '2.4rem 0rem 2.4rem 2rem',
 });
