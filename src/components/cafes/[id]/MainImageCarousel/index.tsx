@@ -10,16 +10,18 @@ import {
   mainImageCarousellList,
   titleImg,
 } from './MainImageCarousel.css';
+import React from 'react';
 
 interface MainImageUrl {
   mainImageUrl: string[];
+  blurImageUrl: string;
 }
 
 const DEFAULT_CAFE_MAIN_IMAGE = 'https://placehold.co/600x400?text=Cafe1';
 
-export default function MainImageCarousel({ mainImageUrl }: MainImageUrl) {
+export default function MainImageCarousel({ mainImageUrl,blurImageUrl }: MainImageUrl) {
   const { carouselRef, currentIndex } = useCafeCarousel();
-  
+
   return (
     <div ref={carouselRef} className={mainImageCarouselContainer}>
       <ul className={mainImageCarousellList}>
@@ -31,6 +33,8 @@ export default function MainImageCarousel({ mainImageUrl }: MainImageUrl) {
               width={375}
               height={260}
               className={titleImg}
+              placeholder="blur"
+              blurDataURL={blurImageUrl}
             />
             <div className={mainImageCarouselCounts}>
               <span className={mainImageCarouselCurrentNumber}>{currentIndex + 1}</span>

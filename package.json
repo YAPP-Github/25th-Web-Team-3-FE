@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@plaiceholder/next": "^3.0.0",
     "@tanstack/react-query": "^5.64.1",
     "@vanilla-extract/css": "^1.17.0",
     "@vanilla-extract/recipes": "^0.5.5",
@@ -16,8 +17,10 @@
     "embla-carousel-autoplay": "^8.5.2",
     "embla-carousel-react": "^8.5.2",
     "next": "15.0.3",
+    "plaiceholder": "^3.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "sharp": "^0.33.5",
     "zustand": "^5.0.3"
   },
   "devDependencies": {

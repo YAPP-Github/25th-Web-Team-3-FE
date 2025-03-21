@@ -30,6 +30,7 @@ import {
   toggleInput,
   toggleLabel,
 } from './page.css';
+import getBlurImg from '@/lib/getBlurImage';
 
 interface PageId {
   id: string;
@@ -51,6 +52,8 @@ export default async function Page({ params }: { params: Promise<PageId> }) {
     CAFE_DETAIL_REVALIDATE_TIME
   );
 
+  const blurDataUrl = await getBlurImg(cafe.mainImageUrl[0]);
+
   return (
     <div className={cafesIdLayout}>
       <header className={header}>
@@ -64,7 +67,7 @@ export default async function Page({ params }: { params: Promise<PageId> }) {
         </div>
         <MapButton naverMapUrl={cafe.naverMapUrl} />
       </div>
-      <MainImageCarousel mainImageUrl={cafe.mainImageUrl} />
+      <MainImageCarousel mainImageUrl={cafe.mainImageUrl} blurImageUrl={blurDataUrl} />
 
       <main className={cafesDetailMain}>
         <section className={pickReasonSection}>
