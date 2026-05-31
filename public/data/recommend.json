@@ -1,0 +1,245 @@
+{
+  "groups": [
+    {
+      "groupId": "group-awards",
+      "name": "수상 경력이 있는 카페",
+      "cafes": [
+        {
+          "id": "3456e613-742a-8105-a51b-f7ef853d6b45",
+          "mainImage": "https://lh3.googleusercontent.com/place-photos/AJRVUZNVzF3tI0t0FkJBkRM5mz4fi2xUIu6Cgv1hZcnp65lZtdcBsfy-l2GR7hQU6rVoJaP2h7cOM8H-xgVtDtYvvI6_zfPGF1Swt_KxRjN9WXLqhHpLG92ACM1fZwrkMxSzgXjOeFfeAZ-J2rHuyQ=s4800-w800",
+          "name": "트레머 커피웍스",
+          "nearestStation": "홍대입구"
+        },
+        {
+          "id": "3456e613-742a-810c-9314-c6c3dca0c7d0",
+          "mainImage": "https://lh3.googleusercontent.com/place-photos/AJRVUZMoDd1eUjM-E7MDr0eLoMPgHxMs83lDUq_dxusWDfbRcOvm2EPMu6poLZ7rC4OvmVhQTuuv7-2XQf9RVssrH5qdr6UbzRNbgJSvUmmto_CcDs81-80qb9uXZDtyqm7Kwh2qD9eEpmPis8fAqA=s4800-w800",
+          "name": "커넥츠커피 망원",
+          "nearestStation": "망원"
+        },
+        {
+          "id": "3456e613-742a-8112-9bcd-d1a2b77758c2",
+          "mainImage": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220416_166%2F1650082800337GAMGh_JPEG%2FLOTUS_%25BF%25F8%25C7%25FC%25B5%25F0%25C0%25DA%25C0%25CE01.jpg",
+          "name": "로투스 로스팅랩",
+          "nearestStation": "신당"
+        },
+        {
+          "id": "3456e613-742a-8117-998a-e76b75241b88",
+          "mainImage": "https://lh3.googleusercontent.com/place-photos/AJRVUZNp3w0uyaLAXXoned2nURVQL8iMBiH08O61of7a6sdd6n2vxJjYjH9sJFJtCs2joCfiZbYOeb-k35Rx6nfzCsbpYzvYUeW8v9bWM09q-P8A4NPVdvSmjIQtDbb9jwe1uChdSrbbpCzcb1eF=s4800-w800",
+          "name": "커피한약방",
+          "nearestStation": "을지로3가"
+        },
+        {
+          "id": "3456e613-742a-8158-b139-d5dee62905dd",
+          "mainImage": "https://lh3.googleusercontent.com/place-photos/AJRVUZMr_c7bS_U5cIe8Raiv-ovMROHncOhtuivN5GThAmtPjXazAUpYNFZbg2UaNUw898di99RWdgl3lgio3Z-x8POaBeWCGzrJX6QuG2_vO7bpQl_pzNVSJMe5yriLvwjsEaw7KnASxn14xCIml3s=s4800-w800",
+          "name": "인덴트커피룸",
+          "nearestStation": "망원"
+        },
+        {
+          "id": "3456e613-742a-815b-90d7-ef91d85b98aa",
+          "mainImage": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240725_30%2F1721862842184CIHxq_JPEG%2FIMG_5388.jpeg",
+          "name": "말릭커피",
+          "nearestStation": "홍대입구"
+        },
+        {
+          "id": "3456e613-742a-8168-a4f1-cc45f6b820d2",
+          "mainImage": "https://lh3.googleusercontent.com/place-photos/AJRVUZNXconVpn4gyBNZ_PVV2ZrXWvl6vPqE8EDA3c99o9NQfvD6CziB6xznE2VgHCnfhp95ezCYUX4D8Z-Yhx_iA9Vi9Z0onZ3IbuRj03ae0nhHz8Lvhfmp5ISJdD4nA-0Jgu9ryzh6LjQV5o9rQg=s4800-w800",
+          "name": "헤베커피",
+          "nearestStation": "충무로"
+        },
+        {
+          "id": "3456e613-742a-8198-bb10-d841006daf57",
+          "mainImage": "",
+          "name": "노띵커피 본점",
+          "nearestStation": "동대입구"
+        },
+        {
+          "id": "3456e613-742a-81a4-a35a-cfc0bd4c8aec",
+          "mainImage": "https://lh3.googleusercontent.com/place-photos/AJRVUZO-KO_p-yiiYdw4fXxXp9MR3Fu_nSvQNv6vr2wFyKisy8ct_ZFGuTvp_HFuCruSVwC37c69hh5Zt7tvDDp6XNZmdDcYM0hffXFmfemktjELbF4uo5uCPZKo0_ngtBJGRHPM8Xg3CN13V8omPNY=s4800-w800",
+          "name": "커피그래",
+          "nearestStation": "약수"
+        },
+        {
+          "id": "3456e613-742a-81b4-903d-ea20420b9a3f",
+          "mainImage": "https://lh3.googleusercontent.com/place-photos/AJRVUZN62RQ1FnwvGKUmwr2fz9oqNtG5yj66k2NZPOdDAfxP3dr1j2xdu5liLLeGrienmwhFgRoKNbE9YMKCVFJagsN-12bdWsGIZjc96rL-UtLkgbWD1XSds3DArBnFPi0HEFpKJqnb4wCYh8qji9k=s4800-w800",
+          "name": "커피친구",
+          "nearestStation": "종각"
+        }
+      ]
+    },
+    {
+      "groupId": "group-acidity",
+      "name": "산미있는 커피에 도전하고 싶다면",
+      "cafes": [
+        {
+          "id": "3456e613-742a-8112-9bcd-d1a2b77758c2",
+          "mainImage": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220416_166%2F1650082800337GAMGh_JPEG%2FLOTUS_%25BF%25F8%25C7%25FC%25B5%25F0%25C0%25DA%25C0%25CE01.jpg",
+          "name": "로투스 로스팅랩",
+          "nearestStation": "신당"
+        },
+        {
+          "id": "3456e613-742a-8121-a957-fc1f5cb28894",
+          "mainImage": "https://lh3.googleusercontent.com/place-photos/AJRVUZO4N7B2-f52cmt-tYwM42IITAf5LFPG74_8I3Py3HgY9_39QMy-pu9Y8SOGVm47H3q3QvvNnBGYPotci5C3JD534Du-ZCdR80LaAcfGUAY3cutmdWMBwPO_1v1ZZl-fmGeg6AywsTZVJVIG8ys=s4800-w800",
+          "name": "펠트커피 청계천점",
+          "nearestStation": "광화문"
+        },
+        {
+          "id": "3456e613-742a-812e-b998-ecb84f92fe35",
+          "mainImage": "https://lh3.googleusercontent.com/places/ANXAkqEF3B7WteHj1IhJfhJ3g-DM8r4pTmdhoXDdjpjVvb8GNg_7ZxtEN-g3yn7OxFbSknMiSRUijdesImFveGx9uYGjCmLXyx33bRo=s4800-w800",
+          "name": "평형",
+          "nearestStation": "망원"
+        },
+        {
+          "id": "3456e613-742a-8169-99e7-f8434bb3c01d",
+          "mainImage": "",
+          "name": "플레이백",
+          "nearestStation": "충무로"
+        },
+        {
+          "id": "3456e613-742a-8170-962e-d3f534d87546",
+          "mainImage": "https://lh3.googleusercontent.com/place-photos/AJRVUZM4TiaZ1Up8pWG1c2N83yN1ilG6kC-cA6JrnswqIkkkt4DmisQgfeHBTZgctXhJ6ki-d8MPy5nWM07GQ8c9kzdCrhN2g85EHgmg85USaNa1b_kdN3-3yykEVvopKfIbSONlzCA8SjdacSMSA7uwhqNRKA=s4800-w800",
+          "name": "펠트커피 광화문점",
+          "nearestStation": "광화문"
+        },
+        {
+          "id": "3456e613-742a-81d7-b08d-dda44d80c230",
+          "mainImage": "https://lh3.googleusercontent.com/places/ANXAkqHV0ZB0vrL1_RJtdlrDo7rqgZOTHgDWa0yOPKDmIpMDnJ_CcM-BEYE4Dz7Em1iV6R6HtWiVbz6gwsRLfCjqY8tkiwfr7W2Url4=s4800-w555",
+          "name": "포트레이트커피바",
+          "nearestStation": "망원"
+        }
+      ]
+    },
+    {
+      "groupId": "group-latte",
+      "name": "시그니처 라떼 맛집",
+      "cafes": [
+        {
+          "id": "3456e613-742a-810c-9314-c6c3dca0c7d0",
+          "mainImage": "https://lh3.googleusercontent.com/place-photos/AJRVUZMoDd1eUjM-E7MDr0eLoMPgHxMs83lDUq_dxusWDfbRcOvm2EPMu6poLZ7rC4OvmVhQTuuv7-2XQf9RVssrH5qdr6UbzRNbgJSvUmmto_CcDs81-80qb9uXZDtyqm7Kwh2qD9eEpmPis8fAqA=s4800-w800",
+          "name": "커넥츠커피 망원",
+          "nearestStation": "망원"
+        },
+        {
+          "id": "3456e613-742a-812f-8185-f5e79c36f5e6",
+          "mainImage": "https://lh3.googleusercontent.com/places/ANXAkqG4Q9pfPVDTyNmQKTb0mLFHLDFSUGFLQUfshfnCA-hOyMJU5a3FNXoCURoydMXYqxfA5CjUHjDfp6R_gxew8xkGCdeWs5j_Yss=s4800-w800",
+          "name": "커피스니퍼 서울시청점",
+          "nearestStation": "시청"
+        },
+        {
+          "id": "3456e613-742a-815b-90d7-ef91d85b98aa",
+          "mainImage": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240725_30%2F1721862842184CIHxq_JPEG%2FIMG_5388.jpeg",
+          "name": "말릭커피",
+          "nearestStation": "홍대입구"
+        },
+        {
+          "id": "3456e613-742a-8166-b916-fc0d662dea42",
+          "mainImage": "https://lh3.googleusercontent.com/place-photos/AJRVUZPDoub3urTpzKT3Dk-yR6ieyZxVA_MpYc-FXUH2vcrK9r5zvwgL63u0yo9HjBL98HFdNDSZfTLaziMjdiEClbfEbyAurQT9vyluQoh0JtU6-wK596VLu6EDbr9yHGOM0Di2TWnH3WtGoNAQ-mw=s4800-w800",
+          "name": "히트커피로스터스 서교",
+          "nearestStation": "홍대입구"
+        },
+        {
+          "id": "3456e613-742a-816b-901c-e41c2416734d",
+          "mainImage": "https://lh3.googleusercontent.com/places/ANXAkqFPQuvDl30fQfYvO9k2QZUoroD9KYzrlZ3YUo22BGWleoVGH5z7H_9QWG8GLEGh_R_IMmwrv7us1vInVlWyctUP-kW4Vz_-fpQ=s4800-w800",
+          "name": "퀜치커피",
+          "nearestStation": "망원"
+        },
+        {
+          "id": "3456e613-742a-819b-93ff-c4e48531760e",
+          "mainImage": "https://lh3.googleusercontent.com/place-photos/AJRVUZOe7IBy25Y9LS2R6ecttPbvDAXIz9mN9gErwTqCnPQAfiIjXklqMcYLUtMDhIPHRNLv1oqTQLLxSDHJRWPzLnKUUFRFym1v25s6Ew0TyP-8tfhfYgI9Cooapws00ph0zGooCjDrake_uV1v=s4800-w800",
+          "name": "섹터커피로스터스 본점",
+          "nearestStation": "충무로"
+        },
+        {
+          "id": "3456e613-742a-81e5-8e15-f523eaff7d4a",
+          "mainImage": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230629_8%2F1688001957512bTny5_JPEG%2FIMG_1839.jpeg",
+          "name": "업사이드커피 약수점",
+          "nearestStation": "약수"
+        },
+        {
+          "id": "3456e613-742a-81e7-a47a-e5cda7abe514",
+          "mainImage": "https://lh3.googleusercontent.com/place-photos/AJRVUZNWvpgkp3KX_oXfgqKz91fYJjxRh16VQbXO5sxnGjaJZQ4E7aU_y5mCS1_OF0yumd1q1WIkE4YYoZamvkAic0dacJKvwMqlcUddKxh5VIaGQu5bj5czJoU9XlriWFOclrrSj5f8QYnqi8MP288P1aJ20g=s4800-w800",
+          "name": "챔프커피 제3작업실",
+          "nearestStation": "을지로3가"
+        },
+        {
+          "id": "3456e613-742a-81ec-a7e8-fc3e1001a29e",
+          "mainImage": "https://lh3.googleusercontent.com/places/ANXAkqFnO3ToAZInMXVimYPISzXs0lO6lx9SqA2xAVu52Hw1lJ2V6V8tlENT1bbdS8bpmI69WbUuVyfVCsWtkEJ_2XmZFMkcksFZkOc=s4800-w800",
+          "name": "맥컬리커피",
+          "nearestStation": "을지로3가"
+        },
+        {
+          "id": "3456e613-742a-81f9-9628-e740514d4c20",
+          "mainImage": "https://lh3.googleusercontent.com/place-photos/AJRVUZOXoom62MK8N_m7T8xw9r_r6m30elu4Otmky-kBHx1faN1wLqoPnSJxK5ggQfATRy_4X0EcGj6DbFIHE725djstgqOsD8kBNoy_8D32CCPd6Quiaam5Hrdh6Y9ifZbXuaaJbj9VDKERBM3xq14=s4800-w800",
+          "name": "딥블루레이크",
+          "nearestStation": "망원"
+        }
+      ]
+    },
+    {
+      "groupId": "group-brand",
+      "name": "실패없는 브랜드 커피",
+      "cafes": [
+        {
+          "id": "3456e613-742a-810c-acae-d08ae2fbcf73",
+          "mainImage": "https://lh3.googleusercontent.com/places/ANXAkqE5eHmZGdw7P5_mCUk3g9v8IZy0-e2QYQIOAZ8ovRwjQdCXGol3vPPVem5rwMYQiuWpxk-KWFS0WbGbbswxQX-D1w_FuxjD-Xo=s4800-w800",
+          "name": "커피리브레 파란점",
+          "nearestStation": "홍대입구"
+        },
+        {
+          "id": "3456e613-742a-811c-b069-cda489e0a9dc",
+          "mainImage": "https://lh3.googleusercontent.com/place-photos/AJRVUZN9AX14pFZwXCu7y_revxvj42dbrGXbAU1_o1ELnYF2J85R_YeIgiHjWNW8CXdnSwc80ajJikaImOL_Bq_H5-QcN0tMVVb0BUhu1D91SkP8o6vSYopvffM3Wi3Y0rNf7ySeMokdkfAOykfz=s4800-w800",
+          "name": "아마츄어작업실 청계점",
+          "nearestStation": "을지로3가"
+        },
+        {
+          "id": "3456e613-742a-8121-a957-fc1f5cb28894",
+          "mainImage": "https://lh3.googleusercontent.com/place-photos/AJRVUZO4N7B2-f52cmt-tYwM42IITAf5LFPG74_8I3Py3HgY9_39QMy-pu9Y8SOGVm47H3q3QvvNnBGYPotci5C3JD534Du-ZCdR80LaAcfGUAY3cutmdWMBwPO_1v1ZZl-fmGeg6AywsTZVJVIG8ys=s4800-w800",
+          "name": "펠트커피 청계천점",
+          "nearestStation": "광화문"
+        },
+        {
+          "id": "3456e613-742a-812f-8185-f5e79c36f5e6",
+          "mainImage": "https://lh3.googleusercontent.com/places/ANXAkqG4Q9pfPVDTyNmQKTb0mLFHLDFSUGFLQUfshfnCA-hOyMJU5a3FNXoCURoydMXYqxfA5CjUHjDfp6R_gxew8xkGCdeWs5j_Yss=s4800-w800",
+          "name": "커피스니퍼 서울시청점",
+          "nearestStation": "시청"
+        },
+        {
+          "id": "3456e613-742a-8138-9e91-ed9e1a3863fc",
+          "mainImage": "https://lh3.googleusercontent.com/places/ANXAkqEh9OZOx1OceUcsEuQIUuFZc1Ow4oBmgBv0QlV0rLL8V0O-MPVeDYjGKEKHk5cOJnxs4htFl7QdLYPN2IL4slRyOgyOjwWVrEU=s4800-w800",
+          "name": "알레그리아 광화문 케이스퀘어시티점",
+          "nearestStation": "광화문"
+        },
+        {
+          "id": "3456e613-742a-8147-8641-e38b38b62205",
+          "mainImage": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240402_172%2F1712037942572gsrLk_JPEG%2F1.jpg",
+          "name": "프릳츠 원서점",
+          "nearestStation": "안국"
+        },
+        {
+          "id": "3456e613-742a-814b-9c2b-e3e9a61d55db",
+          "mainImage": "https://lh3.googleusercontent.com/place-photos/AJRVUZNvK4UkiWYztGWTEesgXSS1m6xM701GReDczssoBSsX4OuBrpvB5ZauF0OFxJ9aIoqWHEBO0zTyVfZ7rr6azqfElHOyCCC1PChRB_mVy343i2lm6wQsVvuTxmjqrA8LXkAnLDe-dJsmAYfr27kqj81VVA=s4800-w800",
+          "name": "블루보틀 홍대",
+          "nearestStation": "홍대입구"
+        },
+        {
+          "id": "3456e613-742a-8154-afb6-d508a5bb3d47",
+          "mainImage": "https://lh3.googleusercontent.com/places/ANXAkqGWpUdkX0HYEVtbM45bFI1nv0xi0tx1RYm56C_04VKwmTYQByWjQCDHFqzrVKSkw5BEQaVGhH1TqMxVQ1Fk1q_z04ZDUIkB-x8=s4800-w800",
+          "name": "커피리브레 명동성당점",
+          "nearestStation": "을지로3가"
+        },
+        {
+          "id": "3456e613-742a-8166-b916-fc0d662dea42",
+          "mainImage": "https://lh3.googleusercontent.com/place-photos/AJRVUZPDoub3urTpzKT3Dk-yR6ieyZxVA_MpYc-FXUH2vcrK9r5zvwgL63u0yo9HjBL98HFdNDSZfTLaziMjdiEClbfEbyAurQT9vyluQoh0JtU6-wK596VLu6EDbr9yHGOM0Di2TWnH3WtGoNAQ-mw=s4800-w800",
+          "name": "히트커피로스터스 서교",
+          "nearestStation": "홍대입구"
+        },
+        {
+          "id": "3456e613-742a-8167-bbe7-c86d5dccf82f",
+          "mainImage": "https://lh3.googleusercontent.com/places/ANXAkqGyGqDQbJb993TUV-2L7zwgt1aNVW20Xb2gp3-2bwBsLo3frLLaVSJZzKpZu_ZiZrWicVd67KSreXEV-XxYykQWVcm3jxQ0_n0=s4800-w800",
+          "name": "로스팅마스터즈 본점",
+          "nearestStation": "홍대입구"
+        }
+      ]
+    }
+  ],
+  "hasNext": false
+}

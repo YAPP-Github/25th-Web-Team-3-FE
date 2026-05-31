@@ -1,0 +1,73 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-8198-bb10-d841006daf57",
+    "reasonForSelection": "노띵커피는 Seed to Cup 정신으로 투명한 원두 과정을 소비자에게 전달하는 데 일조합니다. 2018 코리아 브루어스 컵 챔피언십(KBrC) 6위 수상의 김현화 바리스타를 배출할 뿐만 아니라, 2년 연속 블루리본을 받았습니다. 싱글오리진 라인업을 마실 수 있습니다.",
+    "naverMapUrl": "https://naver.me/FvEtHhXa",
+    "name": "노띵커피 본점",
+    "nearestStation": "동대입구",
+    "location": "서울 중구 서소문로 89-20 1동 1층 103호",
+    "price": 3500,
+    "mainImageUrl": [],
+    "imageAttributions": []
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-8198-bb10-d841006daf57-bean",
+    "description": "허니 프로세싱 커피는 워시드 커피보다는 산미가 약하고 복합적인 향미를 가집니다. 또한 허니라는 이름에 어울리게 흑설탕과 꿀처럼 은은한 단맛도 느낄 수 있습니다.",
+    "name": "브룬디 마샤 허니",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "붉은 베리류",
+        "category": "Fruity"
+      },
+      {
+        "name": "살구",
+        "category": "Fruity"
+      },
+      {
+        "name": "캐모마일",
+        "category": "Floral"
+      },
+      {
+        "name": "꿀",
+        "category": "Sweet"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "브룬디",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "LIGHT"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-8198-bb10-d841006daf57-m1",
+      "name": "드립커피(노띵배러)",
+      "price": 3500,
+      "imageUrl": "",
+      "description": "스페셜티 배치브루 커피"
+    },
+    {
+      "id": "3456e613-742a-8198-bb10-d841006daf57-m2",
+      "name": "벨벳라떼",
+      "price": 4000,
+      "imageUrl": "",
+      "description": "스페셜티 카페라떼입니다. 벨벳처럼 부드러운 촉감의 거품이 올라갑니다."
+    }
+  ],
+  "tags": [
+    {
+      "id": "d944c5dd-803f-4f2c-96c5-8a6390fd1b95",
+      "name": "블루리본",
+      "imageUrl": ""
+    },
+    {
+      "id": "c8b9f0dd-8d54-481e-8e3a-edbf7929cbb9",
+      "name": "싱글오리진",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": null
+}

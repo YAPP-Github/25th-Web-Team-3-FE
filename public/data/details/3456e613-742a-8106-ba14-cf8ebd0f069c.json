@@ -1,0 +1,93 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-8106-ba14-cf8ebd0f069c",
+    "reasonForSelection": "차별화된 맛을 제공하기 위해, 손이 많이 가더라도 직접 제작한 기구를 사용하여 융드립 커피를 내리는 카페입니다. 숯불로 볶은 원두도 경험할 수 있습니다.",
+    "naverMapUrl": "https://naver.me/xExW9583",
+    "name": "피피커피",
+    "nearestStation": "망원",
+    "location": "서울 마포구 동교로 23 1층",
+    "price": 7000,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/place-photos/AJRVUZPq6s-zDH5TvI-D_3-Q_-qm_JxmYhOv7mCLVMk4tco4M_H4q1Gsy5P2lk8DhlF_SNuhApKZE5BKMeBtb38juIDDxeonpwPxGZ7vf_JvawXqD_24Um3lVlLUgE87kr7_yUE5p4Me7Q-2kup2BA=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "SK. Lee",
+        "uri": "https://maps.google.com/maps/contrib/100330785291388672862"
+      },
+      {
+        "displayName": "EUNJEONG CHO",
+        "uri": "https://maps.google.com/maps/contrib/102848365565532411199"
+      },
+      {
+        "displayName": "Virak Horn",
+        "uri": "https://maps.google.com/maps/contrib/110877812762636938895"
+      },
+      {
+        "displayName": "이연숙",
+        "uri": "https://maps.google.com/maps/contrib/113102366656449143137"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-8106-ba14-cf8ebd0f069c-bean",
+    "description": "비옥한 토양과 좋은 기후를 가진 모모라 농장에서 재배되었습니다. 향긋한 산미와 달콤하고 고소한 향미를 즐길 수 있는 원두입니다.",
+    "name": "에티오피아 모모라 내추럴 구지",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "다크 초콜릿",
+        "category": "Nutty/Cocoa"
+      },
+      {
+        "name": "복숭아",
+        "category": "Fruity"
+      },
+      {
+        "name": "체리",
+        "category": "Fruity"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "에티오피아",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "DARK"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-8106-ba14-cf8ebd0f069c-m1",
+      "name": "융드립 Ice",
+      "price": 7000,
+      "imageUrl": "",
+      "description": "융드립 방식으로 정성스럽게 내려 풍부한 맛과 향을 지닌 한 잔."
+    },
+    {
+      "id": "3456e613-742a-8106-ba14-cf8ebd0f069c-m2",
+      "name": "아메리카노 Ice",
+      "price": 5000,
+      "imageUrl": "",
+      "description": "기본에 충실하면서도 평범하지만은 않은 아메리카노."
+    }
+  ],
+  "tags": [
+    {
+      "id": "1ead9a26-ab24-4d5b-b046-4af8636f6b97",
+      "name": "매니아",
+      "imageUrl": ""
+    },
+    {
+      "id": "84e16f3f-5d1b-49e4-83d9-d38a3349f840",
+      "name": "필터 맛집",
+      "imageUrl": ""
+    },
+    {
+      "id": "c5c030e2-74f2-4031-bbfa-7573231b9121",
+      "name": "에스프레소 맛집",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-25"
+}

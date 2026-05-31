@@ -1,5 +1,4 @@
-import { getCafes } from '@/apis/cafe';
-import { getCafeDetail } from '@/apis/cafeDetail';
+import { getCafeDetailFromData, getCafeListFromData } from '@/lib/cafeData';
 import ChevronLeft from '@/assets/Icon/Chevron_Left.svg';
 import BackButton from '@/components/cafes/[id]/BackButton';
 import BookMarkButton from '@/components/cafes/[id]/BookMarkButton';
@@ -11,7 +10,6 @@ import MapButton from '@/components/cafes/[id]/MapButton';
 import MenuList from '@/components/cafes/[id]/MenuList';
 import OriginList from '@/components/cafes/[id]/OriginList';
 import { RoastingBar } from '@/components/cafes/[id]/RoastingBar';
-import { CAFE_DETAIL_REVALIDATE_TIME } from '@/constants/revalidateTime';
 import {
   beanCardTitle,
   cafesDetailMain,
@@ -36,9 +34,12 @@ interface PageId {
   id: string;
 }
 
-export async function generateStaticParams(): Promise<PageId[]> {
-  const cafesResponse = await getCafes();
-  const { cafes } = cafesResponse;
+// 미리 생성된 id 만 유효 — 나머지는 404. 런타임에 없는 detail JSON 을 import 하지 않게 한다.
+// 데이터는 레포에 커밋된 정적 JSON 이라 런타임 revalidate 불필요 — 재배포 때 갱신된다.
+export const dynamicParams = false;
+
+export function generateStaticParams(): PageId[] {
+  const { cafes } = getCafeListFromData();
   return cafes.map((cafe) => ({
     id: cafe.cafeId,
   }));
@@ -47,10 +48,8 @@ export async function generateStaticParams(): Promise<PageId[]> {
 export default async function Page({ params }: { params: Promise<PageId> }) {
   const detailPageId = (await params).id;
 
-  const { cafe, coffeeBean, menus, updatedAt, tags } = await getCafeDetail(
-    detailPageId,
-    CAFE_DETAIL_REVALIDATE_TIME
-  );
+  const { cafe, coffeeBean, menus, updatedAt, tags } =
+    await getCafeDetailFromData(detailPageId);
 
   const blurDataUrl = await getBlurImg(cafe.mainImageUrl[0]);
 

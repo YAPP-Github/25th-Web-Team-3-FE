@@ -1,0 +1,94 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-81ee-ace8-c0d60cf1860f",
+    "reasonForSelection": "로스터리 카페. 기본 커피는 자체 블렌딩인 세르파와 그랑블루 중에서 선택하며 디카페인도 가능하다. 다양한 싱글오리진 원두를 갖추고 있어 핸드 드립을 즐기기 좋으며, 라테는 시그니처 커피인 파라마운트화이트를 추천한다.",
+    "naverMapUrl": "https://naver.me/5vcHYFEH",
+    "name": "써밋컬쳐 신촌",
+    "nearestStation": "신촌",
+    "location": "서울 마포구 신촌로14안길 11 엘루체 102호 SUMMIT 신촌점",
+    "price": 4800,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/places/ANXAkqGHEyQbmHIUAMC4AR3ow2j5G4V-Rn1B9JDLTP0j1kttYjIeCIra1CT9E66adjwaHSxbSEu9wCzHe9aXx8Mfe7YWtq84Qant990=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "써밋컬쳐 신촌점",
+        "uri": "https://maps.google.com/maps/contrib/117990096595257196919"
+      },
+      {
+        "displayName": "박원재",
+        "uri": "https://maps.google.com/maps/contrib/104628043233507030228"
+      },
+      {
+        "displayName": "IAKOV PAK",
+        "uri": "https://maps.google.com/maps/contrib/103868824186246336228"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-81ee-ace8-c0d60cf1860f-bean",
+    "description": "중강배전의 합리적인 가격 낮은 톤의 산미, 묵직한 단맛, 캐러멜과 쌉싸름한 다크초콜릿의 후미를 가집니다. 데일리 커피에 초점을 맞춘 커피입니다.",
+    "name": "셰르파",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "묵직한 바디",
+        "category": "Other"
+      },
+      {
+        "name": "고소한",
+        "category": "Other"
+      },
+      {
+        "name": "다크 초콜릿",
+        "category": "Nutty/Cocoa"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "네팔",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "MEDIUM"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-81ee-ace8-c0d60cf1860f-m1",
+      "name": "아메리카노",
+      "price": 4800,
+      "imageUrl": "",
+      "description": "깔끔하면서도 깊은 맛 데일리 커피로 가장 많은 사랑을 받는 커피"
+    },
+    {
+      "id": "3456e613-742a-81ee-ace8-c0d60cf1860f-m2",
+      "name": "오늘의 커피",
+      "price": 6000,
+      "imageUrl": "",
+      "description": "맛있는 핸드드립 커피를 합리적인 가격으로 만나보실 수 있습니다"
+    }
+  ],
+  "tags": [
+    {
+      "id": "d944c5dd-803f-4f2c-96c5-8a6390fd1b95",
+      "name": "블루리본",
+      "imageUrl": ""
+    },
+    {
+      "id": "f7672ade-797b-4369-8bd5-98a9931a29c9",
+      "name": "시그니처",
+      "imageUrl": ""
+    },
+    {
+      "id": "683fad1f-1a5d-40c4-9ff8-77177b5d009f",
+      "name": "대중적인",
+      "imageUrl": ""
+    },
+    {
+      "id": "45507d6d-9817-4f8c-a23b-2f119d9101d2",
+      "name": "드립커피",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-29"
+}

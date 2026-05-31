@@ -1,0 +1,97 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-8138-9e91-ed9e1a3863fc",
+    "reasonForSelection": "알레그리아 커피 로스터스는 해 마다 갓 수확된 좋은 재료를 찾기 위하여 노력하며 커피가 가진 본연의 아름다움을 정확히 전달하기 위해 체계적인 로스팅 기법과 품질 검증 시스템을 갖춘 카페입니다.",
+    "naverMapUrl": "https://naver.me/xl0DvbDL",
+    "name": "알레그리아 광화문 케이스퀘어시티점",
+    "nearestStation": "광화문",
+    "location": "서울 중구 청계천로 24 1층",
+    "price": 6700,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/places/ANXAkqEh9OZOx1OceUcsEuQIUuFZc1Ow4oBmgBv0QlV0rLL8V0O-MPVeDYjGKEKHk5cOJnxs4htFl7QdLYPN2IL4slRyOgyOjwWVrEU=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "ACR • Alegria Coffee Roasters",
+        "uri": "https://maps.google.com/maps/contrib/113795254722403618287"
+      },
+      {
+        "displayName": "Supakij Khomvilai",
+        "uri": "https://maps.google.com/maps/contrib/109043515752937696097"
+      },
+      {
+        "displayName": "Lisa Nguyen-Maher",
+        "uri": "https://maps.google.com/maps/contrib/102654207693925420526"
+      },
+      {
+        "displayName": "ILSEOP LIM",
+        "uri": "https://maps.google.com/maps/contrib/106619759096815157789"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-8138-9e91-ed9e1a3863fc-bean",
+    "description": "남녀노소 누구나 매일 마시기에 지루하지 않은 달콤하고 고소한 맛이 풍부한 커피입니다.첫 모금부터 입안에 남는 애프터까지 균형 잡힌 밸런스가 유지될 수 있도록 섬세하기 설계되어 있습니다.",
+    "name": "정글 에스프레소",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "묵직한 바디",
+        "category": "Other"
+      },
+      {
+        "name": "고소한",
+        "category": "Other"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "브라질",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "에티오피아",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "과테말라",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "MEDIUM"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-8138-9e91-ed9e1a3863fc-m1",
+      "name": "카페 라 노체",
+      "price": 6700,
+      "imageUrl": "",
+      "description": "정글 콜드브루를 베이스로 달콤한 콜드브루 밀크폼이 어우러진 알레그리아 시그니처 음료"
+    },
+    {
+      "id": "3456e613-742a-8138-9e91-ed9e1a3863fc-m2",
+      "name": "카페 콘 엘라도",
+      "price": 7000,
+      "imageUrl": "",
+      "description": "아이스 라떼 위에 바닐라 아이스크림이 올라가 달콤하게 마실 수 있는 아이스커피"
+    }
+  ],
+  "tags": [
+    {
+      "id": "b20b1b80-50ce-49a4-8ef2-ee2d58b8e4fe",
+      "name": "브랜드",
+      "imageUrl": ""
+    },
+    {
+      "id": "d0d0bdb1-e7c7-4671-96b1-1f3e8c2d745c",
+      "name": "블렌드",
+      "imageUrl": ""
+    },
+    {
+      "id": "c5c030e2-74f2-4031-bbfa-7573231b9121",
+      "name": "에스프레소 맛집",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-27"
+}

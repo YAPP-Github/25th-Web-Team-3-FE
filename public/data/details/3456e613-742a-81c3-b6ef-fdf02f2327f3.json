@@ -1,0 +1,101 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-81c3-b6ef-fdf02f2327f3",
+    "reasonForSelection": "출판사였던 곳을 펄시커피라는 이름으로 창출해낸 구조적 아름다움, 그리고 이 공간을 지켜온 오랜 시간과 가치들을 녹여낸 커피가 어우러져 있습니다. 펄시가 전하는 맛과 향, 그리고 시간은 새로운 기억을 고스란히 저장하는 펄시만의 기록입니다. 펄시커피의 모든 커피에는 매년 sca에서 엄선한 스페셜티 원두만을 사용하고 있습니다.",
+    "naverMapUrl": "https://naver.me/5uIYkv3v",
+    "name": "펄시커피",
+    "nearestStation": "동대입구",
+    "location": "서울 중구 동호로20길 34-57 1층 펄시커피",
+    "price": 5800,
+    "mainImageUrl": [
+      "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240901_205%2F1725157605724m0bUr_PNG%2F%25C6%25DE%25BD%25C3%25C4%25BF%25C7%25C7_%25BF%25DC%25BA%25CE1.png"
+    ],
+    "imageAttributions": []
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-81c3-b6ef-fdf02f2327f3-bean",
+    "description": "펄시커피에서 가장 사랑받고 즐겨찾는 블랜드 스텔라입니다. 복합적인 베리 뉘앙스에 복숭아, 자두의 새콤달콤함을 더했으며 플로럴함과 와이니함을 함께 갖고 있는 게 특징입니다. 스텔라는 마지막 한 방울의 맛까지 오래 기억되는 고유의 블렌드 커피입니다.",
+    "name": "스텔라 블랜드 커피",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "레드와인",
+        "category": "Sour/Fermented"
+      },
+      {
+        "name": "자두",
+        "category": "Fruity"
+      },
+      {
+        "name": "시나몬",
+        "category": "Spices"
+      },
+      {
+        "name": "블루베리",
+        "category": "Fruity"
+      },
+      {
+        "name": "꽃향기",
+        "category": "Floral"
+      },
+      {
+        "name": "복숭아",
+        "category": "Fruity"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "콜롬비아",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "에티오피아",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "케냐",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "LIGHT"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-81c3-b6ef-fdf02f2327f3-m1",
+      "name": "SIGNATURE BROWN",
+      "price": 5800,
+      "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20241120_35%2F1732094179717gRbtR_PNG%2FIMG_3796.png",
+      "description": "(ONLY ICE) 유기농 우유와 스페셜티 에스프레소가 진하게 어우러진 플랫화이트 위로 시나몬 크림과 에스프레소의 글레이징 조화가 환상적인 미소가 절로 지어 지는 맛입니다.8온스의 음료로 펄시의 컬러를 가장 잘 보여주는 작지만 강렬한 맛의 커피 입니다."
+    },
+    {
+      "id": "3456e613-742a-81c3-b6ef-fdf02f2327f3-m2",
+      "name": "STELLA B:LATTE",
+      "price": 6000,
+      "imageUrl": "",
+      "description": "(ONLY ICE) STELLA BLEND로 만든 체리초콜릿 맛 아이스 라떼입니다. *호불호 갈리는 메뉴입니다."
+    }
+  ],
+  "tags": [
+    {
+      "id": "f7672ade-797b-4369-8bd5-98a9931a29c9",
+      "name": "시그니처",
+      "imageUrl": ""
+    },
+    {
+      "id": "d0d0bdb1-e7c7-4671-96b1-1f3e8c2d745c",
+      "name": "블렌드",
+      "imageUrl": ""
+    },
+    {
+      "id": "c8b9f0dd-8d54-481e-8e3a-edbf7929cbb9",
+      "name": "싱글오리진",
+      "imageUrl": ""
+    },
+    {
+      "id": "45507d6d-9817-4f8c-a23b-2f119d9101d2",
+      "name": "드립커피",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-27"
+}

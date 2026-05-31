@@ -1,0 +1,98 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-812f-8185-f5e79c36f5e6",
+    "reasonForSelection": "커피를 좋아하는 모든 사람들이 쉽고 편안하게 즐길 수 있는 커피 문화를 중심으로 성장 목표를 두고 있습니다. 커피 스니퍼에 방문하시는 분들이 역사 속에 담겨있는 커피 스니퍼를 시각적으로 즐길 수 있는 인테리어 포인트, 커피 중심의 메뉴 구성 등을 기반으로 어우러진 음악과 함께 오감을 만족시킬 수 있는 분위기를 조성합니다.",
+    "naverMapUrl": "https://naver.me/xFLuCc2K",
+    "name": "커피스니퍼 서울시청점",
+    "nearestStation": "시청",
+    "location": "서울 중구 세종대로16길 27 남양빌딩 1층 102호",
+    "price": 6800,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/places/ANXAkqG4Q9pfPVDTyNmQKTb0mLFHLDFSUGFLQUfshfnCA-hOyMJU5a3FNXoCURoydMXYqxfA5CjUHjDfp6R_gxew8xkGCdeWs5j_Yss=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "커피스니퍼 서울 시청점 (Koffee Sniffer Seoul City Hall)",
+        "uri": "https://maps.google.com/maps/contrib/105084200904133051989"
+      },
+      {
+        "displayName": "Josemaria Rafael Montemayor",
+        "uri": "https://maps.google.com/maps/contrib/105628346135126353482"
+      },
+      {
+        "displayName": "KunTa Tsai",
+        "uri": "https://maps.google.com/maps/contrib/114875921730523192845"
+      },
+      {
+        "displayName": "Анастасия Босько",
+        "uri": "https://maps.google.com/maps/contrib/109559085324617342384"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-812f-8185-f5e79c36f5e6-bean",
+    "description": "브라질 커피가 가지고 있는 균형 잡힌 향미와 함께 인도 로부스타 품종에서 느껴지는 구수함과 묵직한 바디감이 더해져 에스프레소 베리에이션 음료에 더할 나위 없이 잘 어울리는 커피입니다",
+    "name": "토스티 블렌드",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "묵직한 바디",
+        "category": "Other"
+      },
+      {
+        "name": "다크 초콜릿",
+        "category": "Nutty/Cocoa"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "브라질",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "인도",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "MEDIUM"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-812f-8185-f5e79c36f5e6-m1",
+      "name": "커스타드 라떼",
+      "price": 6800,
+      "imageUrl": "",
+      "description": "달콤한 커스터드 밀크 위에 에스페레소 크림이 올라간 음료"
+    },
+    {
+      "id": "3456e613-742a-812f-8185-f5e79c36f5e6-m2",
+      "name": "비스킷 라떼",
+      "price": 7000,
+      "imageUrl": "",
+      "description": "커피 비스킷 풍미가 가득한 우유와 에스프레소 크림의 조화"
+    }
+  ],
+  "tags": [
+    {
+      "id": "c8b9f0dd-8d54-481e-8e3a-edbf7929cbb9",
+      "name": "싱글오리진",
+      "imageUrl": ""
+    },
+    {
+      "id": "d0d0bdb1-e7c7-4671-96b1-1f3e8c2d745c",
+      "name": "블렌드",
+      "imageUrl": ""
+    },
+    {
+      "id": "b20b1b80-50ce-49a4-8ef2-ee2d58b8e4fe",
+      "name": "브랜드",
+      "imageUrl": ""
+    },
+    {
+      "id": "71a7dbcb-7bbf-4f99-bbdb-82e294e688ae",
+      "name": "라떼 맛집",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-27"
+}

@@ -1,0 +1,32 @@
+{
+  "areas": [
+    {
+      "code": "CHUNGMURO_EULJIRO",
+      "displayName": "충무로 / 을지로"
+    },
+    {
+      "code": "SINDANG_YAKSU",
+      "displayName": "신당 / 약수"
+    },
+    {
+      "code": "SICHEONG_GWANGHWAMUN",
+      "displayName": "시청 / 광화문"
+    },
+    {
+      "code": "JONGRO3GA_ANGUK",
+      "displayName": "종로3가 / 안국"
+    },
+    {
+      "code": "HAPJEONG",
+      "displayName": "합정"
+    },
+    {
+      "code": "SINCHON_HONGDAE",
+      "displayName": "신촌 / 홍대"
+    },
+    {
+      "code": "MANGWON",
+      "displayName": "망원"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-8158-b139-d5dee62905dd",
+    "reasonForSelection": "카페 이름 [인덴트]는 새로 시작하는 문단의 첫머리를 들여씀을 뜻하는 단어입니다. 이처럼 인덴트는 단순한 커피숍을 넘어 머물며 쉬어갈 수 있는 특별한 공간입니다. 직접 볶고 내린 스페셜티 커피와 약간의 읽을거리를 제공합니다.",
+    "naverMapUrl": "https://naver.me/G2EOjUCU",
+    "name": "인덴트커피룸",
+    "nearestStation": "망원",
+    "location": "서울 마포구 희우정로20길 15 1층",
+    "price": 6000,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/place-photos/AJRVUZMr_c7bS_U5cIe8Raiv-ovMROHncOhtuivN5GThAmtPjXazAUpYNFZbg2UaNUw898di99RWdgl3lgio3Z-x8POaBeWCGzrJX6QuG2_vO7bpQl_pzNVSJMe5yriLvwjsEaw7KnASxn14xCIml3s=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "Newjin",
+        "uri": "https://maps.google.com/maps/contrib/105446364100325684675"
+      },
+      {
+        "displayName": "JINU YOUN",
+        "uri": "https://maps.google.com/maps/contrib/112925352849439490899"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-8158-b139-d5dee62905dd-bean",
+    "description": "향긋, 고소, 달콤 쌉싸름한, 데일리로 즐기기 좋은 편안한 느낌의 하우스 블렌드입니다.",
+    "name": "인덴트 하우스 블렌드",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "밀크 초콜릿",
+        "category": "Nutty/Cocoa"
+      },
+      {
+        "name": "시트러스",
+        "category": "Fruity"
+      },
+      {
+        "name": "토피넛",
+        "category": "Nutty/Cocoa"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "브라질",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "에티오피아",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "MEDIUM"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-8158-b139-d5dee62905dd-m1",
+      "name": "브루잉",
+      "price": 6000,
+      "imageUrl": "",
+      "description": "세심하게 고른 원두로 직접 내리는 브루잉 커피."
+    },
+    {
+      "id": "3456e613-742a-8158-b139-d5dee62905dd-m2",
+      "name": "피스타치오 크림라테",
+      "price": 6500,
+      "imageUrl": "",
+      "description": "하우스블렌드 베이스에 피스타치오 페이스트가 들어간, 고소하고 달콤한 크림라테."
+    }
+  ],
+  "tags": [
+    {
+      "id": "d944c5dd-803f-4f2c-96c5-8a6390fd1b95",
+      "name": "블루리본",
+      "imageUrl": ""
+    },
+    {
+      "id": "d0d0bdb1-e7c7-4671-96b1-1f3e8c2d745c",
+      "name": "블렌드",
+      "imageUrl": ""
+    },
+    {
+      "id": "84e16f3f-5d1b-49e4-83d9-d38a3349f840",
+      "name": "필터 맛집",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-25"
+}

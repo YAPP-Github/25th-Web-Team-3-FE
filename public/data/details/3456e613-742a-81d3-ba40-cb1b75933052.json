@@ -1,0 +1,93 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-81d3-ba40-cb1b75933052",
+    "reasonForSelection": "드립커피 전문점으로, 우유와 함께 잘 녹지 않은 오독오독 씹히는 설탕 인 “보현 라떼”를 주력으로 소비자들에게 인기를 끌고 있습니다.",
+    "naverMapUrl": "https://naver.me/5XJy0lfu",
+    "name": "보현커피",
+    "nearestStation": "동대입구",
+    "location": "서울 중구 동호로30길 31 1층",
+    "price": 4000,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/places/ANXAkqEZpwb53dht3D7erbmyf6aXHOApAhnrqNGDQ4eBcRcJEe-PcgNo1mo_QknJxFRcG84x0F4jDeL7TekdTzcJqy7TIVL2kaesSWM=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "보현커피 (BO HYUN Coffee)",
+        "uri": "https://maps.google.com/maps/contrib/101825584993305805085"
+      },
+      {
+        "displayName": "Yong Chung",
+        "uri": "https://maps.google.com/maps/contrib/110930874229939308722"
+      },
+      {
+        "displayName": "Thomas Borch",
+        "uri": "https://maps.google.com/maps/contrib/105452752025181778492"
+      },
+      {
+        "displayName": "BEE KIM",
+        "uri": "https://maps.google.com/maps/contrib/106683935268746501914"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-81d3-ba40-cb1b75933052-bean",
+    "description": "게이샤 원두는 긴 타원형의 모양을 가지고 있으며, 향미가 복잡하고 섬세합니다. 게이샤 블렌드는 이러한 게이샤 원두의 특성을 유지하면서도 다른 원두와의 조화를 통해 균형 잡힌 맛을 제공합니다.",
+    "name": "게이샤 블렌드",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "자스민",
+        "category": "Floral"
+      },
+      {
+        "name": "과일",
+        "category": "Fruity"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "페루",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "콜롬비아",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "LIGHT"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-81d3-ba40-cb1b75933052-m1",
+      "name": "보현카페라떼",
+      "price": 4000,
+      "imageUrl": "",
+      "description": "커피우유,잘 녹지않고 오독오독 씹히는 설탕"
+    },
+    {
+      "id": "3456e613-742a-81d3-ba40-cb1b75933052-m2",
+      "name": "추천 드립 커피",
+      "price": 5000,
+      "imageUrl": "",
+      "description": "원두의 아로마와 맛에 기준을 둔 스페셜 티"
+    }
+  ],
+  "tags": [
+    {
+      "id": "1ead9a26-ab24-4d5b-b046-4af8636f6b97",
+      "name": "매니아",
+      "imageUrl": ""
+    },
+    {
+      "id": "f7672ade-797b-4369-8bd5-98a9931a29c9",
+      "name": "시그니처",
+      "imageUrl": ""
+    },
+    {
+      "id": "45507d6d-9817-4f8c-a23b-2f119d9101d2",
+      "name": "드립커피",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-28"
+}

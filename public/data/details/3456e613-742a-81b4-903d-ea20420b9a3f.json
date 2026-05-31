@@ -1,0 +1,93 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-81b4-903d-ea20420b9a3f",
+    "reasonForSelection": "커피친구는 다양한 원두를 직접 볶고 정성스럽게 내린 핸드드립 커피를 제공하는 전문점입니다. 이곳은 세월이 묻어나는 인테리어와 다양한 커피 기구들이 마치 교토의 한 커피숍에 온 듯한 전통적인 분위기를 자아냅니다.",
+    "naverMapUrl": "https://naver.me/GoDXU61B",
+    "name": "커피친구",
+    "nearestStation": "종각",
+    "location": "서울 종로구 삼봉로 81 두산위브파빌리온",
+    "price": 6000,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/place-photos/AJRVUZN62RQ1FnwvGKUmwr2fz9oqNtG5yj66k2NZPOdDAfxP3dr1j2xdu5liLLeGrienmwhFgRoKNbE9YMKCVFJagsN-12bdWsGIZjc96rL-UtLkgbWD1XSds3DArBnFPi0HEFpKJqnb4wCYh8qji9k=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "De La",
+        "uri": "https://maps.google.com/maps/contrib/106119554221740690788"
+      },
+      {
+        "displayName": "Tanuja Bhat",
+        "uri": "https://maps.google.com/maps/contrib/114150979507454066144"
+      },
+      {
+        "displayName": "Jackie H Lim",
+        "uri": "https://maps.google.com/maps/contrib/104350919687035955949"
+      },
+      {
+        "displayName": "eofish",
+        "uri": "https://maps.google.com/maps/contrib/111441020920432035855"
+      },
+      {
+        "displayName": "un promeneur solitaire",
+        "uri": "https://maps.google.com/maps/contrib/100309870201186518618"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-81b4-903d-ea20420b9a3f-bean",
+    "description": "고유한 향미와 풍미를 제공하여 커피 애호가들에게 큰 매력을 줍니다. 자연 건조와 세척 처리 방법에 따라 와인 같은 맛이나 레몬그라스와 자스민 같은 향미를 경험할 수 있습니다.",
+    "name": "에티오피아 이르가체페",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "꽃향기",
+        "category": "Floral"
+      },
+      {
+        "name": "시트러스",
+        "category": "Fruity"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "에티오피아",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "LIGHT"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-81b4-903d-ea20420b9a3f-m1",
+      "name": "에티오피아",
+      "price": 6000,
+      "imageUrl": "",
+      "description": "에티오피아에서 생산되는 커피 중 가장 세련된 커피로 평가되며 풍부한 향미와 깨끗한 신맛, 부드러운 단맛이 특징인 고급 커피입니다."
+    },
+    {
+      "id": "3456e613-742a-81b4-903d-ea20420b9a3f-m2",
+      "name": "모카 마타리",
+      "price": 9000,
+      "imageUrl": "",
+      "description": "세계에서 최고의 커피중 하나로 평가받고 있으며 와인과 같은 풍미와 깔금하고 오래 지속되는 뒷맛으로 커피의 귀부인이라고도 불립니다."
+    }
+  ],
+  "tags": [
+    {
+      "id": "84e16f3f-5d1b-49e4-83d9-d38a3349f840",
+      "name": "필터 맛집",
+      "imageUrl": ""
+    },
+    {
+      "id": "c8b9f0dd-8d54-481e-8e3a-edbf7929cbb9",
+      "name": "싱글오리진",
+      "imageUrl": ""
+    },
+    {
+      "id": "d944c5dd-803f-4f2c-96c5-8a6390fd1b95",
+      "name": "블루리본",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-27"
+}

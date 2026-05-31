@@ -1,0 +1,93 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-8147-8641-e38b38b62205",
+    "reasonForSelection": "코리아 브루어스 컵 챔피언십(KBrC)를 비롯한 대회 수상자를 여럿 배출한 프릳츠는 국내 스페셜티 커피의 도입에 일조했습니다. 생두 바이어 김병기, 국가대표 챔피언 박근하를 비롯한 사람들이 모여 프릳츠를 설립했습니다. 대중적인 입맛을 사로잡은 블렌드를 선사합니다.",
+    "naverMapUrl": "https://naver.me/FzSZPU8k",
+    "name": "프릳츠 원서점",
+    "nearestStation": "안국",
+    "location": "서울 종로구 율곡로 83 아라리오 뮤지엄",
+    "price": 0,
+    "mainImageUrl": [
+      "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240402_172%2F1712037942572gsrLk_JPEG%2F1.jpg"
+    ],
+    "imageAttributions": []
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-8147-8641-e38b38b62205-bean",
+    "description": "커피는 과일이라는 슬로건 아래, 커피가 가진 고유한 밝은 산미와 깨끗한 단맛을 느낄 수 있습니다.",
+    "name": "서울 시네마",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "자두",
+        "category": "Fruity"
+      },
+      {
+        "name": "라즈베리",
+        "category": "Fruity"
+      },
+      {
+        "name": "레몬필",
+        "category": "Fruity"
+      },
+      {
+        "name": "아쌈티",
+        "category": "Floral"
+      },
+      {
+        "name": "설탕",
+        "category": "Sweet"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "에티오피아",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "코스타리카",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "LIGHT"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-8147-8641-e38b38b62205-m1",
+      "name": "브루잉커피",
+      "price": 0,
+      "imageUrl": "https://ldb-phinf.pstatic.net/20220922_148/16638262488097T4m6_JPEG/%B5%B5%C8%AD%BA%EA%B7%E7%C0%D7.jpg",
+      "description": "원두의 풍미를 가장 잘 느낄 수 있는 브루잉 커피입니다."
+    },
+    {
+      "id": "3456e613-742a-8147-8641-e38b38b62205-m2",
+      "name": "카페라떼",
+      "price": 5000,
+      "imageUrl": "https://ldb-phinf.pstatic.net/20220922_291/1663826177655G8hRr_JPEG/%B6%F3%B6%BC.jpg",
+      "description": "에스프레소에 우유를 넣은 카페라테입니다."
+    }
+  ],
+  "tags": [
+    {
+      "id": "b20b1b80-50ce-49a4-8ef2-ee2d58b8e4fe",
+      "name": "브랜드",
+      "imageUrl": ""
+    },
+    {
+      "id": "683fad1f-1a5d-40c4-9ff8-77177b5d009f",
+      "name": "대중적인",
+      "imageUrl": ""
+    },
+    {
+      "id": "d0d0bdb1-e7c7-4671-96b1-1f3e8c2d745c",
+      "name": "블렌드",
+      "imageUrl": ""
+    },
+    {
+      "id": "0bf60d10-7f76-424f-97f3-4450ad284d73",
+      "name": "과일",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-28"
+}

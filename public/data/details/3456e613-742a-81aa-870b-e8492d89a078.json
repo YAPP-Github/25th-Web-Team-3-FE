@@ -1,0 +1,85 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-81aa-870b-e8492d89a078",
+    "reasonForSelection": "로스터가 직접 운영하는 망원동 로스터리 카페 루틸입니다. 다양한 스페셜티 커피를 매일 로스팅하고 있으며 핸드드립으로 맛보실 수 있습니다. 커피 외에도 루틸에서만 경험하실 수 있는 시그니처 음료들이 준비돼 있습니다.",
+    "naverMapUrl": "https://naver.me/55rAjnJk",
+    "name": "루틸",
+    "nearestStation": "망원",
+    "location": "서울 마포구 포은로 136 1층 루틸",
+    "price": 5000,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/place-photos/AJRVUZMcOxLjdPHPLcUHBAnpOzLQYTUvnHK2JV5yZw9TqvX0Qrj1oeDCk6YOZsrG_7DukG6dGB9paKWrpWrKXkZ4JUc75cmGAmF0RlXKCNhLgjB7r9WkRjS8c_qtMMAT3GxhuW6YEWJJf2BSDsnGgtXy7jQs=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "유영상",
+        "uri": "https://maps.google.com/maps/contrib/117446042587647161743"
+      },
+      {
+        "displayName": "Rutile",
+        "uri": "https://maps.google.com/maps/contrib/105257275143129772496"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-81aa-870b-e8492d89a078-bean",
+    "description": "시트러스의 산미가 있으면서도 밀크 초콜릿의 고소하고 달콤한 향미가 중심을 잘 잡아주는 원두입니다.",
+    "name": "코스타리카 로스 앙헬레스 돈 카이토",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "오렌지",
+        "category": "Fruity"
+      },
+      {
+        "name": "복숭아",
+        "category": "Fruity"
+      },
+      {
+        "name": "밀크 초콜릿",
+        "category": "Nutty/Cocoa"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "코스타리카",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "MEDIUM"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-81aa-870b-e8492d89a078-m1",
+      "name": "핸드드립",
+      "price": 5000,
+      "imageUrl": "",
+      "description": "직접 고르고 로스팅한 원두를 내려드리는 핸드드립."
+    },
+    {
+      "id": "3456e613-742a-81aa-870b-e8492d89a078-m2",
+      "name": "카페 라떼",
+      "price": 4300,
+      "imageUrl": "",
+      "description": "밸런스가 훌륭한 카페 라떼."
+    }
+  ],
+  "tags": [
+    {
+      "id": "1ead9a26-ab24-4d5b-b046-4af8636f6b97",
+      "name": "매니아",
+      "imageUrl": ""
+    },
+    {
+      "id": "c8b9f0dd-8d54-481e-8e3a-edbf7929cbb9",
+      "name": "싱글오리진",
+      "imageUrl": ""
+    },
+    {
+      "id": "84e16f3f-5d1b-49e4-83d9-d38a3349f840",
+      "name": "필터 맛집",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-25"
+}

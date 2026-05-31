@@ -1,0 +1,106 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-8168-a4f1-cc45f6b820d2",
+    "reasonForSelection": "헤베커피를 이끄는 여성 임지영 바리스타는 코리아 브루어스 컵 챔피언십(KBrC)을 수상하며 커피 시장에서 증명받았습니다. 호불호 없는 로스팅과 고소함을 통해 입문자들도 스페셜티에 빠져들게끔 합니다. 헤베커피는 두유와 에스프레소를 기반으로 한 시그니처 라테를 제공합니다.",
+    "naverMapUrl": "https://naver.me/GJEShSln",
+    "name": "헤베커피",
+    "nearestStation": "충무로",
+    "location": "서울 중구 필동로 32 낙원빌딩 1층",
+    "price": 6000,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/place-photos/AJRVUZNXconVpn4gyBNZ_PVV2ZrXWvl6vPqE8EDA3c99o9NQfvD6CziB6xznE2VgHCnfhp95ezCYUX4D8Z-Yhx_iA9Vi9Z0onZ3IbuRj03ae0nhHz8Lvhfmp5ISJdD4nA-0Jgu9ryzh6LjQV5o9rQg=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "Hyoshin “최효신” Choi",
+        "uri": "https://maps.google.com/maps/contrib/116837340461218774818"
+      },
+      {
+        "displayName": "Kyobin Koo",
+        "uri": "https://maps.google.com/maps/contrib/116967419047356431868"
+      },
+      {
+        "displayName": "Yongsuk Sung",
+        "uri": "https://maps.google.com/maps/contrib/108959025408836147813"
+      },
+      {
+        "displayName": "지나Gina",
+        "uri": "https://maps.google.com/maps/contrib/101192948603330846278"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-8168-a4f1-cc45f6b820d2-bean",
+    "description": "클래식 블렌드의 목표는 누구나 호불호 없이 즐길 수 있는 커피를 만드는 데 있습니다. 다크 초콜릿의 진하고 묵직한 맛과 견과류의 고소함을 가지며, 텁텁하지 않아 깔끔하게 마실 수 있습니다.",
+    "name": "클래식 블렌드",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "다크 초콜릿",
+        "category": "Nutty/Cocoa"
+      },
+      {
+        "name": "구운 호두",
+        "category": "Nutty/Cocoa"
+      },
+      {
+        "name": "흑설탕",
+        "category": "Sweet"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "브라질 세라도",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "콜롬비아 우일라",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "인도네시아 만델링",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "DARK"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-8168-a4f1-cc45f6b820d2-m1",
+      "name": "헤베커피",
+      "price": 6000,
+      "imageUrl": "",
+      "description": "시그니처 음료. 고소한 두유 베이스에 에스프레소 샷과 달콤한 생크림의 조화!"
+    },
+    {
+      "id": "3456e613-742a-8168-a4f1-cc45f6b820d2-m2",
+      "name": "브루잉커피",
+      "price": 0,
+      "imageUrl": "",
+      "description": "시즌에 가장 맛있는 싱글 오리진 커피를 선별하여 소개합니다."
+    }
+  ],
+  "tags": [
+    {
+      "id": "66002d49-d8f9-4119-99ef-c508ead21371",
+      "name": "KBrC 수상",
+      "imageUrl": ""
+    },
+    {
+      "id": "d944c5dd-803f-4f2c-96c5-8a6390fd1b95",
+      "name": "블루리본",
+      "imageUrl": ""
+    },
+    {
+      "id": "683fad1f-1a5d-40c4-9ff8-77177b5d009f",
+      "name": "대중적인",
+      "imageUrl": ""
+    },
+    {
+      "id": "d2f64390-f36c-47b2-a787-46227a95ffc9",
+      "name": "고소",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": null
+}

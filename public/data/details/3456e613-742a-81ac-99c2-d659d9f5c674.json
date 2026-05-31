@@ -1,0 +1,77 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-81ac-99c2-d659d9f5c674",
+    "reasonForSelection": "'탁월한 커피전문가 집단'인 빈브라더스의 매장 중 하나입니다. 바리스타의 이름을 표기하며 존중하는 모습이 돋보입니다. 고품질의 싱글오리진 원두를 맛보실 수 있습니다. 과일향이 돋보이는 원두로 맛있는 산미를 느낄 수 있는 쉽지않은 기회입니다.",
+    "naverMapUrl": "https://naver.me/FsRslsi1",
+    "name": "결",
+    "nearestStation": "광화문",
+    "location": "서울 종로구 공평동 17",
+    "price": 0,
+    "mainImageUrl": [
+      "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20231211_85%2F1702260626377lmDSt_JPEG%2F%25B0%25E1_1.jpg"
+    ],
+    "imageAttributions": []
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-81ac-99c2-d659d9f5c674-bean",
+    "description": "좋은 케냐 커피는 기본적으로 흑설탕처럼 진득하게 달콤한 향이 납니다. 망고와 샤인 머스캣부터 자두와 파인애플, 오렌지까지, 주의를 기울이면 진한 달콤함의 베이스 위 풍부한 과일 향을 느낄 수 있습니다.",
+    "name": "케냐 기투구",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "자몽",
+        "category": "Fruity"
+      },
+      {
+        "name": "오렌지",
+        "category": "Fruity"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "케냐",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "MEDIUM"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-81ac-99c2-d659d9f5c674-m1",
+      "name": "필터 커피",
+      "price": 0,
+      "imageUrl": "https://ldb-phinf.pstatic.net/20230531_283/1685525917846LOV6w_JPEG/%B5%E5%B8%B3%C4%BF%C7%C7_ICED_%281%29.jpg",
+      "description": "필터로 내린 커피입니다."
+    },
+    {
+      "id": "3456e613-742a-81ac-99c2-d659d9f5c674-m2",
+      "name": "바닐라라떼",
+      "price": 0,
+      "imageUrl": "https://ldb-phinf.pstatic.net/20230531_242/1685526003844vkJ34_JPEG/%B6%F3%B6%BC%B9%D9%B4%D2%B6%F3_ICED.jpg",
+      "description": "에스프레소에 우유를 넣고 바닐라 향을 가미해 달달한 라테입니다."
+    }
+  ],
+  "tags": [
+    {
+      "id": "b20b1b80-50ce-49a4-8ef2-ee2d58b8e4fe",
+      "name": "브랜드",
+      "imageUrl": ""
+    },
+    {
+      "id": "84e16f3f-5d1b-49e4-83d9-d38a3349f840",
+      "name": "필터 맛집",
+      "imageUrl": ""
+    },
+    {
+      "id": "c8b9f0dd-8d54-481e-8e3a-edbf7929cbb9",
+      "name": "싱글오리진",
+      "imageUrl": ""
+    },
+    {
+      "id": "0bf60d10-7f76-424f-97f3-4450ad284d73",
+      "name": "과일",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-28"
+}

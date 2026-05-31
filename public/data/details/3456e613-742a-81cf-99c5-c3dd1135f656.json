@@ -1,0 +1,95 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-81cf-99c5-c3dd1135f656",
+    "reasonForSelection": "블루보틀은 오로지 커피 맛에 집중합니다. 국내 커피 접근성을 높이고 초심자에게 친절한 가이드를 건네는 블루보틀은‘ 2024년 탄소중립을 향한 우리의 로드맵’을 발표하는등 사회 영향을 강조합니다.",
+    "naverMapUrl": "https://naver.me/FafyiH32",
+    "name": "블루보틀 삼청 카페",
+    "nearestStation": "안국",
+    "location": "서울 종로구 북촌로5길 76",
+    "price": 6600,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/place-photos/AJRVUZNkjHFR2a7_qMc0XiZI_4iR5qDTNQvU0pUELbQQkyyHSPBqwrmcw7gq41Fc7l2Y4wd6h4mNu5Zs1qwS-NuUa9iAGHH46LAlN-lyV_-HeOlu_GbR3lQ--5eDYSFIVMZVq8HYdAH2w2ANPlwhLtK6TgobZw=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "루나루이",
+        "uri": "https://maps.google.com/maps/contrib/102265699602969609145"
+      },
+      {
+        "displayName": "HA KWON",
+        "uri": "https://maps.google.com/maps/contrib/109161350980383316858"
+      },
+      {
+        "displayName": "WenHuei Chen",
+        "uri": "https://maps.google.com/maps/contrib/111271951369724601076"
+      },
+      {
+        "displayName": "HUN KIM",
+        "uri": "https://maps.google.com/maps/contrib/104490842568215655362"
+      },
+      {
+        "displayName": "Eon Wang",
+        "uri": "https://maps.google.com/maps/contrib/104092365072111774209"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-81cf-99c5-c3dd1135f656-bean",
+    "description": "블루보틀 창립자인 제임스 프리먼이 개발한 블렌드입니다. 가장 깊고 진하며, 커피 로스팅 시간을 길게 하면 묵직한 바디감을 유지하면서도 강렬한 풍미와 최고의 단맛을 구현할 수 있습니다",
+    "name": "헤이즈 벨리 에스프레소",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "베이킹 초콜릿",
+        "category": "Nutty/Cocoa"
+      },
+      {
+        "name": "오렌지필",
+        "category": "Fruity"
+      },
+      {
+        "name": "당밀",
+        "category": "Sweet"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "과테말라",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "브라질",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "콜롬비아",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "DARK"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-81cf-99c5-c3dd1135f656-m1",
+      "name": "놀라",
+      "price": 6600,
+      "imageUrl": "",
+      "description": "놀라는 블루보틀의 시그니처로, 뉴올리언스 스타일 라떼입니다. 다크 로스팅한 스페셜티 커피에 유기농 설탕과 우유를 배합했습니다."
+    },
+    {
+      "id": "3456e613-742a-81cf-99c5-c3dd1135f656-m2",
+      "name": "싱글오리진 (드립)",
+      "price": 6500,
+      "imageUrl": "",
+      "description": "싱글오리진 원두를 드립커피로 제공합니다."
+    }
+  ],
+  "tags": [
+    {
+      "id": "b20b1b80-50ce-49a4-8ef2-ee2d58b8e4fe",
+      "name": "브랜드",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-27"
+}

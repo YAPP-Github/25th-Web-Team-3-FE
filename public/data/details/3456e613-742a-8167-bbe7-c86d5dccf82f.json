@@ -1,0 +1,96 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-8167-bbe7-c86d5dccf82f",
+    "reasonForSelection": "인터네셔널 초콜릿 어워드와 아카데미 오브 초콜릿에서 수상한 실력파 카페로, 신선한 원두와 카카오를 매일 로스팅하여 깊이 있는 커피와 화학 첨가물 없는 빈투바 초콜릿을 함께 즐길 수 있는 특별한 공간입니다.",
+    "naverMapUrl": "https://naver.me/G0DXsJ2f",
+    "name": "로스팅마스터즈 본점",
+    "nearestStation": "홍대입구",
+    "location": "서울 마포구 동교로 129 1층 로스팅마스터즈",
+    "price": 5300,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/places/ANXAkqGyGqDQbJb993TUV-2L7zwgt1aNVW20Xb2gp3-2bwBsLo3frLLaVSJZzKpZu_ZiZrWicVd67KSreXEV-XxYykQWVcm3jxQ0_n0=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "로스팅마스터즈 본점",
+        "uri": "https://maps.google.com/maps/contrib/104162441183739850239"
+      },
+      {
+        "displayName": "Yunhee Nam",
+        "uri": "https://maps.google.com/maps/contrib/100333863946239230211"
+      },
+      {
+        "displayName": "Non Non39 (のんのん)",
+        "uri": "https://maps.google.com/maps/contrib/115567437524978682644"
+      },
+      {
+        "displayName": "Masters Roasting",
+        "uri": "https://maps.google.com/maps/contrib/109745297181587940790"
+      },
+      {
+        "displayName": "IAKOV PAK",
+        "uri": "https://maps.google.com/maps/contrib/103868824186246336228"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-8167-bbe7-c86d5dccf82f-bean",
+    "description": "고소하고 깊은 맛의 합정 원두와 과실향의 밝은 맛을 가진 상수 원두를 매일 필요한 양만큼 로스팅하여 항상 신선한 상태를 유지합니다",
+    "name": "합정 마이스터 블랜드",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "고소한",
+        "category": "Other"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "브라질",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "콜롬비아",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "과테말라",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "인도",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "MEDIUM"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-8167-bbe7-c86d5dccf82f-m1",
+      "name": "드립커피",
+      "price": 5300,
+      "imageUrl": "",
+      "description": "신선하게 로스팅된 원두로 추출한 깊은 풍미의 핸드드립 커피"
+    },
+    {
+      "id": "3456e613-742a-8167-bbe7-c86d5dccf82f-m2",
+      "name": "멜팅초코",
+      "price": 6000,
+      "imageUrl": "",
+      "description": "카카오 초콜릿이 70%나 들어가는 진한 맛의 프리미엄 초콜릿 음료"
+    }
+  ],
+  "tags": [
+    {
+      "id": "b20b1b80-50ce-49a4-8ef2-ee2d58b8e4fe",
+      "name": "브랜드",
+      "imageUrl": ""
+    },
+    {
+      "id": "e36cc3de-cfad-4eee-91b9-eb3d2c421113",
+      "name": "초콜릿",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-29"
+}

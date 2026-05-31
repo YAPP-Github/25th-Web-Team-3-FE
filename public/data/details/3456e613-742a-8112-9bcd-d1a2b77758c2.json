@@ -1,0 +1,86 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-8112-9bcd-d1a2b77758c2",
+    "reasonForSelection": "상호명에서 알 수 있듯이 직접 로스팅을 한 원두로 커피를 내주는 로스터리 카페 입니다. 바테이블 형식이며, 샴페인 잔에 커피를 담아주는 독특한 특징이 있습니다.",
+    "naverMapUrl": "https://naver.me/G9r5J3zu",
+    "name": "로투스 로스팅랩",
+    "nearestStation": "신당",
+    "location": "서울 중구 퇴계로83길 30-14 1층 로투스 로스팅랩",
+    "price": 5000,
+    "mainImageUrl": [
+      "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20220416_166%2F1650082800337GAMGh_JPEG%2FLOTUS_%25BF%25F8%25C7%25FC%25B5%25F0%25C0%25DA%25C0%25CE01.jpg",
+      "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230825_97%2F16929688374889edAV_JPEG%2FIMG_5918.jpeg"
+    ],
+    "imageAttributions": []
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-8112-9bcd-d1a2b77758c2-bean",
+    "description": "아몬드와 밀크초콜렛 같은 견과류와 편안함. 언제나 데일리 커피로 가능합니다. 우유와 함께 섞이는 커피에 에스프레소용으로 사용하기 좋은 고소한 맛의 원두입니다.",
+    "name": "볶블렌드",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "아몬드",
+        "category": "Nutty/Cocoa"
+      },
+      {
+        "name": "밀크 초콜릿",
+        "category": "Nutty/Cocoa"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "에티오피아",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "브라질",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "과테말라",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "MEDIUM"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-8112-9bcd-d1a2b77758c2-m1",
+      "name": "LO+US Latte",
+      "price": 5000,
+      "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240207_182%2F1707297938991FMocE_JPEG%2FIMG_8703.jpeg",
+      "description": "스페셜티 커피 에스프레소+티 느낌이 나는 우유. 밀크티 느낌이 나는 카페라떼."
+    },
+    {
+      "id": "3456e613-742a-8112-9bcd-d1a2b77758c2-m2",
+      "name": "Granita",
+      "price": 5500,
+      "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230829_219%2F1693296774847llUIs_JPEG%2FAE28906D-3AF2-4556-A6BD-1D362DE76685.jpeg",
+      "description": "스페셜티 커피 에스프레소+오렌지 샤베트. 시원, 상큼, 달달한 디저트 음료."
+    }
+  ],
+  "tags": [
+    {
+      "id": "c5c030e2-74f2-4031-bbfa-7573231b9121",
+      "name": "에스프레소 맛집",
+      "imageUrl": ""
+    },
+    {
+      "id": "66002d49-d8f9-4119-99ef-c508ead21371",
+      "name": "KBrC 수상",
+      "imageUrl": ""
+    },
+    {
+      "id": "0921cf45-93af-400b-a9ed-0b85a194f812",
+      "name": "산미",
+      "imageUrl": ""
+    },
+    {
+      "id": "45507d6d-9817-4f8c-a23b-2f119d9101d2",
+      "name": "드립커피",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-27"
+}

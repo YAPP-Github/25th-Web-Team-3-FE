@@ -1,0 +1,98 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-81a4-a35a-cfc0bd4c8aec",
+    "reasonForSelection": "커피그래는 3년 연속 블루리본을 받았습니다. 폭 넓은 원두 선택으로 부담없는 커피 여정의 시작이 될 수 있습니다. 싱글 오리진으로 산미가 돋보이는 필터커피를 입문하기 좋습니다.",
+    "naverMapUrl": "https://naver.me/I55ajFRF",
+    "name": "커피그래",
+    "nearestStation": "약수",
+    "location": "서울 중구 동호로 204 1층",
+    "price": 0,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/place-photos/AJRVUZO-KO_p-yiiYdw4fXxXp9MR3Fu_nSvQNv6vr2wFyKisy8ct_ZFGuTvp_HFuCruSVwC37c69hh5Zt7tvDDp6XNZmdDcYM0hffXFmfemktjELbF4uo5uCPZKo0_ngtBJGRHPM8Xg3CN13V8omPNY=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "stepanorama",
+        "uri": "https://maps.google.com/maps/contrib/101365978953489823828"
+      },
+      {
+        "displayName": "Yeonju Im",
+        "uri": "https://maps.google.com/maps/contrib/105073872421360972186"
+      },
+      {
+        "displayName": "Vivian Chen",
+        "uri": "https://maps.google.com/maps/contrib/113780243021424332188"
+      },
+      {
+        "displayName": "이동현 (커넥터리)",
+        "uri": "https://maps.google.com/maps/contrib/117240882341854953168"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-81a4-a35a-cfc0bd4c8aec-bean",
+    "description": "커피 원두의 국가대표 결정전이라고도 볼 수 있는 Cup of Excellence 대회에서 우수한 성적을 가진 온두라스의 원두입니다. 밝게 볶아서 꽃향기와 백도/청포도의 상큼한 맛을 느낄 수 있습니다. 따뜻한 커피로 마시면 좋습니다.",
+    "name": "온두라스 5위 버지니아스 게이샤 워시드",
+    "engName": "CoE",
+    "flavors": [
+      {
+        "name": "꽃향기",
+        "category": "Floral"
+      },
+      {
+        "name": "백도",
+        "category": "Fruity"
+      },
+      {
+        "name": "청포도",
+        "category": "Fruity"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "온두라스",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "LIGHT"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-81a4-a35a-cfc0bd4c8aec-m1",
+      "name": "핸드드립",
+      "price": 0,
+      "imageUrl": "",
+      "description": "커피의 맛을 가장 많이 느낄 수 있는 추출 방식입니다."
+    },
+    {
+      "id": "3456e613-742a-81a4-a35a-cfc0bd4c8aec-m2",
+      "name": "카페라떼",
+      "price": 5500,
+      "imageUrl": "",
+      "description": "카페라떼입니다."
+    }
+  ],
+  "tags": [
+    {
+      "id": "d944c5dd-803f-4f2c-96c5-8a6390fd1b95",
+      "name": "블루리본",
+      "imageUrl": ""
+    },
+    {
+      "id": "84e16f3f-5d1b-49e4-83d9-d38a3349f840",
+      "name": "필터 맛집",
+      "imageUrl": ""
+    },
+    {
+      "id": "c8b9f0dd-8d54-481e-8e3a-edbf7929cbb9",
+      "name": "싱글오리진",
+      "imageUrl": ""
+    },
+    {
+      "id": "a43f33e2-31f1-47dd-b479-2b60e7d50c26",
+      "name": "꽃향기",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": null
+}

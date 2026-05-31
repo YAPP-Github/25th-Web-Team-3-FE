@@ -1,0 +1,89 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-8184-94c5-f50be5356e64",
+    "reasonForSelection": "망원지튼은 스페셜티 커피와 잘 어울리는 다양한 베이커리를 직접 만드는 공간입니다. 에스프레소와 브루드 커피를 제공하며, 브루드 커피는 시즌별로 원두가 달라집니다. 베이커리는 케이크, 까눌레, 타르트 3종류를 취급하며, 매일 매장에서 직접 구워 신선한 맛을 제공합니다.",
+    "naverMapUrl": "https://naver.me/GvcQC2fn",
+    "name": "망원 지튼",
+    "nearestStation": "망원",
+    "location": "서울 마포구 망원로 73 2층 ZTTN",
+    "price": 6000,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/places/ANXAkqHU69RXln7bbG3wQTiv9jHFLjaPq-oCH5G2g4Pup7KWOqDQgqb4_H5h_VBhE11ECYe4tIB1FAFVkFj-XaDG4R3IIFfMSnQRFak=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "망원 지튼",
+        "uri": "https://maps.google.com/maps/contrib/104684183525583287497"
+      },
+      {
+        "displayName": "박정환",
+        "uri": "https://maps.google.com/maps/contrib/100988524057110604884"
+      },
+      {
+        "displayName": "장유민",
+        "uri": "https://maps.google.com/maps/contrib/109618683476606217821"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-8184-94c5-f50be5356e64-bean",
+    "description": "땅콩, 호두의 고소한 향과 다크 초콜릿의 중후한 향이 어우러지는 원두입니다. 스모키하고 달콤쌉싸름한 맛이 특징입니다.",
+    "name": "과테말라 후에후에테낭고",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "땅콩",
+        "category": "Nutty/Cocoa"
+      },
+      {
+        "name": "호두",
+        "category": "Nutty/Cocoa"
+      },
+      {
+        "name": "다크 초콜릿",
+        "category": "Nutty/Cocoa"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "과테말라",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "DARK"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-8184-94c5-f50be5356e64-m1",
+      "name": "Brewed Coffee",
+      "price": 6000,
+      "imageUrl": "",
+      "description": "계절에 따라 직접 골라 제공되는 커피."
+    },
+    {
+      "id": "3456e613-742a-8184-94c5-f50be5356e64-m2",
+      "name": "God Father",
+      "price": 6000,
+      "imageUrl": "",
+      "description": "12시간 침출된 콜드브루와 수제바닐라크림의 조화."
+    }
+  ],
+  "tags": [
+    {
+      "id": "683fad1f-1a5d-40c4-9ff8-77177b5d009f",
+      "name": "대중적인",
+      "imageUrl": ""
+    },
+    {
+      "id": "84e16f3f-5d1b-49e4-83d9-d38a3349f840",
+      "name": "필터 맛집",
+      "imageUrl": ""
+    },
+    {
+      "id": "f7672ade-797b-4369-8bd5-98a9931a29c9",
+      "name": "시그니처",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-25"
+}

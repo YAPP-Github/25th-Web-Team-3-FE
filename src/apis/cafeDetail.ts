@@ -8,12 +8,12 @@ interface CafeDetail extends Cafe {
   mainImageUrl: string[];
   reasonForSelection: string;
 }
-interface CafeDetailResponse {
+export interface CafeDetailResponse {
   cafe: CafeDetail;
   coffeeBean: CoffeeBean;
   menus: Menu[];
   tags: Tag[];
-  updatedAt: string;
+  updatedAt: string | null;
   description: string;
 }
 

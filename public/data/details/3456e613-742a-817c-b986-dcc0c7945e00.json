@@ -1,0 +1,92 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-817c-b986-dcc0c7945e00",
+    "reasonForSelection": "2002년도에 시작한 테라로사는 강원도에 뿌리내린 브랜드입니다. 스페셜티 커피 브랜드를 표방하며 스페셜티 미식을 알리려는 선구자입니다. 농부명을 표기하고 공정무역을 추진하는 Picker Project에 임합니다.",
+    "naverMapUrl": "https://naver.me/FEUpAjIk",
+    "name": "테라로사 국립현대미술관서울점",
+    "nearestStation": "안국",
+    "location": "서울 종로구 삼청로 30 국립현대미술관 서울관 1층",
+    "price": 0,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/place-photos/AJRVUZOb0J7etstQ0AZL71MxwWcwFl2lEo08E1DkNxgfHTtu_Zw4vocVXtPA-aqLhXACDxDNUUxUFcMI9XwyLOBBaifeWXtruOw-olKbNGSHf8JS7Q4JV4UMBN9evuhNKCzGA5ezgVV1vBUTarBBgcaqGH09mA=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "이동현 (커넥터리)",
+        "uri": "https://maps.google.com/maps/contrib/117240882341854953168"
+      },
+      {
+        "displayName": "ADEN",
+        "uri": "https://maps.google.com/maps/contrib/101083200750962039989"
+      },
+      {
+        "displayName": "김경실",
+        "uri": "https://maps.google.com/maps/contrib/102967200202073535718"
+      },
+      {
+        "displayName": "MJ",
+        "uri": "https://maps.google.com/maps/contrib/112976572875988699111"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-817c-b986-dcc0c7945e00-bean",
+    "description": "핑크 부르봉은 최근 주목받고 있는 원두로, 레드와 옐로 부르봉이 자연 교배하여 만들어진 품종입니다. 실제로는 옅은 붉은빛입니다. 상큼한 오렌지와 크렌베리, 그리고 히비스커스의 향을 느낄 수 있습니다.",
+    "name": "콜롬비아 우일라 핑크 부르봉",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "오렌지",
+        "category": "Fruity"
+      },
+      {
+        "name": "히비스커스",
+        "category": "Floral"
+      },
+      {
+        "name": "크랜베리",
+        "category": "Fruity"
+      },
+      {
+        "name": "망고",
+        "category": "Fruity"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "콜롬비아 우일라",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "LIGHT"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-817c-b986-dcc0c7945e00-m1",
+      "name": "핸드드립",
+      "price": 0,
+      "imageUrl": "",
+      "description": "핸드드립 방식의 커피입니다."
+    },
+    {
+      "id": "3456e613-742a-817c-b986-dcc0c7945e00-m2",
+      "name": "실론 시나몬 라테",
+      "price": 6500,
+      "imageUrl": "",
+      "description": "쌉쌀한 시나몬이 들어가 은은히 달달한 라테입니다."
+    }
+  ],
+  "tags": [
+    {
+      "id": "b20b1b80-50ce-49a4-8ef2-ee2d58b8e4fe",
+      "name": "브랜드",
+      "imageUrl": ""
+    },
+    {
+      "id": "84e16f3f-5d1b-49e4-83d9-d38a3349f840",
+      "name": "필터 맛집",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": null
+}

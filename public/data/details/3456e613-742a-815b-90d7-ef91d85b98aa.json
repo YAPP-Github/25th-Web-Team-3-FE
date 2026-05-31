@@ -1,0 +1,75 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-815b-90d7-ef91d85b98aa",
+    "reasonForSelection": "2016년에 시작된 스페셜티 로스터리로, KCRC 대회에서 준우승을 차지한 최철 로스터님이 운영하는 가게입니다.  ’malic‘은 ‘사과에서 추출한 산’을 의미하는 단어인데, 그래서인지 카페 로고에도 사과가 그려져 있습니다. 또한 로스팅 할 때 말릭산을 잘 표현하면 원두에서 사과 향미를 느낄 수 있다고 합니다.",
+    "naverMapUrl": "https://naver.me/5k7GG6XQ",
+    "name": "말릭커피",
+    "nearestStation": "홍대입구",
+    "location": "서울 마포구 와우산로29바길 20 반지층 카페 말릭",
+    "price": 6000,
+    "mainImageUrl": [
+      "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240725_30%2F1721862842184CIHxq_JPEG%2FIMG_5388.jpeg"
+    ],
+    "imageAttributions": []
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-815b-90d7-ef91d85b98aa-bean",
+    "description": "새콤달콤 과일향의 풍성함이 느껴지는 커피. 전반적으로 라즈베리, 오렌지 껍질 등의 과일 향이 나고 부드럽고 단 클린한 커피입니다.",
+    "name": "프루티블렌드",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "라즈베리",
+        "category": "Fruity"
+      },
+      {
+        "name": "오렌지 블라썸",
+        "category": "Floral"
+      },
+      {
+        "name": "복숭아",
+        "category": "Fruity"
+      },
+      {
+        "name": "꽃향기",
+        "category": "Floral"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "에티오피아",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "LIGHT"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-815b-90d7-ef91d85b98aa-m1",
+      "name": "너티크림라떼",
+      "price": 6000,
+      "imageUrl": "http://imagefarm.baemin.com/smartmenuimage/upload/image/2020/11/25/aHSYiyUD7_Oc709NAvoeCxHg5n0XxYBE-_P8HK6vdogKB3PETcPbA82xzKsbC2wm.jpg",
+      "description": "우유와 땅콩크림의 단짠조화"
+    },
+    {
+      "id": "3456e613-742a-815b-90d7-ef91d85b98aa-m2",
+      "name": "아인슈페너/비엔나",
+      "price": 5500,
+      "imageUrl": "http://imagefarm.baemin.com/smartmenuimage/upload/image/2020/11/25/aHSYiyUD7_Oc709NAvoeC4tLbOF6mOFzLQ8wm-pox_zg0-kViJKMOVLh_Ytmv1xQ.jpg",
+      "description": "아메리카노 위에 수제 크림이 올려진 메뉴"
+    }
+  ],
+  "tags": [
+    {
+      "id": "66002d49-d8f9-4119-99ef-c508ead21371",
+      "name": "KBrC 수상",
+      "imageUrl": ""
+    },
+    {
+      "id": "71a7dbcb-7bbf-4f99-bbdb-82e294e688ae",
+      "name": "라떼 맛집",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-28"
+}

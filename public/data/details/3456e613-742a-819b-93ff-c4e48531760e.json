@@ -1,0 +1,92 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-819b-93ff-c4e48531760e",
+    "reasonForSelection": "을지로와 충무로 일대에 카페를 둔 섹터커피 로스터스는 직장인의 점심시간을 채울 수 있는 공간을 꿈꾸며 대중적인 입맛을 사로잡았습니다. 우유 기반 음료가 대표적이며, '좋은 사람들'이라는 장애 단체에 8년째 나눔하는 선한 영향력을 행사합니다.",
+    "naverMapUrl": "https://naver.me/5jJTMeSH",
+    "name": "섹터커피로스터스 본점",
+    "nearestStation": "충무로",
+    "location": "서울 중구 퇴계로36길 35 1층 섹터 커피 로스터스 본점",
+    "price": 4000,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/place-photos/AJRVUZOe7IBy25Y9LS2R6ecttPbvDAXIz9mN9gErwTqCnPQAfiIjXklqMcYLUtMDhIPHRNLv1oqTQLLxSDHJRWPzLnKUUFRFym1v25s6Ew0TyP-8tfhfYgI9Cooapws00ph0zGooCjDrake_uV1v=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "jihyon bae",
+        "uri": "https://maps.google.com/maps/contrib/112992327282736445583"
+      },
+      {
+        "displayName": "짱이야",
+        "uri": "https://maps.google.com/maps/contrib/114699963417588940889"
+      },
+      {
+        "displayName": "Tomas G",
+        "uri": "https://maps.google.com/maps/contrib/100489612856131015301"
+      },
+      {
+        "displayName": "Kyuwon Lee",
+        "uri": "https://maps.google.com/maps/contrib/110778779454043925617"
+      },
+      {
+        "displayName": "Pichanun Boonpromgul",
+        "uri": "https://maps.google.com/maps/contrib/118145485622453747582"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-819b-93ff-c4e48531760e-bean",
+    "description": "황설탕의 단맛과 과일의 상큼함이 모두 돋보이는 원두입니다. 아프리카 최대의 커피 생산지인 에티오피아의 풍부한 향을 느낄 수 있습니다.",
+    "name": "블랜딩",
+    "engName": "UTTER",
+    "flavors": [
+      {
+        "name": "흑설탕",
+        "category": "Sweet"
+      },
+      {
+        "name": "라즈베리",
+        "category": "Fruity"
+      },
+      {
+        "name": "체리",
+        "category": "Fruity"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "에티오피아",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "MEDIUM"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-819b-93ff-c4e48531760e-m1",
+      "name": "FLAT WHITE",
+      "price": 4000,
+      "imageUrl": "",
+      "description": "플랫화이트는 우유 거품이 평평하게 들어가서 플랫(Flat) 화이트라고 부릅니다. 라테보다 짙어 에스프레소의 맛이 더욱 느껴지는 커피입니다."
+    },
+    {
+      "id": "3456e613-742a-819b-93ff-c4e48531760e-m2",
+      "name": "스위트 카푸치노",
+      "price": 4500,
+      "imageUrl": "",
+      "description": "스위트 카푸치노는 라테 위에 시나몬을 뿌려 달콤한 카푸치노와도 같은 부드러운 맛을 느낄 수 있습니다."
+    }
+  ],
+  "tags": [
+    {
+      "id": "683fad1f-1a5d-40c4-9ff8-77177b5d009f",
+      "name": "대중적인",
+      "imageUrl": ""
+    },
+    {
+      "id": "71a7dbcb-7bbf-4f99-bbdb-82e294e688ae",
+      "name": "라떼 맛집",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": null
+}

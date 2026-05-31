@@ -1,0 +1,102 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-81ec-a7e8-fc3e1001a29e",
+    "reasonForSelection": "블루보틀의 헤드 로스터로 일했던 맥컬리 커피의 대표는 을지로에서 유니크한 미국 분위기를 뽐냅니다. CoE(Cup of Execllence) 원두를 취급하는 등 더 맛있는 원두를 친근하게 제공하고자 합니다. 핸드드립부터 라테까지 올라운더의 역할을 톡톡히 해내고 있습니다.",
+    "naverMapUrl": "https://naver.me/FqWt3kDL",
+    "name": "맥컬리커피",
+    "nearestStation": "을지로3가",
+    "location": "서울 중구 충무로5길 6-1 2층",
+    "price": 4800,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/places/ANXAkqFnO3ToAZInMXVimYPISzXs0lO6lx9SqA2xAVu52Hw1lJ2V6V8tlENT1bbdS8bpmI69WbUuVyfVCsWtkEJ_2XmZFMkcksFZkOc=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "맥컬리커피",
+        "uri": "https://maps.google.com/maps/contrib/112776837295624220563"
+      },
+      {
+        "displayName": "Winnie Lee",
+        "uri": "https://maps.google.com/maps/contrib/103607488160778828911"
+      },
+      {
+        "displayName": "Janine Pagtakhan",
+        "uri": "https://maps.google.com/maps/contrib/102432335726703941796"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-81ec-a7e8-fc3e1001a29e-bean",
+    "description": "Jamison이 운영 중인 Deborah 농장의 커피는 국내외 바리스타와 브루어스컵 대회에서 수많은 타이틀을 획득했습니다. 2017년월드브루어스컵에서 2위, 월드바리스타챔피언십에서 5위, 보스턴 WBC에서 2위와 4위를 차지했습니다. 와인 산업에서 수십 년간 사용된 공정방법인 Carboric Maceration를 커피에 접목한 세계 최초의 기업 중 하나입니다.",
+    "name": "파나마 핀카 데보라 일루미네션 게이샤",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "블러드 오렌지",
+        "category": "Fruity"
+      },
+      {
+        "name": "히비스커스",
+        "category": "Floral"
+      },
+      {
+        "name": "로스 와인 베르가못",
+        "category": "Fruity"
+      },
+      {
+        "name": "사과",
+        "category": "Fruity"
+      },
+      {
+        "name": "살구",
+        "category": "Fruity"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "파나마",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "MEDIUM"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-81ec-a7e8-fc3e1001a29e-m1",
+      "name": "코르타도",
+      "price": 4800,
+      "imageUrl": "",
+      "description": "에스프레소와 따뜻한 우유를 1:1 비율로 섞은 커피 음료입니다. 커피의 진한 풍미를 그대로 느낄 수 있습니다."
+    },
+    {
+      "id": "3456e613-742a-81ec-a7e8-fc3e1001a29e-m2",
+      "name": "라벤더라떼",
+      "price": 5500,
+      "imageUrl": "",
+      "description": "카페라테에 라벤더 시럽이 들어간 음료입니다."
+    }
+  ],
+  "tags": [
+    {
+      "id": "683fad1f-1a5d-40c4-9ff8-77177b5d009f",
+      "name": "대중적인",
+      "imageUrl": ""
+    },
+    {
+      "id": "71a7dbcb-7bbf-4f99-bbdb-82e294e688ae",
+      "name": "라떼 맛집",
+      "imageUrl": ""
+    },
+    {
+      "id": "0bf60d10-7f76-424f-97f3-4450ad284d73",
+      "name": "과일",
+      "imageUrl": ""
+    },
+    {
+      "id": "c8b9f0dd-8d54-481e-8e3a-edbf7929cbb9",
+      "name": "싱글오리진",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": null
+}

@@ -1,0 +1,105 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-8166-b916-fc0d662dea42",
+    "reasonForSelection": "히트커피로스터스 서교점은 홍대 인근 서교동에 위치한 로스터리 카페로, 다양한 원두와 전문적인 커피를 제공합니다. 이곳은 필터 커피와 에스프레소 메뉴가 주를 이룹니다.",
+    "naverMapUrl": "https://naver.me/G9r5qIyD",
+    "name": "히트커피로스터스 서교",
+    "nearestStation": "홍대입구",
+    "location": "서울 마포구 동교로 146 관양빌딩 1층 카페",
+    "price": 6500,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/place-photos/AJRVUZPDoub3urTpzKT3Dk-yR6ieyZxVA_MpYc-FXUH2vcrK9r5zvwgL63u0yo9HjBL98HFdNDSZfTLaziMjdiEClbfEbyAurQT9vyluQoh0JtU6-wK596VLu6EDbr9yHGOM0Di2TWnH3WtGoNAQ-mw=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "범코치의 일상",
+        "uri": "https://maps.google.com/maps/contrib/102409794197688162389"
+      },
+      {
+        "displayName": "LU Hsiao-Feng",
+        "uri": "https://maps.google.com/maps/contrib/108616330114328846983"
+      },
+      {
+        "displayName": "林保葭",
+        "uri": "https://maps.google.com/maps/contrib/114030786419627776320"
+      },
+      {
+        "displayName": "조호정",
+        "uri": "https://maps.google.com/maps/contrib/108838961495267256926"
+      },
+      {
+        "displayName": "Anchalee Chantaweaj",
+        "uri": "https://maps.google.com/maps/contrib/109978116388928054955"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-8166-b916-fc0d662dea42-bean",
+    "description": "강배전으로 로스팅된 크랙시한 에스프레소 입니다. 깜깜해진 자정을 넘긴 밤하늘을 때론 낮보다도 감성적이고 자유롭고 시간을 보내기 좋습니다.",
+    "name": "에스프레소 미드나이트",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "다크 초콜릿",
+        "category": "Nutty/Cocoa"
+      },
+      {
+        "name": "헤이즐넛",
+        "category": "Nutty/Cocoa"
+      },
+      {
+        "name": "묵직한 바디",
+        "category": "Other"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "브라질 세라도",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "콜롬비아 우일라",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "인도네시아",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "DARK"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-8166-b916-fc0d662dea42-m1",
+      "name": "넛츠크림라떼",
+      "price": 6500,
+      "imageUrl": "",
+      "description": "고소한 곡물 베이스에 에스프레소, 아몬드 크림이 올라간 시그니쳐 크림커피 입니다"
+    },
+    {
+      "id": "3456e613-742a-8166-b916-fc0d662dea42-m2",
+      "name": "코코넛라떼",
+      "price": 5500,
+      "imageUrl": "",
+      "description": "코코넛 시럽과 바닐라아이스크림의 조합이 좋은 히트커피의 시그니쳐 베리에이션 커피음료 입니다"
+    }
+  ],
+  "tags": [
+    {
+      "id": "f7672ade-797b-4369-8bd5-98a9931a29c9",
+      "name": "시그니처",
+      "imageUrl": ""
+    },
+    {
+      "id": "b20b1b80-50ce-49a4-8ef2-ee2d58b8e4fe",
+      "name": "브랜드",
+      "imageUrl": ""
+    },
+    {
+      "id": "71a7dbcb-7bbf-4f99-bbdb-82e294e688ae",
+      "name": "라떼 맛집",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-28"
+}

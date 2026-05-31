@@ -1,0 +1,98 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-812e-b998-ecb84f92fe35",
+    "reasonForSelection": "계절이나 상황에 따라 커피와 디저트를 직접 선정하여 제공하는 카페입니다. 아늑한 분위기의 공간에서 정성스럽게 준비한 커피와 디저트를 경험해 보세요.",
+    "naverMapUrl": "https://naver.me/FPnrr9Xa",
+    "name": "평형",
+    "nearestStation": "망원",
+    "location": "서울 마포구 포은로5길 6 1층",
+    "price": 5000,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/places/ANXAkqEF3B7WteHj1IhJfhJ3g-DM8r4pTmdhoXDdjpjVvb8GNg_7ZxtEN-g3yn7OxFbSknMiSRUijdesImFveGx9uYGjCmLXyx33bRo=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "평형",
+        "uri": "https://maps.google.com/maps/contrib/103391835054553483549"
+      },
+      {
+        "displayName": "A",
+        "uri": "https://maps.google.com/maps/contrib/114273467874530356771"
+      },
+      {
+        "displayName": "Sesame Sprinkles",
+        "uri": "https://maps.google.com/maps/contrib/114630405221931250347"
+      },
+      {
+        "displayName": "이동윤 (폭스마피아)",
+        "uri": "https://maps.google.com/maps/contrib/110412043580559528745"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-812e-b998-ecb84f92fe35-bean",
+    "description": "땅콩, 호두의 고소한 향과 다크 초콜릿의 중후한 향이 어우러지는 원두입니다. 스모키하고 달콤쌉싸름한 맛이 특징입니다.",
+    "name": "과테말라 후에후에테낭고",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "땅콩",
+        "category": "Nutty/Cocoa"
+      },
+      {
+        "name": "호두",
+        "category": "Nutty/Cocoa"
+      },
+      {
+        "name": "다크 초콜릿",
+        "category": "Nutty/Cocoa"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "과테말라",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "MEDIUM"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-812e-b998-ecb84f92fe35-m1",
+      "name": "과테말라 후에후에테낭고",
+      "price": 5000,
+      "imageUrl": "",
+      "description": "호두, 시리얼, 다크 초콜릿의 향미를 지닌 커피."
+    },
+    {
+      "id": "3456e613-742a-812e-b998-ecb84f92fe35-m2",
+      "name": "에티오피아 예가체프",
+      "price": 5500,
+      "imageUrl": "",
+      "description": "플로럴, 레드베리, 레몬티의 향미를 지닌 커피."
+    }
+  ],
+  "tags": [
+    {
+      "id": "683fad1f-1a5d-40c4-9ff8-77177b5d009f",
+      "name": "대중적인",
+      "imageUrl": ""
+    },
+    {
+      "id": "84e16f3f-5d1b-49e4-83d9-d38a3349f840",
+      "name": "필터 맛집",
+      "imageUrl": ""
+    },
+    {
+      "id": "0921cf45-93af-400b-a9ed-0b85a194f812",
+      "name": "산미",
+      "imageUrl": ""
+    },
+    {
+      "id": "d2f64390-f36c-47b2-a787-46227a95ffc9",
+      "name": "고소",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-25"
+}

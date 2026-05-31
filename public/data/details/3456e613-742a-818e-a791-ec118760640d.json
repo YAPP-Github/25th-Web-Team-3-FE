@@ -1,0 +1,85 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-818e-a791-ec118760640d",
+    "reasonForSelection": "리사르커피는 에스프레소에 집중한 독특한 경험과 고급스러운 분위기로 많은 사람들에게 매력을 줍니다. 스탠딩 바 형태로 빠른 회전율을 자랑하며, 바쁜 현대인에게 적합한 형태입니다.이러한 요인들이 리사르커피를 인기 있는 커피 장소로 만드는 데 기여하고 있습니다",
+    "naverMapUrl": "https://naver.me/IxsqtPB2",
+    "name": "리사르커피 종로점",
+    "nearestStation": "광화문",
+    "location": "서울 종로구 종로5길 7 1층",
+    "price": 1500,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/place-photos/AJRVUZM5RvPTtATC0dwVeDWV4jZYhfeiyu4EwCVqNTIycTZLU04_vxi4i1OzN5zfgD6NdHMC3Uy6IZ47bh6qecY_4Vz8hO15I9w8rlZb-itnbhDcZt2CuLbXY80klpuMLOQy7GWfDd0MWk6dYPNwEuQ=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "kang kang",
+        "uri": "https://maps.google.com/maps/contrib/107641118937651317189"
+      },
+      {
+        "displayName": "Leesar Coffee Jongno 리사르커피 종로",
+        "uri": "https://maps.google.com/maps/contrib/111421352271308849915"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-818e-a791-ec118760640d-bean",
+    "description": "하우스블렌드 다크는 리사르커피의 경험을 가득 담아 만든 좋은 품질의 원두커피 입니다. 초코렛스럽고 견과류같은 향기가 나며 고전적인 무게감과 은은하고 그윽한 산미를 가지고 있습니다. 쌉사름한 맛이 나며 다른 맛들은 조화롭게 어우러져 부드럽고 목넘김이 편합니다.",
+    "name": "하우스 블렌드",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "다크 초콜릿",
+        "category": "Nutty/Cocoa"
+      },
+      {
+        "name": "땅콩",
+        "category": "Nutty/Cocoa"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "브라질",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "에티오피아",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "DARK"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-818e-a791-ec118760640d-m1",
+      "name": "카페 에스프레소",
+      "price": 1500,
+      "imageUrl": "",
+      "description": "리사르 커피의 기본 커피"
+    },
+    {
+      "id": "3456e613-742a-818e-a791-ec118760640d-m2",
+      "name": "카페 피에노",
+      "price": 2500,
+      "imageUrl": "",
+      "description": "에스프레소와 크림,카카오 토핑"
+    }
+  ],
+  "tags": [
+    {
+      "id": "b20b1b80-50ce-49a4-8ef2-ee2d58b8e4fe",
+      "name": "브랜드",
+      "imageUrl": ""
+    },
+    {
+      "id": "d0d0bdb1-e7c7-4671-96b1-1f3e8c2d745c",
+      "name": "블렌드",
+      "imageUrl": ""
+    },
+    {
+      "id": "c5c030e2-74f2-4031-bbfa-7573231b9121",
+      "name": "에스프레소 맛집",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-28"
+}

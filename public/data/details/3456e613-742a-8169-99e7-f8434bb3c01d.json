@@ -1,0 +1,79 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-8169-99e7-f8434bb3c01d",
+    "reasonForSelection": "'Playback'은 재생의 의미를 가지고 있습니다. 이름의 의미처럼 커피와 음악을 매개로 문화 전반에 걸친 다양한 활동들 재생해나가고, 그것들을 통해 스페셜티 커피를 보다 많은 사람들과 함께 나누고 싶다는 의도가 담긴 카페입니다. 풍성한 음악과 함께 스페셜티 커피를 즐기고 싶다면 방문해보세요.",
+    "naverMapUrl": "https://naver.me/5S90Yc2A",
+    "name": "플레이백",
+    "nearestStation": "충무로",
+    "location": "서울 중구 퇴계로48길 32 1층",
+    "price": 0,
+    "mainImageUrl": [],
+    "imageAttributions": []
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-8169-99e7-f8434bb3c01d-bean",
+    "description": "신선한 빨간사과와 오렌지의 산미, 사탕수수의 달콤함과 캐러멜 같은 부드러운 바디감이 조화를 이루며, 클린하고 깔끔한 후미가 지속됩니다. 워시드 가공 방식 특유의 깨끗한 질감과 과테말라 안티구아 지역의 독특한 테루아를 그대로 담아낸 이 원두는 브루잉 커피는 물론, 에스프레소에서도 밝고 생동감 있는 풍미를 선사합니다.",
+    "name": "과테말라 엘 템픽스케 워시드",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "살구",
+        "category": "Fruity"
+      },
+      {
+        "name": "사과",
+        "category": "Fruity"
+      },
+      {
+        "name": "오렌지",
+        "category": "Fruity"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "과테말라",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "LIGHT"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-8169-99e7-f8434bb3c01d-m1",
+      "name": "필터커피 (변동)",
+      "price": 0,
+      "imageUrl": "",
+      "description": "원두 본연의 개성과 섬세한 풍미를 깨끗하게 즐기는 커피."
+    },
+    {
+      "id": "3456e613-742a-8169-99e7-f8434bb3c01d-m2",
+      "name": "마카다미아 크림",
+      "price": 6500,
+      "imageUrl": "",
+      "description": "에소프레소, 마카다미아 우유, 크림, 마카다미아. 고소한 마카다미아와 크림의 부드러움이 어우러진 리치한 커피."
+    }
+  ],
+  "tags": [
+    {
+      "id": "1ead9a26-ab24-4d5b-b046-4af8636f6b97",
+      "name": "매니아",
+      "imageUrl": ""
+    },
+    {
+      "id": "c8b9f0dd-8d54-481e-8e3a-edbf7929cbb9",
+      "name": "싱글오리진",
+      "imageUrl": ""
+    },
+    {
+      "id": "84e16f3f-5d1b-49e4-83d9-d38a3349f840",
+      "name": "필터 맛집",
+      "imageUrl": ""
+    },
+    {
+      "id": "0921cf45-93af-400b-a9ed-0b85a194f812",
+      "name": "산미",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-24"
+}

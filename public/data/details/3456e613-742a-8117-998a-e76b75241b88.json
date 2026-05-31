@@ -1,0 +1,105 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-8117-998a-e76b75241b88",
+    "reasonForSelection": "을지로의 터줏대감인 커피 한약방은 원두의 종류와 등급을 구분해 ‘필터 커피’와 ‘필터 스페셜’을 제공합니다. 여전히 직접 로스팅하는 대표인 강윤석 로스터는 베테랑 연극배우이기도 합니다. 오래된 혜민당의 역사만큼, 커피 한약방은 을지로 커피의 역사로 남아있습니다.",
+    "naverMapUrl": "https://naver.me/5WOQhh9r",
+    "name": "커피한약방",
+    "nearestStation": "을지로3가",
+    "location": "서울 중구 삼일대로12길 16-6",
+    "price": 0,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/place-photos/AJRVUZNp3w0uyaLAXXoned2nURVQL8iMBiH08O61of7a6sdd6n2vxJjYjH9sJFJtCs2joCfiZbYOeb-k35Rx6nfzCsbpYzvYUeW8v9bWM09q-P8A4NPVdvSmjIQtDbb9jwe1uChdSrbbpCzcb1eF=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "一起玩生活",
+        "uri": "https://maps.google.com/maps/contrib/118205409563621553270"
+      },
+      {
+        "displayName": "Kyung-Jun Lee",
+        "uri": "https://maps.google.com/maps/contrib/111248486244811888553"
+      },
+      {
+        "displayName": "Jo “gorby” L",
+        "uri": "https://maps.google.com/maps/contrib/109986623119636476956"
+      },
+      {
+        "displayName": "Bartek",
+        "uri": "https://maps.google.com/maps/contrib/109741509203395903561"
+      },
+      {
+        "displayName": "김정호",
+        "uri": "https://maps.google.com/maps/contrib/115353743468053479499"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-8117-998a-e76b75241b88-bean",
+    "description": "직화 로스팅한 시그니처 블랜드입니다. 달콤 쌉싸름한 다크초콜릿의 맛과 텁텁하지 않은 스모키 한 향이 부드럽게 입안을 감쌉니다.",
+    "name": "동네어귀 방앗간 블렌드",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "스모크",
+        "category": "Roasted"
+      },
+      {
+        "name": "다크 초콜릿",
+        "category": "Nutty/Cocoa"
+      },
+      {
+        "name": "라운드",
+        "category": "Other"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "인도네시아 만델링",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "케냐 니에리 레드마운팅",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "에티오피아 아리차",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "DARK"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-8117-998a-e76b75241b88-m1",
+      "name": "필터커피",
+      "price": 0,
+      "imageUrl": "",
+      "description": "핸드드립 방식의 필터 커피입니다."
+    },
+    {
+      "id": "3456e613-742a-8117-998a-e76b75241b88-m2",
+      "name": "필터스페셜",
+      "price": 0,
+      "imageUrl": "",
+      "description": "핸드드립 방식의 필터 커피입니다. 선별된 특별한 원두들을 필터 스페셜이라고 부릅니다."
+    }
+  ],
+  "tags": [
+    {
+      "id": "d944c5dd-803f-4f2c-96c5-8a6390fd1b95",
+      "name": "블루리본",
+      "imageUrl": ""
+    },
+    {
+      "id": "84e16f3f-5d1b-49e4-83d9-d38a3349f840",
+      "name": "필터 맛집",
+      "imageUrl": ""
+    },
+    {
+      "id": "d0d0bdb1-e7c7-4671-96b1-1f3e8c2d745c",
+      "name": "블렌드",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": null
+}

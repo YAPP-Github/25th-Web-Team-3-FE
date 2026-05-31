@@ -1,8 +1,8 @@
-import { getCafeRegions } from '@/apis/cafe';
 import CafesPage from '@/components/cafes/CafesPage';
+import { getRegionsFromData } from '@/lib/cafeData';
 
-export default async function Page() {
-  const regions = await getCafeRegions();
+export default function Page() {
+  const regions = getRegionsFromData();
 
   return <CafesPage availableRegions={regions} />;
 }

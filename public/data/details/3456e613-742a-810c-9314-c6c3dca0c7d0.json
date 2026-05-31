@@ -1,0 +1,109 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-810c-9314-c6c3dca0c7d0",
+    "reasonForSelection": "로스터리 카페로 스페셜티 커피를 진정성있게 다루며, 다수의 커피 대회 수상 이력을 쌓으며 커피에 진심을 다 하는 카페입니다. 단순히 커피만 잘하는 곳을 넘어 아늑한 공간과 매일 정성스럽게 만든 수제 디저트로 만족을 드리기 위하여 노력하는 공간입니다.",
+    "naverMapUrl": "https://naver.me/FxFtoMUT",
+    "name": "커넥츠커피 망원",
+    "nearestStation": "망원",
+    "location": "서울 마포구 월드컵로11길 8 105호 커넥츠커피 망원점",
+    "price": 5000,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/place-photos/AJRVUZMoDd1eUjM-E7MDr0eLoMPgHxMs83lDUq_dxusWDfbRcOvm2EPMu6poLZ7rC4OvmVhQTuuv7-2XQf9RVssrH5qdr6UbzRNbgJSvUmmto_CcDs81-80qb9uXZDtyqm7Kwh2qD9eEpmPis8fAqA=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "홍",
+        "uri": "https://maps.google.com/maps/contrib/109540277806552877850"
+      },
+      {
+        "displayName": "뚜뚜루뚜뚜",
+        "uri": "https://maps.google.com/maps/contrib/116053173347867842673"
+      },
+      {
+        "displayName": "ree T",
+        "uri": "https://maps.google.com/maps/contrib/113968091913809736158"
+      },
+      {
+        "displayName": "JINU YOUN",
+        "uri": "https://maps.google.com/maps/contrib/112925352849439490899"
+      },
+      {
+        "displayName": "ruin Sung Mean Pae",
+        "uri": "https://maps.google.com/maps/contrib/102778409927121337507"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-810c-9314-c6c3dca0c7d0-bean",
+    "description": "건과일이나 조청류의 단맛을 느낄 수 있고, 단조롭지 않은 다양한 풍미가 맛을 더욱 풍부하게 표현합니다. 맛의 균형감이 뛰어나면서 부담 없는 적당한 산미를 가진 부드러운 커피를 찾으시는 분께 추천합니다.",
+    "name": "커넥츠 블렌드",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "흑설탕",
+        "category": "Sweet"
+      },
+      {
+        "name": "오렌지",
+        "category": "Fruity"
+      },
+      {
+        "name": "건과일",
+        "category": "Fruity"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "과테말라",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "콜롬비아",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "에티오피아",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "인도",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "MEDIUM"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-810c-9314-c6c3dca0c7d0-m1",
+      "name": "커넥츠 커피",
+      "price": 5000,
+      "imageUrl": "",
+      "description": "달콤한 크림이 올라간 부드러운 밀크 커피입니다."
+    },
+    {
+      "id": "3456e613-742a-810c-9314-c6c3dca0c7d0-m2",
+      "name": "아메리카노",
+      "price": 4500,
+      "imageUrl": "",
+      "description": "발렌타인(다크 초콜릿, 고소한 맛), 커넥츠(밸런스, 흑설탕), 프루티(산뜻, 잘 익은 과일) 디카페인 변경 가능."
+    }
+  ],
+  "tags": [
+    {
+      "id": "d944c5dd-803f-4f2c-96c5-8a6390fd1b95",
+      "name": "블루리본",
+      "imageUrl": ""
+    },
+    {
+      "id": "683fad1f-1a5d-40c4-9ff8-77177b5d009f",
+      "name": "대중적인",
+      "imageUrl": ""
+    },
+    {
+      "id": "71a7dbcb-7bbf-4f99-bbdb-82e294e688ae",
+      "name": "라떼 맛집",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-25"
+}

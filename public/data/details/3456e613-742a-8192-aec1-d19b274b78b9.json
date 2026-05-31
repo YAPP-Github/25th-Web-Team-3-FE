@@ -1,0 +1,96 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-8192-aec1-d19b274b78b9",
+    "reasonForSelection": "스몰토크를 좋아하는 사장님은 지역사회에 따뜻한 온기를 불어넣습니다. 스피드스터 커피머신과 이쪼 발키리를 사용하며. 게이샤의 맛을 알리는데 일조합니다.",
+    "naverMapUrl": "https://naver.me/5FmSoaLH",
+    "name": "텐스퀘어 남산",
+    "nearestStation": "회현",
+    "location": "서울 중구 소월로 33 1층",
+    "price": 0,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/places/ANXAkqEy68BzN32eUUyD2vQ2YKiTuc8bA-9ARBt-j6UV6e3JAfnxSV8-jfPyIRBomNOC0xZfKxUkpz9u8iWbVk9177uA-DxKpXuVWkI=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "10스퀘어 남산",
+        "uri": "https://maps.google.com/maps/contrib/100160772982925886311"
+      },
+      {
+        "displayName": "G S",
+        "uri": "https://maps.google.com/maps/contrib/114414547499468359326"
+      },
+      {
+        "displayName": "J Park",
+        "uri": "https://maps.google.com/maps/contrib/105302015867721389336"
+      },
+      {
+        "displayName": "大村優介",
+        "uri": "https://maps.google.com/maps/contrib/117318016048129172153"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-8192-aec1-d19b274b78b9-bean",
+    "description": "게이샤는 아라비카 품종 중 하나로, 대중들에게 각광받는 품종 중 하나입니다. 풍부한 향과 깔끔한 맛으로 널리 알려져 있습니다.",
+    "name": "게이샤 블렌드",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "캐모마일",
+        "category": "Floral"
+      },
+      {
+        "name": "자스민",
+        "category": "Floral"
+      },
+      {
+        "name": "베리",
+        "category": "Fruity"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "페루",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "콜롬비아",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "과테말라",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "MEDIUM"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-8192-aec1-d19b274b78b9-m1",
+      "name": "시그니처 아이스 아메리카노",
+      "price": 0,
+      "imageUrl": "",
+      "description": "샤인머스켓, 자몽, 화이트와인의 과일 특유의 맛이 도드라지는 커피입니다."
+    },
+    {
+      "id": "3456e613-742a-8192-aec1-d19b274b78b9-m2",
+      "name": "게이샤라떼",
+      "price": 9500,
+      "imageUrl": "",
+      "description": "1000잔 이상 팔린 명실상부 시그니처입니다. 페루,콜롬비아 그리고 과테말라의 게이샤 품종을 들여와 라떼로 만들었습니다."
+    }
+  ],
+  "tags": [
+    {
+      "id": "1ead9a26-ab24-4d5b-b046-4af8636f6b97",
+      "name": "매니아",
+      "imageUrl": ""
+    },
+    {
+      "id": "84e16f3f-5d1b-49e4-83d9-d38a3349f840",
+      "name": "필터 맛집",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": null
+}

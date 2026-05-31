@@ -1,0 +1,88 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-811c-b069-cda489e0a9dc",
+    "reasonForSelection": "아마츄어는 단순한 커피 로스터가 아니라 진정한 커피에 대한 열정을 가진 장인적 접근을 보여줍니다. 그들은 기계적 대량 생산이 아닌 정성과 섬세함을 담아 원두를 로스팅합니다.",
+    "naverMapUrl": "https://naver.me/5tJCNria",
+    "name": "아마츄어작업실 청계점",
+    "nearestStation": "을지로3가",
+    "location": "서울 종로구 청계천로 97-8",
+    "price": 9500,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/place-photos/AJRVUZN9AX14pFZwXCu7y_revxvj42dbrGXbAU1_o1ELnYF2J85R_YeIgiHjWNW8CXdnSwc80ajJikaImOL_Bq_H5-QcN0tMVVb0BUhu1D91SkP8o6vSYopvffM3Wi3Y0rNf7ySeMokdkfAOykfz=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "이주원",
+        "uri": "https://maps.google.com/maps/contrib/113108122614507003609"
+      },
+      {
+        "displayName": "예지앞사",
+        "uri": "https://maps.google.com/maps/contrib/107087717340452475497"
+      },
+      {
+        "displayName": "환환",
+        "uri": "https://maps.google.com/maps/contrib/107790157174004513891"
+      },
+      {
+        "displayName": "EUNJEONG CHO",
+        "uri": "https://maps.google.com/maps/contrib/102848365565532411199"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-811c-b069-cda489e0a9dc-bean",
+    "description": "콜롬비아 라 루이산원두는 안티오키아 지방의 고산 지대에서 재배되는 고품질 아라비카 커피입니다. 이 원두는 1,500에서 1,800미터 사이의 고도에서 자라며, 워시드 프로세스로 가공됩니다",
+    "name": "콜롬비아 라 루이산 무산소 발효",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "과일",
+        "category": "Fruity"
+      },
+      {
+        "name": "시트러스",
+        "category": "Fruity"
+      },
+      {
+        "name": "시나몬",
+        "category": "Spices"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "콜롬비아",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "LIGHT"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-811c-b069-cda489e0a9dc-m1",
+      "name": "주인장 커피",
+      "price": 9500,
+      "imageUrl": "",
+      "description": "요거트 발효향의 상큼한 향미를 느낄 수 있는 드립 커피"
+    },
+    {
+      "id": "3456e613-742a-811c-b069-cda489e0a9dc-m2",
+      "name": "내 이름은 알롱시",
+      "price": 9500,
+      "imageUrl": "",
+      "description": "기분 좋은 산딸기의 향미를 느낄 수 있는 드립커피"
+    }
+  ],
+  "tags": [
+    {
+      "id": "b20b1b80-50ce-49a4-8ef2-ee2d58b8e4fe",
+      "name": "브랜드",
+      "imageUrl": ""
+    },
+    {
+      "id": "45507d6d-9817-4f8c-a23b-2f119d9101d2",
+      "name": "드립커피",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-28"
+}

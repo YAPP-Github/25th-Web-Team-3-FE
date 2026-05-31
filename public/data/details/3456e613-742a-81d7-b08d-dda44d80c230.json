@@ -1,0 +1,94 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-81d7-b08d-dda44d80c230",
+    "reasonForSelection": "편안한 분위기와 디저트와 스페셜티를 페어링해서",
+    "naverMapUrl": "https://naver.me/GWe2U9By",
+    "name": "포트레이트커피바",
+    "nearestStation": "망원",
+    "location": "서울 마포구 포은로8길 32 1층",
+    "price": 0,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/places/ANXAkqHV0ZB0vrL1_RJtdlrDo7rqgZOTHgDWa0yOPKDmIpMDnJ_CcM-BEYE4Dz7Em1iV6R6HtWiVbz6gwsRLfCjqY8tkiwfr7W2Url4=s4800-w555"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "Portrait coffeebar",
+        "uri": "https://maps.google.com/maps/contrib/117655452661769370578"
+      },
+      {
+        "displayName": "Holideez",
+        "uri": "https://maps.google.com/maps/contrib/100869257863584612957"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-81d7-b08d-dda44d80c230-bean",
+    "description": "에티오피아 PG1 에이미 내추럴은 최고급 생두로 각광받았습니다.G1 등급을 뛰어넘어서 그렇게 해석함.",
+    "name": "에티오피아 에이미 네추럴",
+    "engName": "PG1",
+    "flavors": [
+      {
+        "name": "라즈베리",
+        "category": "Fruity"
+      },
+      {
+        "name": "체리",
+        "category": "Fruity"
+      },
+      {
+        "name": "열대과일",
+        "category": "Fruity"
+      },
+      {
+        "name": "쥬시",
+        "category": "Fruity"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "에티오피아",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "MEDIUM"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-81d7-b08d-dda44d80c230-m1",
+      "name": "브루잉",
+      "price": 0,
+      "imageUrl": "",
+      "description": "가격 변동"
+    },
+    {
+      "id": "3456e613-742a-81d7-b08d-dda44d80c230-m2",
+      "name": "헤비 화이트",
+      "price": 5500,
+      "imageUrl": "",
+      "description": "부드럽다 독특하다"
+    }
+  ],
+  "tags": [
+    {
+      "id": "683fad1f-1a5d-40c4-9ff8-77177b5d009f",
+      "name": "대중적인",
+      "imageUrl": ""
+    },
+    {
+      "id": "0921cf45-93af-400b-a9ed-0b85a194f812",
+      "name": "산미",
+      "imageUrl": ""
+    },
+    {
+      "id": "84e16f3f-5d1b-49e4-83d9-d38a3349f840",
+      "name": "필터 맛집",
+      "imageUrl": ""
+    },
+    {
+      "id": "f7672ade-797b-4369-8bd5-98a9931a29c9",
+      "name": "시그니처",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": null
+}

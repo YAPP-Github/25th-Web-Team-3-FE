@@ -1,0 +1,94 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-810c-acae-d08ae2fbcf73",
+    "reasonForSelection": "국내 스페셜티 커피 1호인 커피리브레는 대한민국 최초의 커피 품질 감별사인 서필훈 큐그레이더가 이끄는 스페셜티 커피 브랜드입니다. 니콰과라의 핀카 리브레 농장을 운영합니다. 직접 운영하는 농장에서 재배해 신선한 싱글 오리진을 경험하실 수 있습니다.",
+    "naverMapUrl": "https://naver.me/GEXvg9SP",
+    "name": "커피리브레 파란점",
+    "nearestStation": "홍대입구",
+    "location": "서울 마포구 성미산로29길 17-8 지하1층, 1, 2층",
+    "price": 5000,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/places/ANXAkqE5eHmZGdw7P5_mCUk3g9v8IZy0-e2QYQIOAZ8ovRwjQdCXGol3vPPVem5rwMYQiuWpxk-KWFS0WbGbbswxQX-D1w_FuxjD-Xo=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "커피 리브레 파란점",
+        "uri": "https://maps.google.com/maps/contrib/106611001321070135527"
+      },
+      {
+        "displayName": "4885",
+        "uri": "https://maps.google.com/maps/contrib/101174457893511364385"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-810c-acae-d08ae2fbcf73-bean",
+    "description": "골드문트는 독일어로 ‘황금입술’이라고 합니다. 최고급 라인업으로 분류되는 이 커피는 게이샤 품종으로, 풍부한 향과 깔끔한 맛을 특징으로 합니다.",
+    "name": "[골드문트] 콜롬비아 나리뇨 라 레이나 벨렌 게이샤",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "자스민",
+        "category": "Floral"
+      },
+      {
+        "name": "패션후르츠",
+        "category": "Fruity"
+      },
+      {
+        "name": "오렌지 블라썸",
+        "category": "Floral"
+      },
+      {
+        "name": "블루베리",
+        "category": "Fruity"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "콜롬비아",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "LIGHT"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-810c-acae-d08ae2fbcf73-m1",
+      "name": "싱글오리진",
+      "price": 5000,
+      "imageUrl": "",
+      "description": "싱글오리진 원두로 내리는 드립커피입니다."
+    },
+    {
+      "id": "3456e613-742a-810c-acae-d08ae2fbcf73-m2",
+      "name": "에스프레소",
+      "price": 4500,
+      "imageUrl": "",
+      "description": "에스프레소 머신으로 추출한 커피입니다."
+    }
+  ],
+  "tags": [
+    {
+      "id": "b20b1b80-50ce-49a4-8ef2-ee2d58b8e4fe",
+      "name": "브랜드",
+      "imageUrl": ""
+    },
+    {
+      "id": "84e16f3f-5d1b-49e4-83d9-d38a3349f840",
+      "name": "필터 맛집",
+      "imageUrl": ""
+    },
+    {
+      "id": "c8b9f0dd-8d54-481e-8e3a-edbf7929cbb9",
+      "name": "싱글오리진",
+      "imageUrl": ""
+    },
+    {
+      "id": "0bf60d10-7f76-424f-97f3-4450ad284d73",
+      "name": "과일",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-29"
+}

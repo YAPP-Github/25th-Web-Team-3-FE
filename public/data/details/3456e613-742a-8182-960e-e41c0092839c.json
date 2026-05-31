@@ -1,0 +1,85 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-8182-960e-e41c0092839c",
+    "reasonForSelection": "2013년부터 커피를 사랑하는 사람들에게 가이드 역할을 해오고 있는 빈브라더스는 한국을 넘어서서 활동하는 커피 전문가 집단입니다. 빈브라더스는 저가형 커피 브랜드들과 경쟁하는 것이 아니기에, 탁월한 품질의 커피를 만드는 일과 훌륭한 커피 경험의 전달에 대부분의 역량을 집중합니다.",
+    "naverMapUrl": "https://naver.me/5JpUFf2L",
+    "name": "빈브라더스 합정",
+    "nearestStation": "합정",
+    "location": "서울 마포구 토정로 35-1",
+    "price": 7000,
+    "mainImageUrl": [
+      "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230531_262%2F1685542994202MxNal_JPEG%2F%25B3%25BB%25BA%25CE01.jpg"
+    ],
+    "imageAttributions": []
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-8182-960e-e41c0092839c-bean",
+    "description": "기본에 충실한 블랙 타입 음료에 최적화된 커피. 초콜릿의 달콤함과 구운 견과의 고소함이 조화롭고, 단맛의 여운이 길게 이어집니다.",
+    "name": "블랙수트",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "밀크 초콜릿",
+        "category": "Nutty/Cocoa"
+      },
+      {
+        "name": "구운 호두",
+        "category": "Nutty/Cocoa"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "브라질",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "에티오피아",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "콜롬비아",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "MEDIUM"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-8182-960e-e41c0092839c-m1",
+      "name": "드립커피",
+      "price": 7000,
+      "imageUrl": "https://ldb-phinf.pstatic.net/20230531_101/1685524957088kaOdb_JPEG/%B5%E5%B8%B3%C4%BF%C7%C7_ICED.jpg",
+      "description": "원두에 따라 가격이 달라집니다"
+    },
+    {
+      "id": "3456e613-742a-8182-960e-e41c0092839c-m2",
+      "name": "화이트 스파이스 라떼",
+      "price": 6500,
+      "imageUrl": "https://ldb-phinf.pstatic.net/20250212_55/1739343932180Fhq3V_JPEG/DSCF3637.jpg",
+      "description": "카다멈과 생강, 시나몬 등으로 만든 시럽을 더한 라떼"
+    }
+  ],
+  "tags": [
+    {
+      "id": "b20b1b80-50ce-49a4-8ef2-ee2d58b8e4fe",
+      "name": "브랜드",
+      "imageUrl": ""
+    },
+    {
+      "id": "d0d0bdb1-e7c7-4671-96b1-1f3e8c2d745c",
+      "name": "블렌드",
+      "imageUrl": ""
+    },
+    {
+      "id": "f7672ade-797b-4369-8bd5-98a9931a29c9",
+      "name": "시그니처",
+      "imageUrl": ""
+    },
+    {
+      "id": "45507d6d-9817-4f8c-a23b-2f119d9101d2",
+      "name": "드립커피",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-28"
+}

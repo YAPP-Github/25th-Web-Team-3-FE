@@ -1,0 +1,110 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-81e7-a47a-e5cda7abe514",
+    "reasonForSelection": "2009년에 출범한 챔프커피는 5호점까지 운영하는 한국의 터줏대감입니다. 카페를 운영할 뿐만 아니라, 원두를 직접 볶고 납품합니다. 직관적인 맛과 다양한 원두 선택지로 대중적인 입맛을 사로잡을 수 있는 우유 기반의 커피 종류가 잘 엄선되어 있습니다.",
+    "naverMapUrl": "https://naver.me/57VZ8Tpk",
+    "name": "챔프커피 제3작업실",
+    "nearestStation": "을지로3가",
+    "location": "서울 중구 을지로 157 라열 3층 381호",
+    "price": 5000,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/place-photos/AJRVUZNWvpgkp3KX_oXfgqKz91fYJjxRh16VQbXO5sxnGjaJZQ4E7aU_y5mCS1_OF0yumd1q1WIkE4YYoZamvkAic0dacJKvwMqlcUddKxh5VIaGQu5bj5czJoU9XlriWFOclrrSj5f8QYnqi8MP288P1aJ20g=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "Troy Nam",
+        "uri": "https://maps.google.com/maps/contrib/109077213121368193973"
+      },
+      {
+        "displayName": "시래캔",
+        "uri": "https://maps.google.com/maps/contrib/113330853258777970160"
+      },
+      {
+        "displayName": "Lu pin",
+        "uri": "https://maps.google.com/maps/contrib/103191946365919722161"
+      },
+      {
+        "displayName": "小不點Paine",
+        "uri": "https://maps.google.com/maps/contrib/115521204432315046152"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-81e7-a47a-e5cda7abe514-bean",
+    "description": "강배전의 장점을 살린 챔프커피의 대표 블렌드입니다. 무게감과 단맛을 두루 갖춰 고소하며 산미에 민감한 사람들이 쉽게 마실 수 있습니다.",
+    "name": "알리 블렌드",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "묵직한 바디",
+        "category": "Other"
+      },
+      {
+        "name": "다크 초콜릿",
+        "category": "Nutty/Cocoa"
+      },
+      {
+        "name": "호두",
+        "category": "Nutty/Cocoa"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "과테말라 안티구아",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "케냐",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "인도네시아",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "인도",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "DARK"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-81e7-a47a-e5cda7abe514-m1",
+      "name": "챔프커피",
+      "price": 5000,
+      "imageUrl": "",
+      "description": "라떼보다 작은 사이즈의 진하고 고소한 커피입니다."
+    },
+    {
+      "id": "3456e613-742a-81e7-a47a-e5cda7abe514-m2",
+      "name": "리스트레토",
+      "price": 4800,
+      "imageUrl": "",
+      "description": "24g의 원두를 사용해서 에스프레소보다 짧게 추출된 커피입니다."
+    }
+  ],
+  "tags": [
+    {
+      "id": "b20b1b80-50ce-49a4-8ef2-ee2d58b8e4fe",
+      "name": "브랜드",
+      "imageUrl": ""
+    },
+    {
+      "id": "683fad1f-1a5d-40c4-9ff8-77177b5d009f",
+      "name": "대중적인",
+      "imageUrl": ""
+    },
+    {
+      "id": "71a7dbcb-7bbf-4f99-bbdb-82e294e688ae",
+      "name": "라떼 맛집",
+      "imageUrl": ""
+    },
+    {
+      "id": "d0d0bdb1-e7c7-4671-96b1-1f3e8c2d745c",
+      "name": "블렌드",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": null
+}

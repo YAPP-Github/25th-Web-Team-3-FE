@@ -41,3 +41,6 @@ next-env.d.ts
 
 #claude
 .claude/*
+
+# build:data 디버그용 Notion 원본 덤프 (소비 안 함)
+public/data/cafes-raw.json

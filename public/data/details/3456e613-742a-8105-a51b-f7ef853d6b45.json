@@ -1,0 +1,110 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-8105-a51b-f7ef853d6b45",
+    "reasonForSelection": "스페셜티 커피 매장. 카페 내부 공간은 협소한 편이지만 좋은 품질의 커피를 선보인다. 상시 10종류의 싱글 오리진 커피를 보유하고 있으며, 취향에 따라 원두 선택부터 에스프레소, 필터, 밀크커피까지 다양하게 선택할 수 있는 것이 특징",
+    "naverMapUrl": "https://naver.me/5iTd6abU",
+    "name": "트레머 커피웍스",
+    "nearestStation": "홍대입구",
+    "location": "서울 마포구 와우산로29다길 11-1 지1층",
+    "price": 0,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/place-photos/AJRVUZNVzF3tI0t0FkJBkRM5mz4fi2xUIu6Cgv1hZcnp65lZtdcBsfy-l2GR7hQU6rVoJaP2h7cOM8H-xgVtDtYvvI6_zfPGF1Swt_KxRjN9WXLqhHpLG92ACM1fZwrkMxSzgXjOeFfeAZ-J2rHuyQ=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "John Swift",
+        "uri": "https://maps.google.com/maps/contrib/103902733045144332915"
+      },
+      {
+        "displayName": "Anna Zhilina",
+        "uri": "https://maps.google.com/maps/contrib/100943356577614589388"
+      },
+      {
+        "displayName": "Agnieszka Witczak",
+        "uri": "https://maps.google.com/maps/contrib/115311569956998214591"
+      },
+      {
+        "displayName": "Ricehon",
+        "uri": "https://maps.google.com/maps/contrib/101812471017667912990"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-8105-a51b-f7ef853d6b45-bean",
+    "description": "남녀노소 좋아할만한 미디엄 다크 로스팅의 커피입니다. 카카오의 쌉싸래한 맛과 적사과의 은은한 향이 조화를 이루며, 구운 마카다미아와 밀크초콜릿의 부드러운 여운을 남깁니다.",
+    "name": "골든 아워 블렌드",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "카카오닙스",
+        "category": "Nutty/Cocoa"
+      },
+      {
+        "name": "사과",
+        "category": "Fruity"
+      },
+      {
+        "name": "밀크 초콜릿",
+        "category": "Nutty/Cocoa"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "콜롬비아",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "브라질",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "인도네시아",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "에티오피아",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "MEDIUM"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-8105-a51b-f7ef853d6b45-m1",
+      "name": "핸드드립",
+      "price": 0,
+      "imageUrl": "",
+      "description": "트레머커피웍스의 모든 커피는 원두를 먼저 선택 후, 추출 방식을 선택해서 드실 수 있습니다"
+    },
+    {
+      "id": "3456e613-742a-8105-a51b-f7ef853d6b45-m2",
+      "name": "더웍스",
+      "price": 20000,
+      "imageUrl": "",
+      "description": "트레머 커피웍스의 주요 세 가지 메뉴를 순서대로 맛볼 수 있는 커피 플래터입니다."
+    }
+  ],
+  "tags": [
+    {
+      "id": "d944c5dd-803f-4f2c-96c5-8a6390fd1b95",
+      "name": "블루리본",
+      "imageUrl": ""
+    },
+    {
+      "id": "c8b9f0dd-8d54-481e-8e3a-edbf7929cbb9",
+      "name": "싱글오리진",
+      "imageUrl": ""
+    },
+    {
+      "id": "c5c030e2-74f2-4031-bbfa-7573231b9121",
+      "name": "에스프레소 맛집",
+      "imageUrl": ""
+    },
+    {
+      "id": "84e16f3f-5d1b-49e4-83d9-d38a3349f840",
+      "name": "필터 맛집",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-29"
+}

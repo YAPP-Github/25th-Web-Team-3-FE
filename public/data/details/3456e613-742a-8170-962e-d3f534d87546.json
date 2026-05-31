@@ -1,0 +1,102 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-8170-962e-d3f534d87546",
+    "reasonForSelection": "커피의 수확부터 한 잔의 커피에 이르기까지, 수많은 과정을 거칩니다. 커피와 그 한 잔을 즐기는 사람이 전부인 공간. 펠트는 오직 커피만을 위한 과정에 집중하는 카페입니다. 매년 직접 산지를 방문하여 생두를 선별하고, 가장 절정의 맛을 담습니다.",
+    "naverMapUrl": "https://naver.me/Gctrkvw1",
+    "name": "펠트커피 광화문점",
+    "nearestStation": "광화문",
+    "location": "서울 종로구 종로3길 17 B2층",
+    "price": 4500,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/place-photos/AJRVUZM4TiaZ1Up8pWG1c2N83yN1ilG6kC-cA6JrnswqIkkkt4DmisQgfeHBTZgctXhJ6ki-d8MPy5nWM07GQ8c9kzdCrhN2g85EHgmg85USaNa1b_kdN3-3yykEVvopKfIbSONlzCA8SjdacSMSA7uwhqNRKA=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "EJ l",
+        "uri": "https://maps.google.com/maps/contrib/105490286672075104016"
+      },
+      {
+        "displayName": "PBHQ",
+        "uri": "https://maps.google.com/maps/contrib/100748775284369640799"
+      },
+      {
+        "displayName": "규규",
+        "uri": "https://maps.google.com/maps/contrib/111064026983487537709"
+      },
+      {
+        "displayName": "siro75",
+        "uri": "https://maps.google.com/maps/contrib/117148674458184446110"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-8170-962e-d3f534d87546-bean",
+    "description": "낮은 톤의 산미, 밀크초콜렛과 다크초콜렛을 넘나드는것 같은 묵직하고 달콤함이 돋보이는 에스프레소. 누구나 편하게 즐길수 있는 균형감 있는 커피.",
+    "name": "펠트 커피 클래식 에스프레소",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "밀크 초콜릿",
+        "category": "Nutty/Cocoa"
+      },
+      {
+        "name": "다크 초콜릿",
+        "category": "Nutty/Cocoa"
+      },
+      {
+        "name": "고소한",
+        "category": "Other"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "콜롬비아",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "코스타리카",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "DARK"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-8170-962e-d3f534d87546-m1",
+      "name": "에스프레소",
+      "price": 4500,
+      "imageUrl": "",
+      "description": "고온·고압의 추출 방식으로 커피의 진한 풍미와 크레마를 즐길 수 있는 커피"
+    },
+    {
+      "id": "3456e613-742a-8170-962e-d3f534d87546-m2",
+      "name": "브루드 커피",
+      "price": 6500,
+      "imageUrl": "",
+      "description": "뜨거운 물을 이용해 원두의 풍미를 우려내는 방식으로 추출된 커피."
+    }
+  ],
+  "tags": [
+    {
+      "id": "b20b1b80-50ce-49a4-8ef2-ee2d58b8e4fe",
+      "name": "브랜드",
+      "imageUrl": ""
+    },
+    {
+      "id": "c8b9f0dd-8d54-481e-8e3a-edbf7929cbb9",
+      "name": "싱글오리진",
+      "imageUrl": ""
+    },
+    {
+      "id": "84e16f3f-5d1b-49e4-83d9-d38a3349f840",
+      "name": "필터 맛집",
+      "imageUrl": ""
+    },
+    {
+      "id": "0921cf45-93af-400b-a9ed-0b85a194f812",
+      "name": "산미",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-24"
+}

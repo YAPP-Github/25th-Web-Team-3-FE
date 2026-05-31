@@ -1,0 +1,93 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-816b-901c-e41c2416734d",
+    "reasonForSelection": "매주 로스팅을 하고, 다양한 산지의 원두를 볶아서 드립 커피를 내리는 카페입니다. 계절에 어울리는 소다와 가벼운 칵테일도 준비되어 있습니다.",
+    "naverMapUrl": "https://naver.me/FK5vi2LB",
+    "name": "퀜치커피",
+    "nearestStation": "망원",
+    "location": "서울 마포구 동교로12안길 9 . 1층",
+    "price": 5000,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/places/ANXAkqFPQuvDl30fQfYvO9k2QZUoroD9KYzrlZ3YUo22BGWleoVGH5z7H_9QWG8GLEGh_R_IMmwrv7us1vInVlWyctUP-kW4Vz_-fpQ=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "퀜치커피 Quench Coffee",
+        "uri": "https://maps.google.com/maps/contrib/102010754974686746855"
+      },
+      {
+        "displayName": "Ho Yoo",
+        "uri": "https://maps.google.com/maps/contrib/117890331081109595652"
+      },
+      {
+        "displayName": "올리브",
+        "uri": "https://maps.google.com/maps/contrib/102504129803958740366"
+      },
+      {
+        "displayName": "B K",
+        "uri": "https://maps.google.com/maps/contrib/102736215150568380319"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-816b-901c-e41c2416734d-bean",
+    "description": "화사한 산미가 혀 끝에 오래 남아 진한 풍미를 선사합니다.",
+    "name": "니콰라가 리틀 레드 라이딩 후드 내추럴",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "라즈베리",
+        "category": "Fruity"
+      },
+      {
+        "name": "체리",
+        "category": "Fruity"
+      },
+      {
+        "name": "메이플 시럽",
+        "category": "Sweet"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "니카라과",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "MEDIUM"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-816b-901c-e41c2416734d-m1",
+      "name": "카푸치노",
+      "price": 5000,
+      "imageUrl": "",
+      "description": "부드럽고 퐁신한 카푸치노의 감동."
+    },
+    {
+      "id": "3456e613-742a-816b-901c-e41c2416734d-m2",
+      "name": "필터 커피",
+      "price": 6000,
+      "imageUrl": "",
+      "description": "신중히 고른 원두로 직접 내리는 핸드드립."
+    }
+  ],
+  "tags": [
+    {
+      "id": "71a7dbcb-7bbf-4f99-bbdb-82e294e688ae",
+      "name": "라떼 맛집",
+      "imageUrl": ""
+    },
+    {
+      "id": "683fad1f-1a5d-40c4-9ff8-77177b5d009f",
+      "name": "대중적인",
+      "imageUrl": ""
+    },
+    {
+      "id": "84e16f3f-5d1b-49e4-83d9-d38a3349f840",
+      "name": "필터 맛집",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-25"
+}

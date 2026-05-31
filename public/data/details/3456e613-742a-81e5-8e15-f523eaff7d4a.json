@@ -1,0 +1,77 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-81e5-8e15-f523eaff7d4a",
+    "reasonForSelection": "업사이 커피는 특별함보단 익숙함에 가치를잡고 운영하는 커피 브랜드입니다.  강아지 심볼만큼이나 친숙한 커피를 만들고자합니다.",
+    "naverMapUrl": "https://naver.me/x2jAtNPn",
+    "name": "업사이드커피 약수점",
+    "nearestStation": "약수",
+    "location": "서울 중구 동호로10길 42 1층",
+    "price": 5000,
+    "mainImageUrl": [
+      "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230629_8%2F1688001957512bTny5_JPEG%2FIMG_1839.jpeg"
+    ],
+    "imageAttributions": []
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-81e5-8e15-f523eaff7d4a-bean",
+    "description": "대중적이고 하루에 한 잔 먹기 좋은 스페셜티 입문용 원두",
+    "name": "에티오피아 아리차(Aricha) 내추럴",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "과일",
+        "category": "Fruity"
+      },
+      {
+        "name": "꽃향기",
+        "category": "Floral"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "에티오피아",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "DARK"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-81e5-8e15-f523eaff7d4a-m1",
+      "name": "해방촌커피",
+      "price": 5000,
+      "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240528_138%2F1716859832976ssjuR_JPEG%2FIMG_2483.jpeg",
+      "description": "크림+플랫화이트"
+    },
+    {
+      "id": "3456e613-742a-81e5-8e15-f523eaff7d4a-m2",
+      "name": "약수에 바나나",
+      "price": 5000,
+      "imageUrl": "https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20240528_48%2F1716859832359RpYbq_JPEG%2FIMG_3858.jpeg",
+      "description": "바나나시럽+크림+플랫화이트"
+    }
+  ],
+  "tags": [
+    {
+      "id": "b20b1b80-50ce-49a4-8ef2-ee2d58b8e4fe",
+      "name": "브랜드",
+      "imageUrl": ""
+    },
+    {
+      "id": "683fad1f-1a5d-40c4-9ff8-77177b5d009f",
+      "name": "대중적인",
+      "imageUrl": ""
+    },
+    {
+      "id": "71a7dbcb-7bbf-4f99-bbdb-82e294e688ae",
+      "name": "라떼 맛집",
+      "imageUrl": ""
+    },
+    {
+      "id": "f7672ade-797b-4369-8bd5-98a9931a29c9",
+      "name": "시그니처",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-27"
+}

@@ -1,0 +1,92 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-81b3-a1ba-c4fdfeb25956",
+    "reasonForSelection": "벌새는 핸드드립 전문점으로, 진하게 내린 드립 커피와 우유에 소량의 설탕을 넣어 달달한 버터 스카치 캔디 맛 구현합니다. ‘커피가게동경’크루에서 오랫동안 일 했던 류형준 바리스타가 로스팅한 원두들을 기본으로 판매합니다.",
+    "naverMapUrl": "https://naver.me/FJbWAuE4",
+    "name": "벌새",
+    "nearestStation": "광화문",
+    "location": "서울 종로구 새문안로3길 12 신문로빌딩 지하 1층 22,23호",
+    "price": 6500,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/places/ANXAkqGdqlkD2as_qw73O_SeO84iAxT_A6Xr03On7UiWjssW35N1Jio0j-UoocPSKPwI1WyHJlfLWU3RyVkyb6yH4Ybb5keVGXc2uEU=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "벌새",
+        "uri": "https://maps.google.com/maps/contrib/117605988042720754281"
+      },
+      {
+        "displayName": "Newjin",
+        "uri": "https://maps.google.com/maps/contrib/105446364100325684675"
+      },
+      {
+        "displayName": "siro75",
+        "uri": "https://maps.google.com/maps/contrib/117148674458184446110"
+      },
+      {
+        "displayName": "アオヤマアオヤマ",
+        "uri": "https://maps.google.com/maps/contrib/101123761628381978757"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-81b3-a1ba-c4fdfeb25956-bean",
+    "description": "고급스러운 맛과 향을 가진 품종으로, 특히 화려한 꽃향과 과일 향이 특징입니다.",
+    "name": "페루 라팔마 게이샤 워시드",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "꿀",
+        "category": "Sweet"
+      },
+      {
+        "name": "꽃향기",
+        "category": "Floral"
+      },
+      {
+        "name": "슈퍼클린",
+        "category": "Sour/Fermented"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "페루",
+        "flagImageUrl": ""
+      },
+      {
+        "name": "콜롬비아",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "LIGHT"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-81b3-a1ba-c4fdfeb25956-m1",
+      "name": "비엔나 커피",
+      "price": 6500,
+      "imageUrl": "",
+      "description": "크림의 부드러움과 아메리카노의 씁쓸한 맛, 시간이 지났을 때 생기는 단맛이 어우러져 커피입니다."
+    },
+    {
+      "id": "3456e613-742a-81b3-a1ba-c4fdfeb25956-m2",
+      "name": "카페오레",
+      "price": 6500,
+      "imageUrl": "",
+      "description": "프랑스에서 프렌치 프레스로 내린 커피와 우유를 같은 비율로, 기호에 따라 설탕을 약간 넣어 마시는 음료입니다."
+    }
+  ],
+  "tags": [
+    {
+      "id": "1ead9a26-ab24-4d5b-b046-4af8636f6b97",
+      "name": "매니아",
+      "imageUrl": ""
+    },
+    {
+      "id": "84e16f3f-5d1b-49e4-83d9-d38a3349f840",
+      "name": "필터 맛집",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": "2025-03-23"
+}

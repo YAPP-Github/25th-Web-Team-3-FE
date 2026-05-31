@@ -1,0 +1,92 @@
+{
+  "cafe": {
+    "id": "3456e613-742a-81f9-9628-e740514d4c20",
+    "reasonForSelection": "딥블루레이크는 코리아 커피 로스팅 대회에서 예선 1위, 결선 6위의 수살 뿐만 아니라 카페쇼나 월픽행사 등 꾸준한 활동을 통해 어쩌구저쩌구 하고 있습니다.",
+    "naverMapUrl": "https://naver.me/xk1nSZvN",
+    "name": "딥블루레이크",
+    "nearestStation": "망원",
+    "location": "서울 마포구 포은로6길 11",
+    "price": 6000,
+    "mainImageUrl": [
+      "https://lh3.googleusercontent.com/place-photos/AJRVUZOXoom62MK8N_m7T8xw9r_r6m30elu4Otmky-kBHx1faN1wLqoPnSJxK5ggQfATRy_4X0EcGj6DbFIHE725djstgqOsD8kBNoy_8D32CCPd6Quiaam5Hrdh6Y9ifZbXuaaJbj9VDKERBM3xq14=s4800-w800"
+    ],
+    "imageAttributions": [
+      {
+        "displayName": "히둥 heedoong",
+        "uri": "https://maps.google.com/maps/contrib/110139067500832058171"
+      },
+      {
+        "displayName": "Novia",
+        "uri": "https://maps.google.com/maps/contrib/111708720672506861891"
+      },
+      {
+        "displayName": "Jay",
+        "uri": "https://maps.google.com/maps/contrib/108669663780773449177"
+      },
+      {
+        "displayName": "B K",
+        "uri": "https://maps.google.com/maps/contrib/102736215150568380319"
+      },
+      {
+        "displayName": "Paul Leong",
+        "uri": "https://maps.google.com/maps/contrib/107174367799723961278"
+      }
+    ]
+  },
+  "coffeeBean": {
+    "id": "3456e613-742a-81f9-9628-e740514d4c20-bean",
+    "description": "농장주 2011년 엄하용의 파젠다 엄. 현재는 아들인 엄보람이 월드바리스타 챔피언. 비스킷이나 볶은 땅콩을 연상시키는 기존 브라질 커피와 달리 시트러스 계열의 맛을 강조하는.",
+    "name": "브라질 파젠다 엄 파라이소 카투아이81",
+    "engName": "",
+    "flavors": [
+      {
+        "name": "감귤",
+        "category": "Fruity"
+      },
+      {
+        "name": "베리",
+        "category": "Fruity"
+      },
+      {
+        "name": "해바라기씨",
+        "category": "Other"
+      }
+    ],
+    "countryOfOrigin": [
+      {
+        "name": "파젠다 엄",
+        "flagImageUrl": ""
+      }
+    ],
+    "roastingPoint": "LIGHT"
+  },
+  "menus": [
+    {
+      "id": "3456e613-742a-81f9-9628-e740514d4c20-m1",
+      "name": "커피러버",
+      "price": 6000,
+      "imageUrl": "",
+      "description": "싱글 에스프레소를 드신 후 탄산수 입가심 후 싱글샷이 들어간 플랫화이트"
+    },
+    {
+      "id": "3456e613-742a-81f9-9628-e740514d4c20-m2",
+      "name": "플랫화이트",
+      "price": 5500,
+      "imageUrl": "",
+      "description": "싱글오리진 커피에 상하목장 우유 제공"
+    }
+  ],
+  "tags": [
+    {
+      "id": "c8b9f0dd-8d54-481e-8e3a-edbf7929cbb9",
+      "name": "싱글오리진",
+      "imageUrl": ""
+    },
+    {
+      "id": "71a7dbcb-7bbf-4f99-bbdb-82e294e688ae",
+      "name": "라떼 맛집",
+      "imageUrl": ""
+    }
+  ],
+  "updatedAt": null
+}
