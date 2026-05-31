@@ -1,0 +1,73 @@
+name: Auto Triage
+
+# 이슈/PR이 열리면 작성자를 assignee로 지정하고,
+# PR이면 head 브랜치 prefix(`<type>/#NN`)에 맞는 라벨을 부여한다.
+# type 종류는 위키 커밋 prefix 규칙(킥오프-회의)을 따른다.
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
+
+permissions:
+  issues: write
+  pull-requests: write
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const pr = context.payload.pull_request;
+            const target = pr ?? context.payload.issue;
+            const { owner, repo } = context.repo;
+
+            // 1) 작성자를 assignee로 자동 지정 (이슈 · PR 공통)
+            await github.rest.issues.addAssignees({
+              owner,
+              repo,
+              issue_number: target.number,
+              assignees: [target.user.login],
+            });
+            core.info(`Assigned @${target.user.login} to #${target.number}`);
+
+            // 2) PR이면 브랜치 prefix 기반 라벨 부여 (이슈는 스킵)
+            if (!pr) return;
+
+            // 위키 커밋 prefix 9종 → 라벨명(동일) + 색상
+            const LABELS = {
+              feat:     { color: '0E8A16', description: '기능 관련 변경' },
+              fix:      { color: 'D73A4A', description: '오류/비정상 수정' },
+              docs:     { color: '0075CA', description: '문서화 관련' },
+              chore:    { color: 'FEF2C0', description: '기타 변경' },
+              config:   { color: '5319E7', description: '설정/구조 세팅' },
+              style:    { color: 'C5DEF5', description: '코드 스타일' },
+              test:     { color: 'BFD4F2', description: '테스트 관련' },
+              design:   { color: 'D4C5F9', description: 'UI/스타일링 변경' },
+              refactor: { color: 'FBCA04', description: '리팩토링' },
+            };
+
+            const prefix = pr.head.ref.split('/')[0]; // 예: "docs/#75" → "docs"
+            const spec = LABELS[prefix];
+            if (!spec) {
+              core.info(`브랜치 prefix '${prefix}'에 매핑된 라벨 없음 — 스킵`);
+              return;
+            }
+
+            // 라벨이 없으면 생성 (이미 있으면 422 무시)
+            try {
+              await github.rest.issues.createLabel({ owner, repo, name: prefix, ...spec });
+              core.info(`라벨 '${prefix}' 생성`);
+            } catch (e) {
+              if (e.status !== 422) throw e;
+            }
+
+            await github.rest.issues.addLabels({
+              owner,
+              repo,
+              issue_number: pr.number,
+              labels: [prefix],
+            });
+            core.info(`PR #${pr.number}에 '${prefix}' 라벨 부여`);
