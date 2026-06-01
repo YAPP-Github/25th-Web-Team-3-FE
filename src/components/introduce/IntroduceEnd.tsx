@@ -1,15 +1,15 @@
 import * as React from 'react';
-import introduceEndImage from '@/assets/introduce/intro-last.jpg';
+import introduceEndImage from '@/shared/assets/introduce/intro-last.jpg';
 import {
   introEndDescription,
   introEndImage,
   introEndSeparator,
   introEndTitle,
 } from './introduce.css';
-import PopUpButton from '../common/PopUpButton';
+import PopUpButton from '../../shared/ui/PopUpButton';
 import Link from 'next/link';
-import { ROUTE_PATH } from '@/constants/routePath';
-import { GOOGLE_FORM_URL } from '@/constants/externalUrl';
+import { ROUTE_PATH } from '@/shared/config/constants/routePath';
+import { GOOGLE_FORM_URL } from '@/shared/config/constants/externalUrl';
 import Image from 'next/image';
 
 export default function IntroduceEnd() {

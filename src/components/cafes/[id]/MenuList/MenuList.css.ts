@@ -1,6 +1,6 @@
-import { color } from '@/styles/color.css';
+import { color } from '@/shared/styles/color.css';
 
-import { body1, body1Bold } from '@/styles/typo.css';
+import { body1, body1Bold } from '@/shared/styles/typo.css';
 import { ComplexStyleRule, style } from '@vanilla-extract/css';
 export const scrollContainer = style({
   overflowX: 'auto',
@@ -14,8 +14,6 @@ export const scrollContainer = style({
       display: 'none',
     },
   },
-
-
 });
 
 export const menuItemList = style({
@@ -35,7 +33,6 @@ export const menuItemBox = style({
   flexDirection: 'column',
   justifyContent: 'space-between',
   boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.2)',
-
 });
 export const menuItemTitleBox = style({
   ...body1Bold,
@@ -48,8 +45,6 @@ export const menuItemImg = style({
   width: '100%',
   height: '24.4rem',
   objectFit: 'cover',
-
- 
 });
 
 export const menuItemContent = style({

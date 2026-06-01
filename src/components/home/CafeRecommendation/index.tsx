@@ -2,9 +2,9 @@
 
 import RecommendedCafeList from './RecommendedCafeList';
 import { cafeRecommendationItem, CafeRecommendationName } from './CafeRecommendation.css';
-import { useInfiniteCafeRecommendation } from '@/hooks/server/useInfiniteCafeRecommendation';
-import { IntersectionDetector } from '@/components/common/IntersectionDetector';
-import { useRestoreScroll } from '@/hooks/useRestoreScroll';
+import { useInfiniteCafeRecommendation } from '@/shared/hooks/server/useInfiniteCafeRecommendation';
+import { IntersectionDetector } from '@/shared/ui/IntersectionDetector';
+import { useRestoreScroll } from '@/shared/hooks/client/useRestoreScroll';
 
 export default function CafeRecommendation() {
   useRestoreScroll('home');

@@ -2,9 +2,9 @@
 
 import * as React from 'react';
 import { bannerTypo, heroBanner } from './HeroBanner.css';
-import BannerTypo from '@/assets/brewloungeBannerTypo.svg';
+import BannerTypo from '@/shared/assets/brewloungeBannerTypo.svg';
 import BannerCarousel from './BannerCarousel';
-import introBannerImage from '@/assets/introduce/intro-banner.jpg';
+import introBannerImage from '@/shared/assets/introduce/intro-banner.jpg';
 
 const MOCK_BANNER_DATA = [
   {

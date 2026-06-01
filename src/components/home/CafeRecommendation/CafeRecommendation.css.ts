@@ -1,4 +1,4 @@
-import { body1Bold, body2, title3 } from '@/styles/typo.css';
+import { body1Bold, body2, title3 } from '@/shared/styles/typo.css';
 import { style } from '@vanilla-extract/css';
 
 // CafeItem

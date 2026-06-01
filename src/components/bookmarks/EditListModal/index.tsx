@@ -1,4 +1,4 @@
-import Modal from '@/components/common/Modal';
+import Modal from '@/shared/ui/Modal';
 import EditListModalContents from './EditListMdoalContents';
 
 interface EditListModalProps {

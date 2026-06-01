@@ -1,4 +1,4 @@
-import Modal from '@/components/common/Modal';
+import Modal from '@/shared/ui/Modal';
 import AddListModalContents from './AddListMoadalContents';
 
 interface AddListModalProps {

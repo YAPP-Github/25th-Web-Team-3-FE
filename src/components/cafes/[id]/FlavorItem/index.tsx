@@ -1,4 +1,4 @@
-import HashTag from '@/components/common/HashTag';
+import HashTag from '@/shared/ui/HashTag';
 import { dot, flavorItem, flavorList } from './FlavorItem.css';
 
 type FlavorCategory =

@@ -1,5 +1,5 @@
-import { color } from '@/styles/color.css';
-import { body1, body1Bold, etc, title3 } from '@/styles/typo.css';
+import { color } from '@/shared/styles/color.css';
+import { body1, body1Bold, etc, title3 } from '@/shared/styles/typo.css';
 import { ComplexStyleRule, style } from '@vanilla-extract/css';
 
 export const cafesIdLayout = style({

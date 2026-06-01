@@ -1,9 +1,9 @@
 import React from 'react';
-import BookmarkBasicImage from '@/assets/Icon/bookmarkBasicImageSmall.svg';
-import CheckedIcon from '@/assets/Icon/checkedBox.svg';
-import UnCheckedIcon from '@/assets/Icon/unCheckedBox.svg';
+import BookmarkBasicImage from '@/shared/assets/Icon/bookmarkBasicImageSmall.svg';
+import CheckedIcon from '@/shared/assets/Icon/checkedBox.svg';
+import UnCheckedIcon from '@/shared/assets/Icon/unCheckedBox.svg';
 import AddListModal from '@/components/bookmarks/AddListModal';
-import PopUpButton from '@/components/common/PopUpButton';
+import PopUpButton from '@/shared/ui/PopUpButton';
 import { useBookmarkStore } from '@/store/store';
 import { BookmarkCafe } from '@/types/types';
 import Image from 'next/image';
@@ -46,7 +46,7 @@ export default function SavedBookmarkListModalContents({
   };
 
   const isAllUnchecked = bookmarkFolders.some((folder) =>
-    folder.cafes.every((cafe) => cafe.isBookmarked)
+    folder.cafes.every((cafe) => cafe.isBookmarked),
   );
 
   const onSave = () => {
@@ -68,7 +68,7 @@ export default function SavedBookmarkListModalContents({
           const cafeCount = bookmark.cafes?.length || 0;
           const lastCafeImage = bookmark.cafes?.at(-1)?.mainImageUrl[0];
           const isBookmarked = bookmark.cafes.some(
-            (cafe) => cafe.id == params.id && cafe.isBookmarked
+            (cafe) => cafe.id == params.id && cafe.isBookmarked,
           );
 
           return (

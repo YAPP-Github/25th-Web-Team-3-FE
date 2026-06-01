@@ -1,12 +1,12 @@
-import { color } from '@/styles/color.css';
-import { body1 } from '@/styles/typo.css';
-import {globalStyle, style } from '@vanilla-extract/css';
+import { color } from '@/shared/styles/color.css';
+import { body1 } from '@/shared/styles/typo.css';
+import { globalStyle, style } from '@vanilla-extract/css';
 import { recipe } from '@vanilla-extract/recipes';
 
 export const roastingBar = style({
   display: 'flex',
   width: '100%',
-  gap:'0.4rem',
+  gap: '0.4rem',
   height: '0.8rem',
   marginTop: '1.2rem',
   backgroundColor: color.grayScale.gray100,
@@ -51,7 +51,7 @@ export const roastingStatus = recipe({
     display: 'flex',
     justifyContent: 'space-between',
     color: color.grayScale.gray300,
-    marginTop:'0.4rem'
+    marginTop: '0.4rem',
   },
   variants: {
     roastingLevel: {

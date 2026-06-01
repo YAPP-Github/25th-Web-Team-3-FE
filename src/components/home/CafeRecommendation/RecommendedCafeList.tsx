@@ -1,5 +1,5 @@
 import { RecommendedCafe } from '@/apis/cafe';
-import { ROUTE_PATH } from '@/constants/routePath';
+import { ROUTE_PATH } from '@/shared/config/constants/routePath';
 import Image from 'next/image';
 import Link from 'next/link';
 import {

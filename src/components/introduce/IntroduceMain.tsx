@@ -1,4 +1,4 @@
-import introduceImage1 from '@/assets/introduce/intro-main.jpg';
+import introduceImage1 from '@/shared/assets/introduce/intro-main.jpg';
 import {
   introMainDescription,
   introMainImage,

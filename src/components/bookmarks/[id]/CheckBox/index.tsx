@@ -1,5 +1,5 @@
-import CheckedBox from '@/assets/Icon/checkedBox.svg';
-import UnCheckedBox from '@/assets/Icon/unCheckedBox.svg';
+import CheckedBox from '@/shared/assets/Icon/checkedBox.svg';
+import UnCheckedBox from '@/shared/assets/Icon/unCheckedBox.svg';
 
 interface CheckBoxProps {
   isEdit: boolean;

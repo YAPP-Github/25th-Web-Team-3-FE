@@ -1,4 +1,4 @@
-import SelectButton from '../common/SelectButton';
+import SelectButton from '../../shared/ui/SelectButton';
 import { selectButtonsContainer } from './cafes.css';
 import { CafeRegion } from '@/apis/cafe';
 

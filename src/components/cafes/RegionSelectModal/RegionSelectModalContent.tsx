@@ -1,5 +1,5 @@
 import { regionItem, regionSelectModalContent } from './RegionSelectModal.css';
-import CheckIcon from '@/assets/checkIcon.svg';
+import CheckIcon from '@/shared/assets/checkIcon.svg';
 import { CafeRegion } from '@/apis/cafe';
 
 interface RegionSelectModalContentProps {

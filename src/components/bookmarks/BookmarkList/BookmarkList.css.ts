@@ -1,11 +1,11 @@
-import { color } from '@/styles/color.css';
-import { body1Bold, body2 } from '@/styles/typo.css';
+import { color } from '@/shared/styles/color.css';
+import { body1Bold, body2 } from '@/shared/styles/typo.css';
 import { ComplexStyleRule, style } from '@vanilla-extract/css';
 
 export const container = style({
   display: 'grid',
   gridTemplateColumns: 'repeat(2, 1fr)',
-  gridAutoRows:'19.1rem',
+  gridAutoRows: '19.1rem',
   backgroundColor: color.grayScale.gray500,
   minHeight: '100svh',
   gap: '0.8rem',
@@ -17,7 +17,7 @@ export const bookmarkLink = style({
   height: '19.1rem',
   width: '100%',
   display: 'flex',
-  justifyContent:'center', 
+  justifyContent: 'center',
 });
 
 export const bookmarkListItem = style({
@@ -26,15 +26,15 @@ export const bookmarkListItem = style({
   backgroundColor: color.grayScale.gray100,
   cursor: 'pointer',
   padding: '0.8rem',
-  height: '100%', 
+  height: '100%',
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
   minWidth: '16.3rem',
-  transition: 'transform 0.2s ease', 
+  transition: 'transform 0.2s ease',
   ':hover': {
-    transform: 'translateY(-2px)'
-  }
+    transform: 'translateY(-2px)',
+  },
 });
 
 export const subTitle = style({
@@ -61,12 +61,12 @@ export const bookmarkBasicImage = style({
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-    '& img': {
-      minWidth: '14.8rem',
-      minHeight:'14.4rem',
-      height: 'auto',
-  }
-}as ComplexStyleRule);
+  '& img': {
+    minWidth: '14.8rem',
+    minHeight: '14.4rem',
+    height: 'auto',
+  },
+} as ComplexStyleRule);
 
 export const listItemCounts = style({
   position: 'absolute',
@@ -80,9 +80,8 @@ export const listItemCounts = style({
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-
 });
 
 export const listItemCountsNumber = style({
-  ...body2
+  ...body2,
 });

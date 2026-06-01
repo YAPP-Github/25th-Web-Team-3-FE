@@ -1,4 +1,4 @@
-import PopUpButton from '@/components/common/PopUpButton';
+import PopUpButton from '@/shared/ui/PopUpButton';
 import { useBookmarkStore } from '@/store/store';
 import EmptyListMessage from './EmptyListMessage';
 import { buttonSection, listContainer } from './SavedBookmark.css';

@@ -1,5 +1,5 @@
-import { body1 } from './../../styles/typo.css';
-import { title3 } from '@/styles/typo.css';
+import { body1 } from '../../shared/styles/typo.css';
+import { title3 } from '@/shared/styles/typo.css';
 import { style } from '@vanilla-extract/css';
 
 export const pageContainer = style({ paddingBottom: '8rem' });

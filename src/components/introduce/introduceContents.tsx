@@ -1,16 +1,16 @@
-import IntroduceIcon1 from '@/assets/introduce/intro-1.svg';
-import IntroduceIcon2 from '@/assets/introduce/intro-2.svg';
-import IntroduceIcon3 from '@/assets/introduce/intro-3.svg';
-import IntroduceIcon4 from '@/assets/introduce/intro-4.svg';
-import IntroduceIcon5 from '@/assets/introduce/intro-5.svg';
-import IntroduceIcon6 from '@/assets/introduce/intro-6.svg';
+import IntroduceIcon1 from '@/shared/assets/introduce/intro-1.svg';
+import IntroduceIcon2 from '@/shared/assets/introduce/intro-2.svg';
+import IntroduceIcon3 from '@/shared/assets/introduce/intro-3.svg';
+import IntroduceIcon4 from '@/shared/assets/introduce/intro-4.svg';
+import IntroduceIcon5 from '@/shared/assets/introduce/intro-5.svg';
+import IntroduceIcon6 from '@/shared/assets/introduce/intro-6.svg';
 
-import introduceImage1 from '@/assets/introduce/intro-1.jpg';
-import introduceImage2 from '@/assets/introduce/intro-2.jpg';
-import introduceImage3 from '@/assets/introduce/intro-3.jpg';
-import introduceImage4 from '@/assets/introduce/intro-4.jpg';
-import introduceImage5 from '@/assets/introduce/intro-5.jpg';
-import introduceImage6 from '@/assets/introduce/intro-6.jpg';
+import introduceImage1 from '@/shared/assets/introduce/intro-1.jpg';
+import introduceImage2 from '@/shared/assets/introduce/intro-2.jpg';
+import introduceImage3 from '@/shared/assets/introduce/intro-3.jpg';
+import introduceImage4 from '@/shared/assets/introduce/intro-4.jpg';
+import introduceImage5 from '@/shared/assets/introduce/intro-5.jpg';
+import introduceImage6 from '@/shared/assets/introduce/intro-6.jpg';
 
 export const introduceContents = [
   {

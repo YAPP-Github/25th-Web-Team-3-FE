@@ -1,5 +1,5 @@
-import { color } from '@/styles/color.css';
-import { body1, title4 } from '@/styles/typo.css';
+import { color } from '@/shared/styles/color.css';
+import { body1, title4 } from '@/shared/styles/typo.css';
 import { style } from '@vanilla-extract/css';
 
 export const title = style({
@@ -9,15 +9,12 @@ export const title = style({
 export const subTitle = style({
   ...body1,
   color: color.grayScale.gray400,
-  
-  
 });
-export const editModalContainer=style({
+export const editModalContainer = style({
   marginTop: '-2.0rem',
- 
-})
+});
 export const buttonSection = style({
-   marginTop:'1.6rem',
+  marginTop: '1.6rem',
   display: 'flex',
   gap: '0.8rem',
 });

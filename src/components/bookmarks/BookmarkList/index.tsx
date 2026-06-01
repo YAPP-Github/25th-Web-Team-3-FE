@@ -1,7 +1,7 @@
 import React from 'react';
-import BookmarkBasicImage from '@/assets/Icon/bookmarkBasicImage.svg';
-import CloseIcon from '@/assets/Icon/closeIcon.svg';
-import { ROUTE_PATH } from '@/constants/routePath';
+import BookmarkBasicImage from '@/shared/assets/Icon/bookmarkBasicImage.svg';
+import CloseIcon from '@/shared/assets/Icon/closeIcon.svg';
+import { ROUTE_PATH } from '@/shared/config/constants/routePath';
 import { BookmarkFolder, useBookmarkStore } from '@/store/store';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -100,7 +100,7 @@ export default function BookmarkList({
           >
             <BookmarkItem item={item} isEdit={isEdit} onOpen={handleOpen} />
           </Link>
-        )
+        ),
       )}
       <EditListModal
         isOpen={isEditModalOpen}

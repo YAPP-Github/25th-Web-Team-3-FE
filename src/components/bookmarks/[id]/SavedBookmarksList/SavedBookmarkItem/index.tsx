@@ -1,4 +1,4 @@
-import { ROUTE_PATH } from '@/constants/routePath';
+import { ROUTE_PATH } from '@/shared/config/constants/routePath';
 import { useBookmarkStore } from '@/store/store';
 import { BookmarkCafe } from '@/types/types';
 import Image from 'next/image';

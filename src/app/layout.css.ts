@@ -1,4 +1,4 @@
-import { color } from '@/styles/color.css';
+import { color } from '@/shared/styles/color.css';
 
 import { style } from '@vanilla-extract/css';
 

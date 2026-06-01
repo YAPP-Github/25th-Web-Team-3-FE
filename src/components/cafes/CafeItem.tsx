@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { ROUTE_PATH } from '@/constants/routePath';
+import { ROUTE_PATH } from '@/shared/config/constants/routePath';
 import type { Cafe } from '@/types/types';
 import {
   cafeImage,
@@ -12,7 +12,7 @@ import {
   cafeLocation,
   tagList,
 } from './cafes.css';
-import HashTag from '../common/HashTag';
+import HashTag from '../../shared/ui/HashTag';
 
 interface CafeItemProps {
   cafe: Cafe;
