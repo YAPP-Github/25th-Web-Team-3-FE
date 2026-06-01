@@ -4,10 +4,10 @@ import React from 'react';
 import CafeList from '@/components/cafes/CafeList';
 import RegionSelectModal from '@/components/cafes/RegionSelectModal';
 import RegionSelectButtons from '@/components/cafes/RegionSelectButtons';
-import { useInfiniteCafes } from '@/hooks/server/useInfiniteCafes';
-import { IntersectionDetector } from '@/components/common/IntersectionDetector';
+import { useInfiniteCafes } from '@/shared/hooks/server/useInfiniteCafes';
+import { IntersectionDetector } from '@/shared/ui/IntersectionDetector';
 import { pageContainer } from '@/components/cafes/cafes.css';
-import { useRestoreScroll } from '@/hooks/useRestoreScroll';
+import { useRestoreScroll } from '@/shared/hooks/client/useRestoreScroll';
 import { CafeRegion } from '@/apis/cafe';
 
 interface CafesPageProps {

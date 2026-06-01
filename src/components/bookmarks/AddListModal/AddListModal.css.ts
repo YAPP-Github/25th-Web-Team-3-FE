@@ -1,5 +1,5 @@
-import { color } from '@/styles/color.css';
-import { body1, button2, fontVars } from '@/styles/typo.css';
+import { color } from '@/shared/styles/color.css';
+import { body1, button2, fontVars } from '@/shared/styles/typo.css';
 import { style } from '@vanilla-extract/css';
 import { recipe } from '@vanilla-extract/recipes';
 
@@ -12,18 +12,18 @@ export const contentsInputContainer = style({
 });
 export const addListModalInput = style({
   ...body1,
-  fontSize: '1.6rem', 
-  width: '106.67%', 
+  fontSize: '1.6rem',
+  width: '106.67%',
   backgroundColor: color.grayScale.gray100,
   color: color.grayScale.gray500,
   outline: 'none',
   padding: '1.28rem 1.6rem 1.28rem 1.28rem',
-  borderRadius: '0.53rem', 
+  borderRadius: '0.53rem',
   border: '1px solid',
   transform: 'scale(0.9375)',
   transformOrigin: 'left top',
-  marginBottom: '-0.4rem', 
-  marginRight: '-6.67%', 
+  marginBottom: '-0.4rem',
+  marginRight: '-6.67%',
 });
 
 export const addListCompleteButton = recipe({
@@ -57,8 +57,8 @@ export const maxLengthText = style({
 });
 
 export const errorMessage = style({
-  color:color.flavor.fruit,
-  fontWeight:fontVars.fontWeight.regular,
-  fontSize:'1.2rem',
-  padding:'0rem 0.8rem',
-})
+  color: color.flavor.fruit,
+  fontWeight: fontVars.fontWeight.regular,
+  fontSize: '1.2rem',
+  padding: '0rem 0.8rem',
+});

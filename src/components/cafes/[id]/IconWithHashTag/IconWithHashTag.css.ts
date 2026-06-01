@@ -1,4 +1,4 @@
-import { caption } from '@/styles/typo.css';
+import { caption } from '@/shared/styles/typo.css';
 import { ComplexStyleRule, style } from '@vanilla-extract/css';
 
 export const IconWithHashTagList = style({

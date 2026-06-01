@@ -1,4 +1,4 @@
-import { ROUTE_PATH } from '@/constants/routePath';
+import { ROUTE_PATH } from '@/shared/config/constants/routePath';
 import type { Cafe } from '@/types/types';
 import type { QueryFunctionContext } from '@tanstack/react-query';
 
@@ -14,7 +14,7 @@ export interface CafeRegion {
 
 export const getCafes = async (
   region?: CafeRegion,
-  pageParam?: string
+  pageParam?: string,
 ): Promise<CafeListResponse> => {
   const params = new URLSearchParams();
 
@@ -55,7 +55,7 @@ export const getCafeRecommendation = async ({
   const query = pageParam ? `?lastGroupId=${pageParam}` : '';
 
   const data = await get<{ data: CafeRecommendationResponse }>(
-    `${ROUTE_PATH.cafeRecommendation}${query}`
+    `${ROUTE_PATH.cafeRecommendation}${query}`,
   );
 
   return data.data;

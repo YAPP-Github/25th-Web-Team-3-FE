@@ -1,5 +1,5 @@
-import { color } from '@/styles/color.css';
-import { body1, body1Bold, fontVars } from '@/styles/typo.css';
+import { color } from '@/shared/styles/color.css';
+import { body1, body1Bold, fontVars } from '@/shared/styles/typo.css';
 import { style } from '@vanilla-extract/css';
 
 export const savedBookmarkModalContainer = style({

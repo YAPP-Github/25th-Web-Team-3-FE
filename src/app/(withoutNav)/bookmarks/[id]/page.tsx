@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import ChervonIcon from '@/assets/Icon/whiteChervonLeft.svg';
+import ChervonIcon from '@/shared/assets/Icon/whiteChervonLeft.svg';
 import SavedBookmarkList from '@/components/bookmarks/[id]/SavedBookmarksList';
 import { useParams, useRouter, useSearchParams } from 'next/navigation';
 import { backButton, editButton, header, headerInfo, headerTitle } from './page.css';

@@ -1,12 +1,12 @@
-import { color } from '@/styles/color.css';
-import { body1 } from '@/styles/typo.css';
+import { color } from '@/shared/styles/color.css';
+import { body1 } from '@/shared/styles/typo.css';
 import { style } from '@vanilla-extract/css';
 import { recipe } from '@vanilla-extract/recipes';
 
 export const flavorList = style({
   ...body1,
   display: 'flex',
-  flexWrap:'wrap',
+  flexWrap: 'wrap',
   gap: '0.6rem',
   marginTop: '0.8rem',
 });
@@ -14,12 +14,12 @@ export const flavorItem = style({
   ...body1,
   display: 'flex',
   alignItems: 'center',
-  whiteSpace:'nowrap',
-  color:color.grayScale.gray500,
+  whiteSpace: 'nowrap',
+  color: color.grayScale.gray500,
 });
 export const dot = recipe({
   base: {
-    display:'block',
+    display: 'block',
     width: '0.8rem',
     height: '0.8rem',
     borderRadius: '50%',
@@ -37,5 +37,5 @@ export const dot = recipe({
       nutty: { backgroundColor: color.flavor.nutty },
       other: { backgroundColor: color.flavor.other },
     },
-  } 
+  },
 });

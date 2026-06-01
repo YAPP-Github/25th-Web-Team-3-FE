@@ -1,4 +1,4 @@
-import PopUpButton from '@/components/common/PopUpButton';
+import PopUpButton from '@/shared/ui/PopUpButton';
 import { useBookmarkStore } from '@/store/store';
 import { buttonSection, editModalContainer, subTitle } from './EditListModal.css';
 
@@ -7,7 +7,6 @@ interface EditListModalContentsProps {
   id: string | null;
 }
 export default function EditListModalContents({ onClose, id }: EditListModalContentsProps) {
-  
   const { deleteFolder } = useBookmarkStore((state) => state);
 
   const handleDelete = (id: string | null) => {

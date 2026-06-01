@@ -1,4 +1,4 @@
-import { useInput } from '@/hooks/useInput';
+import { useInput } from '@/shared/hooks/client/useInput';
 import { useBookmarkStore } from '@/store/store';
 import {
   addListCompleteButton,

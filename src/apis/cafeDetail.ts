@@ -1,4 +1,4 @@
-import { ROUTE_PATH } from '@/constants/routePath';
+import { ROUTE_PATH } from '@/shared/config/constants/routePath';
 import { Cafe, CoffeeBean, Menu, Tag } from '@/types/types';
 
 interface CafeDetail extends Cafe {
@@ -21,7 +21,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 
 export const getCafeDetail = async (
   id: string,
-  revalidate: number
+  revalidate: number,
 ): Promise<CafeDetailResponse> => {
   const url = `${BASE_URL}${ROUTE_PATH.cafesDetail}/${id}`;
   const response = await fetch(url, {

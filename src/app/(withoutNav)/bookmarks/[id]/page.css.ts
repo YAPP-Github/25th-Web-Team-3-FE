@@ -1,5 +1,5 @@
-import { color } from '@/styles/color.css';
-import { button1, title3 } from '@/styles/typo.css';
+import { color } from '@/shared/styles/color.css';
+import { button1, title3 } from '@/shared/styles/typo.css';
 import { style } from '@vanilla-extract/css';
 
 export const header = style({
@@ -20,7 +20,7 @@ export const headerInfo = style({
 });
 export const editButton = style({
   ...button1,
-  color:color.grayScale.gray100,
+  color: color.grayScale.gray100,
   cursor: 'pointer',
 });
 

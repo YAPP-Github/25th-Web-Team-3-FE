@@ -1,4 +1,4 @@
-import { color } from '@/styles/color.css';
+import { color } from '@/shared/styles/color.css';
 import { style } from '@vanilla-extract/css';
 
 export const mainImageCarouselContainer = style({
@@ -21,7 +21,7 @@ export const mainImageCarouselCounts = style({
   position: 'absolute',
   right: '1.6rem',
   bottom: '1.6rem',
-  padding:'0.4rem 0.8rem',
+  padding: '0.4rem 0.8rem',
 });
 export const mainImageCarouselCurrentNumber = style({
   color: color.grayScale.gray100,

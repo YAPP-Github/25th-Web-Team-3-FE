@@ -1,4 +1,4 @@
-import Modal from '../../common/Modal';
+import Modal from '../../../shared/ui/Modal';
 import RegionSelectModalContent from './RegionSelectModalContent';
 import { CafeRegion } from '@/apis/cafe';
 

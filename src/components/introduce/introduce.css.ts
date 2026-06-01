@@ -1,5 +1,5 @@
-import { color } from '@/styles/color.css';
-import { body1, title2, title4 } from '@/styles/typo.css';
+import { color } from '@/shared/styles/color.css';
+import { body1, title2, title4 } from '@/shared/styles/typo.css';
 import { style } from '@vanilla-extract/css';
 
 // Introduce Page

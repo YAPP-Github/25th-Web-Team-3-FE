@@ -1,7 +1,7 @@
 import { style } from '@vanilla-extract/css';
 import { recipe } from '@vanilla-extract/recipes';
-import { body1, body1Bold } from '@/styles/typo.css';
-import { color } from '@/styles/color.css';
+import { body1, body1Bold } from '@/shared/styles/typo.css';
+import { color } from '@/shared/styles/color.css';
 
 export const regionSelectModalContent = style({
   display: 'flex',

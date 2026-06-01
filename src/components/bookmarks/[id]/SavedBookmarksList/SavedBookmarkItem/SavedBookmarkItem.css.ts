@@ -1,5 +1,5 @@
-import { color } from '@/styles/color.css';
-import { body1, body1Bold } from '@/styles/typo.css';
+import { color } from '@/shared/styles/color.css';
+import { body1, body1Bold } from '@/shared/styles/typo.css';
 import { style } from '@vanilla-extract/css';
 
 export const listContainer = style({
@@ -36,6 +36,6 @@ export const listItemDivider = style({
 
 export const listSection = style({
   display: 'flex',
-  alignItems:'center',
-  gap:'1.2rem',
+  alignItems: 'center',
+  gap: '1.2rem',
 });

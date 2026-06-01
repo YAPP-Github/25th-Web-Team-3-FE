@@ -1,5 +1,5 @@
-import { color } from '@/styles/color.css';
-import { body1Bold, title3 } from '@/styles/typo.css';
+import { color } from '@/shared/styles/color.css';
+import { body1Bold, title3 } from '@/shared/styles/typo.css';
 import { style } from '@vanilla-extract/css';
 
 export const title = style({
@@ -8,9 +8,8 @@ export const title = style({
   padding: '1.5rem 0',
 });
 export const container = style({
-  backgroundColor: color.grayScale.gray500, 
+  backgroundColor: color.grayScale.gray500,
   padding: '0 2rem',
-  
 });
 export const header = style({
   display: 'flex',

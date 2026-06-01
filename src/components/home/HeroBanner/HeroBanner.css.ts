@@ -1,5 +1,5 @@
-import { color } from '@/styles/color.css';
-import { caption, title4 } from '@/styles/typo.css';
+import { color } from '@/shared/styles/color.css';
+import { caption, title4 } from '@/shared/styles/typo.css';
 import { keyframes, style } from '@vanilla-extract/css';
 
 export const heroBanner = style({

@@ -1,10 +1,6 @@
-import BottomNavigation from '@/components/common/BottomNavigation';
+import BottomNavigation from '@/shared/ui/BottomNavigation';
 
-export default function Layout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <>
       {children}

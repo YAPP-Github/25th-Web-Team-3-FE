@@ -1,4 +1,4 @@
-import Modal from '@/components/common/Modal';
+import Modal from '@/shared/ui/Modal';
 import SavedBookmarkListModalContents from './SavedBookmarkListModalContents';
 import { BookmarkCafe } from '@/types/types';
 
@@ -6,7 +6,7 @@ interface SavedBookmarkListModalProps {
   cafe: BookmarkCafe;
   isOpen: boolean;
   onClose: () => void;
-  showToast: (message:string,duration:number) => void;
+  showToast: (message: string, duration: number) => void;
 }
 
 export default function SavedBookmarkListModal({

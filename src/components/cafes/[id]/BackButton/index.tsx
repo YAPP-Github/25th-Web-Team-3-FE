@@ -1,5 +1,5 @@
 'use client';
-import ChevronLeft from '@/assets/Icon/Chevron_Left.svg';
+import ChevronLeft from '@/shared/assets/Icon/Chevron_Left.svg';
 import { useRouter } from 'next/navigation';
 import { backButton } from './BackButton.css';
 export default function BackButton() {
