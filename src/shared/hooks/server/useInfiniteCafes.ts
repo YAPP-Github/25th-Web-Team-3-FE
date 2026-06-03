@@ -1,4 +1,5 @@
-import { type CafeListResponse, CafeRegion, getCafes } from '@/apis/cafe';
+import { getCafes } from '@/entities/cafe/api/api';
+import type { CafeListResponse, CafeRegion } from '@/entities/cafe/model/types';
 import { DefaultError, InfiniteData, useInfiniteQuery } from '@tanstack/react-query';
 
 export const useInfiniteCafes = (region: CafeRegion) => {

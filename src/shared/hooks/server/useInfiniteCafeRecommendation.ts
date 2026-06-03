@@ -1,4 +1,5 @@
-import { CafeRecommendationResponse, getCafeRecommendation } from '@/apis/cafe';
+import { getCafeRecommendation } from '@/entities/cafe/api/api';
+import type { CafeRecommendationResponse } from '@/entities/cafe/model/types';
 import { DefaultError, InfiniteData, useInfiniteQuery } from '@tanstack/react-query';
 
 export const useInfiniteCafeRecommendation = () => {

@@ -1,9 +1,9 @@
 'use client';
 
 import React from 'react';
-import AddListButton from '@/components/bookmarks/AddListButton';
-import AddListModal from '@/components/bookmarks/AddListModal';
-import BookmarkList from '@/components/bookmarks/BookmarkList';
+import AddListButton from '@/entities/bookmark/ui/AddBookmarkListButton';
+import AddListModal from '@/entities/bookmark/ui/AddBookmarkListModal';
+import BookmarkList from '@/entities/bookmark/ui/BookmarkList';
 import { container, editButton, header, title } from './page.css';
 
 export type ListName = string;

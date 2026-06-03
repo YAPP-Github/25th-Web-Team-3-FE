@@ -1,12 +1,12 @@
 'use client';
 
 import * as React from 'react';
-import FullPageCarousel from '@/components/introduce/FullPageCarousel';
-import IntroduceMain from '../../../components/introduce/IntroduceMain';
-import IntroduceTemplate from '@/components/introduce/IntroduceTemplate';
-import { introduceContents } from '../../../components/introduce/introduceContents';
-import { introducePage } from '@/components/introduce/introduce.css';
-import IntroduceEnd from '@/components/introduce/IntroduceEnd';
+import FullPageCarousel from '@/entities/introduce/ui/introduce/FullPageCarousel';
+import IntroduceMain from '@/entities/introduce/ui/introduce/IntroduceMain';
+import IntroduceTemplate from '@/entities/introduce/ui/introduce/IntroduceTemplate';
+import { introduceContents } from '@/entities/introduce/ui/introduce/introduceContents';
+import { introducePage } from '@/entities/introduce/ui/introduce/introduce.css';
+import IntroduceEnd from '@/entities/introduce/ui/introduce/IntroduceEnd';
 
 export default function Page() {
   return (

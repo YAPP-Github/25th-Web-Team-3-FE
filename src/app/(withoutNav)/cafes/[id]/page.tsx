@@ -1,16 +1,16 @@
-import { getCafes } from '@/apis/cafe';
-import { getCafeDetail } from '@/apis/cafeDetail';
+import { getCafes } from '@/entities/cafe/api/api';
+import { getCafeDetail } from '@/entities/cafe/api/api';
 import ChevronLeft from '@/shared/assets/Icon/Chevron_Left.svg';
-import BackButton from '@/components/cafes/[id]/BackButton';
-import BookMarkButton from '@/components/cafes/[id]/BookMarkButton';
-import FlavorList from '@/components/cafes/[id]/FlavorItem';
-import Footer from '@/components/cafes/[id]/Footer';
-import IconWithHashTag from '@/components/cafes/[id]/IconWithHashTag';
-import MainImageCarousel from '@/components/cafes/[id]/MainImageCarousel';
-import MapButton from '@/components/cafes/[id]/MapButton';
-import MenuList from '@/components/cafes/[id]/MenuList';
-import OriginList from '@/components/cafes/[id]/OriginList';
-import { RoastingBar } from '@/components/cafes/[id]/RoastingBar';
+import BackButton from '@/entities/cafe/ui/BackButton';
+import BookMarkButton from '@/entities/cafe/ui/BookMarkButton';
+import FlavorList from '@/entities/cafe/ui/FlavorItem';
+import Footer from '@/entities/cafe/ui/Footer';
+import IconWithHashTag from '@/entities/cafe/ui/IconWithHashTag';
+import MainImageCarousel from '@/entities/cafe/ui/MainImageCarousel';
+import MapButton from '@/entities/cafe/ui/MapButton';
+import MenuList from '@/entities/cafe/ui/MenuList';
+import OriginList from '@/entities/cafe/ui/OriginList';
+import { RoastingBar } from '@/entities/cafe/ui/RoastingBar';
 import { CAFE_DETAIL_REVALIDATE_TIME } from '@/shared/config/constants/revalidateTime';
 import {
   beanCardTitle,
