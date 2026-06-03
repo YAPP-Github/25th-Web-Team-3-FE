@@ -1,0 +1,40 @@
+name: CI
+
+# PR과 main push에서 lint·build를 돌려 머지 전 품질 게이트 역할을 한다.
+# 실제 배포는 Vercel Git 연동이 담당 (이 워크플로우는 배포하지 않음).
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+# 같은 ref에서 새 커밋이 오면 진행 중인 run을 취소 (불필요한 중복 빌드 방지)
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      # next build 가 내부적으로 타입체크까지 수행한다.
+      # ⚠️ 백엔드(api 라우트)가 머지되면 빌드가 public/data/*.json 에 의존한다.
+      #    그 시점엔 JSON 을 레포에 커밋하거나, 이 step 앞에 `npm run build:data`
+      #    (NOTION_TOKEN 등 secrets 필요)를 추가해야 빌드가 통과한다.
+      - name: Build
+        run: npm run build
