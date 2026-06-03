@@ -1,6 +1,6 @@
 import { ROUTE_PATH } from '@/shared/config/constants/routePath';
 import { useBookmarkStore } from '@/store/store';
-import { BookmarkCafe } from '@/types/types';
+import { BookmarkCafe } from '@/entities/bookmark/model/types';
 import Image from 'next/image';
 import Link from 'next/link';
 import CheckBox from '@/shared/ui/CheckBox';

@@ -13,7 +13,7 @@ import {
   overflowCafeImageCount,
   tagList,
 } from './cafes.css';
-import { Cafe } from '@/types/types';
+import { Cafe } from '@/entities/cafe/model/types';
 
 interface CafeItemProps {
   cafe: Cafe;

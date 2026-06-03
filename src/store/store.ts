@@ -1,4 +1,4 @@
-import { BookmarkCafe } from '@/types/types';
+import { BookmarkCafe } from '@/entities/bookmark/model/types';
 import {
   checkBookmarkAllCafes,
   createNewFolder,

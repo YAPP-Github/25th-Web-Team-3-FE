@@ -9,7 +9,7 @@ import {
   scrollContainer,
 } from './MenuList.css';
 import { divider, menuListSection, subTitle } from '@/app/(withoutNav)/cafes/[id]/page.css';
-import { Menu } from '@/types/types';
+import { Menu } from '@/entities/cafe/model/types';
 import { useCafeCarousel } from '../hooks/useCafeCarousel';
 
 interface MenuListProps {

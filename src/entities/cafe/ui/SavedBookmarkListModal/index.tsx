@@ -1,6 +1,6 @@
 import Modal from '@/shared/ui/Modal';
 import SavedBookmarkListModalContents from './SavedBookmarkListModalContents';
-import { BookmarkCafe } from '@/types/types';
+import { BookmarkCafe } from '@/entities/bookmark/model/types';
 
 interface SavedBookmarkListModalProps {
   cafe: BookmarkCafe;

@@ -1,4 +1,4 @@
-import { Cafe } from '@/types/types';
+import { Cafe } from '@/entities/cafe/model/types';
 import CafeItem from './CafeItem';
 import { cafeListContainer } from './cafes.css';
 

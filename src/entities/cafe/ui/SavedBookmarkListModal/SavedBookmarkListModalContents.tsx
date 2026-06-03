@@ -5,7 +5,7 @@ import UnCheckedIcon from '@/shared/assets/Icon/unCheckedBox.svg';
 import AddListModal from '@/entities/bookmark/ui/AddBookmarkListModal';
 import PopUpButton from '@/shared/ui/PopUpButton';
 import { useBookmarkStore } from '@/store/store';
-import { BookmarkCafe } from '@/types/types';
+import { BookmarkCafe } from '@/entities/bookmark/model/types';
 import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import {

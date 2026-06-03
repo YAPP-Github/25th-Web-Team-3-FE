@@ -4,7 +4,7 @@ import React from 'react';
 import BookMarkIcon from '@/shared/assets/Icon/Bookmark.svg';
 import { color } from '@/shared/styles/color.css';
 import dynamic from 'next/dynamic';
-import { BookmarkCafe } from '@/types/types';
+import { BookmarkCafe } from '@/entities/bookmark/model/types';
 import SavedBookmarkListModal from '../SavedBookmarkListModal';
 import { bookMarkButton } from './BookMark.css';
 import { useToast } from '@/shared/ui/Toast/hooks/useToast';

@@ -1,5 +1,5 @@
 import HashTag from '@/shared/ui/HashTag';
-import { Country } from '@/types/types';
+import { Country } from '@/entities/cafe/model/types';
 import Image from 'next/image';
 import { countryImage, orginItem, originItemText, originList } from './OriginList.css';
 

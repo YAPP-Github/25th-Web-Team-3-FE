@@ -1,5 +1,5 @@
 import { BookmarkFolder } from '@/store/store';
-import { BookmarkCafe } from '@/types/types';
+import { BookmarkCafe } from '@/entities/bookmark/model/types';
 
 export const createNewFolder = (
   bookmarkFolders: BookmarkFolder[],

@@ -1,5 +1,5 @@
 'use client';
-import { Tag } from '@/types/types';
+import { Tag } from '@/entities/cafe/model/types';
 import Image from 'next/image';
 import { IconWithHashTagList, IconWithHashTagListItem, tagName } from './IconWithHashTag.css';
 
