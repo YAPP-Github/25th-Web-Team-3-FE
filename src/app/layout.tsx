@@ -2,10 +2,10 @@ import BrewloungeQR from '@/shared/ui/layout/BrewLoungeQR';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import QueryClientProviders from '../shared/config/QueryClientProviders';
-import './globals.css';
 import { body, bodyInnerWrapper, rootContainer } from './layout.css';
 import GoogleAnalytics from '@/shared/lib/GoogleAnalytics';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import './globals.css';
 
 const pretendard = localFont({
   src: '../shared/fonts/PretendardVariable.woff2',

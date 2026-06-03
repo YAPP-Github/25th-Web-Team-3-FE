@@ -1,6 +1,6 @@
-import CafeRecommendation from '@/components/home/CafeRecommendation';
-import HeroBanner from '@/components/home/HeroBanner';
-import { pageContainer } from '@/components/home/Home.css';
+import CafeRecommendation from '@/entities/cafe/ui/CafeRecommendation';
+import HeroBanner from '@/shared/ui/HeroBanner';
+import { pageContainer } from '@/app/(withNav)/Home.css';
 
 export default function Home() {
   return (
