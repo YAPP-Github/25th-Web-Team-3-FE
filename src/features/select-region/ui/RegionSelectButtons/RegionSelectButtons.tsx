@@ -1,6 +1,6 @@
 import SelectButton from '../../../../shared/ui/SelectButton';
-import { CafeRegion } from '../../model/types';
-import { selectButtonsContainer } from '../cafe/cafes.css';
+import { CafeRegion } from '@/entities/cafe/model/types';
+import { selectButtonsContainer } from '@/entities/cafe/ui/cafe/cafes.css';
 
 interface RegionSelectButtonsProps {
   region: CafeRegion;
