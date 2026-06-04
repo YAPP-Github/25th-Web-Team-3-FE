@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import ChervonIcon from '@/shared/assets/Icon/whiteChervonLeft.svg';
-import SavedBookmarkList from '@/entities/bookmark/ui/SavedBookmarksList';
+import SavedBookmarkList from '@/features/bookmark/ui/SavedBookmarksList';
 import { useParams, useRouter, useSearchParams } from 'next/navigation';
 import { backButton, editButton, header, headerInfo, headerTitle } from './page.css';
 import { useBookmarkStore } from '@/store/store';

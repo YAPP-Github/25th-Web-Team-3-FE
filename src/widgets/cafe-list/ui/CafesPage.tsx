@@ -2,14 +2,14 @@
 
 import React from 'react';
 import CafeList from '@/entities/cafe/ui/cafe/CafeList';
-import RegionSelectModal from '@/shared/ui/RegionSelectModal';
-import RegionSelectButtons from '@/entities/cafe/ui/RegionSelectButtons/RegionSelectButtons';
+import RegionSelectModal from '@/features/select-region/ui/RegionSelectModal';
+import RegionSelectButtons from '@/features/select-region/ui/RegionSelectButtons/RegionSelectButtons';
 import { useInfiniteCafes } from '@/shared/hooks/server/useInfiniteCafes';
 import { IntersectionDetector } from '@/shared/ui/IntersectionDetector';
 
 import { useRestoreScroll } from '@/shared/hooks/client/useRestoreScroll';
-import { CafeRegion } from '../../model/types';
-import { pageContainer } from './cafes.css';
+import { CafeRegion } from '@/entities/cafe/model/types';
+import { pageContainer } from '@/entities/cafe/ui/cafe/cafes.css';
 
 interface CafesPageProps {
   availableRegions: CafeRegion[];

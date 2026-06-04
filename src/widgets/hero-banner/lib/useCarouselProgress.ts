@@ -1,6 +1,6 @@
 import { UseEmblaCarouselType } from 'embla-carousel-react';
 import React from 'react';
-import { autoplayProgress } from '@/shared/ui/HeroBanner/HeroBanner.css';
+import { autoplayProgress } from '@/widgets/hero-banner/ui/HeroBanner/HeroBanner.css';
 
 type EmblaApi = UseEmblaCarouselType[1];
 

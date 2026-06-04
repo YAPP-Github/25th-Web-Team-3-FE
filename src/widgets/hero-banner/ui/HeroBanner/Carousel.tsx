@@ -8,7 +8,7 @@ import {
   progressBar,
   progressBarContainer,
 } from './HeroBanner.css';
-import { useCarousel } from '@/shared/hooks/client/useCarousel';
+import { useCarousel } from '@/widgets/hero-banner/lib/useCarousel';
 
 const CAROUSEL_AUTOPLAY_DELAY = 3_000;
 

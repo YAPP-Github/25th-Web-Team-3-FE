@@ -1,5 +1,5 @@
 import { CafeRegion } from '@/entities/cafe/model/types';
-import Modal from '../Modal';
+import Modal from '@/shared/ui/Modal';
 import RegionSelectModalContent from './RegionSelectModalContent';
 
 interface RegionSelectModalProps {

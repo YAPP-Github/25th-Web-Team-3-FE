@@ -5,7 +5,7 @@ import {
   deleteFolderById,
   toggleCafeBookmark,
   updatedBookmark
-} from '@/utils/bookmarkUtils';
+} from '@/features/bookmark/lib/bookmarkUtils';
 import { create } from 'zustand';
 import { createJSONStorage, persist } from 'zustand/middleware';
 

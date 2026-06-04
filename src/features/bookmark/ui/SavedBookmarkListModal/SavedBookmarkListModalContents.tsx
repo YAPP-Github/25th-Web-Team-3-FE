@@ -2,7 +2,7 @@ import React from 'react';
 import BookmarkBasicImage from '@/shared/assets/Icon/bookmarkBasicImageSmall.svg';
 import CheckedIcon from '@/shared/assets/Icon/checkedBox.svg';
 import UnCheckedIcon from '@/shared/assets/Icon/unCheckedBox.svg';
-import AddListModal from '@/entities/bookmark/ui/AddBookmarkListModal';
+import AddListModal from '@/features/bookmark/ui/AddBookmarkListModal';
 import PopUpButton from '@/shared/ui/PopUpButton';
 import { useBookmarkStore } from '@/store/store';
 import { BookmarkCafe } from '@/entities/bookmark/model/types';
